@@ -2,6 +2,7 @@
 """Rebuild the curated playlist from reviewed, reproducible metadata."""
 
 import argparse
+import copy
 import collections
 import csv
 import hashlib
@@ -127,6 +128,29 @@ def select_channels(channels, policy):
     return result, excluded
 
 
+def apply_resolution_overrides(channels, overrides):
+    """Add reviewed stable child renditions without rewriting the baseline inventory."""
+    channels = copy.deepcopy(channels)
+    by_id = {channel['id']: channel for channel in channels}
+    for override in overrides:
+        channel = by_id.get(override['id'])
+        if channel is None:
+            raise ValueError(f'Unknown resolution override channel: {override["id"]}')
+        old = next((candidate for candidate in channel['candidates']
+                    if candidate['url'] == override['old_url'] and candidate.get('quality') == override['old_resolution']), None)
+        if old is None:
+            raise ValueError(f'Resolution override no longer matches baseline: {override["id"]}')
+        candidate = copy.deepcopy(old)
+        candidate.update(url=override['new_url'], quality=override['new_resolution'],
+                         sources=list(dict.fromkeys(old['sources'] + [override['source']])))
+        candidate['labels'] = list(dict.fromkeys(candidate.get('labels', []) + ['focused stable lower-resolution rendition']))
+        channel['candidates'].append(candidate)
+        host = urllib.parse.urlsplit(override['new_url']).hostname
+        if host not in channel['approved_hosts']:
+            channel['approved_hosts'].append(host)
+    return channels
+
+
 def render_m3u(channels):
     lines = ['#EXTM3U']
     for channel in channels:
@@ -238,7 +262,7 @@ def build_report(channels, excluded, targets, policy):
             'newly_added_channels': sum(row['newly_added'] for row in rows),
             'famous_channel_coverage': coverage, 'excluded': excluded, 'channels': rows,
             'verification': {'health_testing_performed': False,
-                             'focused_candidate_testing': 'One-time manifest, selected media-playlist, and first-media-object response checks for focused-pass additions only; no reusable health checker',
+                             'focused_candidate_testing': 'One-time manifest, selected media-playlist, and first-media-object response checks for focused additions and lower-resolution replacements; no reusable health checker',
                              'resolution_basis': 'Published source metadata plus inspected master-manifest rendition labels for focused-pass additions; bitrate not measured',
                              'routing': 'vercel.json outputDirectory=public; /tv -> /tv.m3u',
                              'vercel_sha256': policy['vercel_sha256'], 'live_deployment_tested': False}}
@@ -247,7 +271,7 @@ def build_report(channels, excluded, targets, policy):
 def markdown_report(report):
     lines = ['# Playlist curation report', '', f'Source snapshot: {report["snapshot_date"]}.', '',
              'The playlist contains public index entries and broadcaster/FAST distribution addresses. '
-             'New focused-pass additions received a one-time manifest, media-playlist, and first-media-object response check. '
+             'Focused additions and accepted lower-resolution replacements received manifest, media-playlist, and first-media-object response checks. '
              'The full playlist was not health-tested and no reusable health checker was added. '
              'Geo restrictions, provider eligibility, scheduled broadcasts, and expiring URLs may apply.', '',
              'Resolution is the published stream label, not a measured bitrate or a bandwidth limit. '
@@ -287,6 +311,8 @@ def markdown_report(report):
               'resolution labels, coverage, and excluded duplicate/cap entries. '
               '[missing_famous_channels.csv](missing_famous_channels.csv) records each requested target still missing, '
               'the sources searched, closest selected alternatives, observed resolution labels, and final reason. '
+              '[resolution_replacements.csv](resolution_replacements.csv) records all 149 baseline 1080p channels reviewed, '
+              'accepted lower renditions, URLs, sources, and why retained 1080p entries remained. '
               'The reviewed candidates themselves are in [../curation/channels.json](../curation/channels.json).', '',
               '## Scope', '', 'Sports has no count cap. Language and duplicate filtering apply to every category. '
               'Movies and series have small provider caps. Regional Indian-language-only channels, '
@@ -295,12 +321,45 @@ def markdown_report(report):
     return '\n'.join(lines)
 
 
-def outputs(channels, policy, targets):
+def outputs(channels, policy, targets, resolution_overrides=None):
     routing_check(policy)
+    resolution_overrides = resolution_overrides or []
+    baseline_selected, _ = select_channels(channels, policy)
+    baseline_1080 = {channel['id']: channel for channel in baseline_selected
+                     if channel['selected'].get('quality') in ('1080i', '1080p')}
+    channels = apply_resolution_overrides(channels, resolution_overrides)
     selected, excluded = select_channels(channels, policy)
     if not selected:
         raise ValueError('Refusing an empty playlist')
     report = build_report(selected, excluded, targets, policy)
+    selected_by_id = {channel['id']: channel for channel in selected}
+    overrides_by_id = {override['id']: override for override in resolution_overrides}
+    resolution_reviews = []
+    search_scope = ('Exact name plus 576/576p/SD/720/720p/M3U/M3U8/HLS across current candidates, '
+                    'IPTV indexes, GitHub repositories/code search, broadcaster pages, regional lists, '
+                    'public stream directories, alternate feeds, and master-manifest renditions')
+    for cid, old in sorted(baseline_1080.items(), key=lambda item: item[1]['name'].casefold()):
+        final = selected_by_id[cid]
+        override = overrides_by_id.get(cid)
+        changed = final['selected']['url'] != old['selected']['url']
+        alternatives = override['alternatives_checked'] if override else sorted(
+            {candidate.get('quality') or 'unknown' for candidate in old['candidates']})
+        resolution_reviews.append({
+            'channel_name': old['name'], 'category': old['category'],
+            'old_resolution': old['selected'].get('quality') or 'unknown',
+            'new_resolution': final['selected'].get('quality') or 'unknown',
+            'old_stream_url': old['selected']['url'], 'new_stream_url': final['selected']['url'],
+            'alternatives_checked': alternatives + [search_scope],
+            'source_used': policy['sources'][override['source']]['url'] if override else '; '.join(policy['focused_research_sources']),
+            'reason_for_replacement': override['reason'] if changed else '',
+            'reason_if_1080_remained': '' if changed else
+                'No stable responding 576p or 720p rendition with acceptable provenance survived the focused review; the important/current 1080p channel was retained.'})
+    report['resolution_review'] = {
+        'baseline_1080_reviewed': len(resolution_reviews),
+        'downgraded_total': sum(row['old_resolution'] == '1080p' and row['new_resolution'] != '1080p' for row in resolution_reviews),
+        'downgraded_to_576': sum(row['new_resolution'] in ('576i', '576p') for row in resolution_reviews),
+        'downgraded_to_720': sum(row['new_resolution'] in ('720i', '720p') for row in resolution_reviews),
+        'channels': resolution_reviews}
     buffer = io.StringIO(newline='')
     fields = ['name', 'category', 'provider', 'languages', 'famous', 'newly_added', 'focused_pass_added', 'resolution',
               'lower_resolution_alternative_existed', 'preferred_576_or_720_alternative_existed',
@@ -338,10 +397,20 @@ def outputs(channels, policy, targets):
             'closest_alternatives_found': '; '.join(alternatives) if alternatives else 'None',
             'resolutions_found': '; '.join(target.get('resolutions_found', [])) or 'No acceptable responding public rendition',
             'final_reason': target['reason']})
+    replacement_buffer = io.StringIO(newline='')
+    replacement_fields = ['channel_name', 'category', 'old_resolution', 'new_resolution',
+                          'old_stream_url', 'new_stream_url', 'alternatives_checked', 'source_used',
+                          'reason_for_replacement', 'reason_if_1080_remained']
+    replacement_writer = csv.DictWriter(replacement_buffer, fieldnames=replacement_fields, lineterminator='\n')
+    replacement_writer.writeheader()
+    for row in resolution_reviews:
+        replacement_writer.writerow({key: '; '.join(row[key]) if isinstance(row[key], list) else row[key]
+                                     for key in replacement_fields})
     return {'public/tv.m3u': render_m3u(selected),
             'reports/playlist-report.json': json.dumps(report, ensure_ascii=False, indent=2) + '\n',
             'reports/playlist-report.md': markdown_report(report), 'reports/channels.csv': buffer.getvalue(),
-            'reports/missing_famous_channels.csv': missing_buffer.getvalue()}, report
+            'reports/missing_famous_channels.csv': missing_buffer.getvalue(),
+            'reports/resolution_replacements.csv': replacement_buffer.getvalue()}, report
 
 
 def main():
@@ -354,7 +423,8 @@ def main():
     focused_targets = ROOT / 'curation/focused_targets.json'
     if focused_targets.exists():
         targets.extend(json.loads(focused_targets.read_text()))
-    generated, report = outputs(channels, policy, targets)
+    resolution_overrides = json.loads((ROOT / 'curation/resolution_overrides.json').read_text())
+    generated, report = outputs(channels, policy, targets, resolution_overrides)
     for path, content in generated.items():
         target = ROOT / path
         if args.check:
@@ -364,7 +434,8 @@ def main():
             target.parent.mkdir(parents=True, exist_ok=True)
             target.write_bytes(content.encode('utf-8'))
     print(json.dumps({key: report[key] for key in ['total_channels', 'categories', 'resolution_distribution',
-                                                 'duplicate_names', 'duplicate_urls', 'avoided_1080_channels', 'newly_added_channels']}, indent=2))
+                                                 'duplicate_names', 'duplicate_urls', 'avoided_1080_channels',
+                                                 'newly_added_channels']}, indent=2))
 
 
 if __name__ == '__main__':

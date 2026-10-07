@@ -97,6 +97,14 @@
     "official-hum": {
       "url": "https://hum.tv/live/",
       "retrieved": "2026-10-07"
+    },
+    "manifest-inspection": {
+      "url": "Public HLS master manifests already referenced by curation/channels.json",
+      "retrieved": "2026-10-07"
+    },
+    "official-ufc-fast": {
+      "url": "https://play.xumo.com/live-guide/ufc",
+      "retrieved": "2026-10-07"
     }
   },
   "resolution_policy": "576i/576p first, 720i/720p second, other known SD third, 1080 fallback, unknown last; no rendition URL synthesis",

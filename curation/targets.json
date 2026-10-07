@@ -791,8 +791,8 @@
     "ids": [
       "ESPN8TheOcho.us"
     ],
-    "reason": "No legitimate stable public M3U of the requested flagship found; free brand editions are listed separately. Provider subscriptions, unclear restreams, and nonpreferred language feeds excluded.",
-    "website": "https://www.beinsportsxtra.com/",
+    "reason": "No reviewed free FAST address found.",
+    "website": "https://www.espn.com/watch/",
     "catalogs_searched": [
       "https://iptv-org.github.io/iptv/index.m3u",
       "https://iptv-org.github.io/api/streams.json",
@@ -806,7 +806,7 @@
       "FoxSports1.us",
       "FoxSports2.us"
     ],
-    "reason": "No legitimate stable public M3U of the requested flagship found; free brand editions are listed separately. Provider subscriptions, unclear restreams, and nonpreferred language feeds excluded.",
+    "reason": "No legitimate stable public M3U of the requested flagship found; FOX Sports FAST is listed separately. Provider-authenticated and anonymous restreams were excluded.",
     "website": "https://www.foxsports.com/",
     "catalogs_searched": [
       "https://iptv-org.github.io/iptv/index.m3u",
@@ -1016,8 +1016,8 @@
     "ids": [
       "PTVSports.pk"
     ],
-    "reason": "No legitimate stable public M3U of the requested flagship found; free brand editions are listed separately. Provider subscriptions, unclear restreams, and nonpreferred language feeds excluded.",
-    "website": "https://www.beinsportsxtra.com/",
+    "reason": "The current indexed 720p AynaScope candidates returned HTTP 503 twice; older raw-IP and mirror candidates lacked clear reusable broadcaster provenance. The official PTV page did not publish a stable responding standalone HLS.",
+    "website": "https://www.ptv-sports.com.pk/live-streaming/",
     "catalogs_searched": [
       "https://iptv-org.github.io/iptv/index.m3u",
       "https://iptv-org.github.io/api/streams.json",
@@ -1030,7 +1030,7 @@
     "ids": [
       "GeoSuper.pk"
     ],
-    "reason": "No legitimate stable public M3U of the requested flagship found; free brand editions are listed separately. Provider subscriptions, unclear restreams, and nonpreferred language feeds excluded.",
+    "reason": "The official Geo Super live page did not expose a reusable HLS; the previously indexed 5centscdn candidate returned HTTP 404 and raw-IP mirrors lacked clear distribution provenance.",
     "website": "https://www.geosuper.tv/",
     "catalogs_searched": [
       "https://iptv-org.github.io/iptv/index.m3u",

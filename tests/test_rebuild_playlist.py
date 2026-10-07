@@ -87,7 +87,8 @@ class CurationTests(unittest.TestCase):
     def test_offline_reproducibility_and_header(self):
         targets = json.loads((ROOT / 'curation/targets.json').read_text())
         targets.extend(json.loads((ROOT / 'curation/focused_targets.json').read_text()))
-        generated, report = rebuild.outputs(self.channels, self.policy, targets)
+        overrides = json.loads((ROOT / 'curation/resolution_overrides.json').read_text())
+        generated, report = rebuild.outputs(self.channels, self.policy, targets, overrides)
         self.assertTrue(generated['public/tv.m3u'].startswith('#EXTM3U\n'))
         self.assertEqual(report['total_channels'], generated['public/tv.m3u'].count('#EXTINF:'))
         for path, content in generated.items():
@@ -97,6 +98,8 @@ class CurationTests(unittest.TestCase):
         self.assertEqual([], report['hd_regressions'])
         self.assertIn('reports/missing_famous_channels.csv', generated)
         self.assertIn('all_sources_searched', generated['reports/missing_famous_channels.csv'].splitlines()[0])
+        self.assertEqual(149, report['resolution_review']['baseline_1080_reviewed'])
+        self.assertIn('reports/resolution_replacements.csv', generated)
 
 
 if __name__ == '__main__':

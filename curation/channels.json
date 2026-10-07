@@ -26484,5 +26484,28 @@
     "priority": 5,
     "focused_pass_added": true,
     "access_notes": "Official Fox preview endpoint, not the full authenticated cable channel; 240p media playlist and first media object responded during review."
+  },
+  {
+    "id": "UFCFAST.us",
+    "name": "UFC (FAST)",
+    "category": "Sports",
+    "provider": "UFC",
+    "famous": true,
+    "country": "US",
+    "website": "https://play.xumo.com/live-guide/ufc",
+    "logo": "",
+    "languages": ["eng"],
+    "candidates": [{
+      "url": "https://linear-893.frequency.stream/dist/xumo/893/hls/master/playlist-n_9.m3u8",
+      "quality": "576p", "feed": "FAST", "languages": ["eng"],
+      "labels": ["Xumo FAST edition; not live pay-per-view coverage"],
+      "user_agent": null, "referrer": null,
+      "sources": ["official-ufc-fast", "manifest-inspection"]
+    }],
+    "baseline_present": false,
+    "approved_hosts": ["linear-893.frequency.stream"],
+    "priority": 0,
+    "focused_pass_added": true,
+    "access_notes": "Officially listed Xumo UFC FAST channel; stable 576p child playlist and first media object responded twice during the focused review."
   }
 ]

@@ -2,15 +2,15 @@
 
 Source snapshot: 2026-10-07.
 
-The playlist contains public index entries and broadcaster/FAST distribution addresses. New focused-pass additions received a one-time manifest, media-playlist, and first-media-object response check. The full playlist was not health-tested and no reusable health checker was added. Geo restrictions, provider eligibility, scheduled broadcasts, and expiring URLs may apply.
+The playlist contains public index entries and broadcaster/FAST distribution addresses. Focused additions and accepted lower-resolution replacements received manifest, media-playlist, and first-media-object response checks. The full playlist was not health-tested and no reusable health checker was added. Geo restrictions, provider eligibility, scheduled broadcasts, and expiring URLs may apply.
 
 Resolution is the published stream label, not a measured bitrate or a bandwidth limit. Adaptive master playlists can select other renditions during playback. Unknown stays unknown; SD/HD broadcast tags are not used to infer stream resolution.
 
-Total: **440**; new channel identities: **334**; 1080 alternatives avoided: **85**.
+Total: **441**; new channel identities: **335**; 1080 alternatives avoided: **151**.
 
 | Category | Channels |
 | --- | ---: |
-| Sports | 91 |
+| Sports | 92 |
 | Movies | 37 |
 | Series | 17 |
 | Entertainment | 43 |
@@ -25,15 +25,15 @@ Total: **440**; new channel identities: **334**; 1080 alternatives avoided: **85
 
 | Published resolution | Channels |
 | --- | ---: |
-| 1080p | 149 |
+| 1080p | 83 |
 | 240p | 1 |
 | 360p | 5 |
 | 396p | 1 |
 | 480p | 3 |
 | 540p | 1 |
-| 576p | 37 |
+| 576p | 54 |
 | 684p | 1 |
-| 720p | 173 |
+| 720p | 223 |
 | unknown | 69 |
 
 Duplicate normalized names: 0. Duplicate URLs: 0. 1080 selections with a reviewed lower-resolution candidate: 0.
@@ -54,7 +54,7 @@ Duplicate normalized names: 0. Duplicate URLs: 0. 1080 selections with a reviewe
 | Zee Horror Nights (FAST) | Zee Horror Nights (1080p) |
 | Zee South Flix (Hindi) | Zee South Flix (1080p) |
 | &TV International (FAST) | &TV International (FAST) (1080p) |
-| ESPN8: The Ocho (FAST) | ESPN8: The Ocho (1080p) |
+| ESPN8: The Ocho (FAST) | ESPN8: The Ocho (720p) |
 | beIN SPORTS XTRA (free) | beIN SPORTS XTRA (720p) |
 | CBS Sports Golazo | CBS Sports Golazo Network (720p) |
 | CBS Sports HQ | CBS Sports HQ (720p) |
@@ -65,12 +65,12 @@ Duplicate normalized names: 0. Duplicate URLs: 0. 1080 selections with a reviewe
 | Tennis Channel 2 | T2 Tennis Channel (720p) |
 | Red Bull TV | Red Bull TV (720p) |
 | Willow Sports (FAST) | Willow Sports (720p) |
-| Cricket Gold | Cricket Gold (1080p) |
+| Cricket Gold | Cricket Gold (720p) |
 | PGA Tour | PGA Tour (720p) |
-| F1 Channel (FAST) | F1 Channel (1080p) |
-| NBA public FAST feed | NBA TV (1080p) |
+| F1 Channel (FAST) | F1 Channel (720p) |
+| NBA public FAST feed | NBA TV (720p) |
 | NFL Channel | NFL Channel (720p) |
-| NHL Network | NHL Network (1080p) |
+| NHL Network | NHL Network (720p) |
 | Dubai Sports | Dubai Sports 1 (unknown), Dubai Sports 2 (unknown), Dubai Sports 3 (unknown) |
 | M Sports | M Sports (1080p) |
 | Nickelodeon Pluto TV | Nickelodeon Pluto TV (720p) |
@@ -79,13 +79,13 @@ Duplicate normalized names: 0. Duplicate URLs: 0. 1080 selections with a reviewe
 | BBC Kids | BBC Kids (720p) |
 | CBBC | CBBC (720p) |
 | CBeebies | CBeebies (720p) |
-| MBC 3 USA | MBC 3 USA (1080p) |
+| MBC 3 USA | MBC 3 USA (576p) |
 | PBS Kids | PBS Kids (720p) |
 | BBC News | BBC News (720p) |
 | BBC Persian | BBC Persian (720p) |
 | BBC Arabic | BBC Arabic (720p) |
 | Sky News | Sky News (unknown) |
-| Al Jazeera English | Al Jazeera English (1080p) |
+| Al Jazeera English | Al Jazeera English (720p) |
 | Al Jazeera Arabic | Al Jazeera Arabic (1080p) |
 | Euronews English | Euronews English (720p) |
 | ABC News Live | ABC News Live (720p) |
@@ -97,18 +97,18 @@ Duplicate normalized names: 0. Duplicate URLs: 0. 1080 selections with a reviewe
 | Republic TV | Republic TV (576p) |
 | Republic Bharat | Republic Bharat (576p) |
 | Times Now | Times Now (720p) |
-| News18 India | News18 India (1080p) |
+| News18 India | News18 India (720p) |
 | NDTV India | NDTV India (576p) |
 | NDTV 24x7 | NDTV 24x7 (480p) |
 | France 24 | France 24 English (576p), France 24 Arabic (576p) |
 | DW English | DW English (1080p) |
 | DW Arabic | DW Arabic (1080p) |
 | Al Arabiya | Alarabiya (1080p) |
-| Al Hadath | Al Hadath (1080p) |
+| Al Hadath | Al Hadath (576p) |
 | Sky News Arabia | Sky News Arabia (720p) |
 | Iran International | Iran International (720p) |
 | National Geographic Abu Dhabi | National Geographic Abu Dhabi (unknown) |
-| Asharq Discovery | Asharq Discovery (1080p) |
+| Asharq Discovery | Asharq Discovery (720p) |
 | History TV18 | History TV18 (1080p) |
 | History Hit | History Hit (720p) |
 | BBC Earth (FAST) | BBC Earth (FAST) (720p) |
@@ -118,25 +118,25 @@ Duplicate normalized names: 0. Duplicate URLs: 0. 1080 selections with a reviewe
 | BBC One | BBC One (720p) |
 | BBC Two | BBC Two (720p) |
 | BBC Drama (FAST) | BBC Drama (FAST) (720p) |
-| BBC Food | BBC Food (1080p) |
-| BBC Home & Garden | BBC Home & Garden (1080p) |
+| BBC Food | BBC Food (576p) |
+| BBC Home & Garden | BBC Home & Garden (576p) |
 | Paramount Movie Channel | Paramount Movie Channel (unknown) |
 | Universal Crime | Universal Crime (720p) |
-| NBC Comedy Vault | NBC Comedy Vault (1080p) |
+| NBC Comedy Vault | NBC Comedy Vault (720p) |
 | BET Pluto TV | BET Pluto TV (unknown) |
 | MTV Pluto TV | MTV Pluto TV (unknown) |
 | MTV Classic (free) | MTV Classic (720p) |
 | Trace Urban | Trace Urban (720p) |
 | Trace UK | Trace UK (1080p) |
-| Stingray music | Stingray Hit List (1080p), Stingray DJAZZ (1080p), Stingray Classic Rock (1080p) |
+| Stingray music | Stingray Hit List (1080p), Stingray DJAZZ (720p), Stingray Classic Rock (1080p) |
 | B4U Music | B4U Music (576p) |
 | Music India | Music India (576p) |
 | YRF Music | YRF Music (1080p) |
 | FashionTV | FashionTV Europe (1080p) |
 | Travelxp | Travelxp (1080p) |
-| MBC 1 | MBC 1 (1080p) |
-| MBC Drama | MBC Drama (1080p) |
-| MBC Bollywood | MBC Bollywood (1080p) |
+| MBC 1 | MBC 1 (576p) |
+| MBC Drama | MBC Drama (576p) |
+| MBC Bollywood | MBC Bollywood (576p) |
 | Rotana Cinema | Rotana Cinema KSA (1080p), Rotana Cinema Egypt (1080p) |
 | Rotana Drama | Rotana Drama (1080p) |
 | Rotana Music | Rotana Music (1080p) |
@@ -147,7 +147,7 @@ Duplicate normalized names: 0. Duplicate URLs: 0. 1080 selections with a reviewe
 | TOLOnews | TOLOnews (720p) |
 | Lemar | Lemar TV (720p) |
 | Shamshad | Shamshad TV (unknown) |
-| RTA | RTA (1080p) |
+| RTA | RTA (720p) |
 | Tamadon | Tamadon TV (720p) |
 | Afghanistan International | Afghanistan International (720p) |
 | Amu TV | Amu TV (unknown) |
@@ -167,15 +167,16 @@ Duplicate normalized names: 0. Duplicate URLs: 0. 1080 selections with a reviewe
 | 92 News | 92 News HD (720p) |
 | 8XM | 8XM (unknown) |
 | Jalwa | Jalwa TV (unknown) |
-| Discover Pakistan | Discover Pakistan (1080p) |
+| Discover Pakistan | Discover Pakistan (720p) |
 | FOX Sports (FAST) | FOX Sports (FAST) (720p) |
 | WWE Superstar Central | WWE Superstar Central (720p) |
 | DAZN Ringside | DAZN Ringside (720p) |
 | GolfPass | GolfPass (720p) |
 | Motorvision | Motorvision (720p) |
 | Fox News Channel Preview | Fox News Channel Preview (240p) |
-| NBA TV | NBA TV (1080p) |
+| NBA TV | NBA TV (720p) |
 | Neo News | Neo News (1080p) |
+| UFC (FAST) | UFC (FAST) (576p) |
 
 ## Searched but unavailable as a standalone public M3U
 
@@ -228,12 +229,12 @@ These are search outcomes within the documented sources, not claims that a chann
 | FilmBox (preferred languages) | No legitimate standalone public English/Hindi/Urdu/Persian/Arabic M3U found. Indexed anonymous rebroadcasts do not establish authorized distribution. | https://www.hbo.com/how-to-watch-hbo-max |
 | Sky Sports | No legitimate stable public M3U of the requested flagship found; free brand editions are listed separately. Provider subscriptions, unclear restreams, and nonpreferred language feeds excluded. | https://www.skysports.com/ |
 | ESPN flagship | No legitimate stable public M3U of the requested flagship found; free brand editions are listed separately. Provider subscriptions, unclear restreams, and nonpreferred language feeds excluded. | https://espn.com/ |
-| Fox Sports flagship | No legitimate stable public M3U of the requested flagship found; free brand editions are listed separately. Provider subscriptions, unclear restreams, and nonpreferred language feeds excluded. | https://www.foxsports.com/ |
+| Fox Sports flagship | No legitimate stable public M3U of the requested flagship found; FOX Sports FAST is listed separately. Provider-authenticated and anonymous restreams were excluded. | https://www.foxsports.com/ |
 | beIN Sports flagship | No legitimate stable public M3U of the requested flagship found; free brand editions are listed separately. Provider subscriptions, unclear restreams, and nonpreferred language feeds excluded. | https://www.beinsports.com/ar/ |
 | TNT Sports | No legitimate stable public M3U of the requested flagship found; free brand editions are listed separately. Provider subscriptions, unclear restreams, and nonpreferred language feeds excluded. | https://www.tntsports.co.uk/ |
 | Willow flagship | No legitimate stable public M3U of the requested flagship found; free brand editions are listed separately. Provider subscriptions, unclear restreams, and nonpreferred language feeds excluded. | http://www.willow.tv/ |
-| PTV Sports | No legitimate stable public M3U of the requested flagship found; free brand editions are listed separately. Provider subscriptions, unclear restreams, and nonpreferred language feeds excluded. | https://www.beinsportsxtra.com/ |
-| Geo Super | No legitimate stable public M3U of the requested flagship found; free brand editions are listed separately. Provider subscriptions, unclear restreams, and nonpreferred language feeds excluded. | https://www.geosuper.tv/ |
+| PTV Sports | The current indexed 720p AynaScope candidates returned HTTP 503 twice; older raw-IP and mirror candidates lacked clear reusable broadcaster provenance. The official PTV page did not publish a stable responding standalone HLS. | https://www.ptv-sports.com.pk/live-streaming/ |
+| Geo Super | The official Geo Super live page did not expose a reusable HLS; the previously indexed 5centscdn candidate returned HTTP 404 and raw-IP mirrors lacked clear distribution provenance. | https://www.geosuper.tv/ |
 | Abu Dhabi Sports | No legitimate stable public M3U of the requested flagship found; free brand editions are listed separately. Provider subscriptions, unclear restreams, and nonpreferred language feeds excluded. | https://adtv.ae/en/live/Abu%20Dhabi%20Sports%20Channel%201 |
 | Alkass | No legitimate stable public M3U of the requested flagship found; free brand editions are listed separately. Provider subscriptions, unclear restreams, and nonpreferred language feeds excluded. | https://www.alkass.net/ |
 | Disney Channel | No stable public permitted M3U in the preferred languages found. Subscription rebroadcasts and web/YouTube pages without reusable HLS excluded. | https://www.disney.com/ |
@@ -353,6 +354,11 @@ These are search outcomes within the documented sources, not claims that a chann
 | Public News | No responding broadcaster-published reusable HLS found; indexed candidates had unclear provenance. | https://publicnews.com/ |
 | HBO Family | Premium authenticated network; no licensed unauthenticated public HLS found. | https://www.hbo.com/ |
 | HBO Signature | Premium authenticated network; no licensed unauthenticated public HLS found. | https://www.hbo.com/ |
+| A Sports Pakistan | The broadcaster site and current public indexes did not expose a stable reusable HLS; search hits were embedded players, raw-IP mirrors, or anonymous restreams. | https://a-sports.tv/ |
+| Ten Sports Pakistan | No stable licensed unauthenticated HLS was found; public hits were provider-authenticated or anonymous premium restreams. | https://www.sonypicturesnetworks.com/ |
+| Sports18 | No stable licensed unauthenticated HLS was found; Jio/provider access and public hits were authenticated or unclear restreams. | https://www.jiocinema.com/sports |
+| SuperTennis | The official indexed HiWay master returned HTTP 403 during this pass; no alternate responding permitted HLS was found. | https://www.supertennis.tv/ |
+| UEFA public programming | Official UEFA web/video programming was found, but no stable reusable linear HLS channel with clear public redistribution was exposed. | https://www.uefa.tv/ |
 
 ## Afghan preservation
 
@@ -360,7 +366,7 @@ All 24 original Afghan channel identities remain. The inventory also records add
 
 ## Sources, alternatives, and additions
 
-See [channels.csv](channels.csv) for every selected channel, including whether it is new, selected resolution, source used, and whether a lower-resolution alternative existed. [playlist-report.json](playlist-report.json) contains candidate counts, all alternative resolution labels, coverage, and excluded duplicate/cap entries. [missing_famous_channels.csv](missing_famous_channels.csv) records each requested target still missing, the sources searched, closest selected alternatives, observed resolution labels, and final reason. The reviewed candidates themselves are in [../curation/channels.json](../curation/channels.json).
+See [channels.csv](channels.csv) for every selected channel, including whether it is new, selected resolution, source used, and whether a lower-resolution alternative existed. [playlist-report.json](playlist-report.json) contains candidate counts, all alternative resolution labels, coverage, and excluded duplicate/cap entries. [missing_famous_channels.csv](missing_famous_channels.csv) records each requested target still missing, the sources searched, closest selected alternatives, observed resolution labels, and final reason. [resolution_replacements.csv](resolution_replacements.csv) records all 149 baseline 1080p channels reviewed, accepted lower renditions, URLs, sources, and why retained 1080p entries remained. The reviewed candidates themselves are in [../curation/channels.json](../curation/channels.json).
 
 ## Scope
 
