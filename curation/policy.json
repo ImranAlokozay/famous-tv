@@ -1,0 +1,169 @@
+{
+  "schema_version": 1,
+  "snapshot_date": "2026-10-07",
+  "vercel_sha256": "1b12c3749d3aad2e99be69785711b295d59c8f157f7ab147e763348bf4184747",
+  "category_order": [
+    "Sports",
+    "Movies",
+    "Series",
+    "Entertainment",
+    "Music",
+    "Kids",
+    "News",
+    "Documentary",
+    "Lifestyle",
+    "India",
+    "Afghanistan",
+    "Pakistan"
+  ],
+  "languages": [
+    "eng",
+    "hin",
+    "urd",
+    "fas",
+    "ara"
+  ],
+  "afghanistan_languages": [
+    "eng",
+    "hin",
+    "urd",
+    "fas",
+    "ara",
+    "pus",
+    "prs",
+    "prd"
+  ],
+  "provider_caps": {
+    "Movies": {
+      "Pluto TV": 4,
+      "Rakuten TV": 3,
+      "Persiana": 3,
+      "TVS": 2
+    },
+    "Series": {
+      "Pluto TV": 3,
+      "Persiana": 3
+    },
+    "Music": {
+      "Stingray": 6,
+      "MTV": 3
+    },
+    "Sports": {
+      "TVS": 3
+    }
+  },
+  "sources": {
+    "iptv-org-api": {
+      "url": "https://iptv-org.github.io/api/streams.json",
+      "retrieved": "2026-10-07",
+      "sha256": "59022fdcc6cb873d42028a8afe6af9a76a85bec5116ba44ddd514c3c34373da6"
+    },
+    "iptv-org-index": {
+      "url": "https://iptv-org.github.io/iptv/index.m3u",
+      "retrieved": "2026-10-07",
+      "sha256": "994650515cf978a4d3c86d6e990033882427d5f6603b05445fcb9e63554294b3"
+    },
+    "free-tv": {
+      "url": "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8",
+      "retrieved": "2026-10-07",
+      "sha256": "df218d5c80e01d0491aae60a5738ca432c406e40504e32dd74136a4ee0d86e5d"
+    },
+    "baseline": {
+      "url": "https://github.com/ImranAlokozay/famous-tv/blob/1f5f569f6131a5ab93f6b8fbdb5abf8ef6dc3eae/public/tv.m3u",
+      "retrieved": "2026-10-07"
+    },
+    "official-ary": {
+      "url": "https://cdn.aryzap.com/tv-api/mainSlider.php",
+      "retrieved": "2026-10-07"
+    },
+    "official-arynews": {
+      "url": "https://live.arynews.tv/",
+      "retrieved": "2026-10-07"
+    },
+    "official-amu": {
+      "url": "https://amu.tv/",
+      "retrieved": "2026-10-07"
+    },
+    "official-hum": {
+      "url": "https://hum.tv/live/",
+      "retrieved": "2026-10-07"
+    }
+  },
+  "resolution_policy": "576i/576p first, 720i/720p second, other known SD third, 1080 fallback, unknown last; no rendition URL synthesis",
+  "baseline_afghanistan_ids": [
+    "4Afghanistan.fr",
+    "ABNAfghanistan.us",
+    "AMC.af",
+    "AfghanNobelMovies.ca",
+    "AfghanNobelTV.ca",
+    "AfghanistanInternational.uk",
+    "AmuTV.us",
+    "BaharTV.af",
+    "DunyaNawTV.af",
+    "EslahTV.af",
+    "HewadTV.af",
+    "ImanTV.us",
+    "KayhanTV.af",
+    "LemarTV.af",
+    "MaahTV.my",
+    "PayameAfghanTV.us",
+    "RTA.af",
+    "ShamsTV.af",
+    "ShamshadTV.af",
+    "SharqRadioTV.af",
+    "SohailTV.ca",
+    "TOLOnews.af",
+    "TamadonTV.af",
+    "ToloTV.af"
+  ],
+  "provenance_references": [
+    {
+      "url": "https://www.mjunoon.tv/terms-and-conditions",
+      "note": "Provider states its streams are licensed and most services free."
+    },
+    {
+      "url": "https://www.sonypictures.com/corp/press_releases/2024/0326",
+      "note": "Sony confirms Sony KAL Hindi and Sony One FAST distribution."
+    },
+    {
+      "url": "https://www.beinsportsxtra.com/",
+      "note": "beIN confirms its free XTRA service."
+    },
+    {
+      "url": "https://www.bbcstudiospressroom.com/press/bbc-studios-launches-new-bbc-earth-fast-channel-ahead-of-earth-day/",
+      "note": "BBC confirms a separate BBC Earth FAST service."
+    },
+    {
+      "url": "https://www.mbc.net/about-us",
+      "note": "MBC describes FTA brands; standalone indexed streams may remain region/provider restricted."
+    },
+    {
+      "url": "https://rotana.net/en/channels/live",
+      "note": "Official channel live page; catalog CDN addresses not playback tested."
+    },
+    {
+      "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2299595&lang=2&reg=48",
+      "note": "Indian government confirms BSNL Free Entertainment TV powered by Tango; provider eligibility may apply."
+    },
+    {
+      "url": "https://hum.tv/live/",
+      "note": "Official iframe encodes the selected HUM HLS address."
+    },
+    {
+      "url": "https://amu.tv/",
+      "note": "Official page publishes the Amu HLS address."
+    },
+    {
+      "url": "https://cdn.aryzap.com/tv-api/mainSlider.php",
+      "note": "Official public ARY catalog publishes ARY Digital HLS."
+    },
+    {
+      "url": "https://live.arynews.tv/",
+      "note": "Official page publishes the ARY News HLS address."
+    },
+    {
+      "url": "https://www.linkedin.com/posts/samsung-ads-apac_samsung-tv-plus-india-is-excited-to-announce-activity-7442691606568337408-4SqQ",
+      "note": "Samsung Ads announces the five free ZEE5 FAST channels."
+    }
+  ]
+}

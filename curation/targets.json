@@ -1,0 +1,3246 @@
+[
+  {
+    "name": "Sony Entertainment Television",
+    "group": "Sony",
+    "ids": [
+      "SonyEntertainmentTelevision.in"
+    ],
+    "reason": "No stable unauthenticated broadcaster or licensed public M3U found; indexed alternatives had unclear provenance or required subscription/player access.",
+    "website": "https://www.setindia.com/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Sony SAB",
+    "group": "Sony",
+    "ids": [
+      "SonySAB.in"
+    ],
+    "reason": "No stable unauthenticated broadcaster or licensed public M3U found; indexed alternatives had unclear provenance or required subscription/player access.",
+    "website": "https://www.sabtv.com/en_in/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Sony MAX",
+    "group": "Sony",
+    "ids": [
+      "SonyMax.in"
+    ],
+    "reason": "No stable unauthenticated broadcaster or licensed public M3U found; indexed alternatives had unclear provenance or required subscription/player access.",
+    "website": "https://www.sonymax.tv/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Sony MAX 2",
+    "group": "Sony",
+    "ids": [
+      "SonyMax2.in"
+    ],
+    "reason": "No stable unauthenticated broadcaster or licensed public M3U found; indexed alternatives had unclear provenance or required subscription/player access.",
+    "website": "https://www.sonymax2.tv/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Sony Pal",
+    "group": "Sony",
+    "ids": [
+      "SonyPal.in"
+    ],
+    "reason": "No stable unauthenticated broadcaster or licensed public M3U found; indexed alternatives had unclear provenance or required subscription/player access.",
+    "website": "http://www.sonypal.in/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Sony Sports / Sony Ten",
+    "group": "Sony",
+    "ids": [
+      "SonySportsTen1.in",
+      "SonySportsTen2.in",
+      "SonySportsTen3Hindi.in",
+      "SonySportsTen5.in"
+    ],
+    "reason": "No stable unauthenticated broadcaster or licensed public M3U found; indexed alternatives had unclear provenance or required subscription/player access.",
+    "website": "https://www.sonysportsnetwork.com/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Sony PIX",
+    "group": "Sony",
+    "ids": [
+      "SonyPix.in"
+    ],
+    "reason": "No stable unauthenticated broadcaster or licensed public M3U found; indexed alternatives had unclear provenance or required subscription/player access.",
+    "website": "http://www.sonypix.com/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Sony WAH",
+    "group": "Sony",
+    "ids": [
+      "SonyWah.in"
+    ],
+    "reason": "No stable unauthenticated broadcaster or licensed public M3U found; indexed alternatives had unclear provenance or required subscription/player access.",
+    "website": "https://www.sonywah.tv/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Sony KAL Hindi",
+    "group": "Sony",
+    "ids": [
+      "SonyKALHindi.us"
+    ],
+    "reason": "No stable unauthenticated broadcaster or licensed public M3U found; indexed alternatives had unclear provenance or required subscription/player access.",
+    "website": "https://www.sonykal.com/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Sony Movies",
+    "group": "Sony",
+    "ids": [
+      "SonyMovies.us"
+    ],
+    "reason": "No stable unauthenticated broadcaster or licensed public M3U found; indexed alternatives had unclear provenance or required subscription/player access.",
+    "website": "https://www.sonymovies.com/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Sony One Action/Comedy (English)",
+    "group": "Sony",
+    "ids": [
+      "SonyOneActionHits.uk",
+      "SonyOneComedyHits.uk"
+    ],
+    "reason": "No stable unauthenticated broadcaster or licensed public M3U found; indexed alternatives had unclear provenance or required subscription/player access.",
+    "website": "https://www.sonypicturesnetworks.com/overview",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Colors",
+    "group": "Colors",
+    "ids": [
+      "Colors.in"
+    ],
+    "reason": "No stable public Hindi/English M3U with sufficiently clear provenance found in the searched catalogs and official distribution.",
+    "website": "https://www.colorstv.com/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Colors MENA",
+    "group": "Colors",
+    "ids": [
+      "ColorsMENA.in"
+    ],
+    "reason": "No stable public Hindi/English M3U with sufficiently clear provenance found in the searched catalogs and official distribution.",
+    "website": "https://www.colorstv.com/us/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Colors Cineplex",
+    "group": "Colors",
+    "ids": [
+      "ColorsCineplex.in"
+    ],
+    "reason": "No stable public Hindi/English M3U with sufficiently clear provenance found in the searched catalogs and official distribution.",
+    "website": "https://www.colorstv.com/us/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Colors Cineplex Bollywood",
+    "group": "Colors",
+    "ids": [
+      "ColorsCineplexBollywood.in"
+    ],
+    "reason": "No stable public Hindi/English M3U with sufficiently clear provenance found in the searched catalogs and official distribution.",
+    "website": "https://www.colorstv.com/us/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Colors Cineplex Superhits",
+    "group": "Colors",
+    "ids": [
+      "ColorsCineplexSuperhits.in"
+    ],
+    "reason": "No stable public Hindi/English M3U with sufficiently clear provenance found in the searched catalogs and official distribution.",
+    "website": "https://www.colorstv.com/us/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Colors Infinity",
+    "group": "Colors",
+    "ids": [
+      "ColorsInfinity.in"
+    ],
+    "reason": "No stable public Hindi/English M3U with sufficiently clear provenance found in the searched catalogs and official distribution.",
+    "website": "https://www.colorstv.com/us/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Zee TV",
+    "group": "Zee",
+    "ids": [
+      "ZeeTV.in"
+    ],
+    "reason": "No stable unauthenticated standalone public M3U found. Official web/app availability is not a reusable stream URL; unidentified restreams rejected.",
+    "website": "http://www.zeetv.com/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Zee Cinema",
+    "group": "Zee",
+    "ids": [
+      "ZeeCinema.in"
+    ],
+    "reason": "No stable permitted public M3U confirmed; the purported lower-resolution catalog URL names NGCHD (a different channel), so it was rejected.",
+    "website": "https://zeecinema.zee5.com/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Zee Bollywood",
+    "group": "Zee",
+    "ids": [
+      "ZeeBollywood.in"
+    ],
+    "reason": "No stable unauthenticated standalone public M3U found. Official web/app availability is not a reusable stream URL; unidentified restreams rejected.",
+    "website": "https://zeebollywood.zee5.com/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Zee Action",
+    "group": "Zee",
+    "ids": [
+      "ZeeAction.in"
+    ],
+    "reason": "No stable unauthenticated standalone public M3U found. Official web/app availability is not a reusable stream URL; unidentified restreams rejected.",
+    "website": "https://www.zee5.com/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Zee Classic",
+    "group": "Zee",
+    "ids": [
+      "ZeeClassic.in"
+    ],
+    "reason": "No stable unauthenticated standalone public M3U found. Official web/app availability is not a reusable stream URL; unidentified restreams rejected.",
+    "website": "http://www.zeeclassic.com/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Zee News",
+    "group": "Zee",
+    "ids": [
+      "ZeeNews.in"
+    ],
+    "reason": "No stable unauthenticated standalone public M3U found. Official web/app availability is not a reusable stream URL; unidentified restreams rejected.",
+    "website": "https://zeenews.india.com/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Zee Business",
+    "group": "Zee",
+    "ids": [
+      "ZeeBusiness.in"
+    ],
+    "reason": "No stable unauthenticated standalone public M3U found. Official web/app availability is not a reusable stream URL; unidentified restreams rejected.",
+    "website": "https://www.zeebiz.com/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Zee Cine Classic (FAST)",
+    "group": "Zee",
+    "ids": [
+      "ZeeCineClassic.in"
+    ],
+    "reason": "No stable unauthenticated standalone public M3U found. Official web/app availability is not a reusable stream URL; unidentified restreams rejected.",
+    "website": "https://www.zee5.com/live-tv",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Zee Comedy Nation (FAST)",
+    "group": "Zee",
+    "ids": [
+      "ZeeComedyNation.in"
+    ],
+    "reason": "No stable unauthenticated standalone public M3U found. Official web/app availability is not a reusable stream URL; unidentified restreams rejected.",
+    "website": "https://www.zee5.com/live-tv",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Zee Dil Se (FAST)",
+    "group": "Zee",
+    "ids": [
+      "ZeeDilSe.in"
+    ],
+    "reason": "No stable unauthenticated standalone public M3U found. Official web/app availability is not a reusable stream URL; unidentified restreams rejected.",
+    "website": "https://www.zee5.com/live-tv",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Zee Horror Nights (FAST)",
+    "group": "Zee",
+    "ids": [
+      "ZeeHorrorNights.in"
+    ],
+    "reason": "No stable unauthenticated standalone public M3U found. Official web/app availability is not a reusable stream URL; unidentified restreams rejected.",
+    "website": "https://www.zee5.com/live-tv",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Zee South Flix (Hindi)",
+    "group": "Zee",
+    "ids": [
+      "ZeeSouthFlix.in"
+    ],
+    "reason": "No stable unauthenticated standalone public M3U found. Official web/app availability is not a reusable stream URL; unidentified restreams rejected.",
+    "website": "https://www.zee5.com/live-tv",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Zing",
+    "group": "Zee",
+    "ids": [
+      "Zing.in"
+    ],
+    "reason": "No stable unauthenticated standalone public M3U found. Official web/app availability is not a reusable stream URL; unidentified restreams rejected.",
+    "website": "http://www.zingtv.in/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "&TV International (FAST)",
+    "group": "Zee",
+    "ids": [
+      "AndTV.in"
+    ],
+    "reason": "No stable unauthenticated standalone public M3U found. Official web/app availability is not a reusable stream URL; unidentified restreams rejected.",
+    "website": "https://andtv.zee5.com/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Star Plus",
+    "group": "Star",
+    "ids": [
+      "StarPlus.in",
+      "StarPlus.uk"
+    ],
+    "reason": "No stable public Hindi/English broadcaster M3U found. Catalog entries were unidentified restreams or subscription distribution.",
+    "website": "http://www.hotstar.com/channels/star-plus",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Star Bharat",
+    "group": "Star",
+    "ids": [
+      "StarBharat.in",
+      "StarBharat.uk"
+    ],
+    "reason": "No stable public Hindi/English broadcaster M3U found. Catalog entries were unidentified restreams or subscription distribution.",
+    "website": "http://www.hotstar.com/channels/star-bharat",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Star Gold",
+    "group": "Star",
+    "ids": [
+      "StarGold.in"
+    ],
+    "reason": "No stable public Hindi/English broadcaster M3U found. Catalog entries were unidentified restreams or subscription distribution.",
+    "website": "https://hotstar.com/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Star Gold 2",
+    "group": "Star",
+    "ids": [
+      "StarGold2.in"
+    ],
+    "reason": "No stable public Hindi/English broadcaster M3U found. Catalog entries were unidentified restreams or subscription distribution.",
+    "website": "https://hotstar.com/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Star Gold Select",
+    "group": "Star",
+    "ids": [
+      "StarGoldSelect.in"
+    ],
+    "reason": "No stable public Hindi/English broadcaster M3U found. Catalog entries were unidentified restreams or subscription distribution.",
+    "website": "https://hotstar.com/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Star Sports",
+    "group": "Star",
+    "ids": [
+      "StarSports1.in",
+      "StarSports2.in",
+      "StarSports3.in",
+      "StarSports2Hindi.in"
+    ],
+    "reason": "No stable public Hindi/English broadcaster M3U found. Catalog entries were unidentified restreams or subscription distribution.",
+    "website": "https://www.startv.com/about-us/sports",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Star Sports Select",
+    "group": "Star",
+    "ids": [
+      "StarSportsSelect1.in",
+      "StarSportsSelect2.in"
+    ],
+    "reason": "No stable public Hindi/English broadcaster M3U found. Catalog entries were unidentified restreams or subscription distribution.",
+    "website": "https://www.startv.com/about-us/sports/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Star Utsav",
+    "group": "Star",
+    "ids": [
+      "StarUtsav.in"
+    ],
+    "reason": "No stable public Hindi/English broadcaster M3U found. Catalog entries were unidentified restreams or subscription distribution.",
+    "website": "https://hotstar.com/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Star Utsav Movies",
+    "group": "Star",
+    "ids": [
+      "StarUtsavMovies.in"
+    ],
+    "reason": "No stable public Hindi/English broadcaster M3U found. Catalog entries were unidentified restreams or subscription distribution.",
+    "website": "https://hotstar.com/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Star Movies",
+    "group": "Star",
+    "ids": [
+      "StarMovies.in"
+    ],
+    "reason": "No stable public Hindi/English broadcaster M3U found. Catalog entries were unidentified restreams or subscription distribution.",
+    "website": "http://www.starmovies.in/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "HBO",
+    "group": "Premium",
+    "ids": [
+      "HBO.us",
+      "HBOMovies.us"
+    ],
+    "reason": "No legitimate standalone public English/Hindi/Urdu/Persian/Arabic M3U found. Indexed anonymous rebroadcasts do not establish authorized distribution.",
+    "website": "http://www.hbo.com/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "HBO Hits",
+    "group": "Premium",
+    "ids": [
+      "HBOHits.sg"
+    ],
+    "reason": "No legitimate standalone public English/Hindi/Urdu/Persian/Arabic M3U found. Indexed anonymous rebroadcasts do not establish authorized distribution.",
+    "website": "https://www.hbo.com/how-to-watch-hbo-max",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Cinemax",
+    "group": "Premium",
+    "ids": [
+      "Cinemax.us",
+      "CinemaxHits.us"
+    ],
+    "reason": "No legitimate standalone public English/Hindi/Urdu/Persian/Arabic M3U found. Indexed anonymous rebroadcasts do not establish authorized distribution.",
+    "website": "http://www.cinemax.tv/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Starz",
+    "group": "Premium",
+    "ids": [
+      "Starz.us",
+      "StarzCinema.us"
+    ],
+    "reason": "No legitimate standalone public English/Hindi/Urdu/Persian/Arabic M3U found. Indexed anonymous rebroadcasts do not establish authorized distribution.",
+    "website": "https://www.starz.com/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "OSN Movies",
+    "group": "Premium",
+    "ids": [
+      "OSNMoviesAction.ae"
+    ],
+    "reason": "No legitimate standalone public English/Hindi/Urdu/Persian/Arabic M3U found. Indexed anonymous rebroadcasts do not establish authorized distribution.",
+    "website": "https://www.osn.com/en-ae/explore/channels/ahd/osn-action",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "OSN Series",
+    "group": "Premium",
+    "ids": [
+      "OSNSeries.ae"
+    ],
+    "reason": "No legitimate standalone public English/Hindi/Urdu/Persian/Arabic M3U found. Indexed anonymous rebroadcasts do not establish authorized distribution.",
+    "website": "https://www.hbo.com/how-to-watch-hbo-max",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Warner TV",
+    "group": "Premium",
+    "ids": [
+      "WarnerTV.us"
+    ],
+    "reason": "No legitimate standalone public English/Hindi/Urdu/Persian/Arabic M3U found. Indexed anonymous rebroadcasts do not establish authorized distribution.",
+    "website": "https://www.hbo.com/how-to-watch-hbo-max",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Universal flagship",
+    "group": "Premium",
+    "ids": [
+      "UniversalTV.us"
+    ],
+    "reason": "No legitimate standalone public English/Hindi/Urdu/Persian/Arabic M3U found. Indexed anonymous rebroadcasts do not establish authorized distribution.",
+    "website": "https://www.hbo.com/how-to-watch-hbo-max",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Paramount Network flagship",
+    "group": "Premium",
+    "ids": [
+      "ParamountNetwork.us"
+    ],
+    "reason": "No legitimate standalone public English/Hindi/Urdu/Persian/Arabic M3U found. Indexed anonymous rebroadcasts do not establish authorized distribution.",
+    "website": "http://www.paramountnetwork.com/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "TNT flagship",
+    "group": "Premium",
+    "ids": [
+      "TNT.us"
+    ],
+    "reason": "No legitimate standalone public English/Hindi/Urdu/Persian/Arabic M3U found. Indexed anonymous rebroadcasts do not establish authorized distribution.",
+    "website": "https://www.international.tbs.com/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "FX flagship",
+    "group": "Premium",
+    "ids": [
+      "FX.us"
+    ],
+    "reason": "No legitimate standalone public English/Hindi/Urdu/Persian/Arabic M3U found. Indexed anonymous rebroadcasts do not establish authorized distribution.",
+    "website": "http://www.fxnetworks.com/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "FilmBox (preferred languages)",
+    "group": "Premium",
+    "ids": [
+      "FILMBOXPlusOne.pl",
+      "FILMBOXPlusFestival.pl"
+    ],
+    "reason": "No legitimate standalone public English/Hindi/Urdu/Persian/Arabic M3U found. Indexed anonymous rebroadcasts do not establish authorized distribution.",
+    "website": "https://www.hbo.com/how-to-watch-hbo-max",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Sky Sports",
+    "group": "Sports",
+    "ids": [
+      "SkySportsCricket.uk",
+      "SkySportsFootball.uk",
+      "SkySportsMainEvent.uk"
+    ],
+    "reason": "No legitimate stable public M3U of the requested flagship found; free brand editions are listed separately. Provider subscriptions, unclear restreams, and nonpreferred language feeds excluded.",
+    "website": "https://www.skysports.com/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "ESPN flagship",
+    "group": "Sports",
+    "ids": [
+      "ESPN.us"
+    ],
+    "reason": "No legitimate stable public M3U of the requested flagship found; free brand editions are listed separately. Provider subscriptions, unclear restreams, and nonpreferred language feeds excluded.",
+    "website": "https://espn.com/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "ESPN8: The Ocho (FAST)",
+    "group": "Sports",
+    "ids": [
+      "ESPN8TheOcho.us"
+    ],
+    "reason": "No legitimate stable public M3U of the requested flagship found; free brand editions are listed separately. Provider subscriptions, unclear restreams, and nonpreferred language feeds excluded.",
+    "website": "https://www.beinsportsxtra.com/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Fox Sports flagship",
+    "group": "Sports",
+    "ids": [
+      "FoxSports1.us",
+      "FoxSports2.us"
+    ],
+    "reason": "No legitimate stable public M3U of the requested flagship found; free brand editions are listed separately. Provider subscriptions, unclear restreams, and nonpreferred language feeds excluded.",
+    "website": "https://www.foxsports.com/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "beIN Sports flagship",
+    "group": "Sports",
+    "ids": [
+      "beINSports.qa"
+    ],
+    "reason": "No legitimate stable public M3U of the requested flagship found; free brand editions are listed separately. Provider subscriptions, unclear restreams, and nonpreferred language feeds excluded.",
+    "website": "https://www.beinsports.com/ar/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "beIN SPORTS XTRA (free)",
+    "group": "Sports",
+    "ids": [
+      "beINSPORTSXTRA.us"
+    ],
+    "reason": "No legitimate stable public M3U of the requested flagship found; free brand editions are listed separately. Provider subscriptions, unclear restreams, and nonpreferred language feeds excluded.",
+    "website": "https://www.beinsportsxtra.com/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "TNT Sports",
+    "group": "Sports",
+    "ids": [
+      "TNTSports1.uk"
+    ],
+    "reason": "No legitimate stable public M3U of the requested flagship found; free brand editions are listed separately. Provider subscriptions, unclear restreams, and nonpreferred language feeds excluded.",
+    "website": "https://www.tntsports.co.uk/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "CBS Sports Golazo",
+    "group": "Sports",
+    "ids": [
+      "CBSSportsGolazoNetwork.us"
+    ],
+    "reason": "No legitimate stable public M3U of the requested flagship found; free brand editions are listed separately. Provider subscriptions, unclear restreams, and nonpreferred language feeds excluded.",
+    "website": "https://www.cbssports.com/promotions/cbs-sports-golazo-network-how-to-watch-live-stream-a-24-hour-streaming-soccer-channel-online/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "CBS Sports HQ",
+    "group": "Sports",
+    "ids": [
+      "CBSSportsHQ.us"
+    ],
+    "reason": "No legitimate stable public M3U of the requested flagship found; free brand editions are listed separately. Provider subscriptions, unclear restreams, and nonpreferred language feeds excluded.",
+    "website": "https://pluto.tv/en/live-tv/cbs-sports-hq",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "NBC Sports NOW (FAST)",
+    "group": "Sports",
+    "ids": [
+      "NBCSportsNOW.us"
+    ],
+    "reason": "No legitimate stable public M3U of the requested flagship found; free brand editions are listed separately. Provider subscriptions, unclear restreams, and nonpreferred language feeds excluded.",
+    "website": "https://www.nbcsports.com/now",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "FIFA+",
+    "group": "Sports",
+    "ids": [
+      "FIFAPlus.uk"
+    ],
+    "reason": "No legitimate stable public M3U of the requested flagship found; free brand editions are listed separately. Provider subscriptions, unclear restreams, and nonpreferred language feeds excluded.",
+    "website": "https://www.plus.fifa.com/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "FIFA+ Women",
+    "group": "Sports",
+    "ids": [
+      "FIFAPlusWomen.uk"
+    ],
+    "reason": "No legitimate stable public M3U of the requested flagship found; free brand editions are listed separately. Provider subscriptions, unclear restreams, and nonpreferred language feeds excluded.",
+    "website": "https://www.plus.fifa.com/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Tennis Channel (free edition)",
+    "group": "Sports",
+    "ids": [
+      "TennisChannel.us"
+    ],
+    "reason": "No legitimate stable public M3U of the requested flagship found; free brand editions are listed separately. Provider subscriptions, unclear restreams, and nonpreferred language feeds excluded.",
+    "website": "https://www.tennischannel.app/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Tennis Channel 2",
+    "group": "Sports",
+    "ids": [
+      "TennisChannel2.us"
+    ],
+    "reason": "No legitimate stable public M3U of the requested flagship found; free brand editions are listed separately. Provider subscriptions, unclear restreams, and nonpreferred language feeds excluded.",
+    "website": "https://www.tennischannel.app/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Red Bull TV",
+    "group": "Sports",
+    "ids": [
+      "RedBullTV.at"
+    ],
+    "reason": "No legitimate stable public M3U of the requested flagship found; free brand editions are listed separately. Provider subscriptions, unclear restreams, and nonpreferred language feeds excluded.",
+    "website": "https://www.redbull.tv/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Willow flagship",
+    "group": "Sports",
+    "ids": [
+      "Willow.us"
+    ],
+    "reason": "No legitimate stable public M3U of the requested flagship found; free brand editions are listed separately. Provider subscriptions, unclear restreams, and nonpreferred language feeds excluded.",
+    "website": "http://www.willow.tv/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Willow Sports (FAST)",
+    "group": "Sports",
+    "ids": [
+      "WillowSports.us"
+    ],
+    "reason": "No legitimate stable public M3U of the requested flagship found; free brand editions are listed separately. Provider subscriptions, unclear restreams, and nonpreferred language feeds excluded.",
+    "website": "https://www.willow.tv/willow_sports",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Cricket Gold",
+    "group": "Sports",
+    "ids": [
+      "CricketGold.au"
+    ],
+    "reason": "No legitimate stable public M3U of the requested flagship found; free brand editions are listed separately. Provider subscriptions, unclear restreams, and nonpreferred language feeds excluded.",
+    "website": "https://www.cricket.com.au/cricket-gold",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "PTV Sports",
+    "group": "Sports",
+    "ids": [
+      "PTVSports.pk"
+    ],
+    "reason": "No legitimate stable public M3U of the requested flagship found; free brand editions are listed separately. Provider subscriptions, unclear restreams, and nonpreferred language feeds excluded.",
+    "website": "https://www.beinsportsxtra.com/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Geo Super",
+    "group": "Sports",
+    "ids": [
+      "GeoSuper.pk"
+    ],
+    "reason": "No legitimate stable public M3U of the requested flagship found; free brand editions are listed separately. Provider subscriptions, unclear restreams, and nonpreferred language feeds excluded.",
+    "website": "https://www.geosuper.tv/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "PGA Tour",
+    "group": "Sports",
+    "ids": [
+      "PGATour.us"
+    ],
+    "reason": "No legitimate stable public M3U of the requested flagship found; free brand editions are listed separately. Provider subscriptions, unclear restreams, and nonpreferred language feeds excluded.",
+    "website": "https://pluto.tv/en/live-tv/pga-tour",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "F1 Channel (FAST)",
+    "group": "Sports",
+    "ids": [
+      "F1Channel.ie"
+    ],
+    "reason": "No legitimate stable public M3U of the requested flagship found; free brand editions are listed separately. Provider subscriptions, unclear restreams, and nonpreferred language feeds excluded.",
+    "website": "https://www.c15.studio/channels/formula-1-channel/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "NBA public FAST feed",
+    "group": "Sports",
+    "ids": [
+      "NBATV.us"
+    ],
+    "reason": "No legitimate stable public M3U of the requested flagship found; free brand editions are listed separately. Provider subscriptions, unclear restreams, and nonpreferred language feeds excluded.",
+    "website": "http://www.nba.com/nba_tv/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "NFL Channel",
+    "group": "Sports",
+    "ids": [
+      "NFLChannel.us"
+    ],
+    "reason": "No legitimate stable public M3U of the requested flagship found; free brand editions are listed separately. Provider subscriptions, unclear restreams, and nonpreferred language feeds excluded.",
+    "website": "https://pluto.tv/en/live-tv/nfl-channel",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "NHL Network",
+    "group": "Sports",
+    "ids": [
+      "NHLNetwork.us"
+    ],
+    "reason": "No legitimate stable public M3U of the requested flagship found; free brand editions are listed separately. Provider subscriptions, unclear restreams, and nonpreferred language feeds excluded.",
+    "website": "https://www.nhl.com/info/network",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Dubai Sports",
+    "group": "Sports",
+    "ids": [
+      "DubaiSports1.ae",
+      "DubaiSports2.ae",
+      "DubaiSports3.ae"
+    ],
+    "reason": "No legitimate stable public M3U of the requested flagship found; free brand editions are listed separately. Provider subscriptions, unclear restreams, and nonpreferred language feeds excluded.",
+    "website": "http://www.dubaisports.ae/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Abu Dhabi Sports",
+    "group": "Sports",
+    "ids": [
+      "AbuDhabiSports1.ae",
+      "AbuDhabiSports2.ae"
+    ],
+    "reason": "No legitimate stable public M3U of the requested flagship found; free brand editions are listed separately. Provider subscriptions, unclear restreams, and nonpreferred language feeds excluded.",
+    "website": "https://adtv.ae/en/live/Abu%20Dhabi%20Sports%20Channel%201",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Alkass",
+    "group": "Sports",
+    "ids": [
+      "AlkassOne.qa",
+      "AlkassTwo.qa"
+    ],
+    "reason": "No legitimate stable public M3U of the requested flagship found; free brand editions are listed separately. Provider subscriptions, unclear restreams, and nonpreferred language feeds excluded.",
+    "website": "https://www.alkass.net/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "M Sports",
+    "group": "Sports",
+    "ids": [
+      "MSports.pk"
+    ],
+    "reason": "No legitimate stable public M3U of the requested flagship found; free brand editions are listed separately. Provider subscriptions, unclear restreams, and nonpreferred language feeds excluded.",
+    "website": "https://msports.pk/live/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Disney Channel",
+    "group": "Kids",
+    "ids": [
+      "DisneyChannel.us",
+      "DisneyChannel.in"
+    ],
+    "reason": "No stable public permitted M3U in the preferred languages found. Subscription rebroadcasts and web/YouTube pages without reusable HLS excluded.",
+    "website": "https://www.disney.com/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Disney Junior",
+    "group": "Kids",
+    "ids": [
+      "DisneyJunior.us"
+    ],
+    "reason": "No stable public permitted M3U in the preferred languages found. Subscription rebroadcasts and web/YouTube pages without reusable HLS excluded.",
+    "website": "http://disney.go.com/disneyjunior/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Nickelodeon flagship",
+    "group": "Kids",
+    "ids": [
+      "Nickelodeon.us",
+      "Nickelodeon.in"
+    ],
+    "reason": "No stable public permitted M3U in the preferred languages found. Subscription rebroadcasts and web/YouTube pages without reusable HLS excluded.",
+    "website": "http://www.nick.com/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Nickelodeon Pluto TV",
+    "group": "Kids",
+    "ids": [
+      "NickelodeonPlutoTV.us"
+    ],
+    "reason": "No stable public permitted M3U in the preferred languages found. Subscription rebroadcasts and web/YouTube pages without reusable HLS excluded.",
+    "website": "https://pluto.tv/live-tv/nick-pluto-tv/details",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Nick Jr flagship",
+    "group": "Kids",
+    "ids": [
+      "NickJr.us"
+    ],
+    "reason": "No stable public permitted M3U in the preferred languages found. Subscription rebroadcasts and web/YouTube pages without reusable HLS excluded.",
+    "website": "http://www.nickjr.com/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Nick Jr Pluto TV",
+    "group": "Kids",
+    "ids": [
+      "NickJrPlutoTV.us"
+    ],
+    "reason": "No stable public permitted M3U in the preferred languages found. Subscription rebroadcasts and web/YouTube pages without reusable HLS excluded.",
+    "website": "https://pluto.tv/en/live-tv/nick-jr-pluto-tv-ptv1",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Nicktoons Pluto TV",
+    "group": "Kids",
+    "ids": [
+      "Nicktoons.us"
+    ],
+    "reason": "No stable public permitted M3U in the preferred languages found. Subscription rebroadcasts and web/YouTube pages without reusable HLS excluded.",
+    "website": "http://nicktoons.nick.com/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Cartoon Network",
+    "group": "Kids",
+    "ids": [
+      "CartoonNetwork.us",
+      "CartoonNetwork.in"
+    ],
+    "reason": "No stable public permitted M3U in the preferred languages found. Subscription rebroadcasts and web/YouTube pages without reusable HLS excluded.",
+    "website": "http://www.cartoonnetwork.com/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Pogo",
+    "group": "Kids",
+    "ids": [
+      "Pogo.in"
+    ],
+    "reason": "No stable public permitted M3U in the preferred languages found. Subscription rebroadcasts and web/YouTube pages without reusable HLS excluded.",
+    "website": "https://pluto.tv/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Hungama",
+    "group": "Kids",
+    "ids": [
+      "HungamaTV.in"
+    ],
+    "reason": "No stable public permitted M3U in the preferred languages found. Subscription rebroadcasts and web/YouTube pages without reusable HLS excluded.",
+    "website": "https://hungamatv.ga/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Disney XD",
+    "group": "Kids",
+    "ids": [
+      "DisneyXD.us"
+    ],
+    "reason": "No stable public permitted M3U in the preferred languages found. Subscription rebroadcasts and web/YouTube pages without reusable HLS excluded.",
+    "website": "https://disneynow.com/all-shows/disney-xd",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "BBC Kids",
+    "group": "Kids",
+    "ids": [
+      "BBCKids.us"
+    ],
+    "reason": "No stable public permitted M3U in the preferred languages found. Subscription rebroadcasts and web/YouTube pages without reusable HLS excluded.",
+    "website": "https://pluto.tv/en/live-tv/bbc-kids",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "CBBC",
+    "group": "Kids",
+    "ids": [
+      "CBBC.uk"
+    ],
+    "reason": "No stable public permitted M3U in the preferred languages found. Subscription rebroadcasts and web/YouTube pages without reusable HLS excluded.",
+    "website": "https://www.bbc.co.uk/tv/cbbc",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "CBeebies",
+    "group": "Kids",
+    "ids": [
+      "CBeebies.uk"
+    ],
+    "reason": "No stable public permitted M3U in the preferred languages found. Subscription rebroadcasts and web/YouTube pages without reusable HLS excluded.",
+    "website": "http://www.bbc.co.uk/cbeebies/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Spacetoon Arabic",
+    "group": "Kids",
+    "ids": [
+      "SpacetoonArabic.ae"
+    ],
+    "reason": "No stable public permitted M3U in the preferred languages found. Subscription rebroadcasts and web/YouTube pages without reusable HLS excluded.",
+    "website": "http://www.spacetoon.com/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "MBC 3 USA",
+    "group": "Kids",
+    "ids": [
+      "MBC3USA.us"
+    ],
+    "reason": "No stable public permitted M3U in the preferred languages found. Subscription rebroadcasts and web/YouTube pages without reusable HLS excluded.",
+    "website": "https://mbc3.mbc.net/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "PBS Kids",
+    "group": "Kids",
+    "ids": [
+      "PBSKids.us"
+    ],
+    "reason": "No stable public permitted M3U in the preferred languages found. Subscription rebroadcasts and web/YouTube pages without reusable HLS excluded.",
+    "website": "https://pbskids.org/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "BBC News",
+    "group": "News",
+    "ids": [
+      "BBCNews.uk"
+    ],
+    "reason": "No legitimate stable public standalone M3U found in the searched sources. Official web or YouTube distribution may exist; those pages are not HLS playback URLs.",
+    "website": "https://www.bbc.co.uk/tv/bbcnews",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "BBC Persian",
+    "group": "News",
+    "ids": [
+      "BBCPersian.uk"
+    ],
+    "reason": "No legitimate stable public standalone M3U found in the searched sources. Official web or YouTube distribution may exist; those pages are not HLS playback URLs.",
+    "website": "https://www.bbc.com/persian",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "BBC Arabic",
+    "group": "News",
+    "ids": [
+      "BBCArabic.uk"
+    ],
+    "reason": "No legitimate stable public standalone M3U found in the searched sources. Official web or YouTube distribution may exist; those pages are not HLS playback URLs.",
+    "website": "https://www.bbc.com/arabic",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "CNN",
+    "group": "News",
+    "ids": [
+      "CNN.us",
+      "CNNInternational.us"
+    ],
+    "reason": "Free-TV lists a CNN slate/preview URL, not the full live channel; anonymous restreams and unverified wrappers excluded.",
+    "website": "http://www.cnn.com/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Sky News",
+    "group": "News",
+    "ids": [
+      "SkyNews.uk"
+    ],
+    "reason": "No legitimate stable public standalone M3U found in the searched sources. Official web or YouTube distribution may exist; those pages are not HLS playback URLs.",
+    "website": "https://news.sky.com/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Al Jazeera English",
+    "group": "News",
+    "ids": [
+      "AlJazeera.qa:eng"
+    ],
+    "reason": "No legitimate stable public standalone M3U found in the searched sources. Official web or YouTube distribution may exist; those pages are not HLS playback URLs.",
+    "website": "https://www.bbc.com/news",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Al Jazeera Arabic",
+    "group": "News",
+    "ids": [
+      "AlJazeera.qa:ara"
+    ],
+    "reason": "No legitimate stable public standalone M3U found in the searched sources. Official web or YouTube distribution may exist; those pages are not HLS playback URLs.",
+    "website": "https://www.bbc.com/news",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Euronews English",
+    "group": "News",
+    "ids": [
+      "EuronewsEnglish.fr"
+    ],
+    "reason": "No legitimate stable public standalone M3U found in the searched sources. Official web or YouTube distribution may exist; those pages are not HLS playback URLs.",
+    "website": "https://www.euronews.com/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "ABC News Live",
+    "group": "News",
+    "ids": [
+      "ABCNewsLive.us"
+    ],
+    "reason": "No legitimate stable public standalone M3U found in the searched sources. Official web or YouTube distribution may exist; those pages are not HLS playback URLs.",
+    "website": "https://abcnews.go.com/Live",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "CBS News 24/7",
+    "group": "News",
+    "ids": [
+      "CBSNews247.us"
+    ],
+    "reason": "No legitimate stable public standalone M3U found in the searched sources. Official web or YouTube distribution may exist; those pages are not HLS playback URLs.",
+    "website": "https://www.cbsnews.com/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "NBC News NOW",
+    "group": "News",
+    "ids": [
+      "NBCNewsNOW.us"
+    ],
+    "reason": "No legitimate stable public standalone M3U found in the searched sources. Official web or YouTube distribution may exist; those pages are not HLS playback URLs.",
+    "website": "https://www.nbcnews.com/now",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Fox News",
+    "group": "News",
+    "ids": [
+      "FoxNewsChannel.us"
+    ],
+    "reason": "No legitimate stable public standalone M3U found in the searched sources. Official web or YouTube distribution may exist; those pages are not HLS playback URLs.",
+    "website": "http://www.foxnews.com/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Fox Weather",
+    "group": "News",
+    "ids": [
+      "FoxWeather.us"
+    ],
+    "reason": "No legitimate stable public standalone M3U found in the searched sources. Official web or YouTube distribution may exist; those pages are not HLS playback URLs.",
+    "website": "https://www.foxweather.com/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "India Today",
+    "group": "News",
+    "ids": [
+      "IndiaToday.in"
+    ],
+    "reason": "No legitimate stable public standalone M3U found in the searched sources. Official web or YouTube distribution may exist; those pages are not HLS playback URLs.",
+    "website": "https://www.indiatoday.in/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Aaj Tak",
+    "group": "News",
+    "ids": [
+      "AajTak.in"
+    ],
+    "reason": "No legitimate stable public standalone M3U found in the searched sources. Official web or YouTube distribution may exist; those pages are not HLS playback URLs.",
+    "website": "https://www.aajtak.in/livetv",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Republic TV",
+    "group": "News",
+    "ids": [
+      "RepublicTV.in"
+    ],
+    "reason": "No legitimate stable public standalone M3U found in the searched sources. Official web or YouTube distribution may exist; those pages are not HLS playback URLs.",
+    "website": "https://www.republicworld.com/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Republic Bharat",
+    "group": "News",
+    "ids": [
+      "RepublicBharat.in"
+    ],
+    "reason": "No legitimate stable public standalone M3U found in the searched sources. Official web or YouTube distribution may exist; those pages are not HLS playback URLs.",
+    "website": "https://bharat.republicworld.com/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Times Now",
+    "group": "News",
+    "ids": [
+      "TimesNow.in"
+    ],
+    "reason": "No legitimate stable public standalone M3U found in the searched sources. Official web or YouTube distribution may exist; those pages are not HLS playback URLs.",
+    "website": "https://www.timesnownews.com/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "News18 India",
+    "group": "News",
+    "ids": [
+      "News18India.in"
+    ],
+    "reason": "No legitimate stable public standalone M3U found in the searched sources. Official web or YouTube distribution may exist; those pages are not HLS playback URLs.",
+    "website": "https://hindi.news18.com/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "CNN-News18",
+    "group": "News",
+    "ids": [
+      "CNNNews18.in"
+    ],
+    "reason": "No legitimate stable public standalone M3U found in the searched sources. Official web or YouTube distribution may exist; those pages are not HLS playback URLs.",
+    "website": "https://www.news18.com/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "NDTV India",
+    "group": "News",
+    "ids": [
+      "NDTVIndia.in"
+    ],
+    "reason": "No legitimate stable public standalone M3U found in the searched sources. Official web or YouTube distribution may exist; those pages are not HLS playback URLs.",
+    "website": "https://ndtv.in/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "NDTV 24x7",
+    "group": "News",
+    "ids": [
+      "NDTV24x7.in"
+    ],
+    "reason": "No legitimate stable public standalone M3U found in the searched sources. Official web or YouTube distribution may exist; those pages are not HLS playback URLs.",
+    "website": "https://www.ndtv.com/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "France 24",
+    "group": "News",
+    "ids": [
+      "France24.fr:eng",
+      "France24.fr:ara"
+    ],
+    "reason": "No legitimate stable public standalone M3U found in the searched sources. Official web or YouTube distribution may exist; those pages are not HLS playback URLs.",
+    "website": "https://www.bbc.com/news",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "DW English",
+    "group": "News",
+    "ids": [
+      "DW.de:eng"
+    ],
+    "reason": "No legitimate stable public standalone M3U found in the searched sources. Official web or YouTube distribution may exist; those pages are not HLS playback URLs.",
+    "website": "https://www.bbc.com/news",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "DW Arabic",
+    "group": "News",
+    "ids": [
+      "DW.de:ara"
+    ],
+    "reason": "No legitimate stable public standalone M3U found in the searched sources. Official web or YouTube distribution may exist; those pages are not HLS playback URLs.",
+    "website": "https://www.bbc.com/news",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Al Arabiya",
+    "group": "News",
+    "ids": [
+      "Alarabiya.ae"
+    ],
+    "reason": "No legitimate stable public standalone M3U found in the searched sources. Official web or YouTube distribution may exist; those pages are not HLS playback URLs.",
+    "website": "https://www.alarabiya.net/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Al Hadath",
+    "group": "News",
+    "ids": [
+      "AlHadath.sa"
+    ],
+    "reason": "No legitimate stable public standalone M3U found in the searched sources. Official web or YouTube distribution may exist; those pages are not HLS playback URLs.",
+    "website": "https://www.alhadath.net/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Sky News Arabia",
+    "group": "News",
+    "ids": [
+      "SkyNewsArabia.ae"
+    ],
+    "reason": "No legitimate stable public standalone M3U found in the searched sources. Official web or YouTube distribution may exist; those pages are not HLS playback URLs.",
+    "website": "https://www.skynewsarabia.com/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Iran International",
+    "group": "News",
+    "ids": [
+      "IranInternational.uk"
+    ],
+    "reason": "No legitimate stable public standalone M3U found in the searched sources. Official web or YouTube distribution may exist; those pages are not HLS playback URLs.",
+    "website": "https://iranintl.com/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "National Geographic flagship",
+    "group": "Documentary",
+    "ids": [
+      "NationalGeographic.us",
+      "NationalGeographic.in"
+    ],
+    "reason": "No legitimate public preferred-language M3U found for this exact channel; free documentary brands and language editions are listed separately.",
+    "website": "http://channel.nationalgeographic.com/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "National Geographic Abu Dhabi",
+    "group": "Documentary",
+    "ids": [
+      "NationalGeographicAbuDhabi.ae"
+    ],
+    "reason": "No legitimate public preferred-language M3U found for this exact channel; free documentary brands and language editions are listed separately.",
+    "website": "http://www.natgeotv.ae/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Nat Geo Wild",
+    "group": "Documentary",
+    "ids": [
+      "NationalGeographicWild.us",
+      "NationalGeographicWild.in"
+    ],
+    "reason": "No legitimate public preferred-language M3U found for this exact channel; free documentary brands and language editions are listed separately.",
+    "website": "http://channel.nationalgeographic.com/wild/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Discovery flagship",
+    "group": "Documentary",
+    "ids": [
+      "DiscoveryChannel.us",
+      "DiscoveryChannel.in"
+    ],
+    "reason": "No legitimate public preferred-language M3U found for this exact channel; free documentary brands and language editions are listed separately.",
+    "website": "http://dsc.discovery.com/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Asharq Discovery",
+    "group": "Documentary",
+    "ids": [
+      "AsharqDiscovery.sa"
+    ],
+    "reason": "No legitimate public preferred-language M3U found for this exact channel; free documentary brands and language editions are listed separately.",
+    "website": "https://asharqdiscovery.com",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "History flagship",
+    "group": "Documentary",
+    "ids": [
+      "History.us"
+    ],
+    "reason": "No legitimate public preferred-language M3U found for this exact channel; free documentary brands and language editions are listed separately.",
+    "website": "http://www.history.com/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "History 2",
+    "group": "Documentary",
+    "ids": [
+      "H2.us",
+      "History2.us"
+    ],
+    "reason": "No legitimate public preferred-language M3U found for this exact channel; free documentary brands and language editions are listed separately.",
+    "website": "https://www.bbcearth.com/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "History TV18",
+    "group": "Documentary",
+    "ids": [
+      "HistoryTV18.in"
+    ],
+    "reason": "No legitimate public preferred-language M3U found for this exact channel; free documentary brands and language editions are listed separately.",
+    "website": "http://www.historyindia.com/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "History Hit",
+    "group": "Documentary",
+    "ids": [
+      "HistoryHit.uk"
+    ],
+    "reason": "No legitimate public preferred-language M3U found for this exact channel; free documentary brands and language editions are listed separately.",
+    "website": "https://www.historyhit.com/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "BBC Earth (FAST)",
+    "group": "Documentary",
+    "ids": [
+      "BBCEarth.uk"
+    ],
+    "reason": "No legitimate public preferred-language M3U found for this exact channel; free documentary brands and language editions are listed separately.",
+    "website": "https://www.bbcearth.com/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Animal Planet",
+    "group": "Documentary",
+    "ids": [
+      "AnimalPlanet.us"
+    ],
+    "reason": "No legitimate public preferred-language M3U found for this exact channel; free documentary brands and language editions are listed separately.",
+    "website": "https://www.animalplanet.com/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Viasat History",
+    "group": "Documentary",
+    "ids": [
+      "ViasatHistory.se"
+    ],
+    "reason": "No legitimate public preferred-language M3U found for this exact channel; free documentary brands and language editions are listed separately.",
+    "website": "https://viasathistory.eu/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Viasat Nature",
+    "group": "Documentary",
+    "ids": [
+      "ViasatNature.se"
+    ],
+    "reason": "No legitimate public preferred-language M3U found for this exact channel; free documentary brands and language editions are listed separately.",
+    "website": "https://viasatnature.eu/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Smithsonian Channel Selects",
+    "group": "Documentary",
+    "ids": [
+      "SmithsonianChannelSelects.se"
+    ],
+    "reason": "No legitimate public preferred-language M3U found for this exact channel; free documentary brands and language editions are listed separately.",
+    "website": "https://pluto.tv/live-tv/smithsonian-channel-selects-se-ptv1/details",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "PBS Nature",
+    "group": "Documentary",
+    "ids": [
+      "PBSNature.us"
+    ],
+    "reason": "No legitimate public preferred-language M3U found for this exact channel; free documentary brands and language editions are listed separately.",
+    "website": "https://watch.plex.tv/live-tv/channel/pbs-nature",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Love Nature",
+    "group": "Documentary",
+    "ids": [
+      "LoveNature.ca"
+    ],
+    "reason": "No legitimate public preferred-language M3U found for this exact channel; free documentary brands and language editions are listed separately.",
+    "website": "https://tv.lovenature.com/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "BBC One",
+    "group": "Entertainment and music",
+    "ids": [
+      "BBCOne.uk"
+    ],
+    "reason": "No stable legitimate public HLS in the preferred languages found for the flagship; free brand editions are tracked separately.",
+    "website": "http://www.bbc.co.uk/bbcone/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "BBC Two",
+    "group": "Entertainment and music",
+    "ids": [
+      "BBCTwo.uk"
+    ],
+    "reason": "No stable legitimate public HLS in the preferred languages found for the flagship; free brand editions are tracked separately.",
+    "website": "http://www.bbc.co.uk/bbctwo/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "BBC Drama (FAST)",
+    "group": "Entertainment and music",
+    "ids": [
+      "BBCDrama.uk"
+    ],
+    "reason": "No stable legitimate public HLS in the preferred languages found for the flagship; free brand editions are tracked separately.",
+    "website": "https://pluto.tv/en/live-tv/bbc-drama-es",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "BBC Lifestyle",
+    "group": "Entertainment and music",
+    "ids": [
+      "BBCLifestyle.uk"
+    ],
+    "reason": "No stable legitimate public HLS in the preferred languages found for the flagship; free brand editions are tracked separately.",
+    "website": "https://www.bbcstudios.com/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "BBC Food",
+    "group": "Entertainment and music",
+    "ids": [
+      "BBCFood.us"
+    ],
+    "reason": "No stable legitimate public HLS in the preferred languages found for the flagship; free brand editions are tracked separately.",
+    "website": "https://pluto.tv/en/live-tv/bbc-food",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "BBC Home & Garden",
+    "group": "Entertainment and music",
+    "ids": [
+      "BBCHomeGarden.us"
+    ],
+    "reason": "No stable legitimate public HLS in the preferred languages found for the flagship; free brand editions are tracked separately.",
+    "website": "https://pluto.tv/en/live-tv/bbc-home",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "BBC Travel",
+    "group": "Entertainment and music",
+    "ids": [
+      "BBCTravel.us"
+    ],
+    "reason": "No stable legitimate public HLS in the preferred languages found for the flagship; free brand editions are tracked separately.",
+    "website": "https://pluto.tv/en/live-tv/bbc-travel-de",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Paramount Movie Channel",
+    "group": "Entertainment and music",
+    "ids": [
+      "ParamountMovieChannel.us"
+    ],
+    "reason": "No stable legitimate public HLS in the preferred languages found for the flagship; free brand editions are tracked separately.",
+    "website": "https://pluto.tv/en/live-tv/paramount-movie-channel",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Universal Crime",
+    "group": "Entertainment and music",
+    "ids": [
+      "UniversalCrime.us"
+    ],
+    "reason": "No stable legitimate public HLS in the preferred languages found for the flagship; free brand editions are tracked separately.",
+    "website": "https://www.universalplus.com/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "NBC Comedy Vault",
+    "group": "Entertainment and music",
+    "ids": [
+      "NBCComedyVault.us"
+    ],
+    "reason": "No stable legitimate public HLS in the preferred languages found for the flagship; free brand editions are tracked separately.",
+    "website": "https://pluto.tv/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "BET Pluto TV",
+    "group": "Entertainment and music",
+    "ids": [
+      "BETPlutoTV.us"
+    ],
+    "reason": "No stable legitimate public HLS in the preferred languages found for the flagship; free brand editions are tracked separately.",
+    "website": "https://pluto.tv/en/live-tv/bet-pluto-tv-ptv1",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "MTV flagship",
+    "group": "Entertainment and music",
+    "ids": [
+      "MTV.us",
+      "MTVGlobal.uk"
+    ],
+    "reason": "No stable legitimate public HLS in the preferred languages found for the flagship; free brand editions are tracked separately.",
+    "website": "http://www.mtv.com/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "MTV India",
+    "group": "Entertainment and music",
+    "ids": [
+      "MTV.in"
+    ],
+    "reason": "No stable legitimate public HLS in the preferred languages found for the flagship; free brand editions are tracked separately.",
+    "website": "http://www.mtvindia.com/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "MTV Beats",
+    "group": "Entertainment and music",
+    "ids": [
+      "MTVBeats.in"
+    ],
+    "reason": "No stable legitimate public HLS in the preferred languages found for the flagship; free brand editions are tracked separately.",
+    "website": "http://www.mtvbeats.in/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "MTV Pluto TV",
+    "group": "Entertainment and music",
+    "ids": [
+      "MTVPlutoTV.us"
+    ],
+    "reason": "No stable legitimate public HLS in the preferred languages found for the flagship; free brand editions are tracked separately.",
+    "website": "https://pluto.tv/en/live-tv/mtv-pluto-tv",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "MTV Classic (free)",
+    "group": "Entertainment and music",
+    "ids": [
+      "MTVClassic.us"
+    ],
+    "reason": "No stable legitimate public HLS in the preferred languages found for the flagship; free brand editions are tracked separately.",
+    "website": "http://www.mtv.com/classic",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "VH1 flagship",
+    "group": "Entertainment and music",
+    "ids": [
+      "VH1.us"
+    ],
+    "reason": "No stable legitimate public HLS in the preferred languages found for the flagship; free brand editions are tracked separately.",
+    "website": "https://www.vh1.com/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "VH1 Queens of Reality (FAST)",
+    "group": "Entertainment and music",
+    "ids": [
+      "VH1QueensofReality.us"
+    ],
+    "reason": "No stable legitimate public HLS in the preferred languages found for the flagship; free brand editions are tracked separately.",
+    "website": "https://pluto.tv/live-tv/vh1-queens-of-reality/details",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Trace Urban",
+    "group": "Entertainment and music",
+    "ids": [
+      "TraceUrban.fr"
+    ],
+    "reason": "No stable legitimate public HLS in the preferred languages found for the flagship; free brand editions are tracked separately.",
+    "website": "https://fr.trace.tv/trace-urban/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Trace UK",
+    "group": "Entertainment and music",
+    "ids": [
+      "TraceUK.uk"
+    ],
+    "reason": "No stable legitimate public HLS in the preferred languages found for the flagship; free brand editions are tracked separately.",
+    "website": "https://trace.plus/app",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Music Box",
+    "group": "Entertainment and music",
+    "ids": [
+      "MusicBox80s.cz",
+      "MusicBoxHits.cz",
+      "MusicBoxDance.cz"
+    ],
+    "reason": "No stable legitimate public HLS in the preferred languages found for the flagship; free brand editions are tracked separately.",
+    "website": "https://pluto.tv/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Stingray music",
+    "group": "Entertainment and music",
+    "ids": [
+      "StingrayHitList.ca",
+      "StingrayDJAZZ.ca",
+      "StingrayClassicRock.ca"
+    ],
+    "reason": "No stable legitimate public HLS in the preferred languages found for the flagship; free brand editions are tracked separately.",
+    "website": "https://music.stingray.com/en/CA/channels/007/hit-list",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "B4U Music",
+    "group": "Entertainment and music",
+    "ids": [
+      "B4UMusic.in"
+    ],
+    "reason": "No stable legitimate public HLS in the preferred languages found for the flagship; free brand editions are tracked separately.",
+    "website": "https://b4umusic.in/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Music India",
+    "group": "Entertainment and music",
+    "ids": [
+      "MusicIndia.in"
+    ],
+    "reason": "No stable legitimate public HLS in the preferred languages found for the flagship; free brand editions are tracked separately.",
+    "website": "https://www.musicindiatv.com/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Mastiii",
+    "group": "Entertainment and music",
+    "ids": [
+      "Mastiii.in"
+    ],
+    "reason": "No stable legitimate public HLS in the preferred languages found for the flagship; free brand editions are tracked separately.",
+    "website": "http://www.mastiii.com/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "YRF Music",
+    "group": "Entertainment and music",
+    "ids": [
+      "YRFMusic.in"
+    ],
+    "reason": "No stable legitimate public HLS in the preferred languages found for the flagship; free brand editions are tracked separately.",
+    "website": "https://www.yashrajfilms.com/divisions/yrf-digital/yrf-music-fast-channel",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "FashionTV",
+    "group": "Entertainment and music",
+    "ids": [
+      "FashionTVEurope.fr",
+      "FashionTVAsia.fr"
+    ],
+    "reason": "No stable legitimate public HLS in the preferred languages found for the flagship; free brand editions are tracked separately.",
+    "website": "https://www.fashiontv.com/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Travelxp",
+    "group": "Entertainment and music",
+    "ids": [
+      "Travelxp.in"
+    ],
+    "reason": "No stable legitimate public HLS in the preferred languages found for the flagship; free brand editions are tracked separately.",
+    "website": "http://www.travelxp.tv/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "MBC 1",
+    "group": "Entertainment and music",
+    "ids": [
+      "MBC1.ae"
+    ],
+    "reason": "No stable legitimate public HLS in the preferred languages found for the flagship; free brand editions are tracked separately.",
+    "website": "http://www.mbc.net/mbc1",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "MBC 2",
+    "group": "Entertainment and music",
+    "ids": [
+      "MBC2.ae"
+    ],
+    "reason": "No stable legitimate public HLS in the preferred languages found for the flagship; free brand editions are tracked separately.",
+    "website": "https://www.mbc.net/channels/mbc2",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "MBC Action",
+    "group": "Entertainment and music",
+    "ids": [
+      "MBCAction.ae"
+    ],
+    "reason": "No stable legitimate public HLS in the preferred languages found for the flagship; free brand editions are tracked separately.",
+    "website": "http://www.mbc.net/en/mbc-action.html",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "MBC Max",
+    "group": "Entertainment and music",
+    "ids": [
+      "MBCMax.ae"
+    ],
+    "reason": "No stable legitimate public HLS in the preferred languages found for the flagship; free brand editions are tracked separately.",
+    "website": "https://pluto.tv/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "MBC Drama",
+    "group": "Entertainment and music",
+    "ids": [
+      "MBCDrama.ae"
+    ],
+    "reason": "No stable legitimate public HLS in the preferred languages found for the flagship; free brand editions are tracked separately.",
+    "website": "https://www.mbc.net/channels/mbc-drama",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "MBC Bollywood",
+    "group": "Entertainment and music",
+    "ids": [
+      "MBCBollywood.ae"
+    ],
+    "reason": "No stable legitimate public HLS in the preferred languages found for the flagship; free brand editions are tracked separately.",
+    "website": "http://mbc.net/bollywood",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Rotana Cinema",
+    "group": "Entertainment and music",
+    "ids": [
+      "RotanaCinemaKSA.sa",
+      "RotanaCinemaEgypt.eg"
+    ],
+    "reason": "No stable legitimate public HLS in the preferred languages found for the flagship; free brand editions are tracked separately.",
+    "website": "http://www.cinema.rotana.net/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Rotana Drama",
+    "group": "Entertainment and music",
+    "ids": [
+      "RotanaDrama.sa"
+    ],
+    "reason": "No stable legitimate public HLS in the preferred languages found for the flagship; free brand editions are tracked separately.",
+    "website": "https://rotana.net/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Rotana Music",
+    "group": "Entertainment and music",
+    "ids": [
+      "RotanaMusic.sa"
+    ],
+    "reason": "No stable legitimate public HLS in the preferred languages found for the flagship; free brand editions are tracked separately.",
+    "website": "https://rotana.net/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Persiana Cinema",
+    "group": "Entertainment and music",
+    "ids": [
+      "PersianaCinema.fr"
+    ],
+    "reason": "No stable legitimate public HLS in the preferred languages found for the flagship; free brand editions are tracked separately.",
+    "website": "https://persianagroup.tv/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Persiana Series",
+    "group": "Entertainment and music",
+    "ids": [
+      "PersianaSeries.fr"
+    ],
+    "reason": "No stable legitimate public HLS in the preferred languages found for the flagship; free brand editions are tracked separately.",
+    "website": "https://www.persianagroup.tv/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "PMC",
+    "group": "Entertainment and music",
+    "ids": [
+      "PMC.ae"
+    ],
+    "reason": "No stable legitimate public HLS in the preferred languages found for the flagship; free brand editions are tracked separately.",
+    "website": "https://www.pmc.tv/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Manoto",
+    "group": "Entertainment and music",
+    "ids": [
+      "Manoto.uk"
+    ],
+    "reason": "No stable legitimate public HLS in the preferred languages found for the flagship; free brand editions are tracked separately.",
+    "website": "https://www.manototv.com/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "TOLO",
+    "group": "Afghanistan",
+    "ids": [
+      "ToloTV.af"
+    ],
+    "reason": "No additional stable legitimate public M3U found in current indexes and official websites/apps. Original Afghan feeds were retained without health testing.",
+    "website": "https://www.tolo.tv/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "TOLOnews",
+    "group": "Afghanistan",
+    "ids": [
+      "TOLOnews.af"
+    ],
+    "reason": "No additional stable legitimate public M3U found in current indexes and official websites/apps. Original Afghan feeds were retained without health testing.",
+    "website": "https://www.tolonews.com/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Lemar",
+    "group": "Afghanistan",
+    "ids": [
+      "LemarTV.af"
+    ],
+    "reason": "No additional stable legitimate public M3U found in current indexes and official websites/apps. Original Afghan feeds were retained without health testing.",
+    "website": "https://www.lemar.tv/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Shamshad",
+    "group": "Afghanistan",
+    "ids": [
+      "ShamshadTV.af"
+    ],
+    "reason": "No additional stable legitimate public M3U found in current indexes and official websites/apps. Original Afghan feeds were retained without health testing.",
+    "website": "https://shamshadtv.tv/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "RTA",
+    "group": "Afghanistan",
+    "ids": [
+      "RTA.af"
+    ],
+    "reason": "No additional stable legitimate public M3U found in current indexes and official websites/apps. Original Afghan feeds were retained without health testing.",
+    "website": "https://rta.af/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "RTA News",
+    "group": "Afghanistan",
+    "ids": [
+      "RTANews.af"
+    ],
+    "reason": "No additional stable legitimate public M3U found in current indexes and official websites/apps. Original Afghan feeds were retained without health testing.",
+    "website": "https://rta.af/live/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "RTA Sports",
+    "group": "Afghanistan",
+    "ids": [
+      "RTASport.af"
+    ],
+    "reason": "No additional stable legitimate public M3U found in current indexes and official websites/apps. Original Afghan feeds were retained without health testing.",
+    "website": "https://rta.af/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "RTA Education",
+    "group": "Afghanistan",
+    "ids": [
+      "RTAEducation.af"
+    ],
+    "reason": "No additional stable legitimate public M3U found in current indexes and official websites/apps. Original Afghan feeds were retained without health testing.",
+    "website": "https://rta.af/live/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Tamadon",
+    "group": "Afghanistan",
+    "ids": [
+      "TamadonTV.af"
+    ],
+    "reason": "No additional stable legitimate public M3U found in current indexes and official websites/apps. Original Afghan feeds were retained without health testing.",
+    "website": "https://tamadon.af/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Afghanistan International",
+    "group": "Afghanistan",
+    "ids": [
+      "AfghanistanInternational.uk"
+    ],
+    "reason": "No additional stable legitimate public M3U found in current indexes and official websites/apps. Original Afghan feeds were retained without health testing.",
+    "website": "https://www.afintl.com/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Amu TV",
+    "group": "Afghanistan",
+    "ids": [
+      "AmuTV.us"
+    ],
+    "reason": "No additional stable legitimate public M3U found in current indexes and official websites/apps. Original Afghan feeds were retained without health testing.",
+    "website": "https://amu.tv/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Hewad",
+    "group": "Afghanistan",
+    "ids": [
+      "HewadTV.af"
+    ],
+    "reason": "No additional stable legitimate public M3U found in current indexes and official websites/apps. Original Afghan feeds were retained without health testing.",
+    "website": "https://iptv-org.github.io/iptv/countries/af.m3u",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Sharq",
+    "group": "Afghanistan",
+    "ids": [
+      "SharqRadioTV.af"
+    ],
+    "reason": "No additional stable legitimate public M3U found in current indexes and official websites/apps. Original Afghan feeds were retained without health testing.",
+    "website": "http://www.shaiqnetwork.com/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Payam-e-Afghan",
+    "group": "Afghanistan",
+    "ids": [
+      "PayameAfghanTV.us"
+    ],
+    "reason": "No additional stable legitimate public M3U found in current indexes and official websites/apps. Original Afghan feeds were retained without health testing.",
+    "website": "http://www.payameafghantv.com/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Ariana",
+    "group": "Afghanistan",
+    "ids": [
+      "ATN.af",
+      "ATNNews.af"
+    ],
+    "reason": "No additional stable legitimate public M3U found in current indexes and official websites/apps. Original Afghan feeds were retained without health testing.",
+    "website": "https://ariananews.af/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "1TV Afghanistan",
+    "group": "Afghanistan",
+    "ids": [
+      "1TV.af"
+    ],
+    "reason": "No additional stable legitimate public M3U found in current indexes and official websites/apps. Original Afghan feeds were retained without health testing.",
+    "website": "http://www.1tvmedia.com/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Noor Afghanistan",
+    "group": "Afghanistan",
+    "ids": [
+      "NoorTV.af"
+    ],
+    "reason": "No additional stable legitimate public M3U found in current indexes and official websites/apps. Original Afghan feeds were retained without health testing.",
+    "website": "https://www.noortv.af/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "BBC News Pashto",
+    "group": "Afghanistan",
+    "ids": [
+      "BBCNewsPashto.uk"
+    ],
+    "reason": "No additional stable legitimate public M3U found in current indexes and official websites/apps. Original Afghan feeds were retained without health testing.",
+    "website": "https://www.bbc.com/pashto",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "ARY Digital",
+    "group": "Pakistan",
+    "ids": [
+      "ARYDigital.pk"
+    ],
+    "reason": "No stable public M3U with clear broadcaster/licensed provenance found. Official web/YouTube availability is recorded separately from reusable HLS; anonymous IP/ticket feeds rejected.",
+    "website": "https://arydigital.tv/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "ARY News",
+    "group": "Pakistan",
+    "ids": [
+      "ARYNews.pk"
+    ],
+    "reason": "No stable public M3U with clear broadcaster/licensed provenance found. Official web/YouTube availability is recorded separately from reusable HLS; anonymous IP/ticket feeds rejected.",
+    "website": "http://www.arynews.tv/en/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "ARY Musik",
+    "group": "Pakistan",
+    "ids": [
+      "ARYMusik.pk"
+    ],
+    "reason": "No stable public M3U with clear broadcaster/licensed provenance found. Official web/YouTube availability is recorded separately from reusable HLS; anonymous IP/ticket feeds rejected.",
+    "website": "https://arymusik.tv/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Geo News",
+    "group": "Pakistan",
+    "ids": [
+      "GeoNews.pk"
+    ],
+    "reason": "Official live.geo.tv currently embeds YouTube; no stable permitted standalone HLS found.",
+    "website": "https://live.geo.tv/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Geo Entertainment",
+    "group": "Pakistan",
+    "ids": [
+      "HarPalGeo.pk"
+    ],
+    "reason": "No stable public M3U with clear broadcaster/licensed provenance found. Official web/YouTube availability is recorded separately from reusable HLS; anonymous IP/ticket feeds rejected.",
+    "website": "https://harpalgeo.tv/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "HUM TV",
+    "group": "Pakistan",
+    "ids": [
+      "HumTV.pk"
+    ],
+    "reason": "No stable public M3U with clear broadcaster/licensed provenance found. Official web/YouTube availability is recorded separately from reusable HLS; anonymous IP/ticket feeds rejected.",
+    "website": "https://www.hum.tv/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "HUM News",
+    "group": "Pakistan",
+    "ids": [
+      "HumNews.pk"
+    ],
+    "reason": "Official humnews.pk/live currently embeds YouTube; anonymous IP/ticket catalog feed excluded.",
+    "website": "https://humnews.pk/live/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "HUM Masala",
+    "group": "Pakistan",
+    "ids": [
+      "MasalaTV.pk"
+    ],
+    "reason": "No stable public M3U with clear broadcaster/licensed provenance found. Official web/YouTube availability is recorded separately from reusable HLS; anonymous IP/ticket feeds rejected.",
+    "website": "https://www.masala.tv/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "PTV Home",
+    "group": "Pakistan",
+    "ids": [
+      "PTVHome.pk"
+    ],
+    "reason": "No stable public M3U with clear broadcaster/licensed provenance found. Official web/YouTube availability is recorded separately from reusable HLS; anonymous IP/ticket feeds rejected.",
+    "website": "https://www.mjunoon.tv/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "PTV News",
+    "group": "Pakistan",
+    "ids": [
+      "PTVNews.pk"
+    ],
+    "reason": "No stable public M3U with clear broadcaster/licensed provenance found. Official web/YouTube availability is recorded separately from reusable HLS; anonymous IP/ticket feeds rejected.",
+    "website": "https://www.mjunoon.tv/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Express News",
+    "group": "Pakistan",
+    "ids": [
+      "ExpressNews.pk"
+    ],
+    "reason": "No stable public M3U with clear broadcaster/licensed provenance found. Official web/YouTube availability is recorded separately from reusable HLS; anonymous IP/ticket feeds rejected.",
+    "website": "https://www.express.pk/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Express Entertainment",
+    "group": "Pakistan",
+    "ids": [
+      "ExpressEntertainment.pk"
+    ],
+    "reason": "No stable public M3U with clear broadcaster/licensed provenance found. Official web/YouTube availability is recorded separately from reusable HLS; anonymous IP/ticket feeds rejected.",
+    "website": "https://www.expressentertainment.tv/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Samaa",
+    "group": "Pakistan",
+    "ids": [
+      "SamaaTV.pk"
+    ],
+    "reason": "No stable public M3U with clear broadcaster/licensed provenance found. Official web/YouTube availability is recorded separately from reusable HLS; anonymous IP/ticket feeds rejected.",
+    "website": "https://www.samaa.tv/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Dunya",
+    "group": "Pakistan",
+    "ids": [
+      "DunyaNews.pk"
+    ],
+    "reason": "No stable public M3U with clear broadcaster/licensed provenance found. Official web/YouTube availability is recorded separately from reusable HLS; anonymous IP/ticket feeds rejected.",
+    "website": "https://dunyanews.tv/live/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Dawn",
+    "group": "Pakistan",
+    "ids": [
+      "DawnNews.pk"
+    ],
+    "reason": "No stable public M3U with clear broadcaster/licensed provenance found. Official web/YouTube availability is recorded separately from reusable HLS; anonymous IP/ticket feeds rejected.",
+    "website": "https://www.dawnnews.tv/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Aaj News",
+    "group": "Pakistan",
+    "ids": [
+      "AajNews.pk"
+    ],
+    "reason": "No stable public M3U with clear broadcaster/licensed provenance found. Official web/YouTube availability is recorded separately from reusable HLS; anonymous IP/ticket feeds rejected.",
+    "website": "https://www.aaj.tv/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Aaj Entertainment",
+    "group": "Pakistan",
+    "ids": [
+      "AajEntertainment.pk"
+    ],
+    "reason": "No stable public M3U with clear broadcaster/licensed provenance found. Official web/YouTube availability is recorded separately from reusable HLS; anonymous IP/ticket feeds rejected.",
+    "website": "https://aajentertainment.tv/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "BOL News",
+    "group": "Pakistan",
+    "ids": [
+      "BolNews.pk"
+    ],
+    "reason": "No stable public M3U with clear broadcaster/licensed provenance found. Official web/YouTube availability is recorded separately from reusable HLS; anonymous IP/ticket feeds rejected.",
+    "website": "https://www.bolnews.com/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "BOL Entertainment",
+    "group": "Pakistan",
+    "ids": [
+      "BolEntertainment.pk"
+    ],
+    "reason": "No stable public M3U with clear broadcaster/licensed provenance found. Official web/YouTube availability is recorded separately from reusable HLS; anonymous IP/ticket feeds rejected.",
+    "website": "https://www.bolentertainment.com/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "92 News",
+    "group": "Pakistan",
+    "ids": [
+      "92NewsHD.pk"
+    ],
+    "reason": "No stable public M3U with clear broadcaster/licensed provenance found. Official web/YouTube availability is recorded separately from reusable HLS; anonymous IP/ticket feeds rejected.",
+    "website": "https://92newshd.tv/live-tv",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Filmazia",
+    "group": "Pakistan",
+    "ids": [
+      "Filmazia.pk"
+    ],
+    "reason": "No stable public M3U with clear broadcaster/licensed provenance found. Official web/YouTube availability is recorded separately from reusable HLS; anonymous IP/ticket feeds rejected.",
+    "website": "https://www.mjunoon.tv/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Filmax",
+    "group": "Pakistan",
+    "ids": [
+      "Filmax.pk"
+    ],
+    "reason": "No stable public M3U with clear broadcaster/licensed provenance found. Official web/YouTube availability is recorded separately from reusable HLS; anonymous IP/ticket feeds rejected.",
+    "website": "https://www.mjunoon.tv/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "8XM",
+    "group": "Pakistan",
+    "ids": [
+      "8XM.pk"
+    ],
+    "reason": "No stable public M3U with clear broadcaster/licensed provenance found. Official web/YouTube availability is recorded separately from reusable HLS; anonymous IP/ticket feeds rejected.",
+    "website": "https://8xm.tv/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Jalwa",
+    "group": "Pakistan",
+    "ids": [
+      "JalwaTV.pk"
+    ],
+    "reason": "No stable public M3U with clear broadcaster/licensed provenance found. Official web/YouTube availability is recorded separately from reusable HLS; anonymous IP/ticket feeds rejected.",
+    "website": "https://jalwa.tv/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Urdu 1",
+    "group": "Pakistan",
+    "ids": [
+      "Urdu1.pk"
+    ],
+    "reason": "No stable public M3U with clear broadcaster/licensed provenance found. Official web/YouTube availability is recorded separately from reusable HLS; anonymous IP/ticket feeds rejected.",
+    "website": "https://www.mjunoon.tv/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Discover Pakistan",
+    "group": "Pakistan",
+    "ids": [
+      "DiscoverPakistan.pk"
+    ],
+    "reason": "No stable public M3U with clear broadcaster/licensed provenance found. Official web/YouTube availability is recorded separately from reusable HLS; anonymous IP/ticket feeds rejected.",
+    "website": "https://www.discoverpakistan.tv/",
+    "catalogs_searched": [
+      "https://iptv-org.github.io/iptv/index.m3u",
+      "https://iptv-org.github.io/api/streams.json",
+      "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    ]
+  }
+]
