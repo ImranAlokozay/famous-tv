@@ -11,6 +11,8 @@ https://d3b6q2ou5kp8ke.cloudfront.net/ESPNTheOcho.m3u8
 https://a62dad94.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmFrdXRlblRWLWV1X0ZJRkFQbHVzRW5nbGlzaF9ITFM/playlist.m3u8
 #EXTINF:-1 tvg-id="FIFAPlusWomen.uk@English" tvg-name="FIFA+ Women" tvg-logo="https://i.ibb.co/LhpwRm8V/GB3800009-F0-20251028-T010335-SQUARE.png" tvg-language="eng" group-title="Sports",FIFA+ Women (720p)
 https://cffda8ff.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/U2Ftc3VuZy1nYl9GSUZBUGx1c3dvbWVuX0hMUw/playlist.m3u8
+#EXTINF:-1 tvg-id="FoxSportsFAST.us@FAST" tvg-name="FOX Sports (FAST)" tvg-logo="" tvg-language="eng" group-title="Sports",FOX Sports (FAST) (720p)
+https://amg02855-foxsports-amg02855c1-xumo-us-1755.playouts.now.amagi.tv/Fox-Sports-AmazonNews/playlist720-p.m3u8
 #EXTINF:-1 tvg-id="NBCSportsNOW.us@SD" tvg-name="NBC Sports NOW" tvg-logo="https://i.imgur.com/EzNf2Yx.png" tvg-language="eng" group-title="Sports",NBC Sports NOW (720p)
 https://jmp2.uk/plu-6549306c83595c000815a696.m3u8
 #EXTINF:-1 tvg-id="RedBullTV.at@SD" tvg-name="Red Bull TV" tvg-logo="https://i.postimg.cc/8c78JM28/image.png" tvg-language="eng" group-title="Sports",Red Bull TV (720p)
@@ -19,8 +21,18 @@ https://rbmn-live.akamaized.net/hls/live/590964/BoRB-AT/master_3360.m3u8
 https://636ffd31f0e12.streamlock.net/RacingStream1/RacingStream1/playlist.m3u8
 #EXTINF:-1 tvg-id="SkyRacing2.au@SD" tvg-name="Sky Racing 2" tvg-logo="https://i.imgur.com/TxQvFnQ.png" tvg-language="eng" group-title="Sports",Sky Racing 2 (720p)
 https://skylivetab-new.akamaized.net/hls/live/2038781/sky2/index.m3u8
+#EXTINF:-1 tvg-id="TennisChannel2.us@FAST" tvg-name="T2 Tennis Channel" tvg-logo="" tvg-language="eng" group-title="Sports",T2 Tennis Channel (720p)
+https://ttc-tennischannelus-firetv.amagi.tv/playlist720p.m3u8
 #EXTINF:-1 tvg-id="TennisChannel.us@SD" tvg-name="Tennis Channel" tvg-logo="https://i.imgur.com/tsljAnY.png" tvg-language="eng" group-title="Sports",Tennis Channel (720p)
 https://jmp2.uk/plu-6627621d56fc840008e47c90.m3u8
+#EXTINF:-1 tvg-id="DAZNRingside.us@FAST" tvg-name="DAZN Ringside" tvg-logo="" tvg-language="eng" group-title="Sports",DAZN Ringside (720p)
+https://aegis-cloudfront-1.tubi.video/bfad29e2-5bee-44f3-8256-127324e8b106/720p-cc/index.m3u8
+#EXTINF:-1 tvg-id="GolfPass.us@FAST" tvg-name="GolfPass" tvg-logo="" tvg-language="eng" group-title="Sports",GolfPass (720p)
+https://d2icntm6fhxrry.cloudfront.net/master_3.m3u8
+#EXTINF:-1 tvg-id="Motorvision.de@FAST" tvg-name="Motorvision" tvg-logo="" tvg-language="eng" group-title="Sports",Motorvision (720p)
+https://stream.ads.ottera.tv/playlist.m3u8?network_id=535
+#EXTINF:-1 tvg-id="WWESuperstarCentral.us@FAST" tvg-name="WWE Superstar Central" tvg-logo="" tvg-language="eng" group-title="Sports",WWE Superstar Central (720p)
+https://dpv6ceilvhyrw.cloudfront.net/720p-en-vtt/index.m3u8
 #EXTINF:-1 tvg-id="ACCDigitalNetwork.us@SD" tvg-name="ACC Digital Network" tvg-logo="https://i.imgur.com/V6Kaqha.png" tvg-language="eng" group-title="Sports",ACC Digital Network (1080p)
 https://aegis-cloudfront-1.tubi.video/a1e671ae-d1c2-4e39-99c7-889e83056fd2/playlist.m3u8
 #EXTINF:-1 tvg-id="BahrainSports1.bh@SD" tvg-name="Bahrain Sports 1" tvg-logo="https://i.imgur.com/fBpLsbC.png" tvg-language="ara" group-title="Sports",Bahrain Sports 1 (720p)
@@ -247,6 +259,8 @@ https://stream-us-east-1.getpublica.com/playlist.m3u8?network_id=2246
 https://dbrb49pjoymg4.cloudfront.net/10001/99991745/hls/master.m3u8?ads.xumo_channelId=99991745
 #EXTINF:-1 tvg-id="TVSDriveInMovie.us@SD" tvg-name="TVS Drive In Movie" tvg-logo="https://i.imgur.com/OR9APjb.png" tvg-language="eng" group-title="Movies",TVS Drive In Movie (360p)
 https://rpn.bozztv.com/gusa/gusa-tvsdriveinmovie/index.m3u8
+#EXTINF:-1 tvg-id="BBCDrama.uk@FAST" tvg-name="BBC Drama (FAST)" tvg-logo="" tvg-language="eng" group-title="Series",BBC Drama (FAST) (720p)
+https://amg00793-amg00793c40-rakuten-es-5444.playouts.now.amagi.tv/720p/index.m3u8
 #EXTINF:-1 tvg-id="MBCDrama.ae@SD" tvg-name="MBC Drama" tvg-logo="https://i.imgur.com/g5PWnqp.png" tvg-language="ara" group-title="Series",MBC Drama (1080p)
 https://shd-gcp-live.edgenextcdn.net/live/bitmovin-mbc-drama/2c28a458e2f3253e678b07ac7d13fe71/index.m3u8
 #EXTINF:-1 tvg-id="MBCMasrDrama.sa@SD" tvg-name="MBC Masr Drama" tvg-logo="https://media0070.elcinema.com/tvguide/1399_1.png" tvg-language="ara" group-title="Series",MBC Masr Drama (1080p)
@@ -366,8 +380,6 @@ https://tulixcdn.akamaized.net/tintv6/tintv/tintv/playlist.m3u8
 https://aegis-cloudfront-1.tubi.video/57c1fa3c-566b-4998-b6de-d6de67031d99/index.m3u8
 #EXTINF:-1 tvg-id="TopGear.uk@SD" tvg-name="Top Gear" tvg-logo="https://i.imgur.com/S6Su6QH.png" tvg-language="eng" group-title="Entertainment",Top Gear (720p)
 https://aegis-cloudfront-1.tubi.video/33ccaca5-a666-4b28-8578-55a9ab9f06d5/playlist.m3u8
-#EXTINF:-1 tvg-id="VH1QueensofReality.us@SD" tvg-name="VH1 Queens of Reality" tvg-logo="https://images.pluto.tv/channels/66abefe5d2d50d00082c7d12/colorLogoPNG.png" tvg-language="eng" group-title="Entertainment",VH1 Queens of Reality
-https://jmp2.uk/plu-66abefe5d2d50d00082c7d12.m3u8
 #EXTINF:-1 tvg-id="MTVBiggestPop.us@US" tvg-name="MTV Biggest Pop" tvg-logo="https://i.imgur.com/AOaZmlS.png" tvg-language="eng" group-title="Music",MTV Biggest Pop (1080p)
 https://jmp2.uk/plu-5d14fd1a252d35decbc4080c.m3u8
 #EXTINF:-1 tvg-id="MTVClassic.us@CA" tvg-name="MTV Classic" tvg-logo="https://images.pluto.tv/channels/66a01dcb8561260008b0a41d/colorLogoPNG.png" tvg-language="eng" group-title="Music",MTV Classic (720p)
@@ -438,14 +450,10 @@ https://amg00056-vevotv-vevo80saunz-samsungau-rp5e3.amagi.tv/playlist/amg00056-v
 https://amg00056-vevotv-vevo90saunz-samsungau-n6a0d.amagi.tv/playlist/amg00056-vevotv-vevo90saunz-samsungau/playlist.m3u8
 #EXTINF:-1 tvg-id="Vevo2K.us@SD" tvg-name="Vevo 2K" tvg-logo="https://images.pluto.tv/channels/5fd7bca3e0a4ee0007a38e8c/featuredImage.jpg" tvg-language="eng" group-title="Music",Vevo 2K (1080p)
 https://amg00056-vevotv-vevo2kau-samsungnz-tamaq.amagi.tv/playlist/amg00056-vevotv-vevo2kau-samsungnz/playlist.m3u8
-#EXTINF:-1 tvg-id="VevoCountry.us@SD" tvg-name="Vevo Country" tvg-logo="https://images.pluto.tv/channels/5da0d75e84830900098a1ea0/featuredImage.jpg" tvg-language="eng" group-title="Music",Vevo Country (1080p)
-https://amg00056-vevotv-vevocountryau-samsungau-ktmqm.amagi.tv/playlist/amg00056-vevotv-vevocountryau-samsungau/playlist.m3u8
 #EXTINF:-1 tvg-id="VevoHipHop.us@SD" tvg-name="Vevo Hip Hop" tvg-logo="https://i.imgur.com/Lbc9cYw.png" tvg-language="eng" group-title="Music",Vevo Hip Hop (1080p)
 https://d3vgs3ro3x6v8a.cloudfront.net/Vevo_Hip_Hop.m3u8
 #EXTINF:-1 tvg-id="VevoPop.us@SD" tvg-name="Vevo Pop" tvg-logo="https://i.imgur.com/dZHktKR.png" tvg-language="eng" group-title="Music",Vevo Pop (1080p)
 https://amg00056-amg00056c6-rakuten-uk-3235.playouts.now.amagi.tv/playlist.m3u8
-#EXTINF:-1 tvg-id="VevoRB.us@SD" tvg-name="Vevo R&B" tvg-logo="https://images.pluto.tv/channels/5da0d83f66c9700009b96d0e/featuredImage.jpg" tvg-language="eng" group-title="Music",Vevo R&B (1080p)
-https://d1hf773q57zx9s.cloudfront.net/Vevo_R_B.m3u8
 #EXTINF:-1 tvg-id="XITE90sThrowback.us@SD" tvg-name="XITE 90's Throwback" tvg-logo="https://i.imgur.com/vwpOzuz.png" tvg-language="eng" group-title="Music",XITE 90's Throwback (1080p)
 https://d284aawtm5vi48.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-fjdfi2br1jtq7/XITE_90s_Throwback.m3u8
 #EXTINF:-1 tvg-id="XITEHits.nl@UK" tvg-name="XITE Hits" tvg-logo="https://i.imgur.com/N51Rp7E.png" tvg-language="eng" group-title="Music",XITE Hits (1080p)
@@ -470,12 +478,6 @@ https://jmp2.uk/plu-5ebac49ce4dc8b00078b23bc.m3u8
 https://vs-cmaf-pushb-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:cbbc_hd/iptv_hd_abr_v1.mpd
 #EXTINF:-1 tvg-id="CBeebies.uk@SD" tvg-name="CBeebies" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/1/16/CBeebies.svg/960px-CBeebies.svg.png" tvg-language="eng" group-title="Kids",CBeebies (720p)
 https://vs-cmaf-pushb-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:cbeebies_hd/iptv_hd_abr_v1.mpd
-#EXTINF:-1 tvg-id="DoraTV.us@CA" tvg-name="Dora TV" tvg-logo="https://i.imgur.com/zJuSbmU.png" tvg-language="eng" group-title="Kids",Dora TV
-https://jmp2.uk/plu-62e951258a26d40007b3034c.m3u8
-#EXTINF:-1 tvg-id="ForeverKids.us@SD" tvg-name="Forever Kids" tvg-logo="https://i.imgur.com/deeQqYZ.png" tvg-language="eng" group-title="Kids",Forever Kids
-https://jmp2.uk/plu-56171fafada51f8004c4b40f.m3u8
-#EXTINF:-1 tvg-id="GarfieldandFriends.us@US" tvg-name="Garfield and Friends" tvg-logo="https://i.imgur.com/evzfe9C.png" tvg-language="eng" group-title="Kids",Garfield and Friends
-https://jmp2.uk/plu-60faf9ddfcc1f200070a5932.m3u8
 #EXTINF:-1 tvg-id="HappyKids.us@SD" tvg-name="HappyKids" tvg-logo="https://i.imgur.com/cPrUCFw.png" tvg-language="eng" group-title="Kids",HappyKids (1080p)
 https://dil9xdvretp0f.cloudfront.net/index.m3u8
 #EXTINF:-1 tvg-id="HasbroLegends.us@SD" tvg-name="Hasbro Legends" tvg-logo="https://i.imgur.com/JDM9rEV.png" tvg-language="eng" group-title="Kids",Hasbro Legends (1080p)
@@ -490,8 +492,6 @@ https://amg07653-apmc-amg07653c9-samsung-us-8740.playouts.now.amagi.tv/playlist.
 https://stream-us-east-1.getpublica.com/playlist.m3u8?network_id=50
 #EXTINF:-1 tvg-id="LegoChannel.us@SD" tvg-name="Lego Channel" tvg-logo="https://i.imgur.com/xePwW13.png" tvg-language="eng" group-title="Kids",Lego Channel (1080p)
 https://dh18i7whff86v.cloudfront.net/index.m3u8
-#EXTINF:-1 tvg-id="LEGOKidsTV.us@SD" tvg-name="LEGO Kids TV" tvg-logo="https://i.imgur.com/tMfEsVr.png" tvg-language="eng" group-title="Kids",LEGO Kids TV
-https://jmp2.uk/plu-60fb01a24795a6000762fe83.m3u8
 #EXTINF:-1 tvg-id="MoonbugKids.uk@SD" tvg-name="Moonbug Kids" tvg-logo="https://i.imgur.com/vZHtxQb.png" tvg-language="eng" group-title="Kids",Moonbug Kids (1080p)
 https://dq2a9ghraf7sw.cloudfront.net/Moonbug.m3u8
 #EXTINF:-1 tvg-id="MrBeanAnimated.uk@English" tvg-name="Mr Bean Animated" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/2/25/Mr._Bean_Animated_Series_stacked_logo.png" tvg-language="eng" group-title="Kids",Mr Bean Animated (1080p)
@@ -500,8 +500,6 @@ https://amg00627-amg00627c23-samsung-au-4110.playouts.now.amagi.tv/playlist.m3u8
 https://d3868b4ny0rgdf.cloudfront.net/playlist.m3u8
 #EXTINF:-1 tvg-id="PBSKids.us@SD" tvg-name="PBS Kids" tvg-logo="https://i.imgur.com/fg8c9WK.png" tvg-language="eng" group-title="Kids",PBS Kids (720p)
 https://livestream.pbskids.org/out/v1/14507d931bbe48a69287e4850e53443c/est.m3u8
-#EXTINF:-1 tvg-id="PeppaPig.us@SD" tvg-name="Peppa Pig" tvg-logo="https://images.pluto.tv/channels/5d14fb6c84dd37df3b4290c5/colorLogoPNG_1730733871298.png" tvg-language="eng" group-title="Kids",Peppa Pig
-https://jmp2.uk/plu-5d14fb6c84dd37df3b4290c5.m3u8
 #EXTINF:-1 tvg-id="PersianaJunior.fr@SD" tvg-name="Persiana Junior" tvg-logo="https://i.imgur.com/zeKHZYG.png" tvg-language="fas" group-title="Kids",Persiana Junior
 https://junhls.persiana.live/hls/stream.m3u8
 #EXTINF:-1 tvg-id="PersianaTeen.fr@SD" tvg-name="Persiana Teen" tvg-logo="" tvg-language="fas" group-title="Kids",Persiana Teen
@@ -560,6 +558,8 @@ https://jmp2.uk/plu-5df97894467dfa00091c873c.m3u8
 https://linear021-gb-hls1-prd-ak.cdn.skycdp.com/Content/HLS_001_hd/Live/channel(skynews)/index_mob.m3u8
 #EXTINF:-1 tvg-id="SkyNewsArabia.ae@SD" tvg-name="Sky News Arabia" tvg-logo="https://i.imgur.com/SvjU4h6.png" tvg-language="ara" group-title="News",Sky News Arabia (720p)
 https://stream.skynewsarabia.com/hls/sna.m3u8
+#EXTINF:-1 tvg-id="FoxNewsChannelPreview.us@Preview" tvg-name="Fox News Channel Preview" tvg-logo="" tvg-language="eng" group-title="News",Fox News Channel Preview (240p)
+http://247preview.foxnews.com/hls/live/2020027/fncv3preview/primary.m3u8
 #EXTINF:-1 tvg-id="AlArabiyaBusiness.ae@SD" tvg-name="Al Arabiya Business" tvg-logo="https://i.imgur.com/eEV4r6J.jpg" tvg-language="ara" group-title="News",Al Arabiya Business (1080p)
 https://live.alarabiya.net/alarabiapublish/aswaaq.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="AlMayadeenTV.lb@SD" tvg-name="Al Mayadeen TV" tvg-logo="https://i.imgur.com/GtQOKeW.png" tvg-language="ara" group-title="News",Al Mayadeen TV (576p)
@@ -692,8 +692,6 @@ https://d6ef3usc6d9cl.cloudfront.net/Tastemade_Travel.m3u8
 https://amg00441-amg00441c1-rakuten-us-6050.playouts.now.amagi.tv/playlist.m3u8
 #EXTINF:-1 tvg-id="TheJamieOliverChannel.us@SD" tvg-name="The Jamie Oliver Channel" tvg-logo="https://i.imgur.com/4v93XUB.png" tvg-language="eng" group-title="Lifestyle",The Jamie Oliver Channel (720p)
 https://jmp2.uk/plu-64dab9df3d48f40008868091.m3u8
-#EXTINF:-1 tvg-id="ThisOldHouse.us@SD" tvg-name="This Old House" tvg-logo="https://i.imgur.com/nrVLyE6.png" tvg-language="eng" group-title="Lifestyle",This Old House (1080p)
-https://thisoldhouse-2-us.roku.wurl.tv/playlist.m3u8
 #EXTINF:-1 tvg-id="Travelxp.in@HD" tvg-name="Travelxp" tvg-logo="https://i.imgur.com/HUWEnc5.png" tvg-language="eng;hin" group-title="Lifestyle",Travelxp (1080p)
 https://amg00416-amg00416c9-samsung-in-4882.playouts.now.amagi.tv/playlist/amg00416-travelxp-travelxphd-samsungin/playlist.m3u8
 #EXTINF:-1 tvg-id="AajTak.in@SD" tvg-name="Aaj Tak" tvg-logo="https://i.imgur.com/JYLmXy4.png" tvg-language="hin" group-title="India",Aaj Tak (720p)

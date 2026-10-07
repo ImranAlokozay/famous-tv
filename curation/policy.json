@@ -44,8 +44,18 @@
       "Pluto TV": 3,
       "Persiana": 3
     },
+    "Entertainment": {
+      "Pluto TV": 5
+    },
+    "Kids": {
+      "Pluto TV": 8
+    },
+    "Lifestyle": {
+      "Pluto TV": 4
+    },
     "Music": {
       "Stingray": 6,
+      "Pluto TV": 6,
       "MTV": 3
     },
     "Sports": {
@@ -90,6 +100,15 @@
     }
   },
   "resolution_policy": "576i/576p first, 720i/720p second, other known SD third, 1080 fallback, unknown last; no rendition URL synthesis",
+  "focused_research_sources": [
+    "https://iptv-org.github.io/api/streams.json",
+    "https://iptv-org.github.io/iptv/index.m3u",
+    "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8",
+    "GitHub code search and public IPTV repositories",
+    "Broadcaster websites and live pages",
+    "Public FAST distributions on Rakuten, Xumo, Tubi, Pluto, Samsung TV Plus, Plex, Amagi, Wurl, and Ottera",
+    "Web search for exact names, spelling variants, regional feeds, SD/576/720 editions, HLS, and M3U8 references"
+  ],
   "baseline_afghanistan_ids": [
     "4Afghanistan.fr",
     "ABNAfghanistan.us",
@@ -164,6 +183,22 @@
     {
       "url": "https://www.linkedin.com/posts/samsung-ads-apac_samsung-tv-plus-india-is-excited-to-announce-activity-7442691606568337408-4SqQ",
       "note": "Samsung Ads announces the five free ZEE5 FAST channels."
+    },
+    {
+      "url": "https://www.tennischannel.com/",
+      "note": "Tennis Channel documents its T2 FAST service and supported distributions."
+    },
+    {
+      "url": "https://www.foxsports.com/find-fs1-on-your-tv",
+      "note": "FOX documents authenticated TV-provider access for FS1; the selected FOX Sports FAST channel is a distinct service."
+    },
+    {
+      "url": "https://www.skysports.com/watch/sky-sports-main-event",
+      "note": "Sky's official watch page requires a Sky Sports or NOW subscription for its flagship channels."
+    },
+    {
+      "url": "https://www.sonyliv.com/faqs",
+      "note": "SonyLIV documents subscription packs and live-channel availability; anonymous Sony restreams were rejected."
     }
   ]
 }

@@ -86,6 +86,7 @@ class CurationTests(unittest.TestCase):
 
     def test_offline_reproducibility_and_header(self):
         targets = json.loads((ROOT / 'curation/targets.json').read_text())
+        targets.extend(json.loads((ROOT / 'curation/focused_targets.json').read_text()))
         generated, report = rebuild.outputs(self.channels, self.policy, targets)
         self.assertTrue(generated['public/tv.m3u'].startswith('#EXTM3U\n'))
         self.assertEqual(report['total_channels'], generated['public/tv.m3u'].count('#EXTINF:'))
@@ -94,6 +95,8 @@ class CurationTests(unittest.TestCase):
         self.assertEqual([], report['duplicate_names'])
         self.assertEqual([], report['duplicate_urls'])
         self.assertEqual([], report['hd_regressions'])
+        self.assertIn('reports/missing_famous_channels.csv', generated)
+        self.assertIn('all_sources_searched', generated['reports/missing_famous_channels.csv'].splitlines()[0])
 
 
 if __name__ == '__main__':

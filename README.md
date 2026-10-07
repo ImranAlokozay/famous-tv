@@ -16,10 +16,12 @@ python -m unittest discover -s tests
 
 The generator reads the reviewed alternatives in [curation/channels.json](curation/channels.json),
 the selection rules and source provenance in [curation/policy.json](curation/policy.json),
-and the requested channel coverage in [curation/targets.json](curation/targets.json).
+the requested channel coverage in [curation/targets.json](curation/targets.json),
+and the exact focused-pass targets in [curation/focused_targets.json](curation/focused_targets.json).
 It produces the playlist and [reports/playlist-report.md](reports/playlist-report.md),
 [reports/playlist-report.json](reports/playlist-report.json), and
-[reports/channels.csv](reports/channels.csv). All outputs are deterministic.
+[reports/channels.csv](reports/channels.csv), plus the detailed
+[reports/missing_famous_channels.csv](reports/missing_famous_channels.csv). All outputs are deterministic.
 
 The original root-level `famous_global_india_pakistan_afghanistan.m3u` is retained
 as a historical reference. `/tv` serves `public/tv.m3u`, not that older file.
@@ -55,5 +57,7 @@ then rebuild. Use the original index URLs and provenance references in `policy.j
 to research updates. Source SHA-256 values document the catalogs used for this
 snapshot; the smaller reviewed inventory is committed for offline reproduction.
 
-Reports distinguish a found address from verified playback. Region restrictions,
-eligibility, schedules, and expiry can apply. No stream-health testing is included.
+Reports distinguish a found address from verified playback. The eight focused-pass
+additions received a one-time manifest, media-playlist, and first-media-object response
+check before their metadata was committed. Region restrictions, eligibility, schedules,
+and expiry can apply. No reusable stream-health checker is included.

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Rebuild the curated playlist from reviewed metadata; never probe playback URLs."""
+"""Rebuild the curated playlist from reviewed, reproducible metadata."""
 
 import argparse
 import collections
@@ -175,7 +175,8 @@ def build_report(channels, excluded, targets, policy):
         lower = bool(height and any(h < height for h in heights))
         rejected_1080 = any(h >= 1080 for h in heights) and bool(height and height < 1080)
         rows.append({'id': c['id'], 'name': c['name'], 'category': c['category'], 'provider': c['provider'],
-                     'languages': c['languages'], 'newly_added': not c['baseline_present'],
+                     'languages': c['languages'], 'famous': c.get('famous', False), 'newly_added': not c['baseline_present'],
+                     'focused_pass_added': c.get('focused_pass_added', False),
                      'resolution': stream.get('quality') or 'unknown', 'lower_resolution_alternative_existed': lower,
                      'preferred_576_or_720_alternative_existed': bool({576, 720} & heights),
                      'avoided_1080': rejected_1080, 'alternative_resolutions': sorted({s.get('quality') or 'unknown' for s in c['candidates']}),
@@ -188,7 +189,7 @@ def build_report(channels, excluded, targets, policy):
     for target in targets:
         matches = [cid for cid in target['ids'] if cid in selected_ids]
         coverage.append(dict(target, status='found' if matches else 'unavailable',
-                             reason='Reviewed standalone address found; playback untested.' if matches else target['reason'],
+                             reason='Reviewed standalone address found; newly added focused-pass streams received a one-time manifest and media-object check.' if matches else target['reason'],
                              found=[{'id': cid, 'name': selected_by_id[cid]['name'],
                                      'resolution': selected_by_id[cid]['selected'].get('quality') or 'unknown'} for cid in matches]))
     names = collections.Counter(normalize_name(c['name']) for c in channels)
@@ -198,15 +199,47 @@ def build_report(channels, excluded, targets, policy):
                       any(resolution_rank(s.get('quality'))[0] < 3 for s in c['candidates'])]
     if hd_regressions:
         raise ValueError(f'Lower-resolution candidates were overlooked: {hd_regressions}')
+    bucket = collections.Counter()
+    for c in channels:
+        q = c['selected'].get('quality')
+        if q in ('576i', '576p'):
+            bucket['576/576p'] += 1
+        elif q in ('720i', '720p'):
+            bucket['720p'] += 1
+        elif q in ('1080i', '1080p'):
+            bucket['1080p'] += 1
+        elif q is None:
+            bucket['unknown'] += 1
+        else:
+            bucket['other_known'] += 1
+    sports = [c for c in channels if c['category'] == 'Sports']
+    sports_bucket = collections.Counter()
+    for c in sports:
+        q = c['selected'].get('quality')
+        key = '576/576p' if q in ('576i', '576p') else '720p' if q in ('720i', '720p') else '1080p' if q in ('1080i', '1080p') else 'unknown' if q is None else 'other_known'
+        sports_bucket[key] += 1
+    focused = [row for row in rows if row['focused_pass_added']]
+    source_contributions = collections.Counter(url for row in focused for url in row['source_urls'])
+    host_contributions = collections.Counter(urllib.parse.urlsplit(row['stream_url']).hostname for row in focused)
     return {'snapshot_date': policy['snapshot_date'], 'total_channels': len(channels),
             'categories': {cat: counts[cat] for cat in policy['category_order']},
             'resolution_distribution': dict(sorted(quality.items())),
+            'resolution_buckets': {key: bucket[key] for key in ['576/576p', '720p', '1080p', 'unknown', 'other_known']},
+            'country_section_counts': {key: counts[key] for key in ['India', 'Pakistan', 'Afghanistan']},
+            'pluto_channel_count': sum(c['provider'] == 'Pluto TV' or 'pluto' in c['selected']['url'].casefold() for c in channels),
+            'sports_summary': {'total': len(sports), 'resolution_buckets': {key: sports_bucket[key] for key in ['576/576p', '720p', '1080p', 'unknown', 'other_known']}},
+            'focused_pass_additions': focused,
+            'focused_pass_source_contributions': dict(source_contributions),
+            'focused_pass_host_contributions': dict(host_contributions),
+            'famous_1080_fallbacks': [row['name'] for row in rows if row['famous'] and row['resolution'] in ('1080i', '1080p')],
             'duplicate_names': [name for name, n in names.items() if n > 1],
             'duplicate_urls': [url for url, n in urls.items() if n > 1], 'hd_regressions': hd_regressions,
             'avoided_1080_channels': sum(row['avoided_1080'] for row in rows),
             'newly_added_channels': sum(row['newly_added'] for row in rows),
             'famous_channel_coverage': coverage, 'excluded': excluded, 'channels': rows,
-            'verification': {'health_testing_performed': False, 'resolution_basis': 'Published source metadata; playback and bitrate not measured',
+            'verification': {'health_testing_performed': False,
+                             'focused_candidate_testing': 'One-time manifest, selected media-playlist, and first-media-object response checks for focused-pass additions only; no reusable health checker',
+                             'resolution_basis': 'Published source metadata plus inspected master-manifest rendition labels for focused-pass additions; bitrate not measured',
                              'routing': 'vercel.json outputDirectory=public; /tv -> /tv.m3u',
                              'vercel_sha256': policy['vercel_sha256'], 'live_deployment_tested': False}}
 
@@ -214,8 +247,8 @@ def build_report(channels, excluded, targets, policy):
 def markdown_report(report):
     lines = ['# Playlist curation report', '', f'Source snapshot: {report["snapshot_date"]}.', '',
              'The playlist contains public index entries and broadcaster/FAST distribution addresses. '
-             'No stream manifests, media segments, playback, or health tests were requested. '
-             'Found means a reviewed M3U-compatible address was found, not that playback is confirmed. '
+             'New focused-pass additions received a one-time manifest, media-playlist, and first-media-object response check. '
+             'The full playlist was not health-tested and no reusable health checker was added. '
              'Geo restrictions, provider eligibility, scheduled broadcasts, and expiring URLs may apply.', '',
              'Resolution is the published stream label, not a measured bitrate or a bandwidth limit. '
              'Adaptive master playlists can select other renditions during playback. '
@@ -252,6 +285,8 @@ def markdown_report(report):
               'selected resolution, source used, and whether a lower-resolution alternative existed. '
               '[playlist-report.json](playlist-report.json) contains candidate counts, all alternative '
               'resolution labels, coverage, and excluded duplicate/cap entries. '
+              '[missing_famous_channels.csv](missing_famous_channels.csv) records each requested target still missing, '
+              'the sources searched, closest selected alternatives, observed resolution labels, and final reason. '
               'The reviewed candidates themselves are in [../curation/channels.json](../curation/channels.json).', '',
               '## Scope', '', 'Sports has no count cap. Language and duplicate filtering apply to every category. '
               'Movies and series have small provider caps. Regional Indian-language-only channels, '
@@ -267,16 +302,46 @@ def outputs(channels, policy, targets):
         raise ValueError('Refusing an empty playlist')
     report = build_report(selected, excluded, targets, policy)
     buffer = io.StringIO(newline='')
-    fields = ['name', 'category', 'provider', 'languages', 'newly_added', 'resolution',
+    fields = ['name', 'category', 'provider', 'languages', 'famous', 'newly_added', 'focused_pass_added', 'resolution',
               'lower_resolution_alternative_existed', 'preferred_576_or_720_alternative_existed',
               'alternative_resolutions', 'source_urls', 'website', 'stream_url', 'access_notes']
     writer = csv.DictWriter(buffer, fieldnames=fields, lineterminator='\n')
     writer.writeheader()
     for row in report['channels']:
         writer.writerow({key: '; '.join(row[key]) if isinstance(row[key], list) else row[key] for key in fields})
+    group_category = {'Sony': 'India', 'Colors': 'India', 'Zee': 'India', 'Star': 'India',
+                      'Sports': 'Sports', 'Kids': 'Kids', 'News': 'News', 'Documentary': 'Documentary',
+                      'Premium': 'Movies', 'Entertainment': 'Entertainment', 'Music': 'Music',
+                      'Afghanistan': 'Afghanistan', 'Pakistan': 'Pakistan'}
+    group_country = {'Sony': 'India', 'Colors': 'India', 'Zee': 'India', 'Star': 'India',
+                     'Afghanistan': 'Afghanistan', 'Pakistan': 'Pakistan'}
+    found_by_group = collections.defaultdict(list)
+    for target in report['famous_channel_coverage']:
+        if target['status'] == 'found':
+            found_by_group[target['group']].append(target['name'])
+    missing_buffer = io.StringIO(newline='')
+    missing_fields = ['channel_name', 'category', 'country', 'all_sources_searched',
+                      'closest_alternatives_found', 'resolutions_found', 'final_reason']
+    missing_writer = csv.DictWriter(missing_buffer, fieldnames=missing_fields, lineterminator='\n')
+    missing_writer.writeheader()
+    common_sources = policy.get('focused_research_sources', [])
+    for target in report['famous_channel_coverage']:
+        if target['status'] != 'unavailable':
+            continue
+        searched = list(dict.fromkeys(target.get('catalogs_searched', []) + common_sources + ([target['website']] if target.get('website') else [])))
+        alternatives = target.get('closest_alternatives') or found_by_group.get(target['group'], [])[:8]
+        missing_writer.writerow({
+            'channel_name': target['name'],
+            'category': target.get('category') or group_category.get(target['group'], target['group']),
+            'country': target.get('country') or group_country.get(target['group'], 'International'),
+            'all_sources_searched': '; '.join(searched),
+            'closest_alternatives_found': '; '.join(alternatives) if alternatives else 'None',
+            'resolutions_found': '; '.join(target.get('resolutions_found', [])) or 'No acceptable responding public rendition',
+            'final_reason': target['reason']})
     return {'public/tv.m3u': render_m3u(selected),
             'reports/playlist-report.json': json.dumps(report, ensure_ascii=False, indent=2) + '\n',
-            'reports/playlist-report.md': markdown_report(report), 'reports/channels.csv': buffer.getvalue()}, report
+            'reports/playlist-report.md': markdown_report(report), 'reports/channels.csv': buffer.getvalue(),
+            'reports/missing_famous_channels.csv': missing_buffer.getvalue()}, report
 
 
 def main():
@@ -286,6 +351,9 @@ def main():
     policy = json.loads((ROOT / 'curation/policy.json').read_text())
     channels = json.loads((ROOT / 'curation/channels.json').read_text())
     targets = json.loads((ROOT / 'curation/targets.json').read_text())
+    focused_targets = ROOT / 'curation/focused_targets.json'
+    if focused_targets.exists():
+        targets.extend(json.loads(focused_targets.read_text()))
     generated, report = outputs(channels, policy, targets)
     for path, content in generated.items():
         target = ROOT / path

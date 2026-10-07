@@ -26316,5 +26316,173 @@
       "af7a8b4e.wurl.com"
     ],
     "priority": 20
+  },
+  {
+    "id": "BBCDrama.uk",
+    "name": "BBC Drama (FAST)",
+    "category": "Series",
+    "provider": "BBC Studios",
+    "famous": true,
+    "country": "UK",
+    "website": "https://pluto.tv/en/live-tv/bbc-drama-es",
+    "logo": "",
+    "languages": ["eng"],
+    "candidates": [{
+      "url": "https://amg00793-amg00793c40-rakuten-es-5444.playouts.now.amagi.tv/720p/index.m3u8",
+      "quality": "720p", "feed": "FAST", "languages": ["eng"], "labels": [],
+      "user_agent": null, "referrer": null, "sources": ["iptv-org-api"]
+    }],
+    "baseline_present": false,
+    "approved_hosts": ["amg00793-amg00793c40-rakuten-es-5444.playouts.now.amagi.tv"],
+    "priority": 0,
+    "focused_pass_added": true,
+    "access_notes": "Rakuten/Amagi FAST distribution; 720p media playlist and first media object responded during the 2026-10-07 focused review."
+  },
+  {
+    "id": "TennisChannel2.us",
+    "name": "T2 Tennis Channel",
+    "category": "Sports",
+    "provider": "Tennis Channel",
+    "famous": true,
+    "country": "US",
+    "website": "https://www.tennischannel.com/",
+    "logo": "",
+    "languages": ["eng"],
+    "candidates": [{
+      "url": "https://ttc-tennischannelus-firetv.amagi.tv/playlist720p.m3u8",
+      "quality": "720p", "feed": "FAST", "languages": ["eng"], "labels": [],
+      "user_agent": null, "referrer": null, "sources": ["iptv-org-api"]
+    }],
+    "baseline_present": false,
+    "approved_hosts": ["ttc-tennischannelus-firetv.amagi.tv"],
+    "priority": 0,
+    "focused_pass_added": true,
+    "access_notes": "Official Tennis Channel FAST edition; explicit 720p playlist and first media object responded during the focused review."
+  },
+  {
+    "id": "FoxSportsFAST.us",
+    "name": "FOX Sports (FAST)",
+    "category": "Sports",
+    "provider": "FOX Sports",
+    "famous": true,
+    "country": "US",
+    "website": "https://www.foxsports.com/",
+    "logo": "",
+    "languages": ["eng"],
+    "candidates": [{
+      "url": "https://amg02855-foxsports-amg02855c1-xumo-us-1755.playouts.now.amagi.tv/Fox-Sports-AmazonNews/playlist720-p.m3u8",
+      "quality": "720p", "feed": "FAST", "languages": ["eng"], "labels": [],
+      "user_agent": null, "referrer": null, "sources": ["iptv-org-api"]
+    }],
+    "baseline_present": false,
+    "approved_hosts": ["amg02855-foxsports-amg02855c1-xumo-us-1755.playouts.now.amagi.tv"],
+    "priority": 0,
+    "focused_pass_added": true,
+    "access_notes": "FOX Sports FAST edition on Xumo/Amagi, distinct from FS1 and FS2; 720p playlist and first media object responded during review."
+  },
+  {
+    "id": "WWESuperstarCentral.us",
+    "name": "WWE Superstar Central",
+    "category": "Sports",
+    "provider": "WWE",
+    "famous": true,
+    "country": "US",
+    "website": "https://www.wwe.com/",
+    "logo": "",
+    "languages": ["eng"],
+    "candidates": [{
+      "url": "https://dpv6ceilvhyrw.cloudfront.net/720p-en-vtt/index.m3u8",
+      "quality": "720p", "feed": "FAST", "languages": ["eng"], "labels": [],
+      "user_agent": null, "referrer": null, "sources": ["iptv-org-api"]
+    }],
+    "baseline_present": false,
+    "approved_hosts": ["dpv6ceilvhyrw.cloudfront.net"],
+    "priority": 5,
+    "focused_pass_added": true,
+    "access_notes": "Public WWE FAST distribution; 720p playlist and first media object responded during review."
+  },
+  {
+    "id": "DAZNRingside.us",
+    "name": "DAZN Ringside",
+    "category": "Sports",
+    "provider": "DAZN",
+    "famous": true,
+    "country": "US",
+    "website": "https://www.dazn.com/",
+    "logo": "",
+    "languages": ["eng"],
+    "candidates": [{
+      "url": "https://aegis-cloudfront-1.tubi.video/bfad29e2-5bee-44f3-8256-127324e8b106/720p-cc/index.m3u8",
+      "quality": "720p", "feed": "FAST", "languages": ["eng"], "labels": [],
+      "user_agent": null, "referrer": null, "sources": ["iptv-org-api"]
+    }],
+    "baseline_present": false,
+    "approved_hosts": ["aegis-cloudfront-1.tubi.video"],
+    "priority": 5,
+    "focused_pass_added": true,
+    "access_notes": "DAZN combat-sports FAST distribution on Tubi; 720p playlist and first media object responded during review."
+  },
+  {
+    "id": "GolfPass.us",
+    "name": "GolfPass",
+    "category": "Sports",
+    "provider": "NBC Sports",
+    "famous": true,
+    "country": "US",
+    "website": "https://www.golfpass.com/",
+    "logo": "",
+    "languages": ["eng"],
+    "candidates": [{
+      "url": "https://d2icntm6fhxrry.cloudfront.net/master_3.m3u8",
+      "quality": "720p", "feed": "FAST", "languages": ["eng"], "labels": [],
+      "user_agent": null, "referrer": null, "sources": ["iptv-org-api"]
+    }],
+    "baseline_present": false,
+    "approved_hosts": ["d2icntm6fhxrry.cloudfront.net"],
+    "priority": 5,
+    "focused_pass_added": true,
+    "access_notes": "GolfPass FAST distribution; lower-bitrate 720p rendition and first media object responded during review."
+  },
+  {
+    "id": "Motorvision.de",
+    "name": "Motorvision",
+    "category": "Sports",
+    "provider": "Motorvision",
+    "famous": true,
+    "country": "DE",
+    "website": "https://motorvision.tv/",
+    "logo": "",
+    "languages": ["eng"],
+    "candidates": [{
+      "url": "https://stream.ads.ottera.tv/playlist.m3u8?network_id=535",
+      "quality": "720p", "feed": "FAST", "languages": ["eng"], "labels": [],
+      "user_agent": null, "referrer": null, "sources": ["iptv-org-api"]
+    }],
+    "baseline_present": false,
+    "approved_hosts": ["stream.ads.ottera.tv"],
+    "priority": 5,
+    "focused_pass_added": true,
+    "access_notes": "Stable adaptive master selected because its 720p child is session-addressed; 720p media playlist and first media object responded during review."
+  },
+  {
+    "id": "FoxNewsChannelPreview.us",
+    "name": "Fox News Channel Preview",
+    "category": "News",
+    "provider": "Fox News",
+    "famous": true,
+    "country": "US",
+    "website": "https://www.foxnews.com/video/topics/live-news/",
+    "logo": "",
+    "languages": ["eng"],
+    "candidates": [{
+      "url": "http://247preview.foxnews.com/hls/live/2020027/fncv3preview/primary.m3u8",
+      "quality": "240p", "feed": "Preview", "languages": ["eng"], "labels": ["official preview; may show a preview slate"],
+      "user_agent": null, "referrer": null, "sources": ["iptv-org-api"]
+    }],
+    "baseline_present": false,
+    "approved_hosts": ["247preview.foxnews.com"],
+    "priority": 5,
+    "focused_pass_added": true,
+    "access_notes": "Official Fox preview endpoint, not the full authenticated cable channel; 240p media playlist and first media object responded during review."
   }
 ]
