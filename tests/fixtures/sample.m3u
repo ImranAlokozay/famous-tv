@@ -1,0 +1,7 @@
+#EXTM3U
+#EXTINF:-1 tvg-id="Example.us@FAST" tvg-name="Example FAST" tvg-logo="https://logo.example/example.png" tvg-language="eng" group-title="Sports" http-user-agent="FixtureAgent",Example FAST (1080p)
+#EXTVLCOPT:http-user-agent=FixtureAgent
+#EXTVLCOPT:http-referrer=https://example.test/
+https://stream.example/master.m3u8
+#EXTINF:-1 tvg-id="News.gb" tvg-name="News" tvg-logo="" tvg-language="eng" group-title="News",News (720p)
+https://news.example/media.m3u8

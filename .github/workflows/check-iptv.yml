@@ -1,0 +1,147 @@
+name: IPTV Health Check and Repair
+
+'on':
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: Operation to run
+        required: true
+        type: choice
+        default: health-only
+        options:
+          - health-only
+          - check-repair
+          - repair-failed
+      workers:
+        description: Concurrent channel checks
+        required: true
+        default: "24"
+        type: string
+      timeout_seconds:
+        description: Timeout for each network request
+        required: true
+        default: "12"
+        type: string
+      retries:
+        description: Retries after the first attempt
+        required: true
+        default: "2"
+        type: string
+      previous_run_id:
+        description: Optional prior workflow run ID for repair-failed mode
+        required: false
+        default: ""
+        type: string
+
+permissions:
+  contents: read
+  actions: read
+
+concurrency:
+  group: iptv-maintenance-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  maintain-playlist:
+    name: Check streams and propose repairs
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    env:
+      MODE: ${{ inputs.mode }}
+      WORKERS: ${{ inputs.workers }}
+      REQUEST_TIMEOUT: ${{ inputs.timeout_seconds }}
+      RETRIES: ${{ inputs.retries }}
+      PREVIOUS_RUN_ID: ${{ inputs.previous_run_id }}
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run automated tests
+        run: python -m unittest discover -s tests -v
+
+      - name: Resolve previous health report
+        if: ${{ inputs.mode == 'repair-failed' }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [[ -n "$PREVIOUS_RUN_ID" ]]; then
+            [[ "$PREVIOUS_RUN_ID" =~ ^[0-9]+$ ]] || { echo "previous_run_id must be numeric" >&2; exit 2; }
+            mkdir -p previous-results
+            gh run download "$PREVIOUS_RUN_ID" --repo "$GITHUB_REPOSITORY" --name iptv-health-results --dir previous-results
+            mapfile -t matches < <(find previous-results -type f -name iptv_health_report.json)
+            [[ "${#matches[@]}" -eq 1 ]] || { echo "Expected one health report in the prior artifact" >&2; exit 2; }
+            echo "PREVIOUS_REPORT=${matches[0]}" >> "$GITHUB_ENV"
+          else
+            test -f reports/iptv_health_report.json
+            echo "PREVIOUS_REPORT=reports/iptv_health_report.json" >> "$GITHUB_ENV"
+          fi
+
+      - name: Run IPTV maintenance
+        shell: bash
+        run: |
+          set -euo pipefail
+          args=(--mode "$MODE" --workers "$WORKERS" --timeout "$REQUEST_TIMEOUT" --retries "$RETRIES")
+          if [[ "$MODE" == "repair-failed" ]]; then
+            args+=(--previous-report "$PREVIOUS_REPORT")
+          fi
+          python scripts/iptv_maintenance.py "${args[@]}"
+
+      - name: Write workflow summary
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json, os
+          health = json.load(open('reports/iptv_health_report.json'))
+          summary = health['summary']
+          lines = [
+              '# IPTV maintenance results', '',
+              f"- Mode: `{health['mode']}`",
+              f"- Channels: **{summary['total_channels']}**",
+              f"- Working: **{summary['working']}**",
+              f"- Probably working: **{summary['probably_working']}**",
+              f"- Broken: **{summary['broken']}**",
+              f"- Timeout: **{summary['timeout']}**",
+              f"- Geo-blocked/forbidden: **{summary['geo_blocked_or_forbidden']}**",
+              f"- Unknown: **{summary['unknown']}**",
+          ]
+          if os.path.exists('reports/iptv_repair_report.json') and health['mode'] != 'health-only':
+              repair = json.load(open('reports/iptv_repair_report.json'))['summary']
+              lines += ['', f"- Repaired: **{repair['successfully_repaired']}**",
+                        f"- Without verified replacement: **{repair['without_verified_replacement']}**",
+                        f"- Sports repaired: **{repair['sports_repaired']}**"]
+          with open(os.environ['GITHUB_STEP_SUMMARY'], 'a') as output:
+              output.write('\n'.join(lines) + '\n')
+          PY
+
+      - name: Upload health-only reports
+        if: ${{ inputs.mode == 'health-only' }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: iptv-health-results
+          path: |
+            reports/iptv_health_report.csv
+            reports/iptv_health_report.json
+          if-no-files-found: error
+          retention-days: 30
+
+      - name: Upload repair proposal and reports
+        if: ${{ inputs.mode != 'health-only' }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: iptv-health-results
+          path: |
+            public/tv_repaired.m3u
+            reports/iptv_health_report.csv
+            reports/iptv_health_report.json
+            reports/iptv_repair_report.csv
+            reports/iptv_repair_report.json
+            reports/iptv_proposed_removals.csv
+            reports/iptv_proposed_removals.json
+          if-no-files-found: error
+          retention-days: 30

@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "health": {
+    "workers": 24,
+    "timeout_seconds": 12,
+    "retries": 2,
+    "retry_backoff_seconds": 0.4,
+    "max_manifest_bytes": 2000000,
+    "segment_probe_bytes": 2048
+  },
+  "repair": {
+    "max_candidates_per_channel": 10,
+    "candidate_workers": 6,
+    "source_timeout_seconds": 30,
+    "source_retries": 2,
+    "source_retry_backoff_seconds": 1.0
+  },
+  "sources": [
+    {
+      "name": "curated-inventory",
+      "type": "inventory",
+      "path": "curation/channels.json",
+      "enabled": true
+    },
+    {
+      "name": "iptv-org-api",
+      "type": "iptv_org_api",
+      "url": "https://iptv-org.github.io/api/streams.json",
+      "enabled": true
+    },
+    {
+      "name": "iptv-org-index",
+      "type": "m3u",
+      "url": "https://iptv-org.github.io/iptv/index.m3u",
+      "enabled": true
+    },
+    {
+      "name": "Free-TV",
+      "type": "m3u",
+      "url": "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8",
+      "enabled": true
+    }
+  ]
+}

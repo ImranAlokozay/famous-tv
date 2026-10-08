@@ -61,5 +61,49 @@ snapshot; the smaller reviewed inventory is committed for offline reproduction.
 Reports distinguish a found address from verified playback. Focused-pass additions and
 accepted lower-resolution replacements received manifest, media-playlist, and
 first-media-object response checks before their metadata was committed. Region
-restrictions, eligibility, schedules, and expiry can apply. No reusable stream-health
-checker is included.
+restrictions, eligibility, schedules, and expiry can apply.
+
+## IPTV health checker and repair proposals
+
+The reusable maintenance command checks every entry concurrently, follows redirects,
+honors M3U request headers, inspects adaptive HLS renditions, and probes an actual media
+object. Results are deliberately conservative: a single failure is not enough to label a
+channel broken, and forbidden or geographically restricted streams are kept separate
+from confirmed failures.
+
+```sh
+# Reports only; never writes a repaired playlist
+python scripts/iptv_maintenance.py --mode health-only
+
+# Check, search configured public catalogs, verify candidates, and build a proposal
+python scripts/iptv_maintenance.py --mode check-repair
+
+# Recheck only entries marked BROKEN in an earlier health report
+python scripts/iptv_maintenance.py --mode repair-failed \
+  --previous-report reports/iptv_health_report.json
+```
+
+Workers, per-request timeout, and retry count can be overridden with `--workers`,
+`--timeout`, and `--retries`. Defaults and discovery sources live in
+[`config/iptv_health.json`](config/iptv_health.json). New catalog integrations implement
+the provider interface in [`iptv_health/discovery.py`](iptv_health/discovery.py); a source
+failure is recorded without aborting the run.
+
+Repair mode creates `public/tv_repaired.m3u` and detailed CSV/JSON health, repair, and
+proposed-removal reports under `reports/`. The proposed playlist preserves entry order,
+names, TVG metadata, logos, groups, options, and headers; it changes only a verified
+broken entry's URL. Unrepaired entries remain present and are listed separately. It does
+not modify `public/tv.m3u`, `vercel.json`, or deployment configuration.
+
+### Run from an iPhone
+
+1. Open this repository in the GitHub app or at github.com and select **Actions**.
+2. Open **IPTV Health Check and Repair**, tap **Run workflow**, and choose `main`.
+3. Choose `health-only`, `check-repair`, or `repair-failed`; keep the defaults initially.
+4. Tap the green **Run workflow** button and open the new run to follow its progress.
+5. When it finishes, download **iptv-health-results** from the run's **Artifacts** area.
+
+For `repair-failed`, `previous_run_id` may contain the numeric ID from an earlier run's
+URL (`/actions/runs/123456789`). Leave it blank to use the health report committed in the
+repository. Workflow runs only create downloadable artifacts: they do not commit,
+deploy, or replace the production `/tv` playlist.

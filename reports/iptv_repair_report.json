@@ -1,0 +1,302 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-10-08T06:15:32Z",
+  "mode": "check-repair",
+  "source_playlist": "public/tv.m3u",
+  "output_playlist": "public/tv_repaired.m3u",
+  "summary": {
+    "broken_channels_considered": 4,
+    "successfully_repaired": 0,
+    "without_verified_replacement": 4,
+    "sports_repaired": 0,
+    "repaired_1080_to_576_or_720": 0
+  },
+  "source_errors": [
+    {
+      "source": "iptv-org-api",
+      "error": "HTTPError: HTTP Error 503: Service Unavailable"
+    },
+    {
+      "source": "iptv-org-index",
+      "error": "HTTPError: HTTP Error 503: Service Unavailable"
+    },
+    {
+      "source": "Free-TV",
+      "error": "HTTPError: HTTP Error 503: Service Unavailable"
+    }
+  ],
+  "channels": [
+    {
+      "entry_index": 24,
+      "channel_name": "DAZN Combat",
+      "category": "Sports",
+      "original_url": "https://jmp2.uk/plu-648056f0f77b61000828f1ba.m3u8",
+      "original_resolution": "684p",
+      "health_status": "BROKEN",
+      "failure_reason": "Stream returned HTTP 404",
+      "replacement_url": "",
+      "replacement_source": "",
+      "replacement_resolution": "unknown",
+      "candidate_streams_checked": 3,
+      "candidate_evidence": [
+        {
+          "url": "https://jmp2.uk/plu-64805755536e0c0008a19fa1.m3u8",
+          "source": "curated-inventory",
+          "declared_resolution": "684p",
+          "verified_resolution": "684p",
+          "health_status": "BROKEN",
+          "reason": "Stream returned HTTP 404",
+          "identity_score": 100,
+          "identity_evidence": "exact tvg-id/channel id",
+          "selected_variant_url": "",
+          "proposed_url": "https://jmp2.uk/plu-64805755536e0c0008a19fa1.m3u8",
+          "duplicate_rejected": false,
+          "verified_media": false
+        },
+        {
+          "url": "https://jmp2.uk/plu-64805922536e0c0008a1a1e6.m3u8",
+          "source": "curated-inventory",
+          "declared_resolution": "unknown",
+          "verified_resolution": "unknown",
+          "health_status": "BROKEN",
+          "reason": "Stream returned HTTP 404",
+          "identity_score": 100,
+          "identity_evidence": "exact tvg-id/channel id",
+          "selected_variant_url": "",
+          "proposed_url": "https://jmp2.uk/plu-64805922536e0c0008a1a1e6.m3u8",
+          "duplicate_rejected": false,
+          "verified_media": false
+        },
+        {
+          "url": "https://jmp2.uk/plu-64d626ac9b414d000820e2fc.m3u8",
+          "source": "curated-inventory",
+          "declared_resolution": "684p",
+          "verified_resolution": "684p",
+          "health_status": "UNKNOWN",
+          "reason": "Mixed or insufficient failure evidence: Stream returned HTTP 503; Stream returned HTTP 503",
+          "identity_score": 100,
+          "identity_evidence": "exact tvg-id/channel id",
+          "selected_variant_url": "",
+          "proposed_url": "https://jmp2.uk/plu-64d626ac9b414d000820e2fc.m3u8",
+          "duplicate_rejected": false,
+          "verified_media": false
+        }
+      ],
+      "verification_results": {},
+      "repaired": false,
+      "reason": "No identity-matched candidate produced verified HLS media without duplicating another channel",
+      "timestamp": "2026-10-08T06:15:32Z"
+    },
+    {
+      "entry_index": 39,
+      "channel_name": "Fubo Sports Network",
+      "category": "Sports",
+      "original_url": "https://aegis-cloudfront-1.tubi.video/c2ac89da-5c69-439e-b85d-d87de0548b54/5.m3u8",
+      "original_resolution": "720p",
+      "health_status": "BROKEN",
+      "failure_reason": "Stream returned HTTP 404",
+      "replacement_url": "",
+      "replacement_source": "",
+      "replacement_resolution": "unknown",
+      "candidate_streams_checked": 2,
+      "candidate_evidence": [
+        {
+          "url": "https://aegis-cloudfront-1.tubi.video/c2ac89da-5c69-439e-b85d-d87de0548b54/playlist.m3u8",
+          "source": "curated-inventory",
+          "declared_resolution": "1080p",
+          "verified_resolution": "1080p",
+          "health_status": "UNKNOWN",
+          "reason": "Mixed or insufficient failure evidence: Stream returned HTTP 503; Stream returned HTTP 503",
+          "identity_score": 100,
+          "identity_evidence": "exact tvg-id/channel id",
+          "selected_variant_url": "",
+          "proposed_url": "https://aegis-cloudfront-1.tubi.video/c2ac89da-5c69-439e-b85d-d87de0548b54/playlist.m3u8",
+          "duplicate_rejected": false,
+          "verified_media": false
+        },
+        {
+          "url": "https://dnf08l6u6uxnz.cloudfront.net/master.m3u8",
+          "source": "curated-inventory",
+          "declared_resolution": "1080p",
+          "verified_resolution": "1080p",
+          "health_status": "UNKNOWN",
+          "reason": "Mixed or insufficient failure evidence: Stream returned HTTP 503; Stream returned HTTP 503",
+          "identity_score": 100,
+          "identity_evidence": "exact tvg-id/channel id",
+          "selected_variant_url": "",
+          "proposed_url": "https://dnf08l6u6uxnz.cloudfront.net/master.m3u8",
+          "duplicate_rejected": false,
+          "verified_media": false
+        }
+      ],
+      "verification_results": {},
+      "repaired": false,
+      "reason": "No identity-matched candidate produced verified HLS media without duplicating another channel",
+      "timestamp": "2026-10-08T06:15:32Z"
+    },
+    {
+      "entry_index": 43,
+      "channel_name": "Hard Knocks",
+      "category": "Sports",
+      "original_url": "https://d3uyzhwvmemdyf.cloudfront.net/v1/master/9d062541f2ff39b5c0f48b743c6411d25f62fc25/Hard-Knocks-DistroTV/109.m3u8?ads.vf=6pOF6kgy418",
+      "original_resolution": "1080p",
+      "health_status": "BROKEN",
+      "failure_reason": "Stream returned HTTP 404",
+      "replacement_url": "",
+      "replacement_source": "",
+      "replacement_resolution": "unknown",
+      "candidate_streams_checked": 2,
+      "candidate_evidence": [
+        {
+          "url": "https://d3uyzhwvmemdyf.cloudfront.net/v1/master/9d062541f2ff39b5c0f48b743c6411d25f62fc25/HardKnocks-PLEX/121.m3u8",
+          "source": "curated-inventory",
+          "declared_resolution": "1080p",
+          "verified_resolution": "1080p",
+          "health_status": "UNKNOWN",
+          "reason": "Mixed or insufficient failure evidence: Selected HLS rendition returned HTTP 503; Stream returned HTTP 503",
+          "identity_score": 100,
+          "identity_evidence": "exact tvg-id/channel id",
+          "selected_variant_url": "",
+          "proposed_url": "https://d3uyzhwvmemdyf.cloudfront.net/v1/master/9d062541f2ff39b5c0f48b743c6411d25f62fc25/HardKnocks-PLEX/121.m3u8",
+          "duplicate_rejected": false,
+          "verified_media": false
+        },
+        {
+          "url": "https://d3uyzhwvmemdyf.cloudfront.net/v1/master/9d062541f2ff39b5c0f48b743c6411d25f62fc25/HardKnocks-SportsTribal/121.m3u8",
+          "source": "curated-inventory",
+          "declared_resolution": "1080p",
+          "verified_resolution": "1080p",
+          "health_status": "UNKNOWN",
+          "reason": "Mixed or insufficient failure evidence: Stream returned HTTP 503; Stream returned HTTP 503",
+          "identity_score": 100,
+          "identity_evidence": "exact tvg-id/channel id",
+          "selected_variant_url": "",
+          "proposed_url": "https://d3uyzhwvmemdyf.cloudfront.net/v1/master/9d062541f2ff39b5c0f48b743c6411d25f62fc25/HardKnocks-SportsTribal/121.m3u8",
+          "duplicate_rejected": false,
+          "verified_media": false
+        }
+      ],
+      "verification_results": {},
+      "repaired": false,
+      "reason": "No identity-matched candidate produced verified HLS media without duplicating another channel",
+      "timestamp": "2026-10-08T06:15:32Z"
+    },
+    {
+      "entry_index": 65,
+      "channel_name": "PGA Tour",
+      "category": "Sports",
+      "original_url": "https://aegis-cloudfront-1.tubi.video/9c59800e-fa9a-4539-b8e5-5769918e7c5a/playlist.m3u8",
+      "original_resolution": "720p",
+      "health_status": "BROKEN",
+      "failure_reason": "Stream returned HTTP 404",
+      "replacement_url": "",
+      "replacement_source": "",
+      "replacement_resolution": "unknown",
+      "candidate_streams_checked": 7,
+      "candidate_evidence": [
+        {
+          "url": "https://d11k1mnrgfposz.cloudfront.net/playlist.m3u8",
+          "source": "curated-inventory",
+          "declared_resolution": "1080p",
+          "verified_resolution": "1080p",
+          "health_status": "UNKNOWN",
+          "reason": "Mixed or insufficient failure evidence: Stream returned HTTP 503; Stream returned HTTP 503",
+          "identity_score": 100,
+          "identity_evidence": "exact tvg-id/channel id",
+          "selected_variant_url": "",
+          "proposed_url": "https://d11k1mnrgfposz.cloudfront.net/playlist.m3u8",
+          "duplicate_rejected": false,
+          "verified_media": false
+        },
+        {
+          "url": "https://jmp2.uk/plu-5de94dacb394a300099fa22a.m3u8",
+          "source": "curated-inventory",
+          "declared_resolution": "unknown",
+          "verified_resolution": "unknown",
+          "health_status": "UNKNOWN",
+          "reason": "Mixed or insufficient failure evidence: Stream returned HTTP 503; Stream returned HTTP 503",
+          "identity_score": 100,
+          "identity_evidence": "exact tvg-id/channel id",
+          "selected_variant_url": "",
+          "proposed_url": "https://jmp2.uk/plu-5de94dacb394a300099fa22a.m3u8",
+          "duplicate_rejected": false,
+          "verified_media": false
+        },
+        {
+          "url": "https://jmp2.uk/plu-66c86fed85e28d0008f8a9ec.m3u8",
+          "source": "curated-inventory",
+          "declared_resolution": "720p",
+          "verified_resolution": "720p",
+          "health_status": "UNKNOWN",
+          "reason": "Mixed or insufficient failure evidence: Stream returned HTTP 503; Stream returned HTTP 503",
+          "identity_score": 100,
+          "identity_evidence": "exact tvg-id/channel id",
+          "selected_variant_url": "",
+          "proposed_url": "https://jmp2.uk/plu-66c86fed85e28d0008f8a9ec.m3u8",
+          "duplicate_rejected": false,
+          "verified_media": false
+        },
+        {
+          "url": "https://jmp2.uk/plu-66c86fff9ba9e800080d8ebe.m3u8",
+          "source": "curated-inventory",
+          "declared_resolution": "720p",
+          "verified_resolution": "720p",
+          "health_status": "GEO_BLOCKED_OR_FORBIDDEN",
+          "reason": "Stream returned HTTP 403",
+          "identity_score": 100,
+          "identity_evidence": "exact tvg-id/channel id",
+          "selected_variant_url": "",
+          "proposed_url": "https://jmp2.uk/plu-66c86fff9ba9e800080d8ebe.m3u8",
+          "duplicate_rejected": false,
+          "verified_media": false
+        },
+        {
+          "url": "https://jmp2.uk/plu-66c870112630fc0008137ae2.m3u8",
+          "source": "curated-inventory",
+          "declared_resolution": "720p",
+          "verified_resolution": "720p",
+          "health_status": "UNKNOWN",
+          "reason": "Mixed or insufficient failure evidence: Stream returned HTTP 503; Stream returned HTTP 503",
+          "identity_score": 100,
+          "identity_evidence": "exact tvg-id/channel id",
+          "selected_variant_url": "",
+          "proposed_url": "https://jmp2.uk/plu-66c870112630fc0008137ae2.m3u8",
+          "duplicate_rejected": false,
+          "verified_media": false
+        },
+        {
+          "url": "https://jmp2.uk/plu-66d885aef0f17500084b6750.m3u8",
+          "source": "curated-inventory",
+          "declared_resolution": "720p",
+          "verified_resolution": "720p",
+          "health_status": "UNKNOWN",
+          "reason": "Mixed or insufficient failure evidence: Stream returned HTTP 503; Stream returned HTTP 503",
+          "identity_score": 100,
+          "identity_evidence": "exact tvg-id/channel id",
+          "selected_variant_url": "",
+          "proposed_url": "https://jmp2.uk/plu-66d885aef0f17500084b6750.m3u8",
+          "duplicate_rejected": false,
+          "verified_media": false
+        },
+        {
+          "url": "https://pb-783hpus5r91wv.akamaized.net/playlist.m3u8",
+          "source": "curated-inventory",
+          "declared_resolution": "1080p",
+          "verified_resolution": "1080p",
+          "health_status": "UNKNOWN",
+          "reason": "Mixed or insufficient failure evidence: Stream returned HTTP 503; Stream returned HTTP 503",
+          "identity_score": 100,
+          "identity_evidence": "exact tvg-id/channel id",
+          "selected_variant_url": "",
+          "proposed_url": "https://pb-783hpus5r91wv.akamaized.net/playlist.m3u8",
+          "duplicate_rejected": false,
+          "verified_media": false
+        }
+      ],
+      "verification_results": {},
+      "repaired": false,
+      "reason": "No identity-matched candidate produced verified HLS media without duplicating another channel",
+      "timestamp": "2026-10-08T06:15:32Z"
+    }
+  ]
+}
