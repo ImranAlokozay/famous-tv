@@ -27,6 +27,8 @@ https://ttc-tennischannelus-firetv.amagi.tv/playlist720p.m3u8
 https://jmp2.uk/plu-6627621d56fc840008e47c90.m3u8
 #EXTINF:-1 tvg-id="UFCFAST.us@FAST" tvg-name="UFC (FAST)" tvg-logo="" tvg-language="eng" group-title="Sports",UFC (FAST) (576p)
 https://linear-893.frequency.stream/dist/xumo/893/hls/master/playlist-n_9.m3u8
+#EXTINF:-1 tvg-id="ABCCricketAudio.au@Audio" tvg-name="ABC Cricket (Audio)" tvg-logo="" tvg-language="eng" group-title="Sports",ABC Cricket (Audio)
+https://streaming.abc-cdn.net.au/audio/hls/itinerantone.m3u8
 #EXTINF:-1 tvg-id="DAZNRingside.us@FAST" tvg-name="DAZN Ringside" tvg-logo="" tvg-language="eng" group-title="Sports",DAZN Ringside (720p)
 https://aegis-cloudfront-1.tubi.video/bfad29e2-5bee-44f3-8256-127324e8b106/720p-cc/index.m3u8
 #EXTINF:-1 tvg-id="GolfPass.us@FAST" tvg-name="GolfPass" tvg-logo="" tvg-language="eng" group-title="Sports",GolfPass (720p)
@@ -49,7 +51,7 @@ https://pb-wm04vonaerv0k.akamaized.net/billi.m3u8
 https://d382r3rgbxdixq.cloudfront.net/scheduler/scheduleMaster/418/variant/22100031.m3u8
 #EXTINF:-1 tvg-id="DAZNCombat.uk@SD" tvg-name="DAZN Combat" tvg-logo="https://i.postimg.cc/VsW3Jsrz/logo-DAZN-Combat.png" tvg-language="eng" group-title="Sports",DAZN Combat (684p)
 https://jmp2.uk/plu-648056f0f77b61000828f1ba.m3u8
-#EXTINF:-1 tvg-id="DDSports.in@SD" tvg-name="DD Sports" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_DD_SPORTS_HD/images/LOGO_HD/LOGO_HD_image.png" tvg-language="eng;hin" group-title="Sports",DD Sports (720p)
+#EXTINF:-1 tvg-id="DDSports.in@SD" tvg-name="DD Sports" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_DD_SPORTS_HD/images/LOGO_HD/LOGO_HD_image.png" tvg-language="eng;hin" group-title="Sports",DD Sports (576p)
 https://cdn.pishow.tv/ott/live/13/master.m3u8
 #EXTINF:-1 tvg-id="DraftKingsNetwork.us@SD" tvg-name="DraftKings Network" tvg-logo="https://i.imgur.com/SFYhgrt.png" tvg-language="eng" group-title="Sports",DraftKings Network (720p)
 https://d2obyvq5go60aw.cloudfront.net/DraftKings_Network720P.m3u8
@@ -172,8 +174,8 @@ https://amg01131-tracetv-amg01131c2-stirr-us-4392.playouts.now.amagi.tv/playlist
 https://d1t5afz6qed3xk.cloudfront.net/720p-vtt/index.m3u8
 #EXTINF:-1 tvg-id="VarzeshTV.ir@SD" tvg-name="Varzesh TV" tvg-logo="https://upload.wikimedia.org/wikipedia/fa/thumb/f/f5/Iribvarzesh2022.png/960px-Iribvarzesh2022.png" tvg-language="fas" group-title="Sports",Varzesh TV
 https://ncdn.telewebion.ir/varzesh/live/playlist.m3u8
-#EXTINF:-1 tvg-id="WillowSports.us@SD" tvg-name="Willow Sports" tvg-logo="https://provider-static.plex.tv/epg/cms/production/acf3d1d8-c53e-49ca-86e9-0d9410b106b4/Willow_Sports_dark_Background_1500_1000_color.png" tvg-language="eng" group-title="Sports",Willow Sports (720p)
-https://jmp2.uk/plu-6972546cc62833833a187f50.m3u8
+#EXTINF:-1 tvg-id="WillowSports.us@FAST" tvg-name="Willow Sports" tvg-logo="https://provider-static.plex.tv/epg/cms/production/acf3d1d8-c53e-49ca-86e9-0d9410b106b4/Willow_Sports_dark_Background_1500_1000_color.png" tvg-language="eng" group-title="Sports",Willow Sports (720p)
+https://d36r8jifhgsk5j.cloudfront.net/Willow_TV720p.m3u8
 #EXTINF:-1 tvg-id="WorldPokerTour.us@US" tvg-name="World Poker Tour" tvg-logo="https://i.imgur.com/98kLMjj.png" tvg-language="eng" group-title="Sports",World Poker Tour (720p)
 https://amg00218-wptenterprisesi-worldpokertour-klowdtv-5619e.amagi.tv/playlist/amg00218-wptenterprisesi-worldpokertour-klowdtv/playlist.m3u8
 #EXTINF:-1 tvg-id="XFCTV.us@SD" tvg-name="XFC TV" tvg-logo="https://i.imgur.com/LcfzmG0.png" tvg-language="eng" group-title="Sports",XFC TV (720p)

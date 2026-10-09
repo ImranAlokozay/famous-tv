@@ -6960,7 +6960,7 @@
     "candidates": [
       {
         "url": "https://cdn.pishow.tv/ott/live/13/master.m3u8",
-        "quality": "720p",
+        "quality": "576p",
         "feed": "SD",
         "languages": [
           "hin"
@@ -25029,6 +25029,23 @@
         ]
       },
       {
+        "url": "https://d36r8jifhgsk5j.cloudfront.net/Willow_TV720p.m3u8",
+        "quality": "720p",
+        "feed": "FAST",
+        "languages": [
+          "eng"
+        ],
+        "labels": [
+          "stable lower rendition from the public Willow Sports FAST master; not flagship Willow TV"
+        ],
+        "user_agent": null,
+        "referrer": null,
+        "sources": [
+          "iptv-org-api",
+          "manifest-inspection"
+        ]
+      },
+      {
         "url": "https://jmp2.uk/plu-6972546cc62833833a187f50.m3u8",
         "quality": "720p",
         "feed": "SD",
@@ -26507,5 +26524,31 @@
     "priority": 0,
     "focused_pass_added": true,
     "access_notes": "Officially listed Xumo UFC FAST channel; stable 576p child playlist and first media object responded twice during the focused review."
+  },
+  {
+    "id": "ABCCricketAudio.au",
+    "name": "ABC Cricket (Audio)",
+    "category": "Sports",
+    "provider": "ABC Australia",
+    "famous": false,
+    "country": "AU",
+    "website": "https://www.abc.net.au/news/sport/cricket",
+    "logo": "",
+    "languages": ["eng"],
+    "candidates": [{
+      "url": "https://streaming.abc-cdn.net.au/audio/hls/itinerantone.m3u8",
+      "quality": null,
+      "feed": "Audio",
+      "languages": ["eng"],
+      "labels": ["official audio-only event feed; not a television or flagship network substitute"],
+      "user_agent": null,
+      "referrer": null,
+      "sources": ["official-abc-cricket"]
+    }],
+    "baseline_present": false,
+    "approved_hosts": ["streaming.abc-cdn.net.au"],
+    "priority": 5,
+    "focused_pass_added": true,
+    "access_notes": "Official ABC event audio HLS. AAC media segments responded during the 2026-10-09 review; availability and programming are event-dependent."
   }
 ]

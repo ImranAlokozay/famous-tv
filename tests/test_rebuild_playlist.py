@@ -87,9 +87,14 @@ class CurationTests(unittest.TestCase):
     def test_offline_reproducibility_and_header(self):
         targets = json.loads((ROOT / 'curation/targets.json').read_text())
         targets.extend(json.loads((ROOT / 'curation/focused_targets.json').read_text()))
+        cricket_targets = json.loads((ROOT / 'curation/cricket_targets.json').read_text())
+        cricket_target_names = {target['name'] for target in cricket_targets}
+        targets = [target for target in targets if target['name'] not in cricket_target_names]
+        targets.extend(dict(target, group='Sports', category='Sports') for target in cricket_targets)
         overrides = json.loads((ROOT / 'curation/resolution_overrides.json').read_text())
         promotions = json.loads((ROOT / 'curation/health_promotions.json').read_text())
-        generated, report = rebuild.outputs(self.channels, self.policy, targets, overrides, promotions)
+        generated, report = rebuild.outputs(
+            self.channels, self.policy, targets, overrides, promotions, cricket_targets)
         self.assertTrue(generated['public/tv.m3u'].startswith('#EXTM3U\n'))
         self.assertEqual(report['total_channels'], generated['public/tv.m3u'].count('#EXTINF:'))
         for path, content in generated.items():
@@ -101,6 +106,12 @@ class CurationTests(unittest.TestCase):
         self.assertIn('all_sources_searched', generated['reports/missing_famous_channels.csv'].splitlines()[0])
         self.assertEqual(149, report['resolution_review']['baseline_1080_reviewed'])
         self.assertIn('reports/resolution_replacements.csv', generated)
+        self.assertIn('reports/cricket_coverage.csv', generated)
+        self.assertEqual(1, report['cricket_coverage']['added_in_this_pass'])
+        abc = next(row for row in report['cricket_coverage']['channels']
+                   if row['requested_channel'] == 'ABC Cricket (Audio)')
+        self.assertEqual('AVAILABLE_AUDIO', abc['availability'])
+        self.assertIn('audio-only', abc['actual_feed_type'])
         self.assertEqual(5, len(promotions))
         for promotion in promotions:
             self.assertIn(promotion['new_url'], generated['public/tv.m3u'])

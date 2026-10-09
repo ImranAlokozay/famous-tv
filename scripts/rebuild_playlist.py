@@ -335,6 +335,8 @@ def markdown_report(report):
               'the sources searched, closest selected alternatives, observed resolution labels, and final reason. '
               '[resolution_replacements.csv](resolution_replacements.csv) records all 149 baseline 1080p channels reviewed, '
               'accepted lower renditions, URLs, sources, and why retained 1080p entries remained. '
+              '[cricket_coverage.csv](cricket_coverage.csv) records the focused cricket search, feed type, selected resolution, '
+              'source provenance, and live verification result for every requested cricket outlet. '
               'The reviewed candidates themselves are in [../curation/channels.json](../curation/channels.json).', '',
               '## Scope', '', 'Sports has no count cap. Language and duplicate filtering apply to every category. '
               'Movies and series have small provider caps. Regional Indian-language-only channels, '
@@ -343,7 +345,45 @@ def markdown_report(report):
     return '\n'.join(lines)
 
 
-def outputs(channels, policy, targets, resolution_overrides=None, health_promotions=None):
+def cricket_coverage_report(selected, targets, policy):
+    """Create a reproducible record of cricket coverage without treating substitutes as flagships."""
+    selected_by_id = {channel['id']: channel for channel in selected}
+    common_sources = policy.get('focused_research_sources', [])
+    rows = []
+    for target in targets:
+        match = next((selected_by_id[cid] for cid in target['ids'] if cid in selected_by_id), None)
+        feed_type = target['feed_type']
+        if match:
+            stream = match['selected']
+            lowered = feed_type.casefold()
+            availability = ('AVAILABLE_AUDIO' if 'audio' in lowered else
+                            'AVAILABLE_GENERAL_BROADCASTER' if 'general' in lowered or 'public national' in lowered else
+                            'AVAILABLE')
+            source = '; '.join(policy['sources'][key]['url'] for key in stream['sources'])
+            rows.append({
+                'requested_channel': target['name'], 'country': target['country'],
+                'availability': availability, 'playlist_channel': match['name'],
+                'actual_feed_type': feed_type,
+                'resolution': stream.get('quality') or 'audio/unknown',
+                'stream_url': stream['url'], 'url_source': source,
+                'verification_result': target['verification_result'],
+                'alternatives_checked': '; '.join(target.get('resolutions_found', [])) or 'Selected public feed verified',
+                'final_reason': '', 'added_in_this_pass': bool(target.get('added_in_this_pass'))})
+        else:
+            searched = list(dict.fromkeys(common_sources + ([target['website']] if target.get('website') else [])))
+            rows.append({
+                'requested_channel': target['name'], 'country': target['country'],
+                'availability': 'UNAVAILABLE', 'playlist_channel': '',
+                'actual_feed_type': feed_type, 'resolution': 'unavailable',
+                'stream_url': '', 'url_source': '; '.join(searched),
+                'verification_result': target['verification_result'],
+                'alternatives_checked': '; '.join(target.get('resolutions_found', [])) or 'No acceptable public rendition',
+                'final_reason': target.get('reason', 'No verified reusable public feed was found.'),
+                'added_in_this_pass': False})
+    return rows
+
+
+def outputs(channels, policy, targets, resolution_overrides=None, health_promotions=None, cricket_targets=None):
     routing_check(policy)
     resolution_overrides = resolution_overrides or []
     health_promotions = health_promotions or []
@@ -356,6 +396,13 @@ def outputs(channels, policy, targets, resolution_overrides=None, health_promoti
     if not selected:
         raise ValueError('Refusing an empty playlist')
     report = build_report(selected, excluded, targets, policy)
+    cricket_rows = cricket_coverage_report(selected, cricket_targets or [], policy)
+    report['cricket_coverage'] = {
+        'requested': len(cricket_rows),
+        'available': sum(row['availability'] != 'UNAVAILABLE' for row in cricket_rows),
+        'missing': sum(row['availability'] == 'UNAVAILABLE' for row in cricket_rows),
+        'added_in_this_pass': sum(row['added_in_this_pass'] for row in cricket_rows),
+        'channels': cricket_rows}
     selected_by_id = {channel['id']: channel for channel in selected}
     overrides_by_id = {override['id']: override for override in resolution_overrides}
     promotions_by_id = {promotion['id']: promotion for promotion in health_promotions}
@@ -434,11 +481,20 @@ def outputs(channels, policy, targets, resolution_overrides=None, health_promoti
     for row in resolution_reviews:
         replacement_writer.writerow({key: '; '.join(row[key]) if isinstance(row[key], list) else row[key]
                                      for key in replacement_fields})
+    cricket_buffer = io.StringIO(newline='')
+    cricket_fields = ['requested_channel', 'country', 'availability', 'playlist_channel', 'actual_feed_type',
+                      'resolution', 'stream_url', 'url_source', 'verification_result', 'alternatives_checked',
+                      'final_reason', 'added_in_this_pass']
+    cricket_writer = csv.DictWriter(cricket_buffer, fieldnames=cricket_fields, lineterminator='\n')
+    cricket_writer.writeheader()
+    for row in cricket_rows:
+        cricket_writer.writerow({key: row[key] for key in cricket_fields})
     return {'public/tv.m3u': render_m3u(selected),
             'reports/playlist-report.json': json.dumps(report, ensure_ascii=False, indent=2) + '\n',
             'reports/playlist-report.md': markdown_report(report), 'reports/channels.csv': buffer.getvalue(),
             'reports/missing_famous_channels.csv': missing_buffer.getvalue(),
-            'reports/resolution_replacements.csv': replacement_buffer.getvalue()}, report
+            'reports/resolution_replacements.csv': replacement_buffer.getvalue(),
+            'reports/cricket_coverage.csv': cricket_buffer.getvalue()}, report
 
 
 def main():
@@ -451,9 +507,14 @@ def main():
     focused_targets = ROOT / 'curation/focused_targets.json'
     if focused_targets.exists():
         targets.extend(json.loads(focused_targets.read_text()))
+    cricket_targets_path = ROOT / 'curation/cricket_targets.json'
+    cricket_targets = json.loads(cricket_targets_path.read_text()) if cricket_targets_path.exists() else []
+    cricket_target_names = {target['name'] for target in cricket_targets}
+    targets = [target for target in targets if target['name'] not in cricket_target_names]
+    targets.extend(dict(target, group='Sports', category='Sports') for target in cricket_targets)
     resolution_overrides = json.loads((ROOT / 'curation/resolution_overrides.json').read_text())
     health_promotions = json.loads((ROOT / 'curation/health_promotions.json').read_text())
-    generated, report = outputs(channels, policy, targets, resolution_overrides, health_promotions)
+    generated, report = outputs(channels, policy, targets, resolution_overrides, health_promotions, cricket_targets)
     for path, content in generated.items():
         target = ROOT / path
         if args.check:

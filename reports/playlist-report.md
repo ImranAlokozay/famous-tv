@@ -6,11 +6,11 @@ The playlist contains public index entries and broadcaster/FAST distribution add
 
 Resolution is the published stream label, not a measured bitrate or a bandwidth limit. Adaptive master playlists can select other renditions during playback. Unknown stays unknown; SD/HD broadcast tags are not used to infer stream resolution.
 
-Total: **441**; new channel identities: **335**; 1080 alternatives avoided: **151**.
+Total: **442**; new channel identities: **336**; 1080 alternatives avoided: **151**.
 
 | Category | Channels |
 | --- | ---: |
-| Sports | 92 |
+| Sports | 93 |
 | Movies | 37 |
 | Series | 17 |
 | Entertainment | 43 |
@@ -31,10 +31,10 @@ Total: **441**; new channel identities: **335**; 1080 alternatives avoided: **15
 | 396p | 1 |
 | 480p | 3 |
 | 540p | 1 |
-| 576p | 54 |
+| 576p | 55 |
 | 684p | 1 |
-| 720p | 223 |
-| unknown | 69 |
+| 720p | 222 |
+| unknown | 70 |
 
 Duplicate normalized names: 0. Duplicate URLs: 0. 1080 selections with a reviewed lower-resolution candidate: 0.
 
@@ -64,8 +64,6 @@ Duplicate normalized names: 0. Duplicate URLs: 0. 1080 selections with a reviewe
 | Tennis Channel (free edition) | Tennis Channel (720p) |
 | Tennis Channel 2 | T2 Tennis Channel (720p) |
 | Red Bull TV | Red Bull TV (720p) |
-| Willow Sports (FAST) | Willow Sports (720p) |
-| Cricket Gold | Cricket Gold (720p) |
 | PGA Tour | PGA Tour (720p) |
 | F1 Channel (FAST) | F1 Channel (720p) |
 | NBA public FAST feed | NBA TV (720p) |
@@ -177,6 +175,12 @@ Duplicate normalized names: 0. Duplicate URLs: 0. 1080 selections with a reviewe
 | NBA TV | NBA TV (720p) |
 | Neo News | Neo News (1080p) |
 | UFC (FAST) | UFC (FAST) (576p) |
+| DD Sports | DD Sports (576p) |
+| Willow Sports (FAST) | Willow Sports (720p) |
+| Cricket Gold | Cricket Gold (720p) |
+| ABC Cricket (Audio) | ABC Cricket (Audio) (unknown) |
+| Lemar TV cricket coverage | Lemar TV (720p) |
+| RTA cricket coverage | RTA (720p) |
 
 ## Searched but unavailable as a standalone public M3U
 
@@ -233,8 +237,6 @@ These are search outcomes within the documented sources, not claims that a chann
 | beIN Sports flagship | No legitimate stable public M3U of the requested flagship found; free brand editions are listed separately. Provider subscriptions, unclear restreams, and nonpreferred language feeds excluded. | https://www.beinsports.com/ar/ |
 | TNT Sports | No legitimate stable public M3U of the requested flagship found; free brand editions are listed separately. Provider subscriptions, unclear restreams, and nonpreferred language feeds excluded. | https://www.tntsports.co.uk/ |
 | Willow flagship | No legitimate stable public M3U of the requested flagship found; free brand editions are listed separately. Provider subscriptions, unclear restreams, and nonpreferred language feeds excluded. | http://www.willow.tv/ |
-| PTV Sports | The current indexed 720p AynaScope candidates returned HTTP 503 twice; older raw-IP and mirror candidates lacked clear reusable broadcaster provenance. The official PTV page did not publish a stable responding standalone HLS. | https://www.ptv-sports.com.pk/live-streaming/ |
-| Geo Super | The official Geo Super live page did not expose a reusable HLS; the previously indexed 5centscdn candidate returned HTTP 404 and raw-IP mirrors lacked clear distribution provenance. | https://www.geosuper.tv/ |
 | Abu Dhabi Sports | No legitimate stable public M3U of the requested flagship found; free brand editions are listed separately. Provider subscriptions, unclear restreams, and nonpreferred language feeds excluded. | https://adtv.ae/en/live/Abu%20Dhabi%20Sports%20Channel%201 |
 | Alkass | No legitimate stable public M3U of the requested flagship found; free brand editions are listed separately. Provider subscriptions, unclear restreams, and nonpreferred language feeds excluded. | https://www.alkass.net/ |
 | Disney Channel | No stable public permitted M3U in the preferred languages found. Subscription rebroadcasts and web/YouTube pages without reusable HLS excluded. | https://www.disney.com/ |
@@ -289,10 +291,8 @@ These are search outcomes within the documented sources, not claims that a chann
 | Filmazia | No stable public M3U with clear broadcaster/licensed provenance found. Official web/YouTube availability is recorded separately from reusable HLS; anonymous IP/ticket feeds rejected. | https://www.mjunoon.tv/ |
 | Filmax | No stable public M3U with clear broadcaster/licensed provenance found. Official web/YouTube availability is recorded separately from reusable HLS; anonymous IP/ticket feeds rejected. | https://www.mjunoon.tv/ |
 | Urdu 1 | No stable public M3U with clear broadcaster/licensed provenance found. Official web/YouTube availability is recorded separately from reusable HLS; anonymous IP/ticket feeds rejected. | https://www.mjunoon.tv/ |
-| Sky Sports Main Event | Official access requires a Sky Sports/NOW subscription; searched public indexes and code results were anonymous premium restreams or provider-authenticated URLs. | https://www.skysports.com/watch/sky-sports-main-event |
 | Sky Sports Premier League | Official access requires subscription; no stable licensed unauthenticated HLS was found after exact, SD, 576, 720, regional, GitHub, and index searches. | https://www.skysports.com/premier-league |
 | Sky Sports Football | Official access requires subscription; public search hits lacked broadcaster/licensed provenance. | https://www.skysports.com/football |
-| Sky Sports Cricket | Official access requires subscription; public search hits lacked broadcaster/licensed provenance. | https://www.skysports.com/cricket |
 | Sky Sports F1 | Official access requires subscription; no licensed unauthenticated HLS found. | https://www.skysports.com/f1 |
 | Sky Sports Golf | Official access requires subscription; no licensed unauthenticated HLS found. | https://www.skysports.com/golf |
 | Sky Sports Tennis | Official access requires subscription; no licensed unauthenticated HLS found. | https://www.skysports.com/tennis |
@@ -307,7 +307,6 @@ These are search outcomes within the documented sources, not claims that a chann
 | ESPNews | Authenticated network; no stable licensed unauthenticated HLS found. | https://www.espn.com/watch/ |
 | ESPN Deportes | Authenticated network; no stable licensed unauthenticated HLS found. | https://www.espn.com/watch/ |
 | ESPN Latin America | Regional authenticated feed; public hits lacked licensed standalone provenance. | https://www.espn.com/watch/ |
-| ESPN Caribbean | Regional authenticated feed; public hits lacked licensed standalone provenance. | https://www.espn.com/watch/ |
 | Fox Sports 1 | FS1 requires TV-provider or paid platform access; the selected FOX Sports FAST service is a different channel. | https://www.foxsports.com/find-fs1-on-your-tv |
 | Fox Sports 2 | FS2 requires TV-provider or paid platform access; no licensed unauthenticated HLS found. | https://www.foxsports.com/ |
 | Fox Deportes | Authenticated network; no licensed unauthenticated HLS found. | https://www.foxdeportes.com/ |
@@ -325,23 +324,14 @@ These are search outcomes within the documented sources, not claims that a chann
 | TNT Sports 4 | Premium authenticated network; public results lacked licensed standalone provenance. | https://www.tntsports.co.uk/ |
 | TNT Sports Ultimate | Premium authenticated UHD network; no licensed public standalone feed found. | https://www.tntsports.co.uk/ |
 | CBS Sports Network | Authenticated cable network; CBS Sports HQ and Golazo are separate free services. | https://www.cbssports.com/cbs-sports-network/ |
-| Sony Sports Ten 4 | SonyLIV/provider access is authenticated; public playlist hits were anonymous or provider-restricted. | https://www.sonyliv.com/sports |
 | Sony YAY | No stable licensed unauthenticated HLS found; indexed candidates had unclear provenance. | https://www.sonyyay.com/ |
-| Star Sports 1 | Authenticated premium sports feed; no licensed unauthenticated HLS found. | https://www.hotstar.com/in/sports |
-| Star Sports 2 | Authenticated premium sports feed; no licensed unauthenticated HLS found. | https://www.hotstar.com/in/sports |
-| Star Sports Select 1 | Authenticated premium sports feed; no licensed unauthenticated HLS found. | https://www.hotstar.com/in/sports |
-| Star Sports Select 2 | Authenticated premium sports feed; no licensed unauthenticated HLS found. | https://www.hotstar.com/in/sports |
-| Star Sports Khel | No stable licensed unauthenticated HLS found; indexed candidates were anonymous restreams. | https://www.hotstar.com/in/sports |
 | Golf Channel | Authenticated cable network; no licensed unauthenticated HLS found. | https://www.golfchannel.com/ |
 | NFL Network | Authenticated league network; the free NFL Channel is a separate service. | https://www.nfl.com/network/ |
 | MLB Network | Authenticated league network; no licensed public standalone HLS found. | https://www.mlb.com/network |
 | Eurosport 1 | Premium authenticated regional network; no licensed unauthenticated HLS found. | https://www.eurosport.com/ |
 | Eurosport 2 | Premium authenticated regional network; no licensed unauthenticated HLS found. | https://www.eurosport.com/ |
 | ONE Championship TV | Official FAST carriage was confirmed, but the public playlist candidate timed out during manifest testing and was not added. | https://www.onefc.com/ |
-| Sony Sports Ten 1 | SonyLIV/provider access is authenticated; public playlist hits were anonymous or provider-restricted. | https://www.sonyliv.com/sports |
-| Sony Sports Ten 2 | SonyLIV/provider access is authenticated; public playlist hits were anonymous or provider-restricted. | https://www.sonyliv.com/sports |
 | Sony Sports Ten 3 | SonyLIV/provider access is authenticated; public playlist hits were anonymous or provider-restricted. | https://www.sonyliv.com/sports |
-| Sony Sports Ten 5 | SonyLIV/provider access is authenticated; public playlist hits were anonymous or provider-restricted. | https://www.sonyliv.com/sports |
 | Colors Rishtey | No stable licensed unauthenticated HLS found; public hits were provider-restricted or anonymous restreams. | https://www.jiocinema.com/ |
 | Zee Anmol | No stable licensed unauthenticated HLS found; ZEE5 access and public hits were provider-restricted. | https://www.zee5.com/ |
 | Zee Anmol Cinema | No stable licensed unauthenticated HLS found; ZEE5 access and public hits were provider-restricted. | https://www.zee5.com/ |
@@ -354,11 +344,34 @@ These are search outcomes within the documented sources, not claims that a chann
 | Public News | No responding broadcaster-published reusable HLS found; indexed candidates had unclear provenance. | https://publicnews.com/ |
 | HBO Family | Premium authenticated network; no licensed unauthenticated public HLS found. | https://www.hbo.com/ |
 | HBO Signature | Premium authenticated network; no licensed unauthenticated public HLS found. | https://www.hbo.com/ |
-| A Sports Pakistan | The broadcaster site and current public indexes did not expose a stable reusable HLS; search hits were embedded players, raw-IP mirrors, or anonymous restreams. | https://a-sports.tv/ |
-| Ten Sports Pakistan | No stable licensed unauthenticated HLS was found; public hits were provider-authenticated or anonymous premium restreams. | https://www.sonypicturesnetworks.com/ |
-| Sports18 | No stable licensed unauthenticated HLS was found; Jio/provider access and public hits were authenticated or unclear restreams. | https://www.jiocinema.com/sports |
 | SuperTennis | The official indexed HiWay master returned HTTP 403 during this pass; no alternate responding permitted HLS was found. | https://www.supertennis.tv/ |
 | UEFA public programming | Official UEFA web/video programming was found, but no stable reusable linear HLS channel with clear public redistribution was exposed. | https://www.uefa.tv/ |
+| Star Sports 1 | JioHotstar access is authenticated and no broadcaster-published reusable HLS was found. | https://www.hotstar.com/in/sports |
+| Star Sports 2 | No stable broadcaster-published reusable HLS was found. | https://www.hotstar.com/in/sports |
+| Star Sports 1 Hindi | No licensed unauthenticated reusable HLS was found. | https://www.hotstar.com/in/sports |
+| Star Sports 2 Hindi | No licensed unauthenticated reusable HLS was found. | https://www.hotstar.com/in/sports |
+| Star Sports Select 1 | No licensed unauthenticated reusable HLS was found. | https://www.hotstar.com/in/sports |
+| Star Sports Select 2 | No licensed unauthenticated reusable HLS was found. | https://www.hotstar.com/in/sports |
+| Star Sports Khel | No broadcaster-published reusable HLS was found. | https://www.hotstar.com/in/sports |
+| Sony Sports Ten 1 | SonyLIV access is authenticated and no stable licensed standalone HLS was found. | https://www.sonysportsnetwork.com/ |
+| Sony Sports Ten 2 | SonyLIV access is authenticated and no stable licensed standalone HLS was found. | https://www.sonysportsnetwork.com/ |
+| Sony Sports Ten 3 Hindi | No stable licensed unauthenticated HLS was found. | https://www.sonysportsnetwork.com/ |
+| Sony Sports Ten 4 | No suitable licensed Hindi/English standalone HLS was found. | https://www.sonysportsnetwork.com/ |
+| Sony Sports Ten 5 | No stable licensed unauthenticated HLS was found. | https://www.sonysportsnetwork.com/ |
+| Sports18 | No stable licensed unauthenticated HLS was found. | https://www.jiocinema.com/sports |
+| PTV Sports | The official site returned HTTP 403 to this environment and no stable broadcaster-published reusable HLS was found. | https://ptv.com.pk/ |
+| A Sports Pakistan | No stable broadcaster-published reusable HLS was found. | https://a-sports.tv/ |
+| Geo Super | No stable broadcaster-published reusable HLS was found. | https://www.geosuper.tv/live |
+| Ten Sports Pakistan | No stable licensed unauthenticated HLS was found. | https://www.sonypicturesnetworks.com/ |
+| Sky Sports Cricket | Official access requires Sky/NOW authentication; no licensed unauthenticated HLS was found. | https://www.skysports.com/cricket |
+| Sky Sports Main Event | Official access requires Sky/NOW authentication; no licensed unauthenticated HLS was found. | https://www.skysports.com/watch/sky-sports-main-event |
+| Willow TV | The flagship channel requires subscription; the available Willow Sports FAST service is not treated as a substitute. | https://www.willow.tv/ |
+| Fox Cricket | Official access requires Foxtel/Kayo authentication; no licensed unauthenticated HLS was found. | https://www.foxsports.com.au/cricket |
+| SuperSport Cricket | Official access requires DStv authentication; no licensed unauthenticated HLS was found. | https://supersport.com/ |
+| ESPN Caribbean | Official access is authenticated; no licensed unauthenticated HLS was found. | https://www.espn.com/watch/ |
+| CricLife | No licensed unauthenticated reusable HLS was found. | https://starzplay.com/channels/criclife |
+| ICC.tv public feeds | No reusable stream with current media availability was verified. | https://www.icc-cricket.com/icc-tv |
+| Official Afghanistan Cricket Board coverage | Official coverage is event-specific; no current reusable public channel URL was available. | https://cricket.af/ |
 
 ## Afghan preservation
 
@@ -366,7 +379,7 @@ All 24 original Afghan channel identities remain. The inventory also records add
 
 ## Sources, alternatives, and additions
 
-See [channels.csv](channels.csv) for every selected channel, including whether it is new, selected resolution, source used, and whether a lower-resolution alternative existed. [playlist-report.json](playlist-report.json) contains candidate counts, all alternative resolution labels, coverage, and excluded duplicate/cap entries. [missing_famous_channels.csv](missing_famous_channels.csv) records each requested target still missing, the sources searched, closest selected alternatives, observed resolution labels, and final reason. [resolution_replacements.csv](resolution_replacements.csv) records all 149 baseline 1080p channels reviewed, accepted lower renditions, URLs, sources, and why retained 1080p entries remained. The reviewed candidates themselves are in [../curation/channels.json](../curation/channels.json).
+See [channels.csv](channels.csv) for every selected channel, including whether it is new, selected resolution, source used, and whether a lower-resolution alternative existed. [playlist-report.json](playlist-report.json) contains candidate counts, all alternative resolution labels, coverage, and excluded duplicate/cap entries. [missing_famous_channels.csv](missing_famous_channels.csv) records each requested target still missing, the sources searched, closest selected alternatives, observed resolution labels, and final reason. [resolution_replacements.csv](resolution_replacements.csv) records all 149 baseline 1080p channels reviewed, accepted lower renditions, URLs, sources, and why retained 1080p entries remained. [cricket_coverage.csv](cricket_coverage.csv) records the focused cricket search, feed type, selected resolution, source provenance, and live verification result for every requested cricket outlet. The reviewed candidates themselves are in [../curation/channels.json](../curation/channels.json).
 
 ## Scope
 

@@ -1,0 +1,311 @@
+[
+  {
+    "name": "Star Sports 1",
+    "ids": ["StarSports1.in"],
+    "country": "India",
+    "feed_type": "Flagship television network",
+    "website": "https://www.hotstar.com/in/sports",
+    "resolutions_found": ["576p, 720p, and 1080p labels in rejected mirrors"],
+    "verification_result": "Rejected: current 576p raw-IP candidates were anonymous mirrors; the tested VPS candidate returned HTTP 503.",
+    "reason": "JioHotstar access is authenticated and no broadcaster-published reusable HLS was found."
+  },
+  {
+    "name": "Star Sports 2",
+    "ids": ["StarSports2.in"],
+    "country": "India",
+    "feed_type": "Flagship television network",
+    "website": "https://www.hotstar.com/in/sports",
+    "resolutions_found": ["576p and 720p labels in rejected mirrors"],
+    "verification_result": "Rejected: the tested Ayna candidate returned HTTP 404; remaining raw-IP candidates had no licensed provenance.",
+    "reason": "No stable broadcaster-published reusable HLS was found."
+  },
+  {
+    "name": "Star Sports 1 Hindi",
+    "ids": ["StarSports1Hindi.in"],
+    "country": "India",
+    "feed_type": "Hindi flagship television network",
+    "website": "https://www.hotstar.com/in/sports",
+    "resolutions_found": ["720p and 1080p labels in rejected mirrors"],
+    "verification_result": "Rejected: code-search results were anonymous proxies, IPTV credentials, or DRM/provider endpoints.",
+    "reason": "No licensed unauthenticated reusable HLS was found."
+  },
+  {
+    "name": "Star Sports 2 Hindi",
+    "ids": ["StarSports2Hindi.in"],
+    "country": "India",
+    "feed_type": "Hindi flagship television network",
+    "website": "https://www.hotstar.com/in/sports",
+    "resolutions_found": ["720p label in a rejected provider mirror"],
+    "verification_result": "Rejected: the current Ayna URL is not broadcaster-published and did not provide acceptable licensed provenance.",
+    "reason": "No licensed unauthenticated reusable HLS was found."
+  },
+  {
+    "name": "Star Sports Select 1",
+    "ids": ["StarSportsSelect1.in"],
+    "country": "India",
+    "feed_type": "Premium television network",
+    "website": "https://www.hotstar.com/in/sports",
+    "resolutions_found": ["1080p label in rejected raw-IP indexes"],
+    "verification_result": "Rejected: only anonymous raw-IP/provider mirrors were found.",
+    "reason": "No licensed unauthenticated reusable HLS was found."
+  },
+  {
+    "name": "Star Sports Select 2",
+    "ids": ["StarSportsSelect2.in"],
+    "country": "India",
+    "feed_type": "Premium television network",
+    "website": "https://www.hotstar.com/in/sports",
+    "resolutions_found": ["720p and 1080p labels in rejected mirrors"],
+    "verification_result": "Rejected: only anonymous raw-IP/provider mirrors were found.",
+    "reason": "No licensed unauthenticated reusable HLS was found."
+  },
+  {
+    "name": "Star Sports Khel",
+    "ids": ["StarSportsKhel.in"],
+    "country": "India",
+    "feed_type": "Hindi free-to-air sports network",
+    "website": "https://www.hotstar.com/in/sports",
+    "resolutions_found": ["576p label in a rejected raw-IP mirror"],
+    "verification_result": "Rejected: the only current candidate was an anonymous VPS restream.",
+    "reason": "No broadcaster-published reusable HLS was found."
+  },
+  {
+    "name": "Sony Sports Ten 1",
+    "ids": ["SonySportsTen1.in"],
+    "country": "India",
+    "feed_type": "Premium television network",
+    "website": "https://www.sonysportsnetwork.com/",
+    "resolutions_found": ["576p and 1080p labels in rejected mirrors"],
+    "verification_result": "Rejected: SonyLIV Google DAI and Cloudflare Pages candidates returned HTTP 404; one raw-IP 576p mirror played but had no licensed provenance.",
+    "reason": "SonyLIV access is authenticated and no stable licensed standalone HLS was found."
+  },
+  {
+    "name": "Sony Sports Ten 2",
+    "ids": ["SonySportsTen2.in"],
+    "country": "India",
+    "feed_type": "Premium television network",
+    "website": "https://www.sonysportsnetwork.com/",
+    "resolutions_found": ["576p and 1080p labels in rejected mirrors"],
+    "verification_result": "Rejected: SonyLIV Google DAI and Cloudflare Pages candidates returned HTTP 404; raw-IP alternatives lacked licensed provenance.",
+    "reason": "SonyLIV access is authenticated and no stable licensed standalone HLS was found."
+  },
+  {
+    "name": "Sony Sports Ten 3 Hindi",
+    "ids": ["SonySportsTen3Hindi.in"],
+    "country": "India",
+    "feed_type": "Hindi premium television network",
+    "website": "https://www.sonysportsnetwork.com/",
+    "resolutions_found": ["576p and 1080p labels in rejected mirrors"],
+    "verification_result": "Rejected: SonyLIV public DAI references returned HTTP 404 and raw-IP mirrors lacked licensed provenance.",
+    "reason": "No stable licensed unauthenticated HLS was found."
+  },
+  {
+    "name": "Sony Sports Ten 4",
+    "ids": ["SonySportsTen4.in"],
+    "country": "India",
+    "feed_type": "Regional premium television network",
+    "website": "https://www.sonysportsnetwork.com/",
+    "resolutions_found": ["576p and 1080p labels in rejected mirrors"],
+    "verification_result": "Rejected: requested Hindi/English coverage was not available; indexed feeds were regional-language or anonymous mirrors.",
+    "reason": "No suitable licensed Hindi/English standalone HLS was found."
+  },
+  {
+    "name": "Sony Sports Ten 5",
+    "ids": ["SonySportsTen5.in"],
+    "country": "India",
+    "feed_type": "Premium television network",
+    "website": "https://www.sonysportsnetwork.com/",
+    "resolutions_found": ["576p and 1080p labels in rejected mirrors"],
+    "verification_result": "Rejected: SonyLIV public DAI references returned HTTP 404 and raw-IP mirrors lacked licensed provenance.",
+    "reason": "No stable licensed unauthenticated HLS was found."
+  },
+  {
+    "name": "DD Sports",
+    "ids": ["DDSports.in"],
+    "country": "India",
+    "feed_type": "National free-to-air sports television network",
+    "website": "http://doordarshan.gov.in/ddsports",
+    "verification_result": "WORKING: HLS master, selected 576p rendition, and media segment returned HTTP 200 on 2026-10-09."
+  },
+  {
+    "name": "Sports18",
+    "ids": ["Sports18.in"],
+    "country": "India",
+    "feed_type": "Premium television network",
+    "website": "https://www.jiocinema.com/sports",
+    "resolutions_found": ["576p, 720p, and 1080p labels in rejected indexes"],
+    "verification_result": "Rejected: search results were provider-authenticated or anonymous restreams.",
+    "reason": "No stable licensed unauthenticated HLS was found."
+  },
+  {
+    "name": "PTV Sports",
+    "ids": ["PTVSports.pk"],
+    "country": "Pakistan",
+    "feed_type": "National sports television network",
+    "website": "https://ptv.com.pk/",
+    "resolutions_found": ["720p provider mirror and 1080p raw-IP candidate"],
+    "verification_result": "Rejected: the Ayna candidate returned HTTP 503/timeout and the raw-IP candidate timed out; neither had broadcaster-published provenance.",
+    "reason": "The official site returned HTTP 403 to this environment and no stable broadcaster-published reusable HLS was found."
+  },
+  {
+    "name": "A Sports Pakistan",
+    "ids": ["ASports.pk"],
+    "country": "Pakistan",
+    "feed_type": "National sports television network",
+    "website": "https://a-sports.tv/",
+    "resolutions_found": ["HD branding in rejected raw-IP/provider mirrors"],
+    "verification_result": "Rejected: the official site exposed no reusable HLS; code-search hits were expiring provider URLs, ticketed raw-IP feeds, or anonymous proxies.",
+    "reason": "No stable broadcaster-published reusable HLS was found."
+  },
+  {
+    "name": "Geo Super",
+    "ids": ["GeoSuper.pk"],
+    "country": "Pakistan",
+    "feed_type": "National sports television network",
+    "website": "https://www.geosuper.tv/live",
+    "resolutions_found": ["No acceptable current rendition"],
+    "verification_result": "Rejected: the official live page currently supplied a blank player source and public indexes exposed only anonymous or obsolete mirrors.",
+    "reason": "No stable broadcaster-published reusable HLS was found."
+  },
+  {
+    "name": "Ten Sports Pakistan",
+    "ids": ["TenSportsPakistan.pk"],
+    "country": "Pakistan",
+    "feed_type": "Premium sports television network",
+    "website": "https://www.sonypicturesnetworks.com/",
+    "resolutions_found": ["Unknown resolution raw-IP candidate"],
+    "verification_result": "Rejected: the current raw-IP candidate timed out and had no licensed provenance.",
+    "reason": "No stable licensed unauthenticated HLS was found."
+  },
+  {
+    "name": "Sky Sports Cricket",
+    "ids": ["SkySportsCricket.uk"],
+    "country": "United Kingdom",
+    "feed_type": "Premium flagship television network",
+    "website": "https://www.skysports.com/cricket",
+    "resolutions_found": ["720p and 1080p labels in rejected anonymous restreams"],
+    "verification_result": "Rejected: GitHub/index results were credentialed IPTV lines, event proxies, or anonymous restreams.",
+    "reason": "Official access requires Sky/NOW authentication; no licensed unauthenticated HLS was found."
+  },
+  {
+    "name": "Sky Sports Main Event",
+    "ids": ["SkySportsMainEvent.uk"],
+    "country": "United Kingdom",
+    "feed_type": "Premium flagship television network",
+    "website": "https://www.skysports.com/watch/sky-sports-main-event",
+    "resolutions_found": ["720p and 1080p labels in rejected anonymous restreams"],
+    "verification_result": "Rejected: search results lacked broadcaster or licensed-provider provenance.",
+    "reason": "Official access requires Sky/NOW authentication; no licensed unauthenticated HLS was found."
+  },
+  {
+    "name": "Willow TV",
+    "ids": ["Willow.us"],
+    "country": "United States",
+    "feed_type": "Premium flagship cricket television network",
+    "website": "https://www.willow.tv/",
+    "resolutions_found": ["720p provider mirrors"],
+    "verification_result": "Rejected: a tested Ayna mirror played at 720p but was not Willow-published or licensed for standalone redistribution.",
+    "reason": "The flagship channel requires subscription; the available Willow Sports FAST service is not treated as a substitute."
+  },
+  {
+    "name": "Willow Sports (FAST)",
+    "ids": ["WillowSports.us"],
+    "country": "United States",
+    "feed_type": "Official ad-supported FAST cricket channel; not flagship Willow TV",
+    "website": "https://www.willow.tv/willow_sports",
+    "verification_result": "WORKING: the stable 720p rendition on Willow's public CloudFront distribution and its media segment returned HTTP 200 on 2026-10-09; the prior Pluto proxy later returned HTTP 403 and was superseded."
+  },
+  {
+    "name": "Fox Cricket",
+    "ids": ["FoxCricket.au"],
+    "country": "Australia",
+    "feed_type": "Premium flagship cricket television network",
+    "website": "https://www.foxsports.com.au/cricket",
+    "resolutions_found": ["720p and 1080p labels in rejected anonymous restreams"],
+    "verification_result": "Rejected: public code-search hits were anonymous IPTV servers or proxy services.",
+    "reason": "Official access requires Foxtel/Kayo authentication; no licensed unauthenticated HLS was found."
+  },
+  {
+    "name": "SuperSport Cricket",
+    "ids": ["SuperSportCricket.za"],
+    "country": "South Africa",
+    "feed_type": "Premium flagship cricket television network",
+    "website": "https://supersport.com/",
+    "resolutions_found": ["HD labels in rejected credentialed IPTV lists"],
+    "verification_result": "Rejected: the official site exposed only tokenized VOD templates and public hits were credentialed or anonymous restreams.",
+    "reason": "Official access requires DStv authentication; no licensed unauthenticated HLS was found."
+  },
+  {
+    "name": "ESPN Caribbean",
+    "ids": ["ESPNCaribbean.us"],
+    "country": "Caribbean",
+    "feed_type": "Premium regional sports television network",
+    "website": "https://www.espn.com/watch/",
+    "resolutions_found": ["720p labels in rejected mirrors"],
+    "verification_result": "Rejected: no broadcaster-published standalone candidate appeared in current catalogs or code search.",
+    "reason": "Official access is authenticated; no licensed unauthenticated HLS was found."
+  },
+  {
+    "name": "CricLife",
+    "ids": ["CricLife.ae"],
+    "country": "Middle East / North Africa",
+    "feed_type": "Premium cricket television network",
+    "website": "https://starzplay.com/channels/criclife",
+    "resolutions_found": ["No acceptable public rendition"],
+    "verification_result": "Rejected: official distribution is authenticated and web/code searches produced only unofficial stream sites.",
+    "reason": "No licensed unauthenticated reusable HLS was found."
+  },
+  {
+    "name": "ICC.tv public feeds",
+    "ids": ["ICCplus.us"],
+    "country": "International",
+    "feed_type": "Official event streaming / FAST programming",
+    "website": "https://www.icc-cricket.com/icc-tv",
+    "resolutions_found": ["1080p label for a newly indexed ICC+ candidate"],
+    "verification_result": "Rejected: https://icchls.wns.live/hls/stream.m3u8 returned HTTP 404 twice on 2026-10-09; ICC.tv otherwise exposes event/player access rather than a stable linear feed.",
+    "reason": "No reusable stream with current media availability was verified."
+  },
+  {
+    "name": "Cricket Gold",
+    "ids": ["CricketGold.au"],
+    "country": "Australia / International",
+    "feed_type": "Official Cricket Australia archive/highlights FAST channel; not live flagship match coverage",
+    "website": "https://www.cricket.com.au/cricket-gold",
+    "verification_result": "WORKING: HLS media playlist and media segment returned HTTP 200 on 2026-10-09; selected stable 720p rendition."
+  },
+  {
+    "name": "ABC Cricket (Audio)",
+    "ids": ["ABCCricketAudio.au"],
+    "added_in_this_pass": true,
+    "country": "Australia / International",
+    "feed_type": "Official event-dependent English audio-only commentary; not television",
+    "website": "https://www.abc.net.au/news/sport/cricket",
+    "verification_result": "WORKING: official HLS manifest and AAC media segment returned HTTP 200 on 2026-10-09; ffprobe confirmed audio-only AAC."
+  },
+  {
+    "name": "Lemar TV cricket coverage",
+    "ids": ["LemarTV.af"],
+    "country": "Afghanistan",
+    "feed_type": "General national broadcaster with event-dependent cricket coverage",
+    "website": "https://www.lemar.tv/",
+    "verification_result": "WORKING: selected 720p HLS rendition and media segment returned HTTP 200 on 2026-10-09; cricket is rights/schedule dependent."
+  },
+  {
+    "name": "RTA cricket coverage",
+    "ids": ["RTA.af"],
+    "country": "Afghanistan",
+    "feed_type": "Public national broadcaster with event-dependent cricket coverage",
+    "website": "https://rta.af/",
+    "verification_result": "WORKING: HLS media playlist and media segment returned HTTP 200 on 2026-10-09; cricket is rights/schedule dependent."
+  },
+  {
+    "name": "Official Afghanistan Cricket Board coverage",
+    "ids": ["AfghanistanCricketBoard.af"],
+    "country": "Afghanistan",
+    "feed_type": "Official event streams",
+    "website": "https://cricket.af/",
+    "resolutions_found": ["Event and social-video distribution only"],
+    "verification_result": "Rejected: no stable 24/7 or reusable event-independent HLS endpoint was exposed.",
+    "reason": "Official coverage is event-specific; no current reusable public channel URL was available."
+  }
+]
