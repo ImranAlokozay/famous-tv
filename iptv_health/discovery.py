@@ -53,13 +53,27 @@ class DiscoveryProvider:
 
 
 class InventoryProvider(DiscoveryProvider):
-    def __init__(self, name: str, path: Path):
+    def __init__(self, name: str, path: Path, promotions_path: Path | None = None):
         self.name = name
         self.path = path
+        self.promotions_path = promotions_path
         self.by_id: dict[str, dict[str, Any]] = {}
 
     def load(self) -> None:
         records = json.loads(self.path.read_text(encoding="utf-8"))
+        if self.promotions_path and self.promotions_path.exists():
+            promotions = json.loads(self.promotions_path.read_text(encoding="utf-8"))
+            records_by_id = {record["id"]: record for record in records}
+            for promotion in promotions:
+                record = records_by_id.get(promotion["id"])
+                if not record:
+                    raise ValueError(f"Unknown promoted channel: {promotion['id']}")
+                candidate = next((item for item in record.get("candidates", [])
+                                  if item["url"] == promotion["old_url"]), None)
+                if not candidate:
+                    raise ValueError(f"Promoted candidate no longer matches: {promotion['id']}")
+                candidate["url"] = promotion["new_url"]
+                candidate["quality"] = promotion.get("replacement_resolution") or candidate.get("quality")
         self.by_id = {record["id"]: record for record in records}
 
     def candidates(self, entry: PlaylistEntry) -> list[Candidate]:
@@ -147,7 +161,9 @@ class DiscoveryRegistry:
         self.providers: list[DiscoveryProvider] = []
         self.errors: list[dict[str, str]] = []
         factories = {
-            "inventory": lambda spec: InventoryProvider(spec["name"], root / spec["path"]),
+            "inventory": lambda spec: InventoryProvider(
+                spec["name"], root / spec["path"],
+                root / spec["promotions_path"] if spec.get("promotions_path") else None),
             "iptv_org_api": lambda spec: IptvOrgApiProvider(spec["name"], spec["url"], self.transport, timeout),
             "m3u": lambda spec: M3uCatalogProvider(spec["name"], spec["url"], self.transport, timeout),
         }

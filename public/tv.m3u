@@ -78,7 +78,7 @@ https://amg02278-amg02278c1-flosports-worldwide-7592.playouts.now.amagi.tv/720p-
 #EXTINF:-1 tvg-id="FTFSports.us@SD" tvg-name="FTF Sports" tvg-logo="https://i.imgur.com/yvUjOI3.png" tvg-language="eng" group-title="Sports",FTF Sports (720p)
 https://a-cdn.klowdtv.com/live2/ftf_720p/playlist.m3u8
 #EXTINF:-1 tvg-id="FuboSportsNetwork.us@SD" tvg-name="Fubo Sports Network" tvg-logo="https://i.imgur.com/qFNRJLb.png" tvg-language="eng" group-title="Sports",Fubo Sports Network (720p)
-https://aegis-cloudfront-1.tubi.video/c2ac89da-5c69-439e-b85d-d87de0548b54/5.m3u8
+https://dnf08l6u6uxnz.cloudfront.net/5.m3u8
 #EXTINF:-1 tvg-id="FUELTV.pt@SD" tvg-name="FUEL TV" tvg-logo="https://i.imgur.com/I8mviBy.png" tvg-language="eng" group-title="Sports",FUEL TV (720p)
 https://amg01074-fueltv-amg01074c1-stirr-us-4214.playouts.now.amagi.tv/playlist720.m3u8
 #EXTINF:-1 tvg-id="GamePlus.ca@SD" tvg-name="Game+" tvg-logo="https://i.imgur.com/Lj69WbR.png" tvg-language="eng" group-title="Sports",Game+ (720p)
@@ -87,7 +87,7 @@ https://a-cdn.klowdtv.com/live2/fntsy_720p/playlist.m3u8
 https://6f972d29.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmFrdXRlblRWLWV1X0dsb3J5S2lja2JveGluZ19ITFM/playlist.m3u8
 #EXTINF:-1 tvg-id="HardKnocks.ca@SD" tvg-name="Hard Knocks" tvg-logo="https://i.imgur.com/nt9B6jx.png" tvg-language="eng" group-title="Sports" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36 Edg/145.0.0.0",Hard Knocks (1080p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36 Edg/145.0.0.0
-https://d3uyzhwvmemdyf.cloudfront.net/v1/master/9d062541f2ff39b5c0f48b743c6411d25f62fc25/Hard-Knocks-DistroTV/109.m3u8?ads.vf=6pOF6kgy418
+https://d3uyzhwvmemdyf.cloudfront.net/v1/manifest/9d062541f2ff39b5c0f48b743c6411d25f62fc25/HardKnocks-PLEX/89071953-b65b-4444-bb84-33e74c7762c8/1.m3u8
 #EXTINF:-1 tvg-id="InTrouble.nl@SD" tvg-name="InTrouble" tvg-logo="https://cdn.uc.assets.prezly.com/28ebc4a6-cfda-4bb1-9b9c-14e2c3da67a8/InTrouble_portraitOrange.png" tvg-language="eng" group-title="Sports",InTrouble (720p)
 https://amg00861-amg00861c6-stirr-us-8229.playouts.now.amagi.tv/playlist720-p.m3u8
 #EXTINF:-1 tvg-id="IRIB3.ir@SD" tvg-name="IRIB 3" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/IRIB_TV3_LOGO.svg/960px-IRIB_TV3_LOGO.svg.png" tvg-language="fas" group-title="Sports",IRIB 3
@@ -131,7 +131,7 @@ https://fighthls.persiana.live/hls/stream.m3u8
 #EXTINF:-1 tvg-id="PFLMMA.us@SD" tvg-name="PFL MMA" tvg-logo="https://images-3.rakuten.tv/storage/global-live-channel/translation/artwork/f4058a54-67b9-432c-b80e-3bfcf8d2d6d1-width200-quality90.jpeg" tvg-language="eng" group-title="Sports",PFL MMA (720p)
 https://a883593c.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmFrdXRlblRWLWV1X1BGTE1NQV9ITFM/playlist.m3u8
 #EXTINF:-1 tvg-id="PGATour.us@SD" tvg-name="PGA Tour" tvg-logo="https://i.imgur.com/J0TY9dG.png" tvg-language="eng" group-title="Sports",PGA Tour (720p)
-https://aegis-cloudfront-1.tubi.video/9c59800e-fa9a-4539-b8e5-5769918e7c5a/playlist.m3u8
+https://d11k1mnrgfposz.cloudfront.net/playlist_1024x576.m3u8
 #EXTINF:-1 tvg-id="PKSports.pk@SD" tvg-name="PK Sports" tvg-logo="https://i.imgur.com/qtbSnrY.png" tvg-language="urd" group-title="Sports",PK Sports (720p)
 https://lbgo.bozztv.com/ssh101/ssh101/pksportshd/playlist.m3u8
 #EXTINF:-1 tvg-id="PokerGo.us@US" tvg-name="PokerGo" tvg-logo="https://i.imgur.com/1603HED.png" tvg-language="eng" group-title="Sports",PokerGo
@@ -204,7 +204,7 @@ https://amogonetworx-artflix-1-nl.samsung.wurl.tv/playlist.m3u8
 #EXTINF:-1 tvg-id="BETCinema.us@SD" tvg-name="BET Cinema" tvg-logo="https://images.pluto.tv/channels/58af4c093a41ca9d4ecabe96/colorLogoPNG_1759338280891.png" tvg-language="eng" group-title="Movies",BET Cinema
 https://jmp2.uk/plu-58af4c093a41ca9d4ecabe96.m3u8
 #EXTINF:-1 tvg-id="Cinevault80s.us@SD" tvg-name="Cinevault 80s" tvg-logo="https://i.imgur.com/xaCyyDd.png" tvg-language="eng" group-title="Movies",Cinevault 80s (720p)
-https://aegis-cloudfront-1.tubi.video/ea1ab5d1-f554-4f6b-b03f-2611fcd94257/playlist.m3u8
+https://gsn-cinevault-80s-2-us.roku.wurl.tv/2000.m3u8
 #EXTINF:-1 tvg-id="DUST.us@SD" tvg-name="DUST" tvg-logo="https://i.imgur.com/FxYhME9.png" tvg-language="eng" group-title="Movies",DUST (576p)
 https://dqi7ayt2o24fn.cloudfront.net/playlist_1024x576.m3u8
 #EXTINF:-1 tvg-id="EbonyTVbyLionsgate.us@SD" tvg-name="Ebony TV by Lionsgate" tvg-logo="https://provider-static.plex.tv/epg/cms/production/234d5377-ab07-41bf-acd6-34c17c1c051a/EbonyTV_Plex_Logo_Light_1500x1000.png" tvg-language="eng" group-title="Movies",Ebony TV by Lionsgate (720p)
@@ -371,7 +371,7 @@ https://twohls.persiana.live/hls/stream.m3u8
 #EXTINF:-1 tvg-id="QatarTelevision.qa@SD" tvg-name="Qatar Television" tvg-logo="https://i.imgur.com/N5RB4sp.png" tvg-language="ara" group-title="Entertainment",Qatar Television (1080p)
 https://live.kwikmotion.com/qtv1live/qtv1.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="QatarTelevision2.qa@SD" tvg-name="Qatar Television 2" tvg-logo="https://i.imgur.com/iWJxDUm.png" tvg-language="ara" group-title="Entertainment",Qatar Television 2 (720p)
-https://qatartv.akamaized.net/hls/live/2026574/qtv2/master.m3u8
+https://qatartv.akamaized.net/hls/live/20000611/qtv2/stream_02/index.m3u8
 #EXTINF:-1 tvg-id="SamaDubai.ae" tvg-name="Sama Dubai" tvg-logo="https://i.imgur.com/F5g3ymW.png" tvg-language="ara" group-title="Entertainment",Sama Dubai
 https://dmieigthvll.cdn.mgmlcdn.com/samadubaiht/smil:samadubai.stream.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="Shabakeh7.us@SD" tvg-name="Shabakeh 7" tvg-logo="https://i.imgur.com/oHmh5Jb.png" tvg-language="fas" group-title="Entertainment",Shabakeh 7

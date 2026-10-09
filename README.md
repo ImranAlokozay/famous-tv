@@ -17,7 +17,9 @@ python -m unittest discover -s tests
 The generator reads the reviewed alternatives in [curation/channels.json](curation/channels.json),
 the selection rules and source provenance in [curation/policy.json](curation/policy.json),
 the requested channel coverage in [curation/targets.json](curation/targets.json),
-and the exact focused-pass targets in [curation/focused_targets.json](curation/focused_targets.json).
+the exact focused-pass targets in [curation/focused_targets.json](curation/focused_targets.json),
+and reviewed URL-only health promotions in
+[curation/health_promotions.json](curation/health_promotions.json).
 It produces the playlist and [reports/playlist-report.md](reports/playlist-report.md),
 [reports/playlist-report.json](reports/playlist-report.json), and
 [reports/channels.csv](reports/channels.csv), plus the detailed

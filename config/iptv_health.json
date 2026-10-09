@@ -20,6 +20,7 @@
       "name": "curated-inventory",
       "type": "inventory",
       "path": "curation/channels.json",
+      "promotions_path": "curation/health_promotions.json",
       "enabled": true
     },
     {

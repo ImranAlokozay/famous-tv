@@ -7413,8 +7413,10 @@
         "https://iptv-org.github.io/api/streams.json"
       ],
       "website": "https://www.fubo.tv/news/uncategorized/contact-us/",
-      "stream_url": "https://aegis-cloudfront-1.tubi.video/c2ac89da-5c69-439e-b85d-d87de0548b54/5.m3u8",
-      "labels": [],
+      "stream_url": "https://dnf08l6u6uxnz.cloudfront.net/5.m3u8",
+      "labels": [
+        "verified automated health-check replacement"
+      ],
       "candidate_count": 3,
       "access_notes": ""
     },
@@ -7528,8 +7530,10 @@
         "https://iptv-org.github.io/iptv/index.m3u"
       ],
       "website": null,
-      "stream_url": "https://d3uyzhwvmemdyf.cloudfront.net/v1/master/9d062541f2ff39b5c0f48b743c6411d25f62fc25/Hard-Knocks-DistroTV/109.m3u8?ads.vf=6pOF6kgy418",
-      "labels": [],
+      "stream_url": "https://d3uyzhwvmemdyf.cloudfront.net/v1/manifest/9d062541f2ff39b5c0f48b743c6411d25f62fc25/HardKnocks-PLEX/89071953-b65b-4444-bb84-33e74c7762c8/1.m3u8",
+      "labels": [
+        "verified automated health-check replacement"
+      ],
       "candidate_count": 3,
       "access_notes": ""
     },
@@ -8178,8 +8182,10 @@
         "https://iptv-org.github.io/api/streams.json"
       ],
       "website": "https://pluto.tv/en/live-tv/pga-tour",
-      "stream_url": "https://aegis-cloudfront-1.tubi.video/9c59800e-fa9a-4539-b8e5-5769918e7c5a/playlist.m3u8",
-      "labels": [],
+      "stream_url": "https://d11k1mnrgfposz.cloudfront.net/playlist_1024x576.m3u8",
+      "labels": [
+        "verified automated health-check replacement"
+      ],
       "candidate_count": 8,
       "access_notes": ""
     },
@@ -9196,8 +9202,10 @@
         "https://iptv-org.github.io/iptv/index.m3u"
       ],
       "website": "https://www.cinevaulttv.com/",
-      "stream_url": "https://aegis-cloudfront-1.tubi.video/ea1ab5d1-f554-4f6b-b03f-2611fcd94257/playlist.m3u8",
-      "labels": [],
+      "stream_url": "https://gsn-cinevault-80s-2-us.roku.wurl.tv/2000.m3u8",
+      "labels": [
+        "verified automated health-check replacement"
+      ],
       "candidate_count": 2,
       "access_notes": ""
     },
@@ -11614,8 +11622,10 @@
         "https://iptv-org.github.io/api/streams.json"
       ],
       "website": "http://www.qtv.qa/",
-      "stream_url": "https://qatartv.akamaized.net/hls/live/2026574/qtv2/master.m3u8",
-      "labels": [],
+      "stream_url": "https://qatartv.akamaized.net/hls/live/20000611/qtv2/stream_02/index.m3u8",
+      "labels": [
+        "verified automated health-check replacement"
+      ],
       "candidate_count": 3,
       "access_notes": ""
     },
@@ -19050,9 +19060,9 @@
   },
   "resolution_review": {
     "baseline_1080_reviewed": 149,
-    "downgraded_total": 66,
+    "downgraded_total": 67,
     "downgraded_to_576": 16,
-    "downgraded_to_720": 50,
+    "downgraded_to_720": 51,
     "channels": [
       {
         "channel_name": "&TV International (FAST)",
@@ -19865,16 +19875,16 @@
         "channel_name": "Hard Knocks",
         "category": "Sports",
         "old_resolution": "1080p",
-        "new_resolution": "1080p",
+        "new_resolution": "720p",
         "old_stream_url": "https://d3uyzhwvmemdyf.cloudfront.net/v1/master/9d062541f2ff39b5c0f48b743c6411d25f62fc25/Hard-Knocks-DistroTV/109.m3u8?ads.vf=6pOF6kgy418",
-        "new_stream_url": "https://d3uyzhwvmemdyf.cloudfront.net/v1/master/9d062541f2ff39b5c0f48b743c6411d25f62fc25/Hard-Knocks-DistroTV/109.m3u8?ads.vf=6pOF6kgy418",
+        "new_stream_url": "https://d3uyzhwvmemdyf.cloudfront.net/v1/manifest/9d062541f2ff39b5c0f48b743c6411d25f62fc25/HardKnocks-PLEX/89071953-b65b-4444-bb84-33e74c7762c8/1.m3u8",
         "alternatives_checked": [
           "1080p",
           "Exact name plus 576/576p/SD/720/720p/M3U/M3U8/HLS across current candidates, IPTV indexes, GitHub repositories/code search, broadcaster pages, regional lists, public stream directories, alternate feeds, and master-manifest renditions"
         ],
-        "source_used": "https://iptv-org.github.io/api/streams.json; https://iptv-org.github.io/iptv/index.m3u; https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8; GitHub code search and public IPTV repositories; Broadcaster websites and live pages; Public FAST distributions on Rakuten, Xumo, Tubi, Pluto, Samsung TV Plus, Plex, Amagi, Wurl, and Ottera; Web search for exact names, spelling variants, regional feeds, SD/576/720 editions, HLS, and M3U8 references",
-        "reason_for_replacement": "",
-        "reason_if_1080_remained": "No stable responding 576p or 720p rendition with acceptable provenance survived the focused review; the important/current 1080p channel was retained."
+        "source_used": "https://iptv-org.github.io/api/streams.json",
+        "reason_for_replacement": "Repeated 404 on the original; replacement manifest and media object verified by the 2026-10-08 health run.",
+        "reason_if_1080_remained": ""
       },
       {
         "channel_name": "Hasbro Legends",

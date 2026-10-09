@@ -151,6 +151,28 @@ def apply_resolution_overrides(channels, overrides):
     return channels
 
 
+def apply_health_promotions(channels, promotions):
+    """Promote verified replacement URLs while preserving playlist metadata."""
+    channels = copy.deepcopy(channels)
+    by_id = {channel['id']: channel for channel in channels}
+    for promotion in promotions:
+        channel = by_id.get(promotion['id'])
+        if channel is None:
+            raise ValueError(f'Unknown health promotion channel: {promotion["id"]}')
+        candidate = next((item for item in channel['candidates']
+                          if item['url'] == promotion['old_url']), None)
+        if candidate is None:
+            raise ValueError(f'Health promotion no longer matches baseline: {promotion["id"]}')
+        candidate['url'] = promotion['new_url']
+        candidate['sources'] = list(dict.fromkeys(candidate['sources'] + [promotion['source']]))
+        candidate['labels'] = list(dict.fromkeys(
+            candidate.get('labels', []) + ['verified automated health-check replacement']))
+        host = urllib.parse.urlsplit(promotion['new_url']).hostname
+        if host not in channel['approved_hosts']:
+            channel['approved_hosts'].append(host)
+    return channels
+
+
 def render_m3u(channels):
     lines = ['#EXTM3U']
     for channel in channels:
@@ -321,19 +343,22 @@ def markdown_report(report):
     return '\n'.join(lines)
 
 
-def outputs(channels, policy, targets, resolution_overrides=None):
+def outputs(channels, policy, targets, resolution_overrides=None, health_promotions=None):
     routing_check(policy)
     resolution_overrides = resolution_overrides or []
+    health_promotions = health_promotions or []
     baseline_selected, _ = select_channels(channels, policy)
     baseline_1080 = {channel['id']: channel for channel in baseline_selected
                      if channel['selected'].get('quality') in ('1080i', '1080p')}
     channels = apply_resolution_overrides(channels, resolution_overrides)
+    channels = apply_health_promotions(channels, health_promotions)
     selected, excluded = select_channels(channels, policy)
     if not selected:
         raise ValueError('Refusing an empty playlist')
     report = build_report(selected, excluded, targets, policy)
     selected_by_id = {channel['id']: channel for channel in selected}
     overrides_by_id = {override['id']: override for override in resolution_overrides}
+    promotions_by_id = {promotion['id']: promotion for promotion in health_promotions}
     resolution_reviews = []
     search_scope = ('Exact name plus 576/576p/SD/720/720p/M3U/M3U8/HLS across current candidates, '
                     'IPTV indexes, GitHub repositories/code search, broadcaster pages, regional lists, '
@@ -341,17 +366,20 @@ def outputs(channels, policy, targets, resolution_overrides=None):
     for cid, old in sorted(baseline_1080.items(), key=lambda item: item[1]['name'].casefold()):
         final = selected_by_id[cid]
         override = overrides_by_id.get(cid)
+        promotion = promotions_by_id.get(cid)
         changed = final['selected']['url'] != old['selected']['url']
         alternatives = override['alternatives_checked'] if override else sorted(
             {candidate.get('quality') or 'unknown' for candidate in old['candidates']})
         resolution_reviews.append({
             'channel_name': old['name'], 'category': old['category'],
             'old_resolution': old['selected'].get('quality') or 'unknown',
-            'new_resolution': final['selected'].get('quality') or 'unknown',
+            'new_resolution': (promotion.get('replacement_resolution') if promotion else
+                               final['selected'].get('quality')) or 'unknown',
             'old_stream_url': old['selected']['url'], 'new_stream_url': final['selected']['url'],
             'alternatives_checked': alternatives + [search_scope],
-            'source_used': policy['sources'][override['source']]['url'] if override else '; '.join(policy['focused_research_sources']),
-            'reason_for_replacement': override['reason'] if changed else '',
+            'source_used': policy['sources'][(override or promotion)['source']]['url']
+            if (override or promotion) else '; '.join(policy['focused_research_sources']),
+            'reason_for_replacement': (override or promotion)['reason'] if changed else '',
             'reason_if_1080_remained': '' if changed else
                 'No stable responding 576p or 720p rendition with acceptable provenance survived the focused review; the important/current 1080p channel was retained.'})
     report['resolution_review'] = {
@@ -424,7 +452,8 @@ def main():
     if focused_targets.exists():
         targets.extend(json.loads(focused_targets.read_text()))
     resolution_overrides = json.loads((ROOT / 'curation/resolution_overrides.json').read_text())
-    generated, report = outputs(channels, policy, targets, resolution_overrides)
+    health_promotions = json.loads((ROOT / 'curation/health_promotions.json').read_text())
+    generated, report = outputs(channels, policy, targets, resolution_overrides, health_promotions)
     for path, content in generated.items():
         target = ROOT / path
         if args.check:

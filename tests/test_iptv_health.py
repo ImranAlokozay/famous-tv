@@ -182,6 +182,35 @@ class IptvHealthTests(unittest.TestCase):
         self.assertEqual(1, len(found))
         self.assertEqual("exact tvg-id/channel id", found[0].identity_evidence)
 
+    def test_inventory_discovery_applies_promoted_urls(self):
+        records = [{
+            "id": "Test.us", "name": "Test", "country": "US", "languages": ["eng"],
+            "category": "Sports", "candidates": [{
+                "url": "https://old.example/test.m3u8", "quality": "1080p",
+                "languages": ["eng"], "user_agent": None, "referrer": None,
+            }],
+        }]
+        promotions = [{
+            "id": "Test.us", "old_url": "https://old.example/test.m3u8",
+            "new_url": "https://new.example/test.m3u8", "replacement_resolution": "576p",
+        }]
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            (root / "channels.json").write_text(json.dumps(records))
+            (root / "promotions.json").write_text(json.dumps(promotions))
+            registry = DiscoveryRegistry([{
+                "name": "inventory", "type": "inventory", "path": "channels.json",
+                "promotions_path": "promotions.json",
+            }], root)
+            registry.load()
+            _, entries = parse_m3u(
+                '#EXTM3U\n#EXTINF:-1 tvg-id="Test.us" tvg-language="eng" group-title="Sports",Test\n'
+                'https://current.example/test.m3u8\n')
+            found = registry.discover(entries[0])
+        self.assertEqual(1, len(found))
+        self.assertEqual("https://new.example/test.m3u8", found[0].url)
+        self.assertEqual("576p", found[0].resolution)
+
     def test_discovery_source_loading_retries_transient_failure(self):
         catalog = '#EXTM3U\n#EXTINF:-1 tvg-id="Test.us",Test\nhttps://new.example/test.m3u8\n'
         unavailable = urllib.error.HTTPError(

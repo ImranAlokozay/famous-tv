@@ -88,7 +88,8 @@ class CurationTests(unittest.TestCase):
         targets = json.loads((ROOT / 'curation/targets.json').read_text())
         targets.extend(json.loads((ROOT / 'curation/focused_targets.json').read_text()))
         overrides = json.loads((ROOT / 'curation/resolution_overrides.json').read_text())
-        generated, report = rebuild.outputs(self.channels, self.policy, targets, overrides)
+        promotions = json.loads((ROOT / 'curation/health_promotions.json').read_text())
+        generated, report = rebuild.outputs(self.channels, self.policy, targets, overrides, promotions)
         self.assertTrue(generated['public/tv.m3u'].startswith('#EXTM3U\n'))
         self.assertEqual(report['total_channels'], generated['public/tv.m3u'].count('#EXTINF:'))
         for path, content in generated.items():
@@ -100,6 +101,10 @@ class CurationTests(unittest.TestCase):
         self.assertIn('all_sources_searched', generated['reports/missing_famous_channels.csv'].splitlines()[0])
         self.assertEqual(149, report['resolution_review']['baseline_1080_reviewed'])
         self.assertIn('reports/resolution_replacements.csv', generated)
+        self.assertEqual(5, len(promotions))
+        for promotion in promotions:
+            self.assertIn(promotion['new_url'], generated['public/tv.m3u'])
+            self.assertNotIn(promotion['old_url'], generated['public/tv.m3u'])
 
 
 if __name__ == '__main__':

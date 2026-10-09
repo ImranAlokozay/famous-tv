@@ -1,0 +1,42 @@
+[
+  {
+    "id": "FuboSportsNetwork.us",
+    "old_url": "https://aegis-cloudfront-1.tubi.video/c2ac89da-5c69-439e-b85d-d87de0548b54/5.m3u8",
+    "new_url": "https://dnf08l6u6uxnz.cloudfront.net/5.m3u8",
+    "replacement_resolution": "720p",
+    "source": "iptv-org-api",
+    "reason": "Repeated 404 on the original; replacement manifest and media object verified by the 2026-10-08 health run."
+  },
+  {
+    "id": "HardKnocks.ca",
+    "old_url": "https://d3uyzhwvmemdyf.cloudfront.net/v1/master/9d062541f2ff39b5c0f48b743c6411d25f62fc25/Hard-Knocks-DistroTV/109.m3u8?ads.vf=6pOF6kgy418",
+    "new_url": "https://d3uyzhwvmemdyf.cloudfront.net/v1/manifest/9d062541f2ff39b5c0f48b743c6411d25f62fc25/HardKnocks-PLEX/89071953-b65b-4444-bb84-33e74c7762c8/1.m3u8",
+    "replacement_resolution": "720p",
+    "source": "iptv-org-api",
+    "reason": "Repeated 404 on the original; replacement manifest and media object verified by the 2026-10-08 health run."
+  },
+  {
+    "id": "PGATour.us",
+    "old_url": "https://aegis-cloudfront-1.tubi.video/9c59800e-fa9a-4539-b8e5-5769918e7c5a/playlist.m3u8",
+    "new_url": "https://d11k1mnrgfposz.cloudfront.net/playlist_1024x576.m3u8",
+    "replacement_resolution": "576p",
+    "source": "iptv-org-api",
+    "reason": "Repeated 404 on the original; replacement manifest and media object verified by the 2026-10-08 health run."
+  },
+  {
+    "id": "Cinevault80s.us",
+    "old_url": "https://aegis-cloudfront-1.tubi.video/ea1ab5d1-f554-4f6b-b03f-2611fcd94257/playlist.m3u8",
+    "new_url": "https://gsn-cinevault-80s-2-us.roku.wurl.tv/2000.m3u8",
+    "replacement_resolution": "540p",
+    "source": "iptv-org-api",
+    "reason": "Repeated mixed 404/non-playlist failures on the original; replacement manifest and media object verified by the 2026-10-08 health run."
+  },
+  {
+    "id": "QatarTelevision2.qa",
+    "old_url": "https://qatartv.akamaized.net/hls/live/2026574/qtv2/master.m3u8",
+    "new_url": "https://qatartv.akamaized.net/hls/live/20000611/qtv2/stream_02/index.m3u8",
+    "replacement_resolution": "576p",
+    "source": "iptv-org-api",
+    "reason": "Repeated rendition failures on the original; replacement manifest and media object verified by the 2026-10-08 health run."
+  }
+]
