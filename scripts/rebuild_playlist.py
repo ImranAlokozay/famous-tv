@@ -370,7 +370,7 @@ def cricket_coverage_report(selected, targets, policy):
                 'alternatives_checked': '; '.join(target.get('resolutions_found', [])) or 'Selected public feed verified',
                 'final_reason': '', 'added_in_this_pass': bool(target.get('added_in_this_pass'))})
         else:
-            searched = list(dict.fromkeys(common_sources + ([target['website']] if target.get('website') else [])))
+            searched = list(dict.fromkeys(target.get('catalogs_searched', []) + common_sources + ([target['website']] if target.get('website') else [])))
             rows.append({
                 'requested_channel': target['name'], 'country': target['country'],
                 'availability': 'UNAVAILABLE', 'playlist_channel': '',
@@ -380,6 +380,16 @@ def cricket_coverage_report(selected, targets, policy):
                 'alternatives_checked': '; '.join(target.get('resolutions_found', [])) or 'No acceptable public rendition',
                 'final_reason': target.get('reason', 'No verified reusable public feed was found.'),
                 'added_in_this_pass': False})
+        verification = target.get('video_verification', {})
+        rows[-1].update({
+            'bitrate_bps': verification.get('bitrate_bps', ''),
+            'bitrate_basis': verification.get('bitrate_basis', ''),
+            'video_codec': verification.get('codec', ''),
+            'decoded_video_verified': verification.get('decoded_video_verified', False),
+            'identity_evidence': verification.get('identity_evidence', ''),
+            'live_verification': verification.get('live_verification', ''),
+            'verified_at': verification.get('verified_at', ''),
+            'sources_searched': '; '.join(target.get('catalogs_searched', []))})
     return rows
 
 
@@ -484,7 +494,8 @@ def outputs(channels, policy, targets, resolution_overrides=None, health_promoti
     cricket_buffer = io.StringIO(newline='')
     cricket_fields = ['requested_channel', 'country', 'availability', 'playlist_channel', 'actual_feed_type',
                       'resolution', 'stream_url', 'url_source', 'verification_result', 'alternatives_checked',
-                      'final_reason', 'added_in_this_pass']
+                      'final_reason', 'added_in_this_pass', 'bitrate_bps', 'bitrate_basis', 'video_codec', 'decoded_video_verified',
+                      'identity_evidence', 'live_verification', 'verified_at', 'sources_searched']
     cricket_writer = csv.DictWriter(cricket_buffer, fieldnames=cricket_fields, lineterminator='\n')
     cricket_writer.writeheader()
     for row in cricket_rows:

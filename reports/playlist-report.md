@@ -6,11 +6,11 @@ The playlist contains public index entries and broadcaster/FAST distribution add
 
 Resolution is the published stream label, not a measured bitrate or a bandwidth limit. Adaptive master playlists can select other renditions during playback. Unknown stays unknown; SD/HD broadcast tags are not used to infer stream resolution.
 
-Total: **442**; new channel identities: **336**; 1080 alternatives avoided: **151**.
+Total: **447**; new channel identities: **341**; 1080 alternatives avoided: **151**.
 
 | Category | Channels |
 | --- | ---: |
-| Sports | 93 |
+| Sports | 98 |
 | Movies | 37 |
 | Series | 17 |
 | Entertainment | 43 |
@@ -25,15 +25,15 @@ Total: **442**; new channel identities: **336**; 1080 alternatives avoided: **15
 
 | Published resolution | Channels |
 | --- | ---: |
-| 1080p | 83 |
+| 1080p | 84 |
 | 240p | 1 |
 | 360p | 5 |
 | 396p | 1 |
 | 480p | 3 |
 | 540p | 1 |
-| 576p | 55 |
+| 576p | 57 |
 | 684p | 1 |
-| 720p | 222 |
+| 720p | 224 |
 | unknown | 70 |
 
 Duplicate normalized names: 0. Duplicate URLs: 0. 1080 selections with a reviewed lower-resolution candidate: 0.
@@ -54,6 +54,8 @@ Duplicate normalized names: 0. Duplicate URLs: 0. 1080 selections with a reviewe
 | Zee Horror Nights (FAST) | Zee Horror Nights (1080p) |
 | Zee South Flix (Hindi) | Zee South Flix (1080p) |
 | &TV International (FAST) | &TV International (FAST) (1080p) |
+| Star Sports | Star Sports 1 (1080p) |
+| Star Sports Select | Star Sports Select 1 (576p), Star Sports Select 2 (576p) |
 | ESPN8: The Ocho (FAST) | ESPN8: The Ocho (720p) |
 | beIN SPORTS XTRA (free) | beIN SPORTS XTRA (720p) |
 | CBS Sports Golazo | CBS Sports Golazo Network (720p) |
@@ -64,6 +66,7 @@ Duplicate normalized names: 0. Duplicate URLs: 0. 1080 selections with a reviewe
 | Tennis Channel (free edition) | Tennis Channel (720p) |
 | Tennis Channel 2 | T2 Tennis Channel (720p) |
 | Red Bull TV | Red Bull TV (720p) |
+| Willow flagship | Willow TV (720p) |
 | PGA Tour | PGA Tour (720p) |
 | F1 Channel (FAST) | F1 Channel (720p) |
 | NBA public FAST feed | NBA TV (720p) |
@@ -175,7 +178,12 @@ Duplicate normalized names: 0. Duplicate URLs: 0. 1080 selections with a reviewe
 | NBA TV | NBA TV (720p) |
 | Neo News | Neo News (1080p) |
 | UFC (FAST) | UFC (FAST) (576p) |
+| Star Sports 1 | Star Sports 1 (1080p) |
+| Star Sports Select 1 | Star Sports Select 1 (576p) |
+| Star Sports Select 2 | Star Sports Select 2 (576p) |
 | DD Sports | DD Sports (576p) |
+| A Sports Pakistan | A Sports (720p) |
+| Willow TV | Willow TV (720p) |
 | Willow Sports (FAST) | Willow Sports (720p) |
 | Cricket Gold | Cricket Gold (720p) |
 | ABC Cricket (Audio) | ABC Cricket (Audio) (unknown) |
@@ -214,8 +222,6 @@ These are search outcomes within the documented sources, not claims that a chann
 | Star Gold | No stable public Hindi/English broadcaster M3U found. Catalog entries were unidentified restreams or subscription distribution. | https://hotstar.com/ |
 | Star Gold 2 | No stable public Hindi/English broadcaster M3U found. Catalog entries were unidentified restreams or subscription distribution. | https://hotstar.com/ |
 | Star Gold Select | No stable public Hindi/English broadcaster M3U found. Catalog entries were unidentified restreams or subscription distribution. | https://hotstar.com/ |
-| Star Sports | No stable public Hindi/English broadcaster M3U found. Catalog entries were unidentified restreams or subscription distribution. | https://www.startv.com/about-us/sports |
-| Star Sports Select | No stable public Hindi/English broadcaster M3U found. Catalog entries were unidentified restreams or subscription distribution. | https://www.startv.com/about-us/sports/ |
 | Star Utsav | No stable public Hindi/English broadcaster M3U found. Catalog entries were unidentified restreams or subscription distribution. | https://hotstar.com/ |
 | Star Utsav Movies | No stable public Hindi/English broadcaster M3U found. Catalog entries were unidentified restreams or subscription distribution. | https://hotstar.com/ |
 | Star Movies | No stable public Hindi/English broadcaster M3U found. Catalog entries were unidentified restreams or subscription distribution. | http://www.starmovies.in/ |
@@ -236,7 +242,6 @@ These are search outcomes within the documented sources, not claims that a chann
 | Fox Sports flagship | No legitimate stable public M3U of the requested flagship found; FOX Sports FAST is listed separately. Provider-authenticated and anonymous restreams were excluded. | https://www.foxsports.com/ |
 | beIN Sports flagship | No legitimate stable public M3U of the requested flagship found; free brand editions are listed separately. Provider subscriptions, unclear restreams, and nonpreferred language feeds excluded. | https://www.beinsports.com/ar/ |
 | TNT Sports | No legitimate stable public M3U of the requested flagship found; free brand editions are listed separately. Provider subscriptions, unclear restreams, and nonpreferred language feeds excluded. | https://www.tntsports.co.uk/ |
-| Willow flagship | No legitimate stable public M3U of the requested flagship found; free brand editions are listed separately. Provider subscriptions, unclear restreams, and nonpreferred language feeds excluded. | http://www.willow.tv/ |
 | Abu Dhabi Sports | No legitimate stable public M3U of the requested flagship found; free brand editions are listed separately. Provider subscriptions, unclear restreams, and nonpreferred language feeds excluded. | https://adtv.ae/en/live/Abu%20Dhabi%20Sports%20Channel%201 |
 | Alkass | No legitimate stable public M3U of the requested flagship found; free brand editions are listed separately. Provider subscriptions, unclear restreams, and nonpreferred language feeds excluded. | https://www.alkass.net/ |
 | Disney Channel | No stable public permitted M3U in the preferred languages found. Subscription rebroadcasts and web/YouTube pages without reusable HLS excluded. | https://www.disney.com/ |
@@ -346,30 +351,25 @@ These are search outcomes within the documented sources, not claims that a chann
 | HBO Signature | Premium authenticated network; no licensed unauthenticated public HLS found. | https://www.hbo.com/ |
 | SuperTennis | The official indexed HiWay master returned HTTP 403 during this pass; no alternate responding permitted HLS was found. | https://www.supertennis.tv/ |
 | UEFA public programming | Official UEFA web/video programming was found, but no stable reusable linear HLS channel with clear public redistribution was exposed. | https://www.uefa.tv/ |
-| Star Sports 1 | JioHotstar access is authenticated and no broadcaster-published reusable HLS was found. | https://www.hotstar.com/in/sports |
-| Star Sports 2 | No stable broadcaster-published reusable HLS was found. | https://www.hotstar.com/in/sports |
-| Star Sports 1 Hindi | No licensed unauthenticated reusable HLS was found. | https://www.hotstar.com/in/sports |
-| Star Sports 2 Hindi | No licensed unauthenticated reusable HLS was found. | https://www.hotstar.com/in/sports |
-| Star Sports Select 1 | No licensed unauthenticated reusable HLS was found. | https://www.hotstar.com/in/sports |
-| Star Sports Select 2 | No licensed unauthenticated reusable HLS was found. | https://www.hotstar.com/in/sports |
-| Star Sports Khel | No broadcaster-published reusable HLS was found. | https://www.hotstar.com/in/sports |
-| Sony Sports Ten 1 | SonyLIV access is authenticated and no stable licensed standalone HLS was found. | https://www.sonysportsnetwork.com/ |
-| Sony Sports Ten 2 | SonyLIV access is authenticated and no stable licensed standalone HLS was found. | https://www.sonysportsnetwork.com/ |
-| Sony Sports Ten 3 Hindi | No stable licensed unauthenticated HLS was found. | https://www.sonysportsnetwork.com/ |
-| Sony Sports Ten 4 | No suitable licensed Hindi/English standalone HLS was found. | https://www.sonysportsnetwork.com/ |
-| Sony Sports Ten 5 | No stable licensed unauthenticated HLS was found. | https://www.sonysportsnetwork.com/ |
+| Star Sports 2 | No credential-free, exact-identity live video verified in this run. Timeout, forbidden, or skipped results do not prove global unavailability. | https://www.hotstar.com/in/sports |
+| Star Sports 1 Hindi | Decoded 720p Pages candidate is a fixed approximately 65-second IPL 2025 highlights clip with two unchanged segments, not a live channel. Other candidates did not yield verified public live video. | https://www.hotstar.com/in/sports |
+| Star Sports 2 Hindi | No credential-free, exact-identity live video verified in this run. Timeout, forbidden, or skipped results do not prove global unavailability. | https://www.hotstar.com/in/sports |
+| Star Sports Khel | No credential-free, exact-identity live video verified in this run. Timeout, forbidden, or skipped results do not prove global unavailability. | https://www.hotstar.com/in/sports |
+| Sony Sports Ten 1 | No credential-free, exact-identity live video verified in this run. Timeout, forbidden, or skipped results do not prove global unavailability. | https://www.sonysportsnetwork.com/ |
+| Sony Sports Ten 2 | No credential-free, exact-identity live video verified in this run. Timeout, forbidden, or skipped results do not prove global unavailability. | https://www.sonysportsnetwork.com/ |
+| Sony Sports Ten 3 Hindi | No credential-free, exact-identity live video verified in this run. Timeout, forbidden, or skipped results do not prove global unavailability. | https://www.sonysportsnetwork.com/ |
+| Sony Sports Ten 4 | No credential-free, exact-identity live video verified in this run. Timeout, forbidden, or skipped results do not prove global unavailability. | https://www.sonysportsnetwork.com/ |
+| Sony Sports Ten 5 | No credential-free, exact-identity live video verified in this run. Timeout, forbidden, or skipped results do not prove global unavailability. | https://www.sonysportsnetwork.com/ |
 | Sports18 | No stable licensed unauthenticated HLS was found. | https://www.jiocinema.com/sports |
-| PTV Sports | The official site returned HTTP 403 to this environment and no stable broadcaster-published reusable HLS was found. | https://ptv.com.pk/ |
-| A Sports Pakistan | No stable broadcaster-published reusable HLS was found. | https://a-sports.tv/ |
-| Geo Super | No stable broadcaster-published reusable HLS was found. | https://www.geosuper.tv/live |
-| Ten Sports Pakistan | No stable licensed unauthenticated HLS was found. | https://www.sonypicturesnetworks.com/ |
-| Sky Sports Cricket | Official access requires Sky/NOW authentication; no licensed unauthenticated HLS was found. | https://www.skysports.com/cricket |
-| Sky Sports Main Event | Official access requires Sky/NOW authentication; no licensed unauthenticated HLS was found. | https://www.skysports.com/watch/sky-sports-main-event |
-| Willow TV | The flagship channel requires subscription; the available Willow Sports FAST service is not treated as a substitute. | https://www.willow.tv/ |
-| Fox Cricket | Official access requires Foxtel/Kayo authentication; no licensed unauthenticated HLS was found. | https://www.foxsports.com.au/cricket |
-| SuperSport Cricket | Official access requires DStv authentication; no licensed unauthenticated HLS was found. | https://supersport.com/ |
+| PTV Sports | No credential-free, exact-identity live video verified in this run. Timeout, forbidden, or skipped results do not prove global unavailability. | https://ptv.com.pk/ |
+| Geo Super | No credential-free, exact-identity live video verified in this run. Timeout, forbidden, or skipped results do not prove global unavailability. | https://www.geosuper.tv/live |
+| Ten Sports Pakistan | No credential-free, exact-identity live video verified in this run. Timeout, forbidden, or skipped results do not prove global unavailability. | https://www.sonypicturesnetworks.com/ |
+| Sky Sports Cricket | No credential-free, exact-identity live video verified in this run. Timeout, forbidden, or skipped results do not prove global unavailability. | https://www.skysports.com/cricket |
+| Sky Sports Main Event | No credential-free, exact-identity live video verified in this run. Timeout, forbidden, or skipped results do not prove global unavailability. | https://www.skysports.com/watch/sky-sports-main-event |
+| Fox Cricket | No credential-free, exact-identity live video verified in this run. Timeout, forbidden, or skipped results do not prove global unavailability. | https://www.foxsports.com.au/cricket |
+| SuperSport Cricket | No credential-free, exact-identity live video verified in this run. Timeout, forbidden, or skipped results do not prove global unavailability. | https://supersport.com/ |
 | ESPN Caribbean | Official access is authenticated; no licensed unauthenticated HLS was found. | https://www.espn.com/watch/ |
-| CricLife | No licensed unauthenticated reusable HLS was found. | https://starzplay.com/channels/criclife |
+| CricLife | No credential-free, exact-identity live video verified in this run. Timeout, forbidden, or skipped results do not prove global unavailability. | https://starzplay.com/channels/criclife |
 | ICC.tv public feeds | No reusable stream with current media availability was verified. | https://www.icc-cricket.com/icc-tv |
 | Official Afghanistan Cricket Board coverage | Official coverage is event-specific; no current reusable public channel URL was available. | https://cricket.af/ |
 

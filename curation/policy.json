@@ -109,6 +109,34 @@
     "official-abc-cricket": {
       "url": "https://www.abc.net.au/news/sport/cricket",
       "retrieved": "2026-10-09"
+    },
+    "community-cricket-7a0918f334": {
+      "url": "https://raw.githubusercontent.com/judy-gotv/iptv/HEAD/BD.m3u",
+      "description": "Public third-party cricket catalog; decoded identity reviewed, broadcaster authorization not asserted"
+    },
+    "community-cricket-8ce894eab0": {
+      "url": "https://raw.githubusercontent.com/bugsfreeweb/LiveTVCollector/HEAD/LiveTV/Bangladesh/LiveTV.m3u",
+      "description": "Public third-party cricket catalog; decoded identity reviewed, broadcaster authorization not asserted"
+    },
+    "community-cricket-a8d23dd24a": {
+      "url": "https://raw.githubusercontent.com/manikiptv/freecatv.github.io/HEAD/freecatv.m3u8",
+      "description": "Public third-party cricket catalog; decoded identity reviewed, broadcaster authorization not asserted"
+    },
+    "community-cricket-1a08fe1773": {
+      "url": "https://gist.githubusercontent.com/sh400sp-ctrl/6bbd74b685e6bd0b79d329767e237949/raw",
+      "description": "Public third-party cricket catalog; decoded identity reviewed, broadcaster authorization not asserted"
+    },
+    "community-cricket-097bcdf596": {
+      "url": "https://raw.githubusercontent.com/bugsfreeweb/LiveTVCollector/HEAD/LiveTV/India/LiveTV.m3u",
+      "description": "Public third-party cricket catalog; decoded identity reviewed, broadcaster authorization not asserted"
+    },
+    "community-cricket-c1df068b16": {
+      "url": "https://iptv-org.github.io/iptv/categories/sports.m3u",
+      "description": "Public third-party cricket catalog; decoded identity reviewed, broadcaster authorization not asserted"
+    },
+    "community-cricket-7ec4e0ea9e": {
+      "url": "https://raw.githubusercontent.com/M3UCurator/IPTVList/HEAD/All2.m3u",
+      "description": "Public third-party cricket catalog; decoded identity reviewed, broadcaster authorization not asserted"
     }
   },
   "resolution_policy": "576i/576p first, 720i/720p second, other known SD third, 1080 fallback, unknown last; no rendition URL synthesis",

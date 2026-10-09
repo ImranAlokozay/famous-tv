@@ -37,6 +37,16 @@ https://d2icntm6fhxrry.cloudfront.net/master_3.m3u8
 https://stream.ads.ottera.tv/playlist.m3u8?network_id=535
 #EXTINF:-1 tvg-id="WWESuperstarCentral.us@FAST" tvg-name="WWE Superstar Central" tvg-logo="" tvg-language="eng" group-title="Sports",WWE Superstar Central (720p)
 https://dpv6ceilvhyrw.cloudfront.net/720p-en-vtt/index.m3u8
+#EXTINF:-1 tvg-id="ASports.pk@HD" tvg-name="A Sports" tvg-logo="https://i.postimg.cc/4dR0TnGd/A-Sports-HD.png" tvg-language="eng;urd" group-title="Sports",A Sports (720p)
+https://tvsen6.aynaott.com/zv68oqPDu7MZZwmHhRxt/index.m3u8
+#EXTINF:-1 tvg-id="StarSports1.in@HD" tvg-name="Star Sports 1" tvg-logo="https://i.postimg.cc/QM22x0Qj/Star-Sports-1-HD.png" tvg-language="eng" group-title="Sports",Star Sports 1 (1080p)
+http://41.205.93.154/STARSPORTS1/index.m3u8
+#EXTINF:-1 tvg-id="StarSportsSelect1.in@SD" tvg-name="Star Sports Select 1" tvg-logo="https://i.imgur.com/Mh9tKPx.png" tvg-language="eng" group-title="Sports",Star Sports Select 1 (576p)
+http://103.151.60.162:2122/play/a026/index.m3u8?hls
+#EXTINF:-1 tvg-id="StarSportsSelect2.in@SD" tvg-name="Star Sports Select 2" tvg-logo="https://i.imgur.com/FtRT73R.png" tvg-language="eng" group-title="Sports",Star Sports Select 2 (576p)
+http://103.151.60.162:2122/play/a027/index.m3u8?hls
+#EXTINF:-1 tvg-id="Willow.us@HD" tvg-name="Willow TV" tvg-logo="https://i.imgur.com/s27K3Zc.jpg" tvg-language="eng" group-title="Sports",Willow TV (720p)
+https://tvsen5.aynaott.com/willowhd/index.m3u8
 #EXTINF:-1 tvg-id="ACCDigitalNetwork.us@SD" tvg-name="ACC Digital Network" tvg-logo="https://i.imgur.com/V6Kaqha.png" tvg-language="eng" group-title="Sports",ACC Digital Network (720p)
 https://aegis-cloudfront-1.tubi.video/a1e671ae-d1c2-4e39-99c7-889e83056fd2/720p-cc/index.m3u8
 #EXTINF:-1 tvg-id="BahrainSports1.bh@SD" tvg-name="Bahrain Sports 1" tvg-logo="https://i.imgur.com/fBpLsbC.png" tvg-language="ara" group-title="Sports",Bahrain Sports 1 (720p)

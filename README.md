@@ -47,9 +47,10 @@ copies of the same editorial stream are collapsed.
 
 Movies/series have small provider caps; Stingray music and archival TVS sports
 also have caps. Sports has no overall channel-count cap. Identified FAST brand
-editions are named separately from subscription flagships. Anonymous premium
-restreams, ticket/MAC URLs, incorrect channel identities, and nonpreferred
-language editions are not used to fill gaps.
+editions are named separately from subscription flagships. Copied account credentials,
+ticket/MAC URLs, incorrect channel identities, and nonpreferred language editions
+are not used to fill gaps. Reviewed third-party public distributions are permitted;
+their source is recorded without implying broadcaster authorization or guaranteed rights.
 
 For additional channels, add a reviewed inventory record with explicit language,
 source references, an approved host, and candidate URLs copied from an index or
@@ -64,6 +65,46 @@ Reports distinguish a found address from verified playback. Focused-pass additio
 accepted lower-resolution replacements received manifest, media-playlist, and
 first-media-object response checks before their metadata was committed. Region
 restrictions, eligibility, schedules, and expiry can apply.
+
+## Focused cricket discovery and video verification
+
+The additional catalog list, exact aliases, and published candidate references are in
+[`config/cricket_discovery.json`](config/cricket_discovery.json). This is a read-only
+research command, not another production health checker:
+
+```sh
+# Requires ffprobe and ffmpeg on PATH; the existing Python checker is reused.
+python scripts/discover_cricket.py --workers 12 --timeout 10
+# Optional focused retest; results stay separate from the full audit.
+python scripts/discover_cricket.py --channel 'PTV Sports' --output .cache/ptv-review
+```
+
+It fetches community/GitHub/regional catalogs and records website retrieval results,
+tests manifests and media objects, probes the video codec/resolution, decodes video
+frames, checks live-manifest progression, and captures frames for identity review.
+Website discovery is not automatic player/API extraction: a fetched page is not
+reported as a tested feed. Outputs under `.cache/cricket-discovery` include
+`discovery.json`, `access_audit.csv`, `access_audit.json`, and frame captures.
+`--reuse-evidence` is opt-in and retains original timestamps; use a fresh run for
+current HTTP evidence. This command never modifies `public/tv.m3u`.
+
+`SKIPPED_ACCESS` records the exact code condition, a redacted URL, and a unique
+candidate ID. Account/token-shaped paths are access concerns, not proof of a
+subscription or geo-block. These are not requested with copied credentials, so
+their status/redirect/headers are explicitly untested, not fabricated. A generic
+403 remains `UNKNOWN`; `GEO_RESTRICTED`, `AUTH_REQUIRED`, `DRM_PROTECTED`,
+`MISSING_HEADERS`, and `TEMPORARY_FAILURE` require appropriate evidence.
+Only published normal playback headers are honored. There is no token stripping,
+credential generation, DRM-key extraction, or geo-restriction bypass.
+
+The committed [`reports/cricket_discovery.json`](reports/cricket_discovery.json) and
+[`reports/cricket_access_audit.csv`](reports/cricket_access_audit.csv) document this
+research snapshot. [`reports/cricket_coverage.csv`](reports/cricket_coverage.csv)
+records accepted channels and unresolved targets. A public URL or decoded frame
+alone is insufficient: the editorial review must reject unrelated channels,
+fixed highlights clips, and mislabeled FAST editions. Accepted streams are added
+to the reviewed inventory and regenerated offline. Public mirrors can expire or
+have regional/rights limitations; these tests do not certify every LG/Android player.
 
 ## IPTV health checker and repair proposals
 

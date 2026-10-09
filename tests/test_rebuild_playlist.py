@@ -104,10 +104,18 @@ class CurationTests(unittest.TestCase):
         self.assertEqual([], report['hd_regressions'])
         self.assertIn('reports/missing_famous_channels.csv', generated)
         self.assertIn('all_sources_searched', generated['reports/missing_famous_channels.csv'].splitlines()[0])
-        self.assertEqual(149, report['resolution_review']['baseline_1080_reviewed'])
+        self.assertEqual(150, report['resolution_review']['baseline_1080_reviewed'])
         self.assertIn('reports/resolution_replacements.csv', generated)
         self.assertIn('reports/cricket_coverage.csv', generated)
-        self.assertEqual(1, report['cricket_coverage']['added_in_this_pass'])
+        self.assertEqual(5, report['cricket_coverage']['added_in_this_pass'])
+        additions = [row for row in report['cricket_coverage']['channels'] if row['added_in_this_pass']]
+        self.assertEqual({'Star Sports 1', 'Star Sports Select 1', 'Star Sports Select 2',
+                          'A Sports Pakistan', 'Willow TV'}, {row['requested_channel'] for row in additions})
+        for row in additions:
+            self.assertTrue(row['decoded_video_verified'])
+            self.assertEqual('MANIFEST_ADVANCED', row['live_verification'])
+            self.assertIn('not FAST', row['actual_feed_type'])
+            self.assertTrue(row['identity_evidence'])
         abc = next(row for row in report['cricket_coverage']['channels']
                    if row['requested_channel'] == 'ABC Cricket (Audio)')
         self.assertEqual('AVAILABLE_AUDIO', abc['availability'])

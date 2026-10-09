@@ -26550,5 +26550,201 @@
     "priority": 5,
     "focused_pass_added": true,
     "access_notes": "Official ABC event audio HLS. AAC media segments responded during the 2026-10-09 review; availability and programming are event-dependent."
+  },
+  {
+    "id": "ASports.pk",
+    "name": "A Sports",
+    "category": "Sports",
+    "provider": "ARY",
+    "famous": true,
+    "country": "PK",
+    "website": "https://a-sports.tv/",
+    "logo": "https://i.postimg.cc/4dR0TnGd/A-Sports-HD.png",
+    "languages": [
+      "eng",
+      "urd"
+    ],
+    "candidates": [
+      {
+        "url": "https://tvsen6.aynaott.com/zv68oqPDu7MZZwmHhRxt/index.m3u8",
+        "quality": "720p",
+        "feed": "HD",
+        "languages": [
+          "eng",
+          "urd"
+        ],
+        "labels": [
+          "public indexed distribution; decoded video and advancing live HLS verified"
+        ],
+        "user_agent": null,
+        "referrer": null,
+        "sources": [
+          "community-cricket-7a0918f334",
+          "community-cricket-8ce894eab0"
+        ]
+      }
+    ],
+    "baseline_present": false,
+    "approved_hosts": [
+      "tvsen6.aynaott.com"
+    ],
+    "priority": 10,
+    "focused_pass_added": true,
+    "access_notes": "Credential-free public mirror verified from this test location. Rights/region restrictions and future failure may apply; no LG/Android device guarantee."
+  },
+  {
+    "id": "StarSports1.in",
+    "name": "Star Sports 1",
+    "category": "Sports",
+    "provider": "Star",
+    "famous": true,
+    "country": "IN",
+    "website": "https://www.startv.com/about-us/sports/",
+    "logo": "https://i.postimg.cc/QM22x0Qj/Star-Sports-1-HD.png",
+    "languages": [
+      "eng"
+    ],
+    "candidates": [
+      {
+        "url": "http://41.205.93.154/STARSPORTS1/index.m3u8",
+        "quality": "1080p",
+        "feed": "HD",
+        "languages": [
+          "eng"
+        ],
+        "labels": [
+          "public indexed distribution; decoded video and advancing live HLS verified"
+        ],
+        "user_agent": null,
+        "referrer": null,
+        "sources": [
+          "community-cricket-a8d23dd24a",
+          "community-cricket-1a08fe1773"
+        ]
+      }
+    ],
+    "baseline_present": false,
+    "approved_hosts": [
+      "41.205.93.154"
+    ],
+    "priority": 10,
+    "focused_pass_added": true,
+    "access_notes": "Credential-free public mirror verified from this test location. Rights/region restrictions and future failure may apply; no LG/Android device guarantee."
+  },
+  {
+    "id": "StarSportsSelect1.in",
+    "name": "Star Sports Select 1",
+    "category": "Sports",
+    "provider": "Star",
+    "famous": true,
+    "country": "IN",
+    "website": "https://www.startv.com/about-us/sports/",
+    "logo": "https://i.imgur.com/Mh9tKPx.png",
+    "languages": [
+      "eng"
+    ],
+    "candidates": [
+      {
+        "url": "http://103.151.60.162:2122/play/a026/index.m3u8?hls",
+        "quality": "576p",
+        "feed": "SD",
+        "languages": [
+          "eng"
+        ],
+        "labels": [
+          "public indexed distribution; decoded video and advancing live HLS verified"
+        ],
+        "user_agent": null,
+        "referrer": null,
+        "sources": [
+          "community-cricket-097bcdf596",
+          "community-cricket-c1df068b16"
+        ]
+      }
+    ],
+    "baseline_present": false,
+    "approved_hosts": [
+      "103.151.60.162"
+    ],
+    "priority": 10,
+    "focused_pass_added": true,
+    "access_notes": "Credential-free public mirror verified from this test location. Rights/region restrictions and future failure may apply; no LG/Android device guarantee."
+  },
+  {
+    "id": "StarSportsSelect2.in",
+    "name": "Star Sports Select 2",
+    "category": "Sports",
+    "provider": "Star",
+    "famous": true,
+    "country": "IN",
+    "website": "https://www.startv.com/about-us/sports/",
+    "logo": "https://i.imgur.com/FtRT73R.png",
+    "languages": [
+      "eng"
+    ],
+    "candidates": [
+      {
+        "url": "http://103.151.60.162:2122/play/a027/index.m3u8?hls",
+        "quality": "576p",
+        "feed": "SD",
+        "languages": [
+          "eng"
+        ],
+        "labels": [
+          "public indexed distribution; decoded video and advancing live HLS verified"
+        ],
+        "user_agent": null,
+        "referrer": null,
+        "sources": [
+          "community-cricket-097bcdf596",
+          "community-cricket-c1df068b16"
+        ]
+      }
+    ],
+    "baseline_present": false,
+    "approved_hosts": [
+      "103.151.60.162"
+    ],
+    "priority": 10,
+    "focused_pass_added": true,
+    "access_notes": "Credential-free public mirror verified from this test location. Rights/region restrictions and future failure may apply; no LG/Android device guarantee."
+  },
+  {
+    "id": "Willow.us",
+    "name": "Willow TV",
+    "category": "Sports",
+    "provider": "Willow",
+    "famous": true,
+    "country": "US",
+    "website": "https://www.willow.tv/",
+    "logo": "https://i.imgur.com/s27K3Zc.jpg",
+    "languages": [
+      "eng"
+    ],
+    "candidates": [
+      {
+        "url": "https://tvsen5.aynaott.com/willowhd/index.m3u8",
+        "quality": "720p",
+        "feed": "HD",
+        "languages": [
+          "eng"
+        ],
+        "labels": [
+          "public indexed distribution; decoded video and advancing live HLS verified"
+        ],
+        "user_agent": null,
+        "referrer": null,
+        "sources": [
+          "community-cricket-7ec4e0ea9e"
+        ]
+      }
+    ],
+    "baseline_present": false,
+    "approved_hosts": [
+      "tvsen5.aynaott.com"
+    ],
+    "priority": 10,
+    "focused_pass_added": true,
+    "access_notes": "Credential-free public mirror verified from this test location. Rights/region restrictions and future failure may apply; no LG/Android device guarantee."
   }
 ]
