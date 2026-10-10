@@ -21,17 +21,32 @@ class CricketDiscoveryTests(unittest.TestCase):
     def test_normal_public_paths_and_headers_are_not_rejected(self):
         self.assertEqual(('', ''), cricket.access_condition('http://103.151.60.162:2122/play/a026/index.m3u8?hls', [], {'Referer': 'https://example.org/', 'User-Agent': 'Mozilla/5.0'}))
         self.assertEqual('', cricket.credential_reason('https://cdn.example.org/opaque-channel-id/index.m3u8', []))
+        self.assertEqual('', cricket.credential_reason('https://cdn.example.org/sports/current/2026.ts', []))
 
     def test_access_conditions_are_explicit(self):
         fixtures = [
             ('http://user:password@example.org/a.m3u8', [], 'URL_USERINFO'),
             ('https://example.org/a.m3u8?token=secret', [], 'ACCESS_QUERY_KEYS'),
             ('https://example.org/live/user/password/123.m3u8', [], 'ACCOUNT_PATH'),
+            ('https://example.org/09746171/15445345/180', [], 'ACCOUNT_PATH'),
+            ('https://example.org/h1wqD6CY/byxHYgX/707929', [], 'ACCOUNT_PATH'),
             ('https://example.org/iptv/QRDWGTBMDHSDGK/19146/index.m3u8', [], 'ACCOUNT_TOKEN_PATH'),
             ('https://example.org/a.mpd', ['#KODIPROP:inputstream.adaptive.license_key=secret'], 'DRM_OPTIONS'),
         ]
         for url, options, expected in fixtures:
             self.assertEqual(expected, cricket.access_condition(url, options)[0])
+
+    def test_explicit_candidate_keeps_playback_headers_and_access_guards(self):
+        raw = dict(channel='beIN Sports 2', url='https://example.org/live.m3u8',
+                   source='https://example.org/catalog', headers={'Referer': 'https://example.org/'},
+                   options=['#EXTVLCOPT:http-referrer=https://example.org/'])
+        candidate = cricket.configured_candidate(raw)
+        self.assertEqual(raw['headers'], candidate['headers'])
+        self.assertEqual(raw['options'], candidate['options'])
+        self.assertEqual(('', ''), cricket.access_condition(candidate['url'], candidate['options'], candidate['headers']))
+        candidate['headers']['Authorization'] = 'private'
+        self.assertEqual('ACCESS_HEADERS', cricket.access_condition(candidate['url'], candidate['options'], candidate['headers'])[0])
+        self.assertNotIn('Authorization', raw['headers'])
 
     def test_forbidden_does_not_prove_geo_or_subscription(self):
         classify = cricket.classify_access
@@ -41,6 +56,8 @@ class CricketDiscoveryTests(unittest.TestCase):
         self.assertEqual('TEMPORARY_FAILURE', classify(503, {}))
         self.assertEqual('MISSING_HEADERS', classify(200, {}, documented_headers_worked=True))
         self.assertEqual('DRM_PROTECTED', classify(200, {}, '#EXT-X-KEY:METHOD=SAMPLE-AES,KEYFORMAT="widevine"'))
+        self.assertEqual('DRM_PROTECTED', classify(200, {}, '<MPD><ContentProtection schemeIdUri="urn:mpeg:dash:mp4protection:2011" value="cenc"/></MPD>'))
+        self.assertEqual('UNKNOWN', classify(200, {}, '<MPD><Period/></MPD>'))
 
     def test_skipped_access_is_unknown_and_never_requested(self):
         candidate = dict(channel='PTV Sports', url='https://example.org/a.m3u8?token=secret', headers={}, options=[])
@@ -105,6 +122,18 @@ class CricketDiscoveryTests(unittest.TestCase):
             result = cricket.probe_candidate(candidate, Path(directory), 1)
         self.assertEqual('NO_VERIFIED_VIDEO', result['result'])
         self.assertFalse(result['identity_verified'])
+
+    def test_protected_dash_does_not_count_as_verified_playback(self):
+        from iptv_health.models import HealthStatus
+        Check = cricket.dataclasses.make_dataclass('Check', [('status', object), ('verified_media', bool)])
+        candidate = dict(channel='beIN Sports 2', url='https://example.org/cenc.mpd', headers={}, options=[])
+        with patch.object(cricket, 'EvidenceTransport') as transport, patch.object(cricket, 'StreamChecker') as checker, patch.object(cricket.subprocess, 'run') as decode, tempfile.TemporaryDirectory() as directory:
+            transport.return_value.requests = [{'access_classification': 'DRM_PROTECTED'}]
+            checker.return_value.check_url.return_value = Check(HealthStatus.PROBABLY_WORKING, False)
+            result = cricket.probe_candidate(candidate, Path(directory), 1)
+        self.assertEqual('DRM_PROTECTED', result['result'])
+        self.assertFalse(result['identity_verified'])
+        decode.assert_not_called()
 
 
 if __name__ == '__main__':

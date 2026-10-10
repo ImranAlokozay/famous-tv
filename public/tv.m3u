@@ -39,6 +39,8 @@ https://stream.ads.ottera.tv/playlist.m3u8?network_id=535
 https://dpv6ceilvhyrw.cloudfront.net/720p-en-vtt/index.m3u8
 #EXTINF:-1 tvg-id="ASports.pk@HD" tvg-name="A Sports" tvg-logo="https://i.postimg.cc/4dR0TnGd/A-Sports-HD.png" tvg-language="eng;urd" group-title="Sports",A Sports (720p)
 https://tvsen6.aynaott.com/zv68oqPDu7MZZwmHhRxt/index.m3u8
+#EXTINF:-1 tvg-id="beINSportsUSA.us@SD" tvg-name="beIN SPORTS (English)" tvg-logo="https://s3.aynaott.com/storage/04a56bc13c4c486ad4a4d82a1e00fd73" tvg-language="eng" group-title="Sports",beIN SPORTS (English) (432p)
+https://tvsen6.aynaott.com/beinsports/index.m3u8
 #EXTINF:-1 tvg-id="StarSports1.in@HD" tvg-name="Star Sports 1" tvg-logo="https://i.postimg.cc/QM22x0Qj/Star-Sports-1-HD.png" tvg-language="eng" group-title="Sports",Star Sports 1 (1080p)
 http://41.205.93.154/STARSPORTS1/index.m3u8
 #EXTINF:-1 tvg-id="StarSportsSelect1.in@SD" tvg-name="Star Sports Select 1" tvg-logo="https://i.imgur.com/Mh9tKPx.png" tvg-language="eng" group-title="Sports",Star Sports Select 1 (576p)

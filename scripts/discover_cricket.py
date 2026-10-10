@@ -46,6 +46,10 @@ def credential_reason(url, options):
         return 'Credential/token/session-specific published URL; not reusable without access tokens'
     if re.search(r'/(?:live|iptv)/[^/]+/[^/]+/\d+(?:[./]|$)', parsed.path):
         return 'Credential-shaped IPTV line'
+    parts = parsed.path.strip('/').split('/')
+    if (re.fullmatch(r'/[A-Za-z0-9]{6,}/[A-Za-z0-9]{6,}/\d+(?:\.[A-Za-z0-9]+)?/?', parsed.path)
+            and any(character.isdigit() for part in parts[:2] for character in part)):
+        return 'Credential-shaped IPTV line'
     if re.search(r'/iptv/[A-Z0-9]{10,}/\d+/', parsed.path):
         return 'Account-token-shaped IPTV line'
     if any(re.search(r'license_key|license_type|drmlicense=|drmscheme=', item, re.I) for item in options):
@@ -78,6 +82,8 @@ def classify_access(status, headers, body='', documented_headers_worked=False):
     if documented_headers_worked:
         return 'MISSING_HEADERS'
     if '#ext-x-key' in text and ('sample-aes' in text or 'widevine' in text or 'fairplay' in text):
+        return 'DRM_PROTECTED'
+    if '<mpd' in text and ('<contentprotection' in text or '<cenc:pssh' in text):
         return 'DRM_PROTECTED'
     if status == 401 or 'www-authenticate' in headers or (status == 403 and any(w in text for w in ('login required', 'authentication required', 'subscription required'))):
         return 'AUTH_REQUIRED'
@@ -226,6 +232,9 @@ def probe_candidate(candidate, output, timeout):
                 row['access_classification'] = 'MISSING_HEADERS'
         row['http_hls_evidence'] = dataclasses.asdict(check)
         row['http_hls_evidence']['status'] = check.status.value
+        if row['access_classification'] == 'DRM_PROTECTED':
+            row.update(result='DRM_PROTECTED', reason='Manifest declares protected media; no license or decryption keys were used')
+            return row
         if not check.verified_media:
             row.update(result=check.status.value, reason=check.reason)
             return row
@@ -284,7 +293,9 @@ def write_access_report(results, output):
         'NON_HTTP_URL': "scheme not in ('https', 'http') or hostname absent",
         'URL_USERINFO': 'parsed.username or parsed.password',
         'ACCESS_QUERY_KEYS': "query keys intersect {token,ticket,password,username,mac,play_token,wmsauthsign,hdnts,hdnea,auth}",
-        'ACCOUNT_PATH': r'path matches /(?:live|iptv)/[^/]+/[^/]+/\d+(?:[./]|$)',
+        'ACCOUNT_PATH': (r're.search(/(?:live|iptv)/[^/]+/[^/]+/\d+(?:[./]|$), path) or '
+                         r're.fullmatch(/[A-Za-z0-9]{6,}/[A-Za-z0-9]{6,}/\d+(?:\.[A-Za-z0-9]+)?/?, path) '
+                         'and any(character.isdigit() for part in path.strip(/).split(/)[:2] for character in part)'),
         'ACCOUNT_TOKEN_PATH': r'path matches /iptv/[A-Z0-9]{10,}/\d+/',
         'DRM_OPTIONS': 'options match license_key|license_type|drmlicense=|drmscheme=',
         'ACCESS_OPTIONS': 'options contain cookie= or authorization=',
@@ -312,6 +323,15 @@ def write_access_report(results, output):
         writer.writeheader()
         for row in rows:
             writer.writerow(dict(row, response_headers=json.dumps(row['response_headers'], sort_keys=True)))
+
+
+def configured_candidate(candidate):
+    """Preserve publicly documented playback headers/options on explicit candidates."""
+    return dict(candidate, options=list(candidate.get('options', [])),
+                headers=dict(candidate.get('headers', {})), sources=[candidate['source']],
+                catalog_label=candidate.get('catalog_label', candidate['channel']),
+                reported_resolution=candidate.get('reported_resolution', 'unknown'),
+                tvg_id=candidate.get('tvg_id', ''))
 
 
 def main():
@@ -350,8 +370,7 @@ def main():
         deduplicated[key]['sources'].append(candidate['source'])
     candidates = list(deduplicated.values())
     for candidate in config.get('candidates', []):
-        candidates.append(dict(candidate, options=[], headers={}, sources=[candidate['source']],
-                               catalog_label=candidate['channel'], reported_resolution='unknown', tvg_id=''))
+        candidates.append(configured_candidate(candidate))
     unique = {}
     for candidate in candidates:
         key = (candidate['channel'], candidate['url'], tuple(sorted(candidate['headers'].items())))

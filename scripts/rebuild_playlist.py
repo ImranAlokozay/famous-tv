@@ -337,6 +337,9 @@ def markdown_report(report):
               'accepted lower renditions, URLs, sources, and why retained 1080p entries remained. '
               '[cricket_coverage.csv](cricket_coverage.csv) records the focused cricket search, feed type, selected resolution, '
               'source provenance, and live verification result for every requested cricket outlet. '
+              '[bein_coverage.csv](bein_coverage.csv) records beIN editions separately; '
+              '[bein_discovery.json](bein_discovery.json) and [bein_access_audit.csv](bein_access_audit.csv) '
+              'record candidate playback evidence and access uncertainty. '
               'The reviewed candidates themselves are in [../curation/channels.json](../curation/channels.json).', '',
               '## Scope', '', 'Sports has no count cap. Language and duplicate filtering apply to every category. '
               'Movies and series have small provider caps. Regional Indian-language-only channels, '
@@ -345,8 +348,8 @@ def markdown_report(report):
     return '\n'.join(lines)
 
 
-def cricket_coverage_report(selected, targets, policy):
-    """Create a reproducible record of cricket coverage without treating substitutes as flagships."""
+def channel_coverage_report(selected, targets, policy):
+    """Record exact channel coverage without treating alternatives as flagships."""
     selected_by_id = {channel['id']: channel for channel in selected}
     common_sources = policy.get('focused_research_sources', [])
     rows = []
@@ -393,7 +396,7 @@ def cricket_coverage_report(selected, targets, policy):
     return rows
 
 
-def outputs(channels, policy, targets, resolution_overrides=None, health_promotions=None, cricket_targets=None):
+def outputs(channels, policy, targets, resolution_overrides=None, health_promotions=None, cricket_targets=None, bein_targets=None):
     routing_check(policy)
     resolution_overrides = resolution_overrides or []
     health_promotions = health_promotions or []
@@ -406,13 +409,20 @@ def outputs(channels, policy, targets, resolution_overrides=None, health_promoti
     if not selected:
         raise ValueError('Refusing an empty playlist')
     report = build_report(selected, excluded, targets, policy)
-    cricket_rows = cricket_coverage_report(selected, cricket_targets or [], policy)
+    cricket_rows = channel_coverage_report(selected, cricket_targets or [], policy)
     report['cricket_coverage'] = {
         'requested': len(cricket_rows),
         'available': sum(row['availability'] != 'UNAVAILABLE' for row in cricket_rows),
         'missing': sum(row['availability'] == 'UNAVAILABLE' for row in cricket_rows),
         'added_in_this_pass': sum(row['added_in_this_pass'] for row in cricket_rows),
         'channels': cricket_rows}
+    bein_rows = channel_coverage_report(selected, bein_targets or [], policy)
+    report['bein_coverage'] = {
+        'requested': len(bein_rows),
+        'available': sum(row['availability'] != 'UNAVAILABLE' for row in bein_rows),
+        'missing': sum(row['availability'] == 'UNAVAILABLE' for row in bein_rows),
+        'added_in_this_pass': sum(row['added_in_this_pass'] for row in bein_rows),
+        'channels': bein_rows}
     selected_by_id = {channel['id']: channel for channel in selected}
     overrides_by_id = {override['id']: override for override in resolution_overrides}
     promotions_by_id = {promotion['id']: promotion for promotion in health_promotions}
@@ -500,12 +510,18 @@ def outputs(channels, policy, targets, resolution_overrides=None, health_promoti
     cricket_writer.writeheader()
     for row in cricket_rows:
         cricket_writer.writerow({key: row[key] for key in cricket_fields})
+    bein_buffer = io.StringIO(newline='')
+    bein_writer = csv.DictWriter(bein_buffer, fieldnames=cricket_fields, lineterminator='\n')
+    bein_writer.writeheader()
+    for row in bein_rows:
+        bein_writer.writerow({key: row[key] for key in cricket_fields})
     return {'public/tv.m3u': render_m3u(selected),
             'reports/playlist-report.json': json.dumps(report, ensure_ascii=False, indent=2) + '\n',
             'reports/playlist-report.md': markdown_report(report), 'reports/channels.csv': buffer.getvalue(),
             'reports/missing_famous_channels.csv': missing_buffer.getvalue(),
             'reports/resolution_replacements.csv': replacement_buffer.getvalue(),
-            'reports/cricket_coverage.csv': cricket_buffer.getvalue()}, report
+            'reports/cricket_coverage.csv': cricket_buffer.getvalue(),
+            'reports/bein_coverage.csv': bein_buffer.getvalue()}, report
 
 
 def main():
@@ -523,9 +539,14 @@ def main():
     cricket_target_names = {target['name'] for target in cricket_targets}
     targets = [target for target in targets if target['name'] not in cricket_target_names]
     targets.extend(dict(target, group='Sports', category='Sports') for target in cricket_targets)
+    bein_targets_path = ROOT / 'curation/bein_targets.json'
+    bein_targets = json.loads(bein_targets_path.read_text()) if bein_targets_path.exists() else []
+    bein_names = {target['name'] for target in bein_targets}
+    targets = [target for target in targets if target['name'] not in bein_names]
+    targets.extend(dict(target, group='Sports', category='Sports') for target in bein_targets)
     resolution_overrides = json.loads((ROOT / 'curation/resolution_overrides.json').read_text())
     health_promotions = json.loads((ROOT / 'curation/health_promotions.json').read_text())
-    generated, report = outputs(channels, policy, targets, resolution_overrides, health_promotions, cricket_targets)
+    generated, report = outputs(channels, policy, targets, resolution_overrides, health_promotions, cricket_targets, bein_targets)
     for path, content in generated.items():
         target = ROOT / path
         if args.check:

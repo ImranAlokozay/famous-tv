@@ -137,6 +137,11 @@
     "community-cricket-7ec4e0ea9e": {
       "url": "https://raw.githubusercontent.com/M3UCurator/IPTVList/HEAD/All2.m3u",
       "description": "Public third-party cricket catalog; decoded identity reviewed, broadcaster authorization not asserted"
+    },
+    "community-bein-6cd93cc717": {
+      "url": "https://raw.githubusercontent.com/xOdis/stremio-dev-features-opened/HEAD/WATCHIT/arabic-bein.m3u",
+      "retrieved": "2026-10-10",
+      "description": "Public catalog; inaccurate numbered label corrected through decoded on-screen branding; no copied credentials used."
     }
   },
   "resolution_policy": "576i/576p first, 720i/720p second, other known SD third, 1080 fallback, unknown last; no rendition URL synthesis",

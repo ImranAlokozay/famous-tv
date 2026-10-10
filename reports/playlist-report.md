@@ -6,11 +6,11 @@ The playlist contains public index entries and broadcaster/FAST distribution add
 
 Resolution is the published stream label, not a measured bitrate or a bandwidth limit. Adaptive master playlists can select other renditions during playback. Unknown stays unknown; SD/HD broadcast tags are not used to infer stream resolution.
 
-Total: **447**; new channel identities: **341**; 1080 alternatives avoided: **151**.
+Total: **448**; new channel identities: **342**; 1080 alternatives avoided: **151**.
 
 | Category | Channels |
 | --- | ---: |
-| Sports | 98 |
+| Sports | 99 |
 | Movies | 37 |
 | Series | 17 |
 | Entertainment | 43 |
@@ -29,6 +29,7 @@ Total: **447**; new channel identities: **341**; 1080 alternatives avoided: **15
 | 240p | 1 |
 | 360p | 5 |
 | 396p | 1 |
+| 432p | 1 |
 | 480p | 3 |
 | 540p | 1 |
 | 576p | 57 |
@@ -189,6 +190,8 @@ Duplicate normalized names: 0. Duplicate URLs: 0. 1080 selections with a reviewe
 | ABC Cricket (Audio) | ABC Cricket (Audio) (unknown) |
 | Lemar TV cricket coverage | Lemar TV (720p) |
 | RTA cricket coverage | RTA (720p) |
+| beIN SPORTS (English) | beIN SPORTS (English) (432p) |
+| beIN SPORTS XTRA (FAST) | beIN SPORTS XTRA (720p) |
 
 ## Searched but unavailable as a standalone public M3U
 
@@ -240,7 +243,6 @@ These are search outcomes within the documented sources, not claims that a chann
 | Sky Sports | No legitimate stable public M3U of the requested flagship found; free brand editions are listed separately. Provider subscriptions, unclear restreams, and nonpreferred language feeds excluded. | https://www.skysports.com/ |
 | ESPN flagship | No legitimate stable public M3U of the requested flagship found; free brand editions are listed separately. Provider subscriptions, unclear restreams, and nonpreferred language feeds excluded. | https://espn.com/ |
 | Fox Sports flagship | No legitimate stable public M3U of the requested flagship found; FOX Sports FAST is listed separately. Provider-authenticated and anonymous restreams were excluded. | https://www.foxsports.com/ |
-| beIN Sports flagship | No legitimate stable public M3U of the requested flagship found; free brand editions are listed separately. Provider subscriptions, unclear restreams, and nonpreferred language feeds excluded. | https://www.beinsports.com/ar/ |
 | TNT Sports | No legitimate stable public M3U of the requested flagship found; free brand editions are listed separately. Provider subscriptions, unclear restreams, and nonpreferred language feeds excluded. | https://www.tntsports.co.uk/ |
 | Abu Dhabi Sports | No legitimate stable public M3U of the requested flagship found; free brand editions are listed separately. Provider subscriptions, unclear restreams, and nonpreferred language feeds excluded. | https://adtv.ae/en/live/Abu%20Dhabi%20Sports%20Channel%201 |
 | Alkass | No legitimate stable public M3U of the requested flagship found; free brand editions are listed separately. Provider subscriptions, unclear restreams, and nonpreferred language feeds excluded. | https://www.alkass.net/ |
@@ -315,14 +317,6 @@ These are search outcomes within the documented sources, not claims that a chann
 | Fox Sports 1 | FS1 requires TV-provider or paid platform access; the selected FOX Sports FAST service is a different channel. | https://www.foxsports.com/find-fs1-on-your-tv |
 | Fox Sports 2 | FS2 requires TV-provider or paid platform access; no licensed unauthenticated HLS found. | https://www.foxsports.com/ |
 | Fox Deportes | Authenticated network; no licensed unauthenticated HLS found. | https://www.foxdeportes.com/ |
-| beIN Sports 1 | Premium regional feed; no stable licensed unauthenticated HLS found. beIN XTRA is a separate free service. | https://www.beinsports.com/ |
-| beIN Sports 2 | Premium regional feed; no stable licensed unauthenticated HLS found. | https://www.beinsports.com/ |
-| beIN Sports 3 | Premium regional feed; no stable licensed unauthenticated HLS found. | https://www.beinsports.com/ |
-| beIN Sports 4 | Premium regional feed; no stable licensed unauthenticated HLS found. | https://www.beinsports.com/ |
-| beIN Sports 5 | Premium regional feed; no stable licensed unauthenticated HLS found. | https://www.beinsports.com/ |
-| beIN Sports 6 | Premium regional feed; no stable licensed unauthenticated HLS found. | https://www.beinsports.com/ |
-| beIN Sports English | Premium regional feed; no stable licensed unauthenticated HLS found. | https://www.beinsports.com/ |
-| beIN Sports Arabic | Premium regional feed; no stable licensed unauthenticated HLS found. | https://www.beinsports.com/ |
 | TNT Sports 1 | Premium authenticated network; public results lacked licensed standalone provenance. | https://www.tntsports.co.uk/ |
 | TNT Sports 2 | Premium authenticated network; public results lacked licensed standalone provenance. | https://www.tntsports.co.uk/ |
 | TNT Sports 3 | Premium authenticated network; public results lacked licensed standalone provenance. | https://www.tntsports.co.uk/ |
@@ -372,6 +366,34 @@ These are search outcomes within the documented sources, not claims that a chann
 | CricLife | No credential-free, exact-identity live video verified in this run. Timeout, forbidden, or skipped results do not prove global unavailability. | https://starzplay.com/channels/criclife |
 | ICC.tv public feeds | No reusable stream with current media availability was verified. | https://www.icc-cricket.com/icc-tv |
 | Official Afghanistan Cricket Board coverage | Official coverage is event-specific; no current reusable public channel URL was available. | https://cricket.af/ |
+| beIN Sports 1 | No candidate passed decoded-video, exact-identity, live/reusable checks from this test location. BROKEN=4; DRM_PROTECTED=1; GEO_BLOCKED_OR_FORBIDDEN=31; PROBABLY_WORKING=1; SKIPPED_ACCESS=53; TIMEOUT=11; UNKNOWN=30; VERIFIED_LINEAR_FEED=1 | https://www.beinsports.com/ |
+| beIN Sports 2 | No candidate passed decoded-video, exact-identity, live/reusable checks from this test location. BROKEN=8; DRM_PROTECTED=2; GEO_BLOCKED_OR_FORBIDDEN=21; IDENTITY_REJECTED_PLACEHOLDER=1; SKIPPED_ACCESS=54; TIMEOUT=22; UNKNOWN=28 An apparent 1080p response was rejected: redirect to unrelated /new_stub/ on-demand video. Skipped and forbidden sources remain unconfirmed, not proof of global unavailability. | https://www.beinsports.com/ |
+| beIN Sports 3 | No candidate passed decoded-video, exact-identity, live/reusable checks from this test location. BROKEN=4; DRM_PROTECTED=2; GEO_BLOCKED_OR_FORBIDDEN=22; SKIPPED_ACCESS=51; TIMEOUT=10; UNKNOWN=17 | https://www.beinsports.com/ |
+| beIN Sports 4 | No candidate passed decoded-video, exact-identity, live/reusable checks from this test location. BROKEN=4; GEO_BLOCKED_OR_FORBIDDEN=22; SKIPPED_ACCESS=44; TIMEOUT=7; UNKNOWN=14 | https://www.beinsports.com/ |
+| beIN Sports 5 | No candidate passed decoded-video, exact-identity, live/reusable checks from this test location. BROKEN=4; GEO_BLOCKED_OR_FORBIDDEN=16; SKIPPED_ACCESS=45; TIMEOUT=6; UNKNOWN=11 | https://www.beinsports.com/ |
+| beIN Sports 6 | No candidate passed decoded-video, exact-identity, live/reusable checks from this test location. BROKEN=4; GEO_BLOCKED_OR_FORBIDDEN=11; SKIPPED_ACCESS=38; TIMEOUT=4; UNKNOWN=4 | https://www.beinsports.com/ |
+| beIN Sports 7 | No candidate passed decoded-video, exact-identity, live/reusable checks from this test location. BROKEN=4; GEO_BLOCKED_OR_FORBIDDEN=10; SKIPPED_ACCESS=36; TIMEOUT=3; UNKNOWN=4 | https://www.beinsports.com/ |
+| beIN Sports 8 | No candidate passed decoded-video, exact-identity, live/reusable checks from this test location. BROKEN=3; GEO_BLOCKED_OR_FORBIDDEN=8; SKIPPED_ACCESS=28; TIMEOUT=2; UNKNOWN=2 | https://www.beinsports.com/ |
+| beIN Sports 9 | No candidate passed decoded-video, exact-identity, live/reusable checks from this test location. BROKEN=3; GEO_BLOCKED_OR_FORBIDDEN=7; SKIPPED_ACCESS=18; TIMEOUT=2; UNKNOWN=1 | https://www.beinsports.com/ |
+| beIN Sports 1 (English) | No candidate passed decoded-video, exact-identity, live/reusable checks from this test location. BROKEN=1; GEO_BLOCKED_OR_FORBIDDEN=1; SKIPPED_ACCESS=6 | https://www.beinsports.com/ |
+| beIN Sports 2 (English) | No candidate passed decoded-video, exact-identity, live/reusable checks from this test location. BROKEN=1; GEO_BLOCKED_OR_FORBIDDEN=1; SKIPPED_ACCESS=6; TIMEOUT=1; UNKNOWN=2 | https://www.beinsports.com/ |
+| beIN Sports 3 (English) | No candidate passed decoded-video, exact-identity, live/reusable checks from this test location. GEO_BLOCKED_OR_FORBIDDEN=1; SKIPPED_ACCESS=3 | https://www.beinsports.com/ |
+| beIN Sports 1 (France) | No candidate passed decoded-video, exact-identity, live/reusable checks from this test location. BROKEN=1; GEO_BLOCKED_OR_FORBIDDEN=6; SKIPPED_ACCESS=10; TIMEOUT=1; UNKNOWN=1 | https://www.beinsports.com/ |
+| beIN Sports 2 (France) | No candidate passed decoded-video, exact-identity, live/reusable checks from this test location. BROKEN=1; GEO_BLOCKED_OR_FORBIDDEN=5; SKIPPED_ACCESS=10; TIMEOUT=2; UNKNOWN=2 | https://www.beinsports.com/ |
+| beIN Sports 3 (France) | No candidate passed decoded-video, exact-identity, live/reusable checks from this test location. BROKEN=1; GEO_BLOCKED_OR_FORBIDDEN=3; SKIPPED_ACCESS=9; TIMEOUT=1 | https://www.beinsports.com/ |
+| beIN Sports 1 (Turkey) | No candidate passed decoded-video, exact-identity, live/reusable checks from this test location. GEO_BLOCKED_OR_FORBIDDEN=2; SKIPPED_ACCESS=5; UNKNOWN=5 | https://www.beinsports.com/ |
+| beIN Sports 2 (Turkey) | No candidate passed decoded-video, exact-identity, live/reusable checks from this test location. GEO_BLOCKED_OR_FORBIDDEN=3; SKIPPED_ACCESS=4; UNKNOWN=2 | https://www.beinsports.com/ |
+| beIN Sports 3 (Turkey) | No candidate passed decoded-video, exact-identity, live/reusable checks from this test location. GEO_BLOCKED_OR_FORBIDDEN=2; SKIPPED_ACCESS=4; UNKNOWN=3 | https://www.beinsports.com/ |
+| beIN Sports 1 (Thailand) | No candidate passed decoded-video, exact-identity, live/reusable checks from this test location. BROKEN=1; GEO_BLOCKED_OR_FORBIDDEN=1 | https://www.beinsports.com/ |
+| beIN Sports 2 (Thailand) | No candidate passed decoded-video, exact-identity, live/reusable checks from this test location. BROKEN=2; GEO_BLOCKED_OR_FORBIDDEN=1; SKIPPED_ACCESS=1; TIMEOUT=1; UNKNOWN=1 | https://www.beinsports.com/ |
+| beIN Sports 3 (Thailand) | No candidate passed decoded-video, exact-identity, live/reusable checks from this test location. GEO_BLOCKED_OR_FORBIDDEN=1; SKIPPED_ACCESS=1 | https://www.beinsports.com/ |
+| beIN Sports 1 (Premium) | No exact playable candidate identified in the documented catalogs. | https://www.beinsports.com/ |
+| beIN Sports 2 (Premium) | No exact playable candidate identified in the documented catalogs. | https://www.beinsports.com/ |
+| beIN Sports 3 (Premium) | No exact playable candidate identified in the documented catalogs. | https://www.beinsports.com/ |
+| beIN SPORTS NEWS | No candidate passed decoded-video, exact-identity, live/reusable checks from this test location. GEO_BLOCKED_OR_FORBIDDEN=2; SKIPPED_ACCESS=9; TIMEOUT=1 | https://www.beinsports.com/ |
+| beIN Sports flagship | No exact verified reusable public distribution for this MENA service was found in the expanded review. Unnumbered English beIN and XTRA are separate feeds. | https://www.beinsports.com/ |
+| beIN Sports English | No exact verified reusable public distribution for this MENA service was found in the expanded review. Unnumbered English beIN and XTRA are separate feeds. | https://www.beinsports.com/ |
+| beIN Sports Arabic | No exact verified reusable public distribution for this MENA service was found in the expanded review. Unnumbered English beIN and XTRA are separate feeds. | https://www.beinsports.com/ |
 
 ## Afghan preservation
 
@@ -379,7 +401,7 @@ All 24 original Afghan channel identities remain. The inventory also records add
 
 ## Sources, alternatives, and additions
 
-See [channels.csv](channels.csv) for every selected channel, including whether it is new, selected resolution, source used, and whether a lower-resolution alternative existed. [playlist-report.json](playlist-report.json) contains candidate counts, all alternative resolution labels, coverage, and excluded duplicate/cap entries. [missing_famous_channels.csv](missing_famous_channels.csv) records each requested target still missing, the sources searched, closest selected alternatives, observed resolution labels, and final reason. [resolution_replacements.csv](resolution_replacements.csv) records all 149 baseline 1080p channels reviewed, accepted lower renditions, URLs, sources, and why retained 1080p entries remained. [cricket_coverage.csv](cricket_coverage.csv) records the focused cricket search, feed type, selected resolution, source provenance, and live verification result for every requested cricket outlet. The reviewed candidates themselves are in [../curation/channels.json](../curation/channels.json).
+See [channels.csv](channels.csv) for every selected channel, including whether it is new, selected resolution, source used, and whether a lower-resolution alternative existed. [playlist-report.json](playlist-report.json) contains candidate counts, all alternative resolution labels, coverage, and excluded duplicate/cap entries. [missing_famous_channels.csv](missing_famous_channels.csv) records each requested target still missing, the sources searched, closest selected alternatives, observed resolution labels, and final reason. [resolution_replacements.csv](resolution_replacements.csv) records all 149 baseline 1080p channels reviewed, accepted lower renditions, URLs, sources, and why retained 1080p entries remained. [cricket_coverage.csv](cricket_coverage.csv) records the focused cricket search, feed type, selected resolution, source provenance, and live verification result for every requested cricket outlet. [bein_coverage.csv](bein_coverage.csv) records beIN editions separately; [bein_discovery.json](bein_discovery.json) and [bein_access_audit.csv](bein_access_audit.csv) record candidate playback evidence and access uncertainty. The reviewed candidates themselves are in [../curation/channels.json](../curation/channels.json).
 
 ## Scope
 

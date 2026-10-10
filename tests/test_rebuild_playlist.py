@@ -91,10 +91,14 @@ class CurationTests(unittest.TestCase):
         cricket_target_names = {target['name'] for target in cricket_targets}
         targets = [target for target in targets if target['name'] not in cricket_target_names]
         targets.extend(dict(target, group='Sports', category='Sports') for target in cricket_targets)
+        bein_targets = json.loads((ROOT / 'curation/bein_targets.json').read_text())
+        bein_names = {target['name'] for target in bein_targets}
+        targets = [target for target in targets if target['name'] not in bein_names]
+        targets.extend(dict(target, group='Sports', category='Sports') for target in bein_targets)
         overrides = json.loads((ROOT / 'curation/resolution_overrides.json').read_text())
         promotions = json.loads((ROOT / 'curation/health_promotions.json').read_text())
         generated, report = rebuild.outputs(
-            self.channels, self.policy, targets, overrides, promotions, cricket_targets)
+            self.channels, self.policy, targets, overrides, promotions, cricket_targets, bein_targets)
         self.assertTrue(generated['public/tv.m3u'].startswith('#EXTM3U\n'))
         self.assertEqual(report['total_channels'], generated['public/tv.m3u'].count('#EXTINF:'))
         for path, content in generated.items():
@@ -124,6 +128,13 @@ class CurationTests(unittest.TestCase):
         for promotion in promotions:
             self.assertIn(promotion['new_url'], generated['public/tv.m3u'])
             self.assertNotIn(promotion['old_url'], generated['public/tv.m3u'])
+
+        coverage = {row['requested_channel']: row for row in report['bein_coverage']['channels']}
+        self.assertEqual('AVAILABLE', coverage['beIN SPORTS (English)']['availability'])
+        self.assertTrue(coverage['beIN SPORTS (English)']['decoded_video_verified'])
+        self.assertEqual('UNAVAILABLE', coverage['beIN Sports 2']['availability'])
+        self.assertEqual('', coverage['beIN Sports 2']['stream_url'])
+        self.assertIn('beINSPORTSXTRA.us', {c['id'] for c in self.channels})
 
 
 if __name__ == '__main__':

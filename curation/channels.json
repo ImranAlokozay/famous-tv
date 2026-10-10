@@ -26746,5 +26746,44 @@
     "priority": 10,
     "focused_pass_added": true,
     "access_notes": "Credential-free public mirror verified from this test location. Rights/region restrictions and future failure may apply; no LG/Android device guarantee."
+  },
+  {
+    "id": "beINSportsUSA.us",
+    "name": "beIN SPORTS (English)",
+    "category": "Sports",
+    "provider": "beIN",
+    "famous": true,
+    "country": "US",
+    "website": "https://www.beinsports.com/en-us",
+    "logo": "https://s3.aynaott.com/storage/04a56bc13c4c486ad4a4d82a1e00fd73",
+    "languages": [
+      "eng"
+    ],
+    "candidates": [
+      {
+        "url": "https://tvsen6.aynaott.com/beinsports/index.m3u8",
+        "quality": "432p",
+        "feed": "SD",
+        "languages": [
+          "eng"
+        ],
+        "labels": [
+          "Unnumbered linear beIN service; verified football video, not numbered beIN Sports 2 and not XTRA",
+          "Only one 432p HLS rendition was exposed; no 576p/720p option in this master"
+        ],
+        "user_agent": null,
+        "referrer": null,
+        "sources": [
+          "community-bein-6cd93cc717"
+        ]
+      }
+    ],
+    "baseline_present": false,
+    "approved_hosts": [
+      "tvsen6.aynaott.com"
+    ],
+    "priority": 10,
+    "focused_pass_added": true,
+    "access_notes": "Public indexed distribution verified from this location without credentials. Regional metadata identifies the English service; catalog numbering was wrong. Current HLS exposes 432p only. IPTV device playback and continued availability are not guaranteed."
   }
 ]
