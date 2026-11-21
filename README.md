@@ -77,6 +77,14 @@ python scripts/discover_cricket.py --config config/premium_discovery.json \
   --output .cache/premium-discovery --workers 12 --timeout 5
 ```
 
+At the user's explicit request, the playlist also includes the index's exact
+`HBOAsia.sg@SD` entry: **HBO Asia SD (720p) [Geo-blocked]**. The original published
+short link is retained. It resolved to a dynamic DASH manifest on November 21,
+2026; media playback, spoken audio, and broadcaster authorization are unverified.
+The `SD` feed name and `720p` quality both come from the source. Only explicitly
+listed `reviewed_redirect_urls` may bypass the generator's direct-manifest URL
+suffix requirement; ordinary unreviewed short links remain rejected.
+
 Movies/series have small provider caps; Stingray music and archival TVS sports
 also have caps. Sports has no overall channel-count cap. Identified FAST brand
 editions are named separately from subscription flagships. Copied account credentials,

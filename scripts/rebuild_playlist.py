@@ -64,7 +64,8 @@ def validate_candidate(candidate, channel, policy):
     p = urllib.parse.urlsplit(url)
     if p.scheme not in ('https', 'http') or p.username or p.password:
         raise ValueError(f'Invalid playback URL: {channel["id"]}')
-    if not p.path.endswith(('.m3u8', '.mpd')):
+    if (not p.path.endswith(('.m3u8', '.mpd'))
+            and url not in policy.get('reviewed_redirect_urls', [])):
         raise ValueError(f'Not a direct HLS/DASH address: {channel["id"]}')
     if p.hostname not in channel['approved_hosts']:
         raise ValueError(f'Unreviewed host: {channel["id"]}')

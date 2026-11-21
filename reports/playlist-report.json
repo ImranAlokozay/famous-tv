@@ -1,9 +1,9 @@
 {
   "snapshot_date": "2026-10-07",
-  "total_channels": 382,
+  "total_channels": 383,
   "categories": {
     "Sports": 90,
-    "Movies": 30,
+    "Movies": 31,
     "Series": 11,
     "Entertainment": 23,
     "Music": 30,
@@ -25,12 +25,12 @@
     "540p": 1,
     "576p": 50,
     "684p": 1,
-    "720p": 208,
+    "720p": 209,
     "unknown": 38
   },
   "resolution_buckets": {
     "576/576p": 50,
-    "720p": 208,
+    "720p": 209,
     "1080p": 73,
     "unknown": 38,
     "other_known": 13
@@ -566,7 +566,7 @@
   "duplicate_urls": [],
   "hd_regressions": [],
   "avoided_1080_channels": 129,
-  "newly_added_channels": 283,
+  "newly_added_channels": 284,
   "famous_channel_coverage": [
     {
       "name": "Sony Entertainment Television",
@@ -15106,6 +15106,35 @@
       "labels": [],
       "candidate_count": 1,
       "access_notes": ""
+    },
+    {
+      "id": "HBOAsia.sg",
+      "name": "HBO Asia SD [Geo-blocked]",
+      "category": "Movies",
+      "provider": "HBO",
+      "languages": [
+        "eng"
+      ],
+      "famous": true,
+      "newly_added": true,
+      "focused_pass_added": false,
+      "resolution": "720p",
+      "lower_resolution_alternative_existed": false,
+      "preferred_576_or_720_alternative_existed": true,
+      "avoided_1080": false,
+      "alternative_resolutions": [
+        "720p"
+      ],
+      "source_urls": [
+        "https://iptv-org.github.io/iptv/index.m3u"
+      ],
+      "website": null,
+      "stream_url": "https://tinyurl.com/yn3d3rmd",
+      "labels": [
+        "Geo-blocked"
+      ],
+      "candidate_count": 1,
+      "access_notes": "Explicit user-requested index entry HBOAsia.sg@SD. Source lists 720p and Geo-blocked. Published short link returned a DASH manifest on 2026-11-21; media playback and spoken audio not verified. Redirect contains session parameters, which are not stored. Broadcaster authorization not established."
     },
     {
       "id": "50CentAction.us",

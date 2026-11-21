@@ -126,9 +126,22 @@ class CurationTests(unittest.TestCase):
             reviewed_urls.add(row['url'])
         for cid in additions:
             self.assertIn(chosen[cid]['selected']['url'], reviewed_urls)
-        self.assertFalse(any(cid.startswith('HBO') for cid in chosen))
+        self.assertNotIn('HBO.cz', chosen)
         audio = evidence['hbo_audio_probe']['streams']
         self.assertIn('cze', {s.get('tags', {}).get('language') for s in audio})
+
+    def test_user_requested_hbo_asia_redirect(self):
+        selected, _ = rebuild.select_channels(self.channels, self.policy)
+        channel = next(c for c in selected if c['id'] == 'HBOAsia.sg')
+        self.assertEqual('SD', channel['selected']['feed'])
+        self.assertEqual('720p', channel['selected']['quality'])
+        self.assertEqual('https://tinyurl.com/yn3d3rmd', channel['selected']['url'])
+        playlist = rebuild.render_m3u([channel])
+        self.assertIn('tvg-id="HBOAsia.sg@SD"', playlist)
+        self.assertIn('[Geo-blocked]', playlist)
+        channel['candidates'][0]['url'] = 'https://tinyurl.com/unreviewed'
+        with self.assertRaises(ValueError):
+            rebuild.select_channels([channel], self.policy)
 
     def test_offline_reproducibility_and_header(self):
         targets = json.loads((ROOT / 'curation/targets.json').read_text())

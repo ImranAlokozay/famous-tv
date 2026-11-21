@@ -179,6 +179,12 @@
       "retrieved": "2026-11-21",
       "sha256": "4dc19a1867520f89161e5c3194debe0d01cf8f2a1ff99d8afbf8dcd6721b9fbe",
       "description": "Public third-party catalog; channel branding, decoded video, and live media progression reviewed. Broadcaster authorization unconfirmed."
+    },
+    "user-requested-hbo-asia-index": {
+      "url": "https://iptv-org.github.io/iptv/index.m3u",
+      "retrieved": "2026-11-21",
+      "sha256": "165719a4c750355faa3cc580a297e653c22fb8a06c9967e658bd8da24c11ff8a",
+      "description": "User-requested exact HBOAsia.sg@SD entry. Source labels it HBO Asia SD, 720p, Geo-blocked. Public shortcut resolved to a dynamic DASH manifest; playback and broadcaster authorization not verified."
     }
   },
   "resolution_policy": "576i/576p first, 720i/720p second, other known SD third, 1080 fallback, unknown last; no rendition URL synthesis",
@@ -291,5 +297,8 @@
     "urd",
     "eng",
     "hin"
+  ],
+  "reviewed_redirect_urls": [
+    "https://tinyurl.com/yn3d3rmd"
   ]
 }

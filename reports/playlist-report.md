@@ -6,12 +6,12 @@ The playlist contains public index entries and broadcaster/FAST distribution add
 
 Resolution is the published stream label, not a measured bitrate or a bandwidth limit. Adaptive master playlists can select other renditions during playback. Unknown stays unknown; SD/HD broadcast tags are not used to infer stream resolution.
 
-Total: **382**; new channel identities: **283**; 1080 alternatives avoided: **129**.
+Total: **383**; new channel identities: **284**; 1080 alternatives avoided: **129**.
 
 | Category | Channels |
 | --- | ---: |
 | Sports | 90 |
-| Movies | 30 |
+| Movies | 31 |
 | Series | 11 |
 | Entertainment | 23 |
 | Music | 30 |
@@ -34,7 +34,7 @@ Total: **382**; new channel identities: **283**; 1080 alternatives avoided: **12
 | 540p | 1 |
 | 576p | 50 |
 | 684p | 1 |
-| 720p | 208 |
+| 720p | 209 |
 | unknown | 38 |
 
 Duplicate normalized names: 0. Duplicate URLs: 0. 1080 selections with a reviewed lower-resolution candidate: 0.
