@@ -27717,5 +27717,40 @@
     ],
     "priority": 5,
     "access_notes": "Explicit user-requested index entry HBOAsia.sg@SD. Source lists 720p and Geo-blocked. Published short link returned a DASH manifest on 2026-11-21; media playback and spoken audio not verified. Redirect contains session parameters, which are not stored. Broadcaster authorization not established."
+  },
+  {
+    "id": "Colors.in",
+    "name": "Colors",
+    "category": "India",
+    "provider": "Colors",
+    "famous": true,
+    "country": "IN",
+    "website": "https://www.colorstv.com/",
+    "logo": "https://i.imgur.com/M8uCJ0D.png",
+    "languages": [
+      "hin"
+    ],
+    "candidates": [
+      {
+        "url": "https://raw.githubusercontent.com/amazeyourself/adaptive-streams/refs/heads/main/streams/sg/YuppTV/ColorsAPAC.m3u8",
+        "quality": "576p",
+        "feed": "SD",
+        "languages": [
+          "hin"
+        ],
+        "labels": [],
+        "user_agent": null,
+        "referrer": null,
+        "sources": [
+          "user-requested-colors-index"
+        ]
+      }
+    ],
+    "baseline_present": false,
+    "approved_hosts": [
+      "raw.githubusercontent.com"
+    ],
+    "priority": 5,
+    "access_notes": "User-requested Colors.in@SD from the iptv-org index, published as 576p. Manifest, media playlist and first media object responded 2026-11-21; checker selected 396p from the adaptive feed. Decoded branding, spoken audio and broadcaster authorization not independently verified in this pass."
   }
 ]

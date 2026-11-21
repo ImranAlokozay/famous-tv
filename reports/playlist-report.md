@@ -6,7 +6,7 @@ The playlist contains public index entries and broadcaster/FAST distribution add
 
 Resolution is the published stream label, not a measured bitrate or a bandwidth limit. Adaptive master playlists can select other renditions during playback. Unknown stays unknown; SD/HD broadcast tags are not used to infer stream resolution.
 
-Total: **383**; new channel identities: **284**; 1080 alternatives avoided: **129**.
+Total: **384**; new channel identities: **285**; 1080 alternatives avoided: **129**.
 
 | Category | Channels |
 | --- | ---: |
@@ -19,7 +19,7 @@ Total: **383**; new channel identities: **284**; 1080 alternatives avoided: **12
 | News | 19 |
 | Documentary | 22 |
 | Lifestyle | 19 |
-| India | 63 |
+| India | 64 |
 | Afghanistan | 25 |
 | Pakistan | 23 |
 
@@ -32,7 +32,7 @@ Total: **383**; new channel identities: **284**; 1080 alternatives avoided: **12
 | 432p | 1 |
 | 480p | 3 |
 | 540p | 1 |
-| 576p | 50 |
+| 576p | 51 |
 | 684p | 1 |
 | 720p | 209 |
 | unknown | 38 |
@@ -49,6 +49,7 @@ Duplicate normalized names: 0. Duplicate URLs: 0. 1080 selections with a reviewe
 | Sony Sports / Sony Ten | Sony Sports Ten 1 (576p), Sony Sports Ten 2 (1080p), Sony Sports Ten 5 (576p) |
 | Sony PIX | Sony PIX (1080p) |
 | Sony KAL Hindi | Sony KAL Hindi (1080p) |
+| Colors | Colors (576p) |
 | Colors MENA | Colors MENA (720p) |
 | Colors Cineplex | Colors Cineplex (396p) |
 | Zee Cinema | Zee Cinema APAC (720p) |
@@ -200,7 +201,6 @@ These are search outcomes within the documented sources, not claims that a chann
 | Sony WAH | No stable unauthenticated broadcaster or licensed public M3U found; indexed alternatives had unclear provenance or required subscription/player access. | https://www.sonywah.tv/ |
 | Sony Movies | No stable unauthenticated broadcaster or licensed public M3U found; indexed alternatives had unclear provenance or required subscription/player access. | https://www.sonymovies.com/ |
 | Sony One Action/Comedy (English) | No stable unauthenticated broadcaster or licensed public M3U found; indexed alternatives had unclear provenance or required subscription/player access. | https://www.sonypicturesnetworks.com/overview |
-| Colors | No stable public Hindi/English M3U with sufficiently clear provenance found in the searched catalogs and official distribution. | https://www.colorstv.com/ |
 | Colors Cineplex Bollywood | No stable public Hindi/English M3U with sufficiently clear provenance found in the searched catalogs and official distribution. | https://www.colorstv.com/us/ |
 | Colors Cineplex Superhits | No stable public Hindi/English M3U with sufficiently clear provenance found in the searched catalogs and official distribution. | https://www.colorstv.com/us/ |
 | Colors Infinity | No stable public Hindi/English M3U with sufficiently clear provenance found in the searched catalogs and official distribution. | https://www.colorstv.com/us/ |

@@ -1,6 +1,6 @@
 {
   "snapshot_date": "2026-10-07",
-  "total_channels": 383,
+  "total_channels": 384,
   "categories": {
     "Sports": 90,
     "Movies": 31,
@@ -11,7 +11,7 @@
     "News": 19,
     "Documentary": 22,
     "Lifestyle": 19,
-    "India": 63,
+    "India": 64,
     "Afghanistan": 25,
     "Pakistan": 23
   },
@@ -23,20 +23,20 @@
     "432p": 1,
     "480p": 3,
     "540p": 1,
-    "576p": 50,
+    "576p": 51,
     "684p": 1,
     "720p": 209,
     "unknown": 38
   },
   "resolution_buckets": {
-    "576/576p": 50,
+    "576/576p": 51,
     "720p": 209,
     "1080p": 73,
     "unknown": 38,
     "other_known": 13
   },
   "country_section_counts": {
-    "India": 63,
+    "India": 64,
     "Pakistan": 23,
     "Afghanistan": 25
   },
@@ -566,7 +566,7 @@
   "duplicate_urls": [],
   "hd_regressions": [],
   "avoided_1080_channels": 129,
-  "newly_added_channels": 284,
+  "newly_added_channels": 285,
   "famous_channel_coverage": [
     {
       "name": "Sony Entertainment Television",
@@ -788,15 +788,21 @@
       "ids": [
         "Colors.in"
       ],
-      "reason": "No stable public Hindi/English M3U with sufficiently clear provenance found in the searched catalogs and official distribution.",
+      "reason": "Reviewed standalone address found; newly added focused-pass streams received a one-time manifest and media-object check.",
       "website": "https://www.colorstv.com/",
       "catalogs_searched": [
         "https://iptv-org.github.io/iptv/index.m3u",
         "https://iptv-org.github.io/api/streams.json",
         "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
       ],
-      "status": "unavailable",
-      "found": []
+      "status": "found",
+      "found": [
+        {
+          "id": "Colors.in",
+          "name": "Colors",
+          "resolution": "576p"
+        }
+      ]
     },
     {
       "name": "Colors MENA",
@@ -20653,6 +20659,33 @@
       "labels": [],
       "candidate_count": 1,
       "access_notes": "Public third-party distribution; broadcaster authorization not established. Manifest/media, three-frame decode, on-screen channel branding and increasing live media sequence checked 2026-11-21. Language follows channel/catalog metadata; spoken audio not independently transcribed. Region restrictions and expiry may apply."
+    },
+    {
+      "id": "Colors.in",
+      "name": "Colors",
+      "category": "India",
+      "provider": "Colors",
+      "languages": [
+        "hin"
+      ],
+      "famous": true,
+      "newly_added": true,
+      "focused_pass_added": false,
+      "resolution": "576p",
+      "lower_resolution_alternative_existed": false,
+      "preferred_576_or_720_alternative_existed": true,
+      "avoided_1080": false,
+      "alternative_resolutions": [
+        "576p"
+      ],
+      "source_urls": [
+        "https://iptv-org.github.io/iptv/index.m3u"
+      ],
+      "website": "https://www.colorstv.com/",
+      "stream_url": "https://raw.githubusercontent.com/amazeyourself/adaptive-streams/refs/heads/main/streams/sg/YuppTV/ColorsAPAC.m3u8",
+      "labels": [],
+      "candidate_count": 1,
+      "access_notes": "User-requested Colors.in@SD from the iptv-org index, published as 576p. Manifest, media playlist and first media object responded 2026-11-21; checker selected 396p from the adaptive feed. Decoded branding, spoken audio and broadcaster authorization not independently verified in this pass."
     },
     {
       "id": "ColorsCineplex.in",

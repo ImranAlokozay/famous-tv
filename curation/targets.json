@@ -163,7 +163,7 @@
     "ids": [
       "Colors.in"
     ],
-    "reason": "No stable public Hindi/English M3U with sufficiently clear provenance found in the searched catalogs and official distribution.",
+    "reason": "Exact user-requested Colors.in@SD entry added from iptv-org index on 2026-11-21. Published 576p; checker selected 396p and verified manifest/media responses. Broadcaster authorization not established.",
     "website": "https://www.colorstv.com/",
     "catalogs_searched": [
       "https://iptv-org.github.io/iptv/index.m3u",

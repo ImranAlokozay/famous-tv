@@ -1,0 +1,26 @@
+{
+  "source": {
+    "url": "https://iptv-org.github.io/iptv/index.m3u",
+    "retrieved": "2026-11-21",
+    "sha256": "165719a4c750355faa3cc580a297e653c22fb8a06c9967e658bd8da24c11ff8a",
+    "description": "User-requested Colors.in@SD entry, published as Colors (576p). Manifest, media playlist and media object responded; checker selected 396p. Broadcaster authorization and spoken audio not independently verified."
+  },
+  "tvg_id": "Colors.in@SD",
+  "published_name": "Colors (576p)",
+  "published_url": "https://raw.githubusercontent.com/amazeyourself/adaptive-streams/refs/heads/main/streams/sg/YuppTV/ColorsAPAC.m3u8",
+  "health_check": {
+    "status": "WORKING",
+    "reason": "HLS manifest, media playlist, and media object responded",
+    "http_status": 200,
+    "final_url": "https://raw.githubusercontent.com/amazeyourself/adaptive-streams/refs/heads/main/streams/sg/YuppTV/ColorsAPAC.m3u8",
+    "manifest_type": "hls-master",
+    "selected_variant_url": "https://da86m1sqpm3o0.cloudfront.net/28072023/smil:colorsaudev.smil/chunklist_b1928000.m3u8",
+    "selected_resolution": "396p",
+    "selected_bandwidth": 1928000,
+    "segment_url": "https://da86m1sqpm3o0.cloudfront.net/28072023/smil:colorsaudev.smil/media-u07easaje_b1928000_177252.ts",
+    "segment_http_status": 206,
+    "bytes_received": 2048,
+    "verified_media": true,
+    "checked_at": "2026-11-21T11:45:05.486166+00:00"
+  }
+}

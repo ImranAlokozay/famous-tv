@@ -185,6 +185,12 @@
       "retrieved": "2026-11-21",
       "sha256": "165719a4c750355faa3cc580a297e653c22fb8a06c9967e658bd8da24c11ff8a",
       "description": "User-requested exact HBOAsia.sg@SD entry. Source labels it HBO Asia SD, 720p, Geo-blocked. Public shortcut resolved to a dynamic DASH manifest; playback and broadcaster authorization not verified."
+    },
+    "user-requested-colors-index": {
+      "url": "https://iptv-org.github.io/iptv/index.m3u",
+      "retrieved": "2026-11-21",
+      "sha256": "165719a4c750355faa3cc580a297e653c22fb8a06c9967e658bd8da24c11ff8a",
+      "description": "User-requested Colors.in@SD entry, published as Colors (576p). Manifest, media playlist and media object responded; checker selected 396p. Broadcaster authorization and spoken audio not independently verified."
     }
   },
   "resolution_policy": "576i/576p first, 720i/720p second, other known SD third, 1080 fallback, unknown last; no rendition URL synthesis",
