@@ -6,36 +6,36 @@ The playlist contains public index entries and broadcaster/FAST distribution add
 
 Resolution is the published stream label, not a measured bitrate or a bandwidth limit. Adaptive master playlists can select other renditions during playback. Unknown stays unknown; SD/HD broadcast tags are not used to infer stream resolution.
 
-Total: **448**; new channel identities: **342**; 1080 alternatives avoided: **151**.
+Total: **382**; new channel identities: **283**; 1080 alternatives avoided: **129**.
 
 | Category | Channels |
 | --- | ---: |
-| Sports | 99 |
-| Movies | 37 |
-| Series | 17 |
-| Entertainment | 43 |
-| Music | 39 |
-| Kids | 31 |
-| News | 39 |
-| Documentary | 27 |
-| Lifestyle | 20 |
-| India | 52 |
+| Sports | 90 |
+| Movies | 30 |
+| Series | 11 |
+| Entertainment | 23 |
+| Music | 30 |
+| Kids | 27 |
+| News | 19 |
+| Documentary | 22 |
+| Lifestyle | 19 |
+| India | 63 |
 | Afghanistan | 25 |
-| Pakistan | 19 |
+| Pakistan | 23 |
 
 | Published resolution | Channels |
 | --- | ---: |
-| 1080p | 84 |
+| 1080p | 73 |
 | 240p | 1 |
-| 360p | 5 |
-| 396p | 1 |
+| 360p | 4 |
+| 396p | 2 |
 | 432p | 1 |
 | 480p | 3 |
 | 540p | 1 |
-| 576p | 57 |
+| 576p | 50 |
 | 684p | 1 |
-| 720p | 224 |
-| unknown | 70 |
+| 720p | 208 |
+| unknown | 38 |
 
 Duplicate normalized names: 0. Duplicate URLs: 0. 1080 selections with a reviewed lower-resolution candidate: 0.
 
@@ -45,8 +45,13 @@ Duplicate normalized names: 0. Duplicate URLs: 0. 1080 selections with a reviewe
 
 | Searched channel | Selected edition and resolution |
 | --- | --- |
+| Sony MAX | Sony MAX (720p) |
+| Sony Sports / Sony Ten | Sony Sports Ten 1 (576p), Sony Sports Ten 2 (1080p), Sony Sports Ten 5 (576p) |
+| Sony PIX | Sony PIX (1080p) |
 | Sony KAL Hindi | Sony KAL Hindi (1080p) |
 | Colors MENA | Colors MENA (720p) |
+| Colors Cineplex | Colors Cineplex (396p) |
+| Zee Cinema | Zee Cinema APAC (720p) |
 | Zee News | Zee News (576p) |
 | Zee Business | Zee Business (576p) |
 | Zee Cine Classic (FAST) | Zee Cine Classic (1080p) |
@@ -55,8 +60,11 @@ Duplicate normalized names: 0. Duplicate URLs: 0. 1080 selections with a reviewe
 | Zee Horror Nights (FAST) | Zee Horror Nights (1080p) |
 | Zee South Flix (Hindi) | Zee South Flix (1080p) |
 | &TV International (FAST) | &TV International (FAST) (1080p) |
-| Star Sports | Star Sports 1 (1080p) |
+| Star Gold | Star Gold (1080p) |
+| Star Gold 2 | Star Gold 2 (576p) |
+| Star Sports | Star Sports 1 (1080p), Star Sports 2 (1080p) |
 | Star Sports Select | Star Sports Select 1 (576p), Star Sports Select 2 (576p) |
+| Star Movies | Star Movies (1080p) |
 | ESPN8: The Ocho (FAST) | ESPN8: The Ocho (720p) |
 | beIN SPORTS XTRA (free) | beIN SPORTS XTRA (720p) |
 | CBS Sports Golazo | CBS Sports Golazo Network (720p) |
@@ -73,8 +81,6 @@ Duplicate normalized names: 0. Duplicate URLs: 0. 1080 selections with a reviewe
 | NBA public FAST feed | NBA TV (720p) |
 | NFL Channel | NFL Channel (720p) |
 | NHL Network | NHL Network (720p) |
-| Dubai Sports | Dubai Sports 1 (unknown), Dubai Sports 2 (unknown), Dubai Sports 3 (unknown) |
-| M Sports | M Sports (1080p) |
 | Nickelodeon Pluto TV | Nickelodeon Pluto TV (720p) |
 | Nick Jr Pluto TV | Nick Jr. Pluto TV (720p) |
 | Nicktoons Pluto TV | Nicktoons (Pluto TV) (unknown) |
@@ -84,11 +90,8 @@ Duplicate normalized names: 0. Duplicate URLs: 0. 1080 selections with a reviewe
 | MBC 3 USA | MBC 3 USA (576p) |
 | PBS Kids | PBS Kids (720p) |
 | BBC News | BBC News (720p) |
-| BBC Persian | BBC Persian (720p) |
-| BBC Arabic | BBC Arabic (720p) |
 | Sky News | Sky News (unknown) |
 | Al Jazeera English | Al Jazeera English (720p) |
-| Al Jazeera Arabic | Al Jazeera Arabic (1080p) |
 | Euronews English | Euronews English (720p) |
 | ABC News Live | ABC News Live (720p) |
 | CBS News 24/7 | CBS News 24/7 (720p) |
@@ -102,15 +105,8 @@ Duplicate normalized names: 0. Duplicate URLs: 0. 1080 selections with a reviewe
 | News18 India | News18 India (720p) |
 | NDTV India | NDTV India (576p) |
 | NDTV 24x7 | NDTV 24x7 (480p) |
-| France 24 | France 24 English (576p), France 24 Arabic (576p) |
+| France 24 | France 24 English (576p) |
 | DW English | DW English (1080p) |
-| DW Arabic | DW Arabic (1080p) |
-| Al Arabiya | Alarabiya (1080p) |
-| Al Hadath | Al Hadath (576p) |
-| Sky News Arabia | Sky News Arabia (720p) |
-| Iran International | Iran International (720p) |
-| National Geographic Abu Dhabi | National Geographic Abu Dhabi (unknown) |
-| Asharq Discovery | Asharq Discovery (720p) |
 | History TV18 | History TV18 (1080p) |
 | History Hit | History Hit (720p) |
 | BBC Earth (FAST) | BBC Earth (FAST) (720p) |
@@ -136,15 +132,7 @@ Duplicate normalized names: 0. Duplicate URLs: 0. 1080 selections with a reviewe
 | YRF Music | YRF Music (1080p) |
 | FashionTV | FashionTV Europe (1080p) |
 | Travelxp | Travelxp (1080p) |
-| MBC 1 | MBC 1 (576p) |
-| MBC Drama | MBC Drama (576p) |
 | MBC Bollywood | MBC Bollywood (576p) |
-| Rotana Cinema | Rotana Cinema KSA (1080p), Rotana Cinema Egypt (1080p) |
-| Rotana Drama | Rotana Drama (1080p) |
-| Rotana Music | Rotana Music (1080p) |
-| Persiana Cinema | Persiana Cinema (unknown) |
-| Persiana Series | Persiana Series (unknown) |
-| PMC | PMC (unknown) |
 | TOLO | Tolo TV (unknown) |
 | TOLOnews | TOLOnews (720p) |
 | Lemar | Lemar TV (720p) |
@@ -177,11 +165,17 @@ Duplicate normalized names: 0. Duplicate URLs: 0. 1080 selections with a reviewe
 | Motorvision | Motorvision (720p) |
 | Fox News Channel Preview | Fox News Channel Preview (240p) |
 | NBA TV | NBA TV (720p) |
+| ARY Zindagi | ARY Zindagi (unknown) |
 | Neo News | Neo News (1080p) |
 | UFC (FAST) | UFC (FAST) (576p) |
 | Star Sports 1 | Star Sports 1 (1080p) |
+| Star Sports 2 | Star Sports 2 (1080p) |
+| Star Sports 1 Hindi | Star Sports 1 Hindi (1080p) |
 | Star Sports Select 1 | Star Sports Select 1 (576p) |
 | Star Sports Select 2 | Star Sports Select 2 (576p) |
+| Sony Sports Ten 1 | Sony Sports Ten 1 (576p) |
+| Sony Sports Ten 2 | Sony Sports Ten 2 (1080p) |
+| Sony Sports Ten 5 | Sony Sports Ten 5 (576p) |
 | DD Sports | DD Sports (576p) |
 | A Sports Pakistan | A Sports (720p) |
 | Willow TV | Willow TV (720p) |
@@ -201,33 +195,25 @@ These are search outcomes within the documented sources, not claims that a chann
 | --- | --- | --- |
 | Sony Entertainment Television | No stable unauthenticated broadcaster or licensed public M3U found; indexed alternatives had unclear provenance or required subscription/player access. | https://www.setindia.com/ |
 | Sony SAB | No stable unauthenticated broadcaster or licensed public M3U found; indexed alternatives had unclear provenance or required subscription/player access. | https://www.sabtv.com/en_in/ |
-| Sony MAX | No stable unauthenticated broadcaster or licensed public M3U found; indexed alternatives had unclear provenance or required subscription/player access. | https://www.sonymax.tv/ |
 | Sony MAX 2 | No stable unauthenticated broadcaster or licensed public M3U found; indexed alternatives had unclear provenance or required subscription/player access. | https://www.sonymax2.tv/ |
 | Sony Pal | No stable unauthenticated broadcaster or licensed public M3U found; indexed alternatives had unclear provenance or required subscription/player access. | http://www.sonypal.in/ |
-| Sony Sports / Sony Ten | No stable unauthenticated broadcaster or licensed public M3U found; indexed alternatives had unclear provenance or required subscription/player access. | https://www.sonysportsnetwork.com/ |
-| Sony PIX | No stable unauthenticated broadcaster or licensed public M3U found; indexed alternatives had unclear provenance or required subscription/player access. | http://www.sonypix.com/ |
 | Sony WAH | No stable unauthenticated broadcaster or licensed public M3U found; indexed alternatives had unclear provenance or required subscription/player access. | https://www.sonywah.tv/ |
 | Sony Movies | No stable unauthenticated broadcaster or licensed public M3U found; indexed alternatives had unclear provenance or required subscription/player access. | https://www.sonymovies.com/ |
 | Sony One Action/Comedy (English) | No stable unauthenticated broadcaster or licensed public M3U found; indexed alternatives had unclear provenance or required subscription/player access. | https://www.sonypicturesnetworks.com/overview |
 | Colors | No stable public Hindi/English M3U with sufficiently clear provenance found in the searched catalogs and official distribution. | https://www.colorstv.com/ |
-| Colors Cineplex | No stable public Hindi/English M3U with sufficiently clear provenance found in the searched catalogs and official distribution. | https://www.colorstv.com/us/ |
 | Colors Cineplex Bollywood | No stable public Hindi/English M3U with sufficiently clear provenance found in the searched catalogs and official distribution. | https://www.colorstv.com/us/ |
 | Colors Cineplex Superhits | No stable public Hindi/English M3U with sufficiently clear provenance found in the searched catalogs and official distribution. | https://www.colorstv.com/us/ |
 | Colors Infinity | No stable public Hindi/English M3U with sufficiently clear provenance found in the searched catalogs and official distribution. | https://www.colorstv.com/us/ |
 | Zee TV | No stable unauthenticated standalone public M3U found. Official web/app availability is not a reusable stream URL; unidentified restreams rejected. | http://www.zeetv.com/ |
-| Zee Cinema | No stable permitted public M3U confirmed; the purported lower-resolution catalog URL names NGCHD (a different channel), so it was rejected. | https://zeecinema.zee5.com/ |
 | Zee Bollywood | No stable unauthenticated standalone public M3U found. Official web/app availability is not a reusable stream URL; unidentified restreams rejected. | https://zeebollywood.zee5.com/ |
 | Zee Action | No stable unauthenticated standalone public M3U found. Official web/app availability is not a reusable stream URL; unidentified restreams rejected. | https://www.zee5.com/ |
 | Zee Classic | No stable unauthenticated standalone public M3U found. Official web/app availability is not a reusable stream URL; unidentified restreams rejected. | http://www.zeeclassic.com/ |
 | Zing | No stable unauthenticated standalone public M3U found. Official web/app availability is not a reusable stream URL; unidentified restreams rejected. | http://www.zingtv.in/ |
 | Star Plus | No stable public Hindi/English broadcaster M3U found. Catalog entries were unidentified restreams or subscription distribution. | http://www.hotstar.com/channels/star-plus |
 | Star Bharat | No stable public Hindi/English broadcaster M3U found. Catalog entries were unidentified restreams or subscription distribution. | http://www.hotstar.com/channels/star-bharat |
-| Star Gold | No stable public Hindi/English broadcaster M3U found. Catalog entries were unidentified restreams or subscription distribution. | https://hotstar.com/ |
-| Star Gold 2 | No stable public Hindi/English broadcaster M3U found. Catalog entries were unidentified restreams or subscription distribution. | https://hotstar.com/ |
 | Star Gold Select | No stable public Hindi/English broadcaster M3U found. Catalog entries were unidentified restreams or subscription distribution. | https://hotstar.com/ |
 | Star Utsav | No stable public Hindi/English broadcaster M3U found. Catalog entries were unidentified restreams or subscription distribution. | https://hotstar.com/ |
 | Star Utsav Movies | No stable public Hindi/English broadcaster M3U found. Catalog entries were unidentified restreams or subscription distribution. | https://hotstar.com/ |
-| Star Movies | No stable public Hindi/English broadcaster M3U found. Catalog entries were unidentified restreams or subscription distribution. | http://www.starmovies.in/ |
 | HBO | No legitimate standalone public English/Hindi/Urdu/Persian/Arabic M3U found. Indexed anonymous rebroadcasts do not establish authorized distribution. | http://www.hbo.com/ |
 | HBO Hits | No legitimate standalone public English/Hindi/Urdu/Persian/Arabic M3U found. Indexed anonymous rebroadcasts do not establish authorized distribution. | https://www.hbo.com/how-to-watch-hbo-max |
 | Cinemax | No legitimate standalone public English/Hindi/Urdu/Persian/Arabic M3U found. Indexed anonymous rebroadcasts do not establish authorized distribution. | http://www.cinemax.tv/ |
@@ -244,8 +230,10 @@ These are search outcomes within the documented sources, not claims that a chann
 | ESPN flagship | No legitimate stable public M3U of the requested flagship found; free brand editions are listed separately. Provider subscriptions, unclear restreams, and nonpreferred language feeds excluded. | https://espn.com/ |
 | Fox Sports flagship | No legitimate stable public M3U of the requested flagship found; FOX Sports FAST is listed separately. Provider-authenticated and anonymous restreams were excluded. | https://www.foxsports.com/ |
 | TNT Sports | No legitimate stable public M3U of the requested flagship found; free brand editions are listed separately. Provider subscriptions, unclear restreams, and nonpreferred language feeds excluded. | https://www.tntsports.co.uk/ |
+| Dubai Sports | No legitimate stable public M3U of the requested flagship found; free brand editions are listed separately. Provider subscriptions, unclear restreams, and nonpreferred language feeds excluded. | http://www.dubaisports.ae/ |
 | Abu Dhabi Sports | No legitimate stable public M3U of the requested flagship found; free brand editions are listed separately. Provider subscriptions, unclear restreams, and nonpreferred language feeds excluded. | https://adtv.ae/en/live/Abu%20Dhabi%20Sports%20Channel%201 |
 | Alkass | No legitimate stable public M3U of the requested flagship found; free brand editions are listed separately. Provider subscriptions, unclear restreams, and nonpreferred language feeds excluded. | https://www.alkass.net/ |
+| M Sports | No legitimate stable public M3U of the requested flagship found; free brand editions are listed separately. Provider subscriptions, unclear restreams, and nonpreferred language feeds excluded. | https://msports.pk/live/ |
 | Disney Channel | No stable public permitted M3U in the preferred languages found. Subscription rebroadcasts and web/YouTube pages without reusable HLS excluded. | https://www.disney.com/ |
 | Disney Junior | No stable public permitted M3U in the preferred languages found. Subscription rebroadcasts and web/YouTube pages without reusable HLS excluded. | http://disney.go.com/disneyjunior/ |
 | Nickelodeon flagship | No stable public permitted M3U in the preferred languages found. Subscription rebroadcasts and web/YouTube pages without reusable HLS excluded. | http://www.nick.com/ |
@@ -255,12 +243,22 @@ These are search outcomes within the documented sources, not claims that a chann
 | Hungama | No stable public permitted M3U in the preferred languages found. Subscription rebroadcasts and web/YouTube pages without reusable HLS excluded. | https://hungamatv.ga/ |
 | Disney XD | No stable public permitted M3U in the preferred languages found. Subscription rebroadcasts and web/YouTube pages without reusable HLS excluded. | https://disneynow.com/all-shows/disney-xd |
 | Spacetoon Arabic | No stable public permitted M3U in the preferred languages found. Subscription rebroadcasts and web/YouTube pages without reusable HLS excluded. | http://www.spacetoon.com/ |
+| BBC Persian | No legitimate stable public standalone M3U found in the searched sources. Official web or YouTube distribution may exist; those pages are not HLS playback URLs. | https://www.bbc.com/persian |
+| BBC Arabic | No legitimate stable public standalone M3U found in the searched sources. Official web or YouTube distribution may exist; those pages are not HLS playback URLs. | https://www.bbc.com/arabic |
 | CNN | Free-TV lists a CNN slate/preview URL, not the full live channel; anonymous restreams and unverified wrappers excluded. | http://www.cnn.com/ |
+| Al Jazeera Arabic | No legitimate stable public standalone M3U found in the searched sources. Official web or YouTube distribution may exist; those pages are not HLS playback URLs. | https://www.bbc.com/news |
 | Fox News | No legitimate stable public standalone M3U found in the searched sources. Official web or YouTube distribution may exist; those pages are not HLS playback URLs. | http://www.foxnews.com/ |
 | CNN-News18 | No legitimate stable public standalone M3U found in the searched sources. Official web or YouTube distribution may exist; those pages are not HLS playback URLs. | https://www.news18.com/ |
+| DW Arabic | No legitimate stable public standalone M3U found in the searched sources. Official web or YouTube distribution may exist; those pages are not HLS playback URLs. | https://www.bbc.com/news |
+| Al Arabiya | No legitimate stable public standalone M3U found in the searched sources. Official web or YouTube distribution may exist; those pages are not HLS playback URLs. | https://www.alarabiya.net/ |
+| Al Hadath | No legitimate stable public standalone M3U found in the searched sources. Official web or YouTube distribution may exist; those pages are not HLS playback URLs. | https://www.alhadath.net/ |
+| Sky News Arabia | No legitimate stable public standalone M3U found in the searched sources. Official web or YouTube distribution may exist; those pages are not HLS playback URLs. | https://www.skynewsarabia.com/ |
+| Iran International | No legitimate stable public standalone M3U found in the searched sources. Official web or YouTube distribution may exist; those pages are not HLS playback URLs. | https://iranintl.com/ |
 | National Geographic flagship | No legitimate public preferred-language M3U found for this exact channel; free documentary brands and language editions are listed separately. | http://channel.nationalgeographic.com/ |
+| National Geographic Abu Dhabi | No legitimate public preferred-language M3U found for this exact channel; free documentary brands and language editions are listed separately. | http://www.natgeotv.ae/ |
 | Nat Geo Wild | No legitimate public preferred-language M3U found for this exact channel; free documentary brands and language editions are listed separately. | http://channel.nationalgeographic.com/wild/ |
 | Discovery flagship | No legitimate public preferred-language M3U found for this exact channel; free documentary brands and language editions are listed separately. | http://dsc.discovery.com/ |
+| Asharq Discovery | No legitimate public preferred-language M3U found for this exact channel; free documentary brands and language editions are listed separately. | https://asharqdiscovery.com |
 | History flagship | No legitimate public preferred-language M3U found for this exact channel; free documentary brands and language editions are listed separately. | http://www.history.com/ |
 | History 2 | No legitimate public preferred-language M3U found for this exact channel; free documentary brands and language editions are listed separately. | https://www.bbcearth.com/ |
 | Animal Planet | No legitimate public preferred-language M3U found for this exact channel; free documentary brands and language editions are listed separately. | https://www.animalplanet.com/ |
@@ -275,9 +273,17 @@ These are search outcomes within the documented sources, not claims that a chann
 | VH1 Queens of Reality (FAST) | No stable legitimate public HLS in the preferred languages found for the flagship; free brand editions are tracked separately. | https://pluto.tv/live-tv/vh1-queens-of-reality/details |
 | Music Box | No stable legitimate public HLS in the preferred languages found for the flagship; free brand editions are tracked separately. | https://pluto.tv/ |
 | Mastiii | No stable legitimate public HLS in the preferred languages found for the flagship; free brand editions are tracked separately. | http://www.mastiii.com/ |
+| MBC 1 | No stable legitimate public HLS in the preferred languages found for the flagship; free brand editions are tracked separately. | http://www.mbc.net/mbc1 |
 | MBC 2 | No stable legitimate public HLS in the preferred languages found for the flagship; free brand editions are tracked separately. | https://www.mbc.net/channels/mbc2 |
 | MBC Action | No stable legitimate public HLS in the preferred languages found for the flagship; free brand editions are tracked separately. | http://www.mbc.net/en/mbc-action.html |
 | MBC Max | No stable legitimate public HLS in the preferred languages found for the flagship; free brand editions are tracked separately. | https://pluto.tv/ |
+| MBC Drama | No stable legitimate public HLS in the preferred languages found for the flagship; free brand editions are tracked separately. | https://www.mbc.net/channels/mbc-drama |
+| Rotana Cinema | No stable legitimate public HLS in the preferred languages found for the flagship; free brand editions are tracked separately. | http://www.cinema.rotana.net/ |
+| Rotana Drama | No stable legitimate public HLS in the preferred languages found for the flagship; free brand editions are tracked separately. | https://rotana.net/ |
+| Rotana Music | No stable legitimate public HLS in the preferred languages found for the flagship; free brand editions are tracked separately. | https://rotana.net/ |
+| Persiana Cinema | No stable legitimate public HLS in the preferred languages found for the flagship; free brand editions are tracked separately. | https://persianagroup.tv/ |
+| Persiana Series | No stable legitimate public HLS in the preferred languages found for the flagship; free brand editions are tracked separately. | https://www.persianagroup.tv/ |
+| PMC | No stable legitimate public HLS in the preferred languages found for the flagship; free brand editions are tracked separately. | https://www.pmc.tv/ |
 | Manoto | No stable legitimate public HLS in the preferred languages found for the flagship; free brand editions are tracked separately. | https://www.manototv.com/ |
 | RTA News | No additional stable legitimate public M3U found in current indexes and official websites/apps. Original Afghan feeds were retained without health testing. | https://rta.af/live/ |
 | RTA Sports | No additional stable legitimate public M3U found in current indexes and official websites/apps. Original Afghan feeds were retained without health testing. | https://rta.af/ |
@@ -337,7 +343,6 @@ These are search outcomes within the documented sources, not claims that a chann
 | Discovery Science | Premium authenticated network; no licensed unauthenticated public HLS found. | https://www.discovery.com/ |
 | Discovery Turbo | Premium authenticated network; no licensed unauthenticated public HLS found. | https://www.discovery.com/ |
 | PTV World | No responding stable broadcaster-published standalone HLS was found; indexed mirrors had unclear provenance. | https://ptv.com.pk/ |
-| ARY Zindagi | Not present in the official ARY public live catalog; public hits lacked stable licensed standalone provenance. | https://arydigital.tv/ |
 | ARY QTV | Not present as a reusable responding HLS in the official ARY public catalog; mirrors had unclear provenance. | https://aryqtv.tv/ |
 | Geo Kahani | No stable licensed unauthenticated standalone HLS found; indexed mirrors were provider-restricted or unclear. | https://harpalgeo.tv/ |
 | Public News | No responding broadcaster-published reusable HLS found; indexed candidates had unclear provenance. | https://publicnews.com/ |
@@ -345,15 +350,10 @@ These are search outcomes within the documented sources, not claims that a chann
 | HBO Signature | Premium authenticated network; no licensed unauthenticated public HLS found. | https://www.hbo.com/ |
 | SuperTennis | The official indexed HiWay master returned HTTP 403 during this pass; no alternate responding permitted HLS was found. | https://www.supertennis.tv/ |
 | UEFA public programming | Official UEFA web/video programming was found, but no stable reusable linear HLS channel with clear public redistribution was exposed. | https://www.uefa.tv/ |
-| Star Sports 2 | No credential-free, exact-identity live video verified in this run. Timeout, forbidden, or skipped results do not prove global unavailability. | https://www.hotstar.com/in/sports |
-| Star Sports 1 Hindi | Decoded 720p Pages candidate is a fixed approximately 65-second IPL 2025 highlights clip with two unchanged segments, not a live channel. Other candidates did not yield verified public live video. | https://www.hotstar.com/in/sports |
 | Star Sports 2 Hindi | No credential-free, exact-identity live video verified in this run. Timeout, forbidden, or skipped results do not prove global unavailability. | https://www.hotstar.com/in/sports |
 | Star Sports Khel | No credential-free, exact-identity live video verified in this run. Timeout, forbidden, or skipped results do not prove global unavailability. | https://www.hotstar.com/in/sports |
-| Sony Sports Ten 1 | No credential-free, exact-identity live video verified in this run. Timeout, forbidden, or skipped results do not prove global unavailability. | https://www.sonysportsnetwork.com/ |
-| Sony Sports Ten 2 | No credential-free, exact-identity live video verified in this run. Timeout, forbidden, or skipped results do not prove global unavailability. | https://www.sonysportsnetwork.com/ |
 | Sony Sports Ten 3 Hindi | No credential-free, exact-identity live video verified in this run. Timeout, forbidden, or skipped results do not prove global unavailability. | https://www.sonysportsnetwork.com/ |
 | Sony Sports Ten 4 | No credential-free, exact-identity live video verified in this run. Timeout, forbidden, or skipped results do not prove global unavailability. | https://www.sonysportsnetwork.com/ |
-| Sony Sports Ten 5 | No credential-free, exact-identity live video verified in this run. Timeout, forbidden, or skipped results do not prove global unavailability. | https://www.sonysportsnetwork.com/ |
 | Sports18 | No stable licensed unauthenticated HLS was found. | https://www.jiocinema.com/sports |
 | PTV Sports | No credential-free, exact-identity live video verified in this run. Timeout, forbidden, or skipped results do not prove global unavailability. | https://ptv.com.pk/ |
 | Geo Super | No credential-free, exact-identity live video verified in this run. Timeout, forbidden, or skipped results do not prove global unavailability. | https://www.geosuper.tv/live |

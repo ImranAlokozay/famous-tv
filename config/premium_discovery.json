@@ -1,0 +1,156 @@
+{
+  "sources": [
+    {
+      "name": "IPTV-org India",
+      "url": "https://iptv-org.github.io/iptv/countries/in.m3u"
+    },
+    {
+      "name": "IPTV-org US",
+      "url": "https://iptv-org.github.io/iptv/countries/us.m3u"
+    },
+    {
+      "name": "IPTV-org movies",
+      "url": "https://iptv-org.github.io/iptv/categories/movies.m3u"
+    },
+    {
+      "name": "IPTV-org sports",
+      "url": "https://iptv-org.github.io/iptv/categories/sports.m3u"
+    },
+    {
+      "name": "BugsFree India",
+      "url": "https://raw.githubusercontent.com/bugsfreeweb/LiveTVCollector/HEAD/LiveTV/India/LiveTV.m3u"
+    },
+    {
+      "name": "BugsFree Bangladesh",
+      "url": "https://raw.githubusercontent.com/bugsfreeweb/LiveTVCollector/HEAD/LiveTV/Bangladesh/LiveTV.m3u"
+    },
+    {
+      "name": "Freecatv",
+      "url": "https://raw.githubusercontent.com/manikiptv/freecatv.github.io/HEAD/freecatv.m3u8"
+    },
+    {
+      "name": "M3UCurator",
+      "url": "https://raw.githubusercontent.com/M3UCurator/IPTVList/HEAD/All2.m3u"
+    },
+    {
+      "name": "Guruvsc",
+      "url": "https://raw.githubusercontent.com/guruvsc/TV/HEAD/README.md"
+    },
+    {
+      "name": "Public regional gist",
+      "url": "https://gist.githubusercontent.com/Syed-Bipul-Rahman/09a05c101a5a1610e7bcd70c9b0e5c07/raw"
+    },
+    {
+      "name": "Judy regional",
+      "url": "https://raw.githubusercontent.com/judy-gotv/iptv/HEAD/BD.m3u"
+    },
+    {
+      "name": "Riad public catalog",
+      "url": "https://raw.githubusercontent.com/Riad4336/Iptv-playlist/HEAD/playlist.m3u"
+    },
+    {
+      "name": "Sonu regional catalog",
+      "url": "https://raw.githubusercontent.com/Sonuiptvnew/Sonuiptvnew/HEAD/Indian15sep.m3u8"
+    },
+    {
+      "name": "Wukuy catalog archive",
+      "url": "https://raw.githubusercontent.com/wukuy/IPTV2021-1/HEAD/IPTV2021"
+    },
+    {
+      "name": "Nekori catalog",
+      "url": "https://raw.githubusercontent.com/Nekori/TV/HEAD/A_TV.txt"
+    }
+  ],
+  "aliases": {
+    "HBO": [
+      "HBO",
+      "HBO East",
+      "HBO USA",
+      "HBO US",
+      "HBO Link 1",
+      "HBO Link 2",
+      "HBO Limk 3"
+    ],
+    "HBO Hits": [
+      "HBO Hits"
+    ],
+    "HBO Family": [
+      "HBO Family"
+    ],
+    "HBO Signature": [
+      "HBO Signature",
+      "HBO Signature English"
+    ],
+    "Star Gold": [
+      "Star Gold",
+      "Star Gold International"
+    ],
+    "Star Gold 2": [
+      "Star Gold 2"
+    ],
+    "Sony MAX 2": [
+      "Sony Max 2",
+      "Sony MAX2"
+    ],
+    "Sony PIX": [
+      "Sony PIX"
+    ],
+    "Star Movies": [
+      "Star Movies"
+    ],
+    "Star Movies Select": [
+      "Star Movies Select"
+    ],
+    "Movies Now": [
+      "Movies Now"
+    ],
+    "MNX": [
+      "MNX"
+    ],
+    "&flix": [
+      "&flix",
+      "And Flix"
+    ],
+    "&pictures": [
+      "&pictures",
+      "And Pictures"
+    ],
+    "Colors Cineplex": [
+      "Colors Cineplex"
+    ],
+    "Sony WAH": [
+      "Sony WAH"
+    ],
+    "Star Utsav Movies": [
+      "Star Utsav Movies"
+    ],
+    "Star Sports 2": [
+      "Star Sports 2"
+    ],
+    "Star Sports 1 Hindi": [
+      "Star Sports 1 Hindi",
+      "Star Sports Hindi 1",
+      "Star Sports Hindi"
+    ],
+    "Star Sports 2 Hindi": [
+      "Star Sports 2 Hindi",
+      "Star Sports Hindi 2"
+    ],
+    "Sony Sports Ten 1": [
+      "Sony Ten 1",
+      "Sony Sports Ten 1"
+    ],
+    "Sony Sports Ten 2": [
+      "Sony Ten 2",
+      "Sony Sports Ten 2"
+    ],
+    "Sony Sports Ten 3 Hindi": [
+      "Sony Ten 3",
+      "Sony Sports Ten 3 Hindi"
+    ],
+    "Sony Sports Ten 5": [
+      "Sony Ten 5",
+      "Sony Sports Ten 5"
+    ]
+  }
+}

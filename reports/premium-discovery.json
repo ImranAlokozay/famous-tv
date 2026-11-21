@@ -1,0 +1,306 @@
+{
+  "review_date": "2026-11-21",
+  "source": {
+    "url": "https://iptv-org.github.io/api/streams.json",
+    "retrieved": "2026-11-21",
+    "sha256": "7201dba0870181fbe83b7a9166ff58aa36bfd17af894d2b3381b50e968d45c3a",
+    "description": "Public third-party catalog; decoded branding and advancing media checked for Sony MAX and Zee Cinema APAC; broadcaster authorization not asserted."
+  },
+  "candidate_checks": [
+    {
+      "status": "TIMEOUT",
+      "reason": "Stream timeout: timed out",
+      "http_status": null,
+      "final_url": "",
+      "manifest_type": "",
+      "selected_variant_url": "",
+      "selected_resolution": "unknown",
+      "selected_bandwidth": null,
+      "segment_url": "",
+      "segment_http_status": null,
+      "bytes_received": 0,
+      "verified_media": false,
+      "channel": "HBO.us",
+      "url": "http://tvsen7.aynascope.net/hbo/index.m3u8",
+      "checked_at": "2026-11-21T06:53:29.170355+00:00"
+    },
+    {
+      "status": "WORKING",
+      "reason": "HLS manifest, media playlist, and media object responded",
+      "http_status": 200,
+      "final_url": "http://116.90.120.149:8000/play/a123/index.m3u8",
+      "manifest_type": "hls-media",
+      "selected_variant_url": "",
+      "selected_resolution": "unknown",
+      "selected_bandwidth": null,
+      "segment_url": "http://116.90.120.149:8000/play/a123/217407192_fd55.ts",
+      "segment_http_status": 200,
+      "bytes_received": 2048,
+      "verified_media": true,
+      "channel": "SonyMax.in",
+      "url": "http://116.90.120.149:8000/play/a123/index.m3u8",
+      "checked_at": "2026-11-21T06:53:21.990689+00:00"
+    },
+    {
+      "status": "WORKING",
+      "reason": "HLS manifest, media playlist, and media object responded",
+      "http_status": 200,
+      "final_url": "https://drk6xq0vhn.gpcdn.net/hls/set_max_m4fb8dz2wp6kr9s_720/index.m3u8",
+      "manifest_type": "hls-media",
+      "selected_variant_url": "",
+      "selected_resolution": "unknown",
+      "selected_bandwidth": null,
+      "segment_url": "https://drk6xq0vhn.gpcdn.net/hls/set_max_m4fb8dz2wp6kr9s_720/256564.ts",
+      "segment_http_status": 206,
+      "bytes_received": 2048,
+      "verified_media": true,
+      "channel": "SonyMax.in",
+      "url": "https://drk6xq0vhn.gpcdn.net/hls/set_max_m4fb8dz2wp6kr9s_720/index.m3u8",
+      "checked_at": "2026-11-21T06:53:23.426505+00:00"
+    },
+    {
+      "status": "PROBABLY_WORKING",
+      "reason": "Direct media response returned bytes",
+      "http_status": 200,
+      "final_url": "http://163.61.226.31:9981/stream/channelid/1743466790?profile=pass",
+      "manifest_type": "direct-media",
+      "selected_variant_url": "",
+      "selected_resolution": "unknown",
+      "selected_bandwidth": null,
+      "segment_url": "",
+      "segment_http_status": null,
+      "bytes_received": 2000000,
+      "verified_media": false,
+      "channel": "SonyWah.in",
+      "url": "http://163.61.226.31:9981/stream/channelid/1743466790?profile=pass",
+      "checked_at": "2026-11-21T06:53:32.400240+00:00"
+    },
+    {
+      "status": "PROBABLY_WORKING",
+      "reason": "Direct media response returned bytes",
+      "http_status": 200,
+      "final_url": "https://files.catbox.moe/uizjo7.mp4",
+      "manifest_type": "direct-media",
+      "selected_variant_url": "",
+      "selected_resolution": "unknown",
+      "selected_bandwidth": null,
+      "segment_url": "",
+      "segment_http_status": null,
+      "bytes_received": 2000000,
+      "verified_media": false,
+      "channel": "SonyWah.in",
+      "url": "https://sl.vodep39240327.workers.dev/channel/SONY+WAH.m3u8",
+      "checked_at": "2026-11-21T06:53:26.239510+00:00"
+    },
+    {
+      "status": "WORKING",
+      "reason": "HLS manifest, media playlist, and media object responded",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/amazeyourself/adaptive-streams/refs/heads/main/streams/sg/YuppTV/ZeeCinemaAPAC.m3u8",
+      "manifest_type": "hls-master",
+      "selected_variant_url": "https://da86m1sqpm3o0.cloudfront.net/28072023/smil:zeecinemaapachd.smil/chunklist_b2628000.m3u8",
+      "selected_resolution": "720p",
+      "selected_bandwidth": 2628000,
+      "segment_url": "https://da86m1sqpm3o0.cloudfront.net/28072023/smil:zeecinemaapachd.smil/media-ut58u14zn_b2628000_4066.ts",
+      "segment_http_status": 206,
+      "bytes_received": 2048,
+      "verified_media": true,
+      "channel": "ZeeCinema.in",
+      "url": "https://raw.githubusercontent.com/amazeyourself/adaptive-streams/refs/heads/main/streams/sg/YuppTV/ZeeCinemaAPAC.m3u8",
+      "checked_at": "2026-11-21T06:53:24.309692+00:00"
+    }
+  ],
+  "accepted": [
+    {
+      "status": "WORKING",
+      "reason": "HLS manifest, media playlist, and media object responded",
+      "http_status": 200,
+      "final_url": "https://drk6xq0vhn.gpcdn.net/hls/set_max_m4fb8dz2wp6kr9s_720/index.m3u8",
+      "manifest_type": "hls-media",
+      "selected_variant_url": "",
+      "selected_resolution": "unknown",
+      "selected_bandwidth": null,
+      "segment_url": "https://drk6xq0vhn.gpcdn.net/hls/set_max_m4fb8dz2wp6kr9s_720/256564.ts",
+      "segment_http_status": 206,
+      "bytes_received": 2048,
+      "verified_media": true,
+      "channel": "SonyMax.in",
+      "url": "https://drk6xq0vhn.gpcdn.net/hls/set_max_m4fb8dz2wp6kr9s_720/index.m3u8",
+      "checked_at": "2026-11-21T06:53:23.426505+00:00",
+      "second_check": {
+        "status": "WORKING",
+        "reason": "HLS manifest, media playlist, and media object responded",
+        "http_status": 200,
+        "final_url": "https://drk6xq0vhn.gpcdn.net/hls/set_max_m4fb8dz2wp6kr9s_720/index.m3u8",
+        "manifest_type": "hls-media",
+        "selected_variant_url": "",
+        "selected_resolution": "unknown",
+        "selected_bandwidth": null,
+        "segment_url": "https://drk6xq0vhn.gpcdn.net/hls/set_max_m4fb8dz2wp6kr9s_720/256573.ts",
+        "segment_http_status": 206,
+        "bytes_received": 2048,
+        "verified_media": true
+      },
+      "live_media_changed": true,
+      "probe": {
+        "programs": [
+          {
+            "streams": [
+              {
+                "codec_name": "h264",
+                "codec_type": "video",
+                "width": 1280,
+                "height": 720,
+                "tags": {}
+              },
+              {
+                "codec_name": "aac",
+                "codec_type": "audio",
+                "tags": {}
+              }
+            ]
+          }
+        ],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 1280,
+            "height": 720,
+            "tags": {}
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "tags": {}
+          }
+        ]
+      },
+      "identity_evidence": "Decoded picture shows Sony MAX logo",
+      "audio_language_evidence": "Hindi channel metadata; audio codec verified, spoken language not independently verified"
+    },
+    {
+      "status": "WORKING",
+      "reason": "HLS manifest, media playlist, and media object responded",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/amazeyourself/adaptive-streams/refs/heads/main/streams/sg/YuppTV/ZeeCinemaAPAC.m3u8",
+      "manifest_type": "hls-master",
+      "selected_variant_url": "https://da86m1sqpm3o0.cloudfront.net/28072023/smil:zeecinemaapachd.smil/chunklist_b2628000.m3u8",
+      "selected_resolution": "720p",
+      "selected_bandwidth": 2628000,
+      "segment_url": "https://da86m1sqpm3o0.cloudfront.net/28072023/smil:zeecinemaapachd.smil/media-ut58u14zn_b2628000_4066.ts",
+      "segment_http_status": 206,
+      "bytes_received": 2048,
+      "verified_media": true,
+      "channel": "ZeeCinema.in",
+      "url": "https://raw.githubusercontent.com/amazeyourself/adaptive-streams/refs/heads/main/streams/sg/YuppTV/ZeeCinemaAPAC.m3u8",
+      "checked_at": "2026-11-21T06:53:24.309692+00:00",
+      "second_check": {
+        "status": "WORKING",
+        "reason": "HLS manifest, media playlist, and media object responded",
+        "http_status": 200,
+        "final_url": "https://raw.githubusercontent.com/amazeyourself/adaptive-streams/refs/heads/main/streams/sg/YuppTV/ZeeCinemaAPAC.m3u8",
+        "manifest_type": "hls-master",
+        "selected_variant_url": "https://da86m1sqpm3o0.cloudfront.net/28072023/smil:zeecinemaapachd.smil/chunklist_b2628000.m3u8",
+        "selected_resolution": "720p",
+        "selected_bandwidth": 2628000,
+        "segment_url": "https://da86m1sqpm3o0.cloudfront.net/28072023/smil:zeecinemaapachd.smil/media-ut58u14zn_b2628000_4075.ts",
+        "segment_http_status": 206,
+        "bytes_received": 2048,
+        "verified_media": true
+      },
+      "live_media_changed": true,
+      "probe": {
+        "programs": [
+          {
+            "streams": [
+              {
+                "codec_name": "timed_id3",
+                "codec_type": "data",
+                "tags": {}
+              },
+              {
+                "codec_name": "h264",
+                "codec_type": "video",
+                "width": 640,
+                "height": 360,
+                "tags": {}
+              },
+              {
+                "codec_name": "aac",
+                "codec_type": "audio",
+                "tags": {}
+              }
+            ]
+          },
+          {
+            "streams": [
+              {
+                "codec_name": "timed_id3",
+                "codec_type": "data",
+                "tags": {}
+              },
+              {
+                "codec_name": "h264",
+                "codec_type": "video",
+                "width": 1280,
+                "height": 720,
+                "tags": {}
+              },
+              {
+                "codec_name": "aac",
+                "codec_type": "audio",
+                "tags": {}
+              }
+            ]
+          }
+        ],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "timed_id3",
+            "codec_type": "data",
+            "tags": {}
+          },
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 640,
+            "height": 360,
+            "tags": {}
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "tags": {}
+          },
+          {
+            "codec_name": "timed_id3",
+            "codec_type": "data",
+            "tags": {}
+          },
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 1280,
+            "height": 720,
+            "tags": {}
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "tags": {}
+          }
+        ]
+      },
+      "identity_evidence": "Decoded picture shows Z Cinema HD logo and Hindi transliterated tagline",
+      "audio_language_evidence": "Hindi channel metadata; audio codec verified, spoken language not independently verified"
+    }
+  ],
+  "limitations": [
+    "A successful public stream check does not establish broadcaster authorization or future availability.",
+    "HBO candidate timed out; Sony WAH responses did not establish playable HLS and were not accepted.",
+    "Raw-IP Sony MAX candidate responded but was not selected; the catalog CDN candidate was decoded and visually reviewed."
+  ]
+}

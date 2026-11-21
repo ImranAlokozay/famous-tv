@@ -72,6 +72,30 @@ class CurationTests(unittest.TestCase):
         self.assertEqual(4, len(selected))
         self.assertEqual({'channel-0', 'channel-1', 'channel-2', 'channel-3'}, {c['id'] for c in selected})
 
+    def test_preferred_audio_preserves_regional_exceptions(self):
+        selected, excluded = rebuild.select_channels(self.channels, self.policy)
+        for channel in selected:
+            allowed = {'eng', 'hin'}
+            if channel['category'] == 'Pakistan':
+                allowed.add('urd')
+            elif channel['category'] == 'Afghanistan':
+                allowed = set(self.policy['afghanistan_languages'])
+            self.assertTrue(set(channel['selected']['languages']) & allowed, channel['id'])
+        ids = {c['id'] for c in selected}
+        self.assertTrue({'ARYZindagi.pk', 'JooMusic.pk', 'LahoreNews.pk',
+                         'MadaniChannelUrdu.pk'} <= ids)
+        self.assertTrue(set(self.policy['baseline_afghanistan_ids']) <= ids)
+        self.assertTrue(any(c['reason'] == 'Outside preferred audio languages' for c in excluded))
+
+        # Filter audio before ranking so a preferred resolution cannot select
+        # an Arabic rendition over an available English rendition.
+        channel = self.channel(['576p', '720p'])
+        channel['languages'] = ['ara', 'eng']
+        channel['candidates'][0]['languages'] = ['ara']
+        channel['candidates'][1]['languages'] = ['eng']
+        chosen, _ = rebuild.select_channels([channel], self.policy)
+        self.assertEqual('720p', chosen[0]['selected']['quality'])
+
     def test_snapshot_preserves_afghanistan_sports_and_language_scope(self):
         selected, _ = rebuild.select_channels(self.channels, self.policy)
         ids = {c['id'] for c in selected}
@@ -83,6 +107,28 @@ class CurationTests(unittest.TestCase):
                 self.assertTrue(set(c['languages']) <= {'eng', 'hin'})
             if c['category'] == 'Movies':
                 self.assertTrue(set(c['languages']) <= set(self.policy['languages']))
+
+    def test_premium_additions_have_reviewed_live_video_evidence(self):
+        evidence = json.loads((ROOT / 'reports/premium-expanded-discovery.json').read_text())
+        additions = set(evidence['editorial_review']['added_channel_ids'])
+        self.assertEqual(14, len(additions))
+        selected, _ = rebuild.select_channels(self.channels, self.policy)
+        chosen = {c['id']: c for c in selected}
+        reviewed_urls = set()
+        for row in evidence['results']:
+            if row['result'] != 'ACCEPTED':
+                continue
+            self.assertTrue(row['identity_verified'])
+            self.assertGreaterEqual(row['decoded_frames'], 3)
+            live = row['live_evidence']
+            self.assertFalse(live['second']['endlist'])
+            self.assertGreater(live['second']['media_sequence'], live['first']['media_sequence'])
+            reviewed_urls.add(row['url'])
+        for cid in additions:
+            self.assertIn(chosen[cid]['selected']['url'], reviewed_urls)
+        self.assertFalse(any(cid.startswith('HBO') for cid in chosen))
+        audio = evidence['hbo_audio_probe']['streams']
+        self.assertIn('cze', {s.get('tags', {}).get('language') for s in audio})
 
     def test_offline_reproducibility_and_header(self):
         targets = json.loads((ROOT / 'curation/targets.json').read_text())
@@ -108,7 +154,7 @@ class CurationTests(unittest.TestCase):
         self.assertEqual([], report['hd_regressions'])
         self.assertIn('reports/missing_famous_channels.csv', generated)
         self.assertIn('all_sources_searched', generated['reports/missing_famous_channels.csv'].splitlines()[0])
-        self.assertEqual(150, report['resolution_review']['baseline_1080_reviewed'])
+        self.assertEqual(121, report['resolution_review']['baseline_1080_reviewed'])
         self.assertIn('reports/resolution_replacements.csv', generated)
         self.assertIn('reports/cricket_coverage.csv', generated)
         self.assertEqual(5, report['cricket_coverage']['added_in_this_pass'])
@@ -125,8 +171,12 @@ class CurationTests(unittest.TestCase):
         self.assertEqual('AVAILABLE_AUDIO', abc['availability'])
         self.assertIn('audio-only', abc['actual_feed_type'])
         self.assertEqual(5, len(promotions))
+        selected_ids = {row['id'] for row in report['channels']}
         for promotion in promotions:
-            self.assertIn(promotion['new_url'], generated['public/tv.m3u'])
+            if promotion['id'] in selected_ids:
+                self.assertIn(promotion['new_url'], generated['public/tv.m3u'])
+            else:
+                self.assertNotIn(promotion['new_url'], generated['public/tv.m3u'])
             self.assertNotIn(promotion['old_url'], generated['public/tv.m3u'])
 
         coverage = {row['requested_channel']: row for row in report['bein_coverage']['channels']}

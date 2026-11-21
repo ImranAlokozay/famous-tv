@@ -33,7 +33,7 @@
     "ids": [
       "SonyMax.in"
     ],
-    "reason": "No stable unauthenticated broadcaster or licensed public M3U found; indexed alternatives had unclear provenance or required subscription/player access.",
+    "reason": "Public third-party candidate now passed manifest/media, decoding, on-screen branding and live media progression checks on 2026-11-21; broadcaster authorization is not established.",
     "website": "https://www.sonymax.tv/",
     "catalogs_searched": [
       "https://iptv-org.github.io/iptv/index.m3u",
@@ -78,7 +78,7 @@
       "SonySportsTen3Hindi.in",
       "SonySportsTen5.in"
     ],
-    "reason": "No stable unauthenticated broadcaster or licensed public M3U found; indexed alternatives had unclear provenance or required subscription/player access.",
+    "reason": "Reviewed public third-party candidate added 2026-11-21 after media, video branding and advancing live-manifest checks; broadcaster authorization is unconfirmed.",
     "website": "https://www.sonysportsnetwork.com/",
     "catalogs_searched": [
       "https://iptv-org.github.io/iptv/index.m3u",
@@ -92,7 +92,7 @@
     "ids": [
       "SonyPix.in"
     ],
-    "reason": "No stable unauthenticated broadcaster or licensed public M3U found; indexed alternatives had unclear provenance or required subscription/player access.",
+    "reason": "Reviewed public third-party candidate added 2026-11-21 after media, video branding and advancing live-manifest checks; broadcaster authorization is unconfirmed.",
     "website": "http://www.sonypix.com/",
     "catalogs_searched": [
       "https://iptv-org.github.io/iptv/index.m3u",
@@ -191,7 +191,7 @@
     "ids": [
       "ColorsCineplex.in"
     ],
-    "reason": "No stable public Hindi/English M3U with sufficiently clear provenance found in the searched catalogs and official distribution.",
+    "reason": "Reviewed public third-party candidate added 2026-11-21 after media, video branding and advancing live-manifest checks; broadcaster authorization is unconfirmed.",
     "website": "https://www.colorstv.com/us/",
     "catalogs_searched": [
       "https://iptv-org.github.io/iptv/index.m3u",
@@ -261,7 +261,7 @@
     "ids": [
       "ZeeCinema.in"
     ],
-    "reason": "No stable permitted public M3U confirmed; the purported lower-resolution catalog URL names NGCHD (a different channel), so it was rejected.",
+    "reason": "Public third-party candidate now passed manifest/media, decoding, on-screen branding and live media progression checks on 2026-11-21; broadcaster authorization is not established.",
     "website": "https://zeecinema.zee5.com/",
     "catalogs_searched": [
       "https://iptv-org.github.io/iptv/index.m3u",
@@ -473,7 +473,7 @@
     "ids": [
       "StarGold.in"
     ],
-    "reason": "No stable public Hindi/English broadcaster M3U found. Catalog entries were unidentified restreams or subscription distribution.",
+    "reason": "Reviewed public third-party candidate added 2026-11-21 after media, video branding and advancing live-manifest checks; broadcaster authorization is unconfirmed.",
     "website": "https://hotstar.com/",
     "catalogs_searched": [
       "https://iptv-org.github.io/iptv/index.m3u",
@@ -487,7 +487,7 @@
     "ids": [
       "StarGold2.in"
     ],
-    "reason": "No stable public Hindi/English broadcaster M3U found. Catalog entries were unidentified restreams or subscription distribution.",
+    "reason": "Reviewed public third-party candidate added 2026-11-21 after media, video branding and advancing live-manifest checks; broadcaster authorization is unconfirmed.",
     "website": "https://hotstar.com/",
     "catalogs_searched": [
       "https://iptv-org.github.io/iptv/index.m3u",
@@ -518,7 +518,7 @@
       "StarSports3.in",
       "StarSports2Hindi.in"
     ],
-    "reason": "No stable public Hindi/English broadcaster M3U found. Catalog entries were unidentified restreams or subscription distribution.",
+    "reason": "Reviewed public third-party candidate added 2026-11-21 after media, video branding and advancing live-manifest checks; broadcaster authorization is unconfirmed.",
     "website": "https://www.startv.com/about-us/sports",
     "catalogs_searched": [
       "https://iptv-org.github.io/iptv/index.m3u",
@@ -575,7 +575,7 @@
     "ids": [
       "StarMovies.in"
     ],
-    "reason": "No stable public Hindi/English broadcaster M3U found. Catalog entries were unidentified restreams or subscription distribution.",
+    "reason": "Reviewed public third-party candidate added 2026-11-21 after media, video branding and advancing live-manifest checks; broadcaster authorization is unconfirmed.",
     "website": "http://www.starmovies.in/",
     "catalogs_searched": [
       "https://iptv-org.github.io/iptv/index.m3u",

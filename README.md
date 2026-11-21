@@ -38,12 +38,44 @@ No URL suffixes or rendition paths are invented. Important 1080-only channels
 remain in the playlist. Published quality describes source metadata, not an
 enforced bandwidth limit; an adaptive master may choose other renditions.
 
-The inventory favors English, Hindi, Urdu, Persian, and Arabic. The Afghanistan
-section additionally permits Pashto and Dari, and preserves all 24 original
-Afghan channel identities. India's section permits Hindi/English; DD Urdu is
-placed outside that section. Different English and Arabic news editions have
-separate names because their programming/audio differs. Country/resolution
-copies of the same editorial stream are collapsed.
+The playlist selects English and Hindi audio in the general sections. The
+Pakistan section also permits Urdu. The Afghanistan section retains its existing
+language exceptions and preserves all 24 original Afghan channel identities.
+Other reviewed languages remain in the inventory for provenance but are excluded
+from the generated playlist. Country/resolution copies of the same editorial
+stream are collapsed.
+
+The November 21, 2026 Pakistan expansion adds ARY Zindagi, JooMusic, Lahore News,
+and Madani Channel Urdu. Manifest and media-object checks succeeded for the latter
+three; ARY Zindagi's official published URL could not be verified because of a TLS
+certificate error. These checks do not verify decoded video/audio or future
+availability. Evidence is in [reports/pakistan-expansion.json](reports/pakistan-expansion.json).
+
+The same day's initial premium-channel review adds Sony MAX and Zee Cinema APAC from
+public third-party catalog links after successful manifest/media checks, H.264/AAC
+decoding, visual branding review, and live media progression checks. Broadcaster
+authorization is unconfirmed; Hindi language is channel metadata rather than an
+independent audio review. HBO's candidate timed out and was not added. Details are
+in [reports/premium-discovery.json](reports/premium-discovery.json).
+
+A broader pass checked 104 candidates from 11 catalogs and a further 23 HBO
+candidates from four catalogs. It adds &pictures, Colors Cineplex, MNX, Movies
+Now, Sony PIX, Star Gold, Star Gold 2, Star Movies, Star Movies Select, Sony Sports
+Ten 1/2/5, Star Sports 1 Hindi, and Star Sports 2. Each accepted URL passed manifest
+and media checks, three-frame video decoding, matching on-screen branding review,
+and increasing live media sequences. Broadcaster authorization remains unconfirmed;
+language is channel/catalog metadata rather than an independent spoken-audio review.
+The one decoded HBO feed carries a Czech audio tag and was excluded. Static
+manifests and a mislabeled English feed offered as Hindi were also excluded.
+Research evidence is in
+[reports/premium-expanded-discovery.json](reports/premium-expanded-discovery.json).
+The existing research command supports this configuration too (it writes research
+outputs only and never edits the production playlist):
+
+```sh
+python scripts/discover_cricket.py --config config/premium_discovery.json \
+  --output .cache/premium-discovery --workers 12 --timeout 5
+```
 
 Movies/series have small provider caps; Stingray music and archival TVS sports
 also have caps. Sports has no overall channel-count cap. Identified FAST brand

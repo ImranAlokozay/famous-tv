@@ -26343,14 +26343,29 @@
     "country": "UK",
     "website": "https://pluto.tv/en/live-tv/bbc-drama-es",
     "logo": "",
-    "languages": ["eng"],
-    "candidates": [{
-      "url": "https://amg00793-amg00793c40-rakuten-es-5444.playouts.now.amagi.tv/720p/index.m3u8",
-      "quality": "720p", "feed": "FAST", "languages": ["eng"], "labels": [],
-      "user_agent": null, "referrer": null, "sources": ["iptv-org-api"]
-    }],
+    "languages": [
+      "eng"
+    ],
+    "candidates": [
+      {
+        "url": "https://amg00793-amg00793c40-rakuten-es-5444.playouts.now.amagi.tv/720p/index.m3u8",
+        "quality": "720p",
+        "feed": "FAST",
+        "languages": [
+          "eng"
+        ],
+        "labels": [],
+        "user_agent": null,
+        "referrer": null,
+        "sources": [
+          "iptv-org-api"
+        ]
+      }
+    ],
     "baseline_present": false,
-    "approved_hosts": ["amg00793-amg00793c40-rakuten-es-5444.playouts.now.amagi.tv"],
+    "approved_hosts": [
+      "amg00793-amg00793c40-rakuten-es-5444.playouts.now.amagi.tv"
+    ],
     "priority": 0,
     "focused_pass_added": true,
     "access_notes": "Rakuten/Amagi FAST distribution; 720p media playlist and first media object responded during the 2026-10-07 focused review."
@@ -26364,14 +26379,29 @@
     "country": "US",
     "website": "https://www.tennischannel.com/",
     "logo": "",
-    "languages": ["eng"],
-    "candidates": [{
-      "url": "https://ttc-tennischannelus-firetv.amagi.tv/playlist720p.m3u8",
-      "quality": "720p", "feed": "FAST", "languages": ["eng"], "labels": [],
-      "user_agent": null, "referrer": null, "sources": ["iptv-org-api"]
-    }],
+    "languages": [
+      "eng"
+    ],
+    "candidates": [
+      {
+        "url": "https://ttc-tennischannelus-firetv.amagi.tv/playlist720p.m3u8",
+        "quality": "720p",
+        "feed": "FAST",
+        "languages": [
+          "eng"
+        ],
+        "labels": [],
+        "user_agent": null,
+        "referrer": null,
+        "sources": [
+          "iptv-org-api"
+        ]
+      }
+    ],
     "baseline_present": false,
-    "approved_hosts": ["ttc-tennischannelus-firetv.amagi.tv"],
+    "approved_hosts": [
+      "ttc-tennischannelus-firetv.amagi.tv"
+    ],
     "priority": 0,
     "focused_pass_added": true,
     "access_notes": "Official Tennis Channel FAST edition; explicit 720p playlist and first media object responded during the focused review."
@@ -26385,14 +26415,29 @@
     "country": "US",
     "website": "https://www.foxsports.com/",
     "logo": "",
-    "languages": ["eng"],
-    "candidates": [{
-      "url": "https://amg02855-foxsports-amg02855c1-xumo-us-1755.playouts.now.amagi.tv/Fox-Sports-AmazonNews/playlist720-p.m3u8",
-      "quality": "720p", "feed": "FAST", "languages": ["eng"], "labels": [],
-      "user_agent": null, "referrer": null, "sources": ["iptv-org-api"]
-    }],
+    "languages": [
+      "eng"
+    ],
+    "candidates": [
+      {
+        "url": "https://amg02855-foxsports-amg02855c1-xumo-us-1755.playouts.now.amagi.tv/Fox-Sports-AmazonNews/playlist720-p.m3u8",
+        "quality": "720p",
+        "feed": "FAST",
+        "languages": [
+          "eng"
+        ],
+        "labels": [],
+        "user_agent": null,
+        "referrer": null,
+        "sources": [
+          "iptv-org-api"
+        ]
+      }
+    ],
     "baseline_present": false,
-    "approved_hosts": ["amg02855-foxsports-amg02855c1-xumo-us-1755.playouts.now.amagi.tv"],
+    "approved_hosts": [
+      "amg02855-foxsports-amg02855c1-xumo-us-1755.playouts.now.amagi.tv"
+    ],
     "priority": 0,
     "focused_pass_added": true,
     "access_notes": "FOX Sports FAST edition on Xumo/Amagi, distinct from FS1 and FS2; 720p playlist and first media object responded during review."
@@ -26406,14 +26451,29 @@
     "country": "US",
     "website": "https://www.wwe.com/",
     "logo": "",
-    "languages": ["eng"],
-    "candidates": [{
-      "url": "https://dpv6ceilvhyrw.cloudfront.net/720p-en-vtt/index.m3u8",
-      "quality": "720p", "feed": "FAST", "languages": ["eng"], "labels": [],
-      "user_agent": null, "referrer": null, "sources": ["iptv-org-api"]
-    }],
+    "languages": [
+      "eng"
+    ],
+    "candidates": [
+      {
+        "url": "https://dpv6ceilvhyrw.cloudfront.net/720p-en-vtt/index.m3u8",
+        "quality": "720p",
+        "feed": "FAST",
+        "languages": [
+          "eng"
+        ],
+        "labels": [],
+        "user_agent": null,
+        "referrer": null,
+        "sources": [
+          "iptv-org-api"
+        ]
+      }
+    ],
     "baseline_present": false,
-    "approved_hosts": ["dpv6ceilvhyrw.cloudfront.net"],
+    "approved_hosts": [
+      "dpv6ceilvhyrw.cloudfront.net"
+    ],
     "priority": 5,
     "focused_pass_added": true,
     "access_notes": "Public WWE FAST distribution; 720p playlist and first media object responded during review."
@@ -26427,14 +26487,29 @@
     "country": "US",
     "website": "https://www.dazn.com/",
     "logo": "",
-    "languages": ["eng"],
-    "candidates": [{
-      "url": "https://aegis-cloudfront-1.tubi.video/bfad29e2-5bee-44f3-8256-127324e8b106/720p-cc/index.m3u8",
-      "quality": "720p", "feed": "FAST", "languages": ["eng"], "labels": [],
-      "user_agent": null, "referrer": null, "sources": ["iptv-org-api"]
-    }],
+    "languages": [
+      "eng"
+    ],
+    "candidates": [
+      {
+        "url": "https://aegis-cloudfront-1.tubi.video/bfad29e2-5bee-44f3-8256-127324e8b106/720p-cc/index.m3u8",
+        "quality": "720p",
+        "feed": "FAST",
+        "languages": [
+          "eng"
+        ],
+        "labels": [],
+        "user_agent": null,
+        "referrer": null,
+        "sources": [
+          "iptv-org-api"
+        ]
+      }
+    ],
     "baseline_present": false,
-    "approved_hosts": ["aegis-cloudfront-1.tubi.video"],
+    "approved_hosts": [
+      "aegis-cloudfront-1.tubi.video"
+    ],
     "priority": 5,
     "focused_pass_added": true,
     "access_notes": "DAZN combat-sports FAST distribution on Tubi; 720p playlist and first media object responded during review."
@@ -26448,14 +26523,29 @@
     "country": "US",
     "website": "https://www.golfpass.com/",
     "logo": "",
-    "languages": ["eng"],
-    "candidates": [{
-      "url": "https://d2icntm6fhxrry.cloudfront.net/master_3.m3u8",
-      "quality": "720p", "feed": "FAST", "languages": ["eng"], "labels": [],
-      "user_agent": null, "referrer": null, "sources": ["iptv-org-api"]
-    }],
+    "languages": [
+      "eng"
+    ],
+    "candidates": [
+      {
+        "url": "https://d2icntm6fhxrry.cloudfront.net/master_3.m3u8",
+        "quality": "720p",
+        "feed": "FAST",
+        "languages": [
+          "eng"
+        ],
+        "labels": [],
+        "user_agent": null,
+        "referrer": null,
+        "sources": [
+          "iptv-org-api"
+        ]
+      }
+    ],
     "baseline_present": false,
-    "approved_hosts": ["d2icntm6fhxrry.cloudfront.net"],
+    "approved_hosts": [
+      "d2icntm6fhxrry.cloudfront.net"
+    ],
     "priority": 5,
     "focused_pass_added": true,
     "access_notes": "GolfPass FAST distribution; lower-bitrate 720p rendition and first media object responded during review."
@@ -26469,14 +26559,29 @@
     "country": "DE",
     "website": "https://motorvision.tv/",
     "logo": "",
-    "languages": ["eng"],
-    "candidates": [{
-      "url": "https://stream.ads.ottera.tv/playlist.m3u8?network_id=535",
-      "quality": "720p", "feed": "FAST", "languages": ["eng"], "labels": [],
-      "user_agent": null, "referrer": null, "sources": ["iptv-org-api"]
-    }],
+    "languages": [
+      "eng"
+    ],
+    "candidates": [
+      {
+        "url": "https://stream.ads.ottera.tv/playlist.m3u8?network_id=535",
+        "quality": "720p",
+        "feed": "FAST",
+        "languages": [
+          "eng"
+        ],
+        "labels": [],
+        "user_agent": null,
+        "referrer": null,
+        "sources": [
+          "iptv-org-api"
+        ]
+      }
+    ],
     "baseline_present": false,
-    "approved_hosts": ["stream.ads.ottera.tv"],
+    "approved_hosts": [
+      "stream.ads.ottera.tv"
+    ],
     "priority": 5,
     "focused_pass_added": true,
     "access_notes": "Stable adaptive master selected because its 720p child is session-addressed; 720p media playlist and first media object responded during review."
@@ -26490,14 +26595,31 @@
     "country": "US",
     "website": "https://www.foxnews.com/video/topics/live-news/",
     "logo": "",
-    "languages": ["eng"],
-    "candidates": [{
-      "url": "http://247preview.foxnews.com/hls/live/2020027/fncv3preview/primary.m3u8",
-      "quality": "240p", "feed": "Preview", "languages": ["eng"], "labels": ["official preview; may show a preview slate"],
-      "user_agent": null, "referrer": null, "sources": ["iptv-org-api"]
-    }],
+    "languages": [
+      "eng"
+    ],
+    "candidates": [
+      {
+        "url": "http://247preview.foxnews.com/hls/live/2020027/fncv3preview/primary.m3u8",
+        "quality": "240p",
+        "feed": "Preview",
+        "languages": [
+          "eng"
+        ],
+        "labels": [
+          "official preview; may show a preview slate"
+        ],
+        "user_agent": null,
+        "referrer": null,
+        "sources": [
+          "iptv-org-api"
+        ]
+      }
+    ],
     "baseline_present": false,
-    "approved_hosts": ["247preview.foxnews.com"],
+    "approved_hosts": [
+      "247preview.foxnews.com"
+    ],
     "priority": 5,
     "focused_pass_added": true,
     "access_notes": "Official Fox preview endpoint, not the full authenticated cable channel; 240p media playlist and first media object responded during review."
@@ -26511,16 +26633,32 @@
     "country": "US",
     "website": "https://play.xumo.com/live-guide/ufc",
     "logo": "",
-    "languages": ["eng"],
-    "candidates": [{
-      "url": "https://linear-893.frequency.stream/dist/xumo/893/hls/master/playlist-n_9.m3u8",
-      "quality": "576p", "feed": "FAST", "languages": ["eng"],
-      "labels": ["Xumo FAST edition; not live pay-per-view coverage"],
-      "user_agent": null, "referrer": null,
-      "sources": ["official-ufc-fast", "manifest-inspection"]
-    }],
+    "languages": [
+      "eng"
+    ],
+    "candidates": [
+      {
+        "url": "https://linear-893.frequency.stream/dist/xumo/893/hls/master/playlist-n_9.m3u8",
+        "quality": "576p",
+        "feed": "FAST",
+        "languages": [
+          "eng"
+        ],
+        "labels": [
+          "Xumo FAST edition; not live pay-per-view coverage"
+        ],
+        "user_agent": null,
+        "referrer": null,
+        "sources": [
+          "official-ufc-fast",
+          "manifest-inspection"
+        ]
+      }
+    ],
     "baseline_present": false,
-    "approved_hosts": ["linear-893.frequency.stream"],
+    "approved_hosts": [
+      "linear-893.frequency.stream"
+    ],
     "priority": 0,
     "focused_pass_added": true,
     "access_notes": "Officially listed Xumo UFC FAST channel; stable 576p child playlist and first media object responded twice during the focused review."
@@ -26534,19 +26672,31 @@
     "country": "AU",
     "website": "https://www.abc.net.au/news/sport/cricket",
     "logo": "",
-    "languages": ["eng"],
-    "candidates": [{
-      "url": "https://streaming.abc-cdn.net.au/audio/hls/itinerantone.m3u8",
-      "quality": null,
-      "feed": "Audio",
-      "languages": ["eng"],
-      "labels": ["official audio-only event feed; not a television or flagship network substitute"],
-      "user_agent": null,
-      "referrer": null,
-      "sources": ["official-abc-cricket"]
-    }],
+    "languages": [
+      "eng"
+    ],
+    "candidates": [
+      {
+        "url": "https://streaming.abc-cdn.net.au/audio/hls/itinerantone.m3u8",
+        "quality": null,
+        "feed": "Audio",
+        "languages": [
+          "eng"
+        ],
+        "labels": [
+          "official audio-only event feed; not a television or flagship network substitute"
+        ],
+        "user_agent": null,
+        "referrer": null,
+        "sources": [
+          "official-abc-cricket"
+        ]
+      }
+    ],
     "baseline_present": false,
-    "approved_hosts": ["streaming.abc-cdn.net.au"],
+    "approved_hosts": [
+      "streaming.abc-cdn.net.au"
+    ],
     "priority": 5,
     "focused_pass_added": true,
     "access_notes": "Official ABC event audio HLS. AAC media segments responded during the 2026-10-09 review; availability and programming are event-dependent."
@@ -26785,5 +26935,750 @@
     "priority": 10,
     "focused_pass_added": true,
     "access_notes": "Public indexed distribution verified from this location without credentials. Regional metadata identifies the English service; catalog numbering was wrong. Current HLS exposes 432p only. IPTV device playback and continued availability are not guaranteed."
+  },
+  {
+    "id": "ARYZindagi.pk",
+    "name": "ARY Zindagi",
+    "category": "Pakistan",
+    "provider": "ARY",
+    "famous": false,
+    "country": "PK",
+    "website": "https://www.aryzindagi.tv/",
+    "logo": "",
+    "languages": [
+      "urd"
+    ],
+    "candidates": [
+      {
+        "url": "https://6zklx4wryw9b-hls-live.5centscdn.com/aryzindagi/f7b44cfafd5c52223d5498196c8a2e7b.sdp/playlist.m3u8",
+        "quality": null,
+        "feed": null,
+        "languages": [
+          "urd"
+        ],
+        "labels": [],
+        "user_agent": null,
+        "referrer": null,
+        "sources": [
+          "pakistan-expansion-catalog",
+          "official-aryzindagi"
+        ]
+      }
+    ],
+    "baseline_present": false,
+    "approved_hosts": [
+      "6zklx4wryw9b-hls-live.5centscdn.com"
+    ],
+    "priority": 20,
+    "access_notes": "Official broadcaster page publishes this playback URL. Mixed or insufficient failure evidence: Stream connection error: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081). Checked 2026-11-21; decoded identity/audio not verified in this pass."
+  },
+  {
+    "id": "JooMusic.pk",
+    "name": "JooMusic",
+    "category": "Pakistan",
+    "provider": "JooMusic",
+    "famous": false,
+    "country": "PK",
+    "website": "https://www.joomusic.info/",
+    "logo": "",
+    "languages": [
+      "urd"
+    ],
+    "candidates": [
+      {
+        "url": "https://livecdn.live247stream.com/joomusic/tv/playlist.m3u8",
+        "quality": "720p",
+        "feed": null,
+        "languages": [
+          "urd"
+        ],
+        "labels": [],
+        "user_agent": null,
+        "referrer": null,
+        "sources": [
+          "pakistan-expansion-catalog",
+          "official-joomusic"
+        ]
+      }
+    ],
+    "baseline_present": false,
+    "approved_hosts": [
+      "livecdn.live247stream.com"
+    ],
+    "priority": 20,
+    "access_notes": "Official broadcaster page publishes this playback URL. HLS manifest, media playlist, and media object responded. Checked 2026-11-21; decoded identity/audio not verified in this pass."
+  },
+  {
+    "id": "LahoreNews.pk",
+    "name": "Lahore News",
+    "category": "Pakistan",
+    "provider": "Dunya",
+    "famous": false,
+    "country": "PK",
+    "website": "https://lahorenews.tv/",
+    "logo": "",
+    "languages": [
+      "urd"
+    ],
+    "candidates": [
+      {
+        "url": "https://vcdn.dunyanews.tv/lahorelive/ngrp:lnews_1_all/playlist.m3u8",
+        "quality": "720p",
+        "feed": null,
+        "languages": [
+          "urd"
+        ],
+        "labels": [],
+        "user_agent": null,
+        "referrer": null,
+        "sources": [
+          "pakistan-expansion-catalog"
+        ]
+      }
+    ],
+    "baseline_present": false,
+    "approved_hosts": [
+      "vcdn.dunyanews.tv"
+    ],
+    "priority": 20,
+    "access_notes": "Public catalog lists this broadcaster/provider host; no authorization claim is inferred from availability. HLS manifest, media playlist, and media object responded. Checked 2026-11-21; decoded identity/audio not verified in this pass."
+  },
+  {
+    "id": "MadaniChannelUrdu.pk",
+    "name": "Madani Channel Urdu",
+    "category": "Pakistan",
+    "provider": "Dawat-e-Islami",
+    "famous": false,
+    "country": "PK",
+    "website": "https://www.madanichannel.tv/",
+    "logo": "",
+    "languages": [
+      "urd"
+    ],
+    "candidates": [
+      {
+        "url": "https://streaming.madanichannel.tv/static/streaming-playlists/hls/b9790f10-cb0d-4e30-82bf-84a756234e58/master.m3u8",
+        "quality": "720p",
+        "feed": null,
+        "languages": [
+          "urd"
+        ],
+        "labels": [],
+        "user_agent": null,
+        "referrer": null,
+        "sources": [
+          "pakistan-expansion-catalog"
+        ]
+      }
+    ],
+    "baseline_present": false,
+    "approved_hosts": [
+      "streaming.madanichannel.tv"
+    ],
+    "priority": 20,
+    "access_notes": "Public catalog lists this broadcaster/provider host; no authorization claim is inferred from availability. HLS manifest, media playlist, and media object responded. Checked 2026-11-21; decoded identity/audio not verified in this pass."
+  },
+  {
+    "id": "SonyMax.in",
+    "name": "Sony MAX",
+    "category": "India",
+    "provider": "Sony",
+    "famous": true,
+    "country": "IN",
+    "website": "https://www.sonymax.tv/",
+    "logo": "",
+    "languages": [
+      "hin"
+    ],
+    "candidates": [
+      {
+        "url": "https://drk6xq0vhn.gpcdn.net/hls/set_max_m4fb8dz2wp6kr9s_720/index.m3u8",
+        "quality": "720p",
+        "feed": "SD",
+        "languages": [
+          "hin"
+        ],
+        "labels": [],
+        "user_agent": null,
+        "referrer": null,
+        "sources": [
+          "community-premium-review-20261121"
+        ]
+      }
+    ],
+    "baseline_present": false,
+    "approved_hosts": [
+      "drk6xq0vhn.gpcdn.net"
+    ],
+    "priority": 5,
+    "access_notes": "Public third-party stream; broadcaster authorization not established. Matching on-screen channel branding, H.264/AAC decoding, and changing live media objects checked 2026-11-21. Hindi is channel/catalog metadata; audio language was not independently transcribed. Region restrictions and expiry may apply."
+  },
+  {
+    "id": "ZeeCinema.in",
+    "name": "Zee Cinema APAC",
+    "category": "India",
+    "provider": "Zee",
+    "famous": true,
+    "country": "IN",
+    "website": "https://zeecinema.zee5.com/",
+    "logo": "",
+    "languages": [
+      "hin"
+    ],
+    "candidates": [
+      {
+        "url": "https://raw.githubusercontent.com/amazeyourself/adaptive-streams/refs/heads/main/streams/sg/YuppTV/ZeeCinemaAPAC.m3u8",
+        "quality": "720p",
+        "feed": "APAC",
+        "languages": [
+          "hin"
+        ],
+        "labels": [],
+        "user_agent": null,
+        "referrer": null,
+        "sources": [
+          "community-premium-review-20261121"
+        ]
+      }
+    ],
+    "baseline_present": false,
+    "approved_hosts": [
+      "raw.githubusercontent.com"
+    ],
+    "priority": 5,
+    "access_notes": "Public third-party stream; broadcaster authorization not established. Matching on-screen channel branding, H.264/AAC decoding, and changing live media objects checked 2026-11-21. Hindi is channel/catalog metadata; audio language was not independently transcribed. Region restrictions and expiry may apply."
+  },
+  {
+    "id": "Andpictures.in",
+    "name": "&pictures",
+    "category": "India",
+    "provider": "Zee",
+    "famous": true,
+    "country": "IN",
+    "website": "https://andtv.zee5.com/",
+    "logo": "",
+    "languages": [
+      "hin"
+    ],
+    "candidates": [
+      {
+        "url": "http://116.90.120.149:8000/play/a132/index.m3u8",
+        "quality": "1080p",
+        "feed": "HD",
+        "languages": [
+          "hin"
+        ],
+        "labels": [],
+        "user_agent": null,
+        "referrer": null,
+        "sources": [
+          "premium-catalog-c773c84625c4"
+        ]
+      }
+    ],
+    "baseline_present": false,
+    "approved_hosts": [
+      "116.90.120.149"
+    ],
+    "priority": 5,
+    "access_notes": "Public third-party distribution; broadcaster authorization not established. Manifest/media, three-frame decode, on-screen channel branding and increasing live media sequence checked 2026-11-21. Language follows channel/catalog metadata; spoken audio not independently transcribed. Region restrictions and expiry may apply."
+  },
+  {
+    "id": "ColorsCineplex.in",
+    "name": "Colors Cineplex",
+    "category": "India",
+    "provider": "Colors",
+    "famous": true,
+    "country": "IN",
+    "website": "https://www.colorstv.com/us/",
+    "logo": "",
+    "languages": [
+      "hin"
+    ],
+    "candidates": [
+      {
+        "url": "https://raw.githubusercontent.com/amazeyourself/adaptive-streams/refs/heads/main/streams/gb/YuppTV/ColorsCineplexUK.m3u8",
+        "quality": "396p",
+        "feed": "SD",
+        "languages": [
+          "hin"
+        ],
+        "labels": [],
+        "user_agent": null,
+        "referrer": null,
+        "sources": [
+          "premium-catalog-c773c84625c4"
+        ]
+      }
+    ],
+    "baseline_present": false,
+    "approved_hosts": [
+      "raw.githubusercontent.com"
+    ],
+    "priority": 5,
+    "access_notes": "Public third-party distribution; broadcaster authorization not established. Manifest/media, three-frame decode, on-screen channel branding and increasing live media sequence checked 2026-11-21. Language follows channel/catalog metadata; spoken audio not independently transcribed. Region restrictions and expiry may apply."
+  },
+  {
+    "id": "MNX.in",
+    "name": "MNX",
+    "category": "India",
+    "provider": "Times",
+    "famous": true,
+    "country": "IN",
+    "website": null,
+    "logo": "",
+    "languages": [
+      "eng"
+    ],
+    "candidates": [
+      {
+        "url": "http://116.90.120.149:8000/play/a11e/index.m3u8",
+        "quality": "576p",
+        "feed": "SD",
+        "languages": [
+          "eng"
+        ],
+        "labels": [],
+        "user_agent": null,
+        "referrer": null,
+        "sources": [
+          "premium-catalog-c773c84625c4"
+        ]
+      },
+      {
+        "url": "http://116.90.120.149:8000/play/a11m/index.m3u8",
+        "quality": "1080p",
+        "feed": "HD",
+        "languages": [
+          "eng"
+        ],
+        "labels": [],
+        "user_agent": null,
+        "referrer": null,
+        "sources": [
+          "premium-catalog-c773c84625c4"
+        ]
+      }
+    ],
+    "baseline_present": false,
+    "approved_hosts": [
+      "116.90.120.149"
+    ],
+    "priority": 5,
+    "access_notes": "Public third-party distribution; broadcaster authorization not established. Manifest/media, three-frame decode, on-screen channel branding and increasing live media sequence checked 2026-11-21. Language follows channel/catalog metadata; spoken audio not independently transcribed. Region restrictions and expiry may apply."
+  },
+  {
+    "id": "MoviesNow.in",
+    "name": "Movies Now",
+    "category": "India",
+    "provider": "Times",
+    "famous": true,
+    "country": "IN",
+    "website": null,
+    "logo": "",
+    "languages": [
+      "eng"
+    ],
+    "candidates": [
+      {
+        "url": "http://116.90.120.149:8000/play/a11f/index.m3u8",
+        "quality": "1080p",
+        "feed": "HD",
+        "languages": [
+          "eng"
+        ],
+        "labels": [],
+        "user_agent": null,
+        "referrer": null,
+        "sources": [
+          "premium-catalog-c773c84625c4"
+        ]
+      },
+      {
+        "url": "http://27.124.71.27/Movies_Now/index.m3u8",
+        "quality": "360p",
+        "feed": "SD",
+        "languages": [
+          "eng"
+        ],
+        "labels": [],
+        "user_agent": null,
+        "referrer": null,
+        "sources": [
+          "premium-catalog-8ce894eab0fc"
+        ]
+      }
+    ],
+    "baseline_present": false,
+    "approved_hosts": [
+      "116.90.120.149",
+      "27.124.71.27"
+    ],
+    "priority": 5,
+    "access_notes": "Public third-party distribution; broadcaster authorization not established. Manifest/media, three-frame decode, on-screen channel branding and increasing live media sequence checked 2026-11-21. Language follows channel/catalog metadata; spoken audio not independently transcribed. Region restrictions and expiry may apply."
+  },
+  {
+    "id": "SonyPix.in",
+    "name": "Sony PIX",
+    "category": "India",
+    "provider": "Sony",
+    "famous": true,
+    "country": "IN",
+    "website": "http://www.sonypix.com/",
+    "logo": "",
+    "languages": [
+      "eng"
+    ],
+    "candidates": [
+      {
+        "url": "http://116.90.120.149:8000/play/a138/index.m3u8",
+        "quality": "1080p",
+        "feed": "HD",
+        "languages": [
+          "eng"
+        ],
+        "labels": [],
+        "user_agent": null,
+        "referrer": null,
+        "sources": [
+          "premium-catalog-c773c84625c4"
+        ]
+      }
+    ],
+    "baseline_present": false,
+    "approved_hosts": [
+      "116.90.120.149"
+    ],
+    "priority": 5,
+    "access_notes": "Public third-party distribution; broadcaster authorization not established. Manifest/media, three-frame decode, on-screen channel branding and increasing live media sequence checked 2026-11-21. Language follows channel/catalog metadata; spoken audio not independently transcribed. Region restrictions and expiry may apply."
+  },
+  {
+    "id": "SonySportsTen1.in",
+    "name": "Sony Sports Ten 1",
+    "category": "Sports",
+    "provider": "Sony",
+    "famous": true,
+    "country": "IN",
+    "website": "https://www.sonysportsnetwork.com/",
+    "logo": "",
+    "languages": [
+      "eng"
+    ],
+    "candidates": [
+      {
+        "url": "http://116.90.120.149:8000/play/a11t/index.m3u8",
+        "quality": "1080p",
+        "feed": "HD",
+        "languages": [
+          "eng"
+        ],
+        "labels": [],
+        "user_agent": null,
+        "referrer": null,
+        "sources": [
+          "premium-catalog-c1df068b16b0"
+        ]
+      },
+      {
+        "url": "http://116.90.120.149:8000/play/a126/index.m3u8",
+        "quality": "576p",
+        "feed": "SD",
+        "languages": [
+          "eng"
+        ],
+        "labels": [],
+        "user_agent": null,
+        "referrer": null,
+        "sources": [
+          "premium-catalog-c1df068b16b0"
+        ]
+      }
+    ],
+    "baseline_present": false,
+    "approved_hosts": [
+      "116.90.120.149"
+    ],
+    "priority": 5,
+    "access_notes": "Public third-party distribution; broadcaster authorization not established. Manifest/media, three-frame decode, on-screen channel branding and increasing live media sequence checked 2026-11-21. Language follows channel/catalog metadata; spoken audio not independently transcribed. Region restrictions and expiry may apply."
+  },
+  {
+    "id": "SonySportsTen2.in",
+    "name": "Sony Sports Ten 2",
+    "category": "Sports",
+    "provider": "Sony",
+    "famous": true,
+    "country": "IN",
+    "website": "https://www.sonysportsnetwork.com/",
+    "logo": "",
+    "languages": [
+      "eng"
+    ],
+    "candidates": [
+      {
+        "url": "http://116.90.120.149:8000/play/a137/index.m3u8",
+        "quality": "1080p",
+        "feed": "HD",
+        "languages": [
+          "eng"
+        ],
+        "labels": [],
+        "user_agent": null,
+        "referrer": null,
+        "sources": [
+          "premium-catalog-c1df068b16b0"
+        ]
+      }
+    ],
+    "baseline_present": false,
+    "approved_hosts": [
+      "116.90.120.149"
+    ],
+    "priority": 5,
+    "access_notes": "Public third-party distribution; broadcaster authorization not established. Manifest/media, three-frame decode, on-screen channel branding and increasing live media sequence checked 2026-11-21. Language follows channel/catalog metadata; spoken audio not independently transcribed. Region restrictions and expiry may apply."
+  },
+  {
+    "id": "SonySportsTen5.in",
+    "name": "Sony Sports Ten 5",
+    "category": "Sports",
+    "provider": "Sony",
+    "famous": true,
+    "country": "IN",
+    "website": "https://www.sonysportsnetwork.com/",
+    "logo": "",
+    "languages": [
+      "eng"
+    ],
+    "candidates": [
+      {
+        "url": "http://116.90.120.149:8000/play/a117/index.m3u8",
+        "quality": "576p",
+        "feed": "SD",
+        "languages": [
+          "eng"
+        ],
+        "labels": [],
+        "user_agent": null,
+        "referrer": null,
+        "sources": [
+          "premium-catalog-c1df068b16b0"
+        ]
+      }
+    ],
+    "baseline_present": false,
+    "approved_hosts": [
+      "116.90.120.149"
+    ],
+    "priority": 5,
+    "access_notes": "Public third-party distribution; broadcaster authorization not established. Manifest/media, three-frame decode, on-screen channel branding and increasing live media sequence checked 2026-11-21. Language follows channel/catalog metadata; spoken audio not independently transcribed. Region restrictions and expiry may apply."
+  },
+  {
+    "id": "StarGold.in",
+    "name": "Star Gold",
+    "category": "India",
+    "provider": "Star",
+    "famous": true,
+    "country": "IN",
+    "website": "https://hotstar.com/",
+    "logo": "",
+    "languages": [
+      "hin"
+    ],
+    "candidates": [
+      {
+        "url": "http://116.90.120.149:8000/play/a12a/index.m3u8",
+        "quality": "1080p",
+        "feed": "HD",
+        "languages": [
+          "hin"
+        ],
+        "labels": [],
+        "user_agent": null,
+        "referrer": null,
+        "sources": [
+          "premium-catalog-c773c84625c4"
+        ]
+      }
+    ],
+    "baseline_present": false,
+    "approved_hosts": [
+      "116.90.120.149"
+    ],
+    "priority": 5,
+    "access_notes": "Public third-party distribution; broadcaster authorization not established. Manifest/media, three-frame decode, on-screen channel branding and increasing live media sequence checked 2026-11-21. Language follows channel/catalog metadata; spoken audio not independently transcribed. Region restrictions and expiry may apply."
+  },
+  {
+    "id": "StarGold2.in",
+    "name": "Star Gold 2",
+    "category": "India",
+    "provider": "Star",
+    "famous": true,
+    "country": "IN",
+    "website": "https://hotstar.com/",
+    "logo": "",
+    "languages": [
+      "hin"
+    ],
+    "candidates": [
+      {
+        "url": "http://116.90.120.149:8000/play/a12b/index.m3u8",
+        "quality": "576p",
+        "feed": "SD",
+        "languages": [
+          "hin"
+        ],
+        "labels": [],
+        "user_agent": null,
+        "referrer": null,
+        "sources": [
+          "premium-catalog-c773c84625c4"
+        ]
+      }
+    ],
+    "baseline_present": false,
+    "approved_hosts": [
+      "116.90.120.149"
+    ],
+    "priority": 5,
+    "access_notes": "Public third-party distribution; broadcaster authorization not established. Manifest/media, three-frame decode, on-screen channel branding and increasing live media sequence checked 2026-11-21. Language follows channel/catalog metadata; spoken audio not independently transcribed. Region restrictions and expiry may apply."
+  },
+  {
+    "id": "StarMovies.in",
+    "name": "Star Movies",
+    "category": "India",
+    "provider": "Star",
+    "famous": true,
+    "country": "IN",
+    "website": "http://www.starmovies.in/",
+    "logo": "",
+    "languages": [
+      "eng"
+    ],
+    "candidates": [
+      {
+        "url": "http://116.90.120.149:8000/play/a13a/index.m3u8",
+        "quality": "1080p",
+        "feed": "HD",
+        "languages": [
+          "eng"
+        ],
+        "labels": [],
+        "user_agent": null,
+        "referrer": null,
+        "sources": [
+          "premium-catalog-c773c84625c4"
+        ]
+      }
+    ],
+    "baseline_present": false,
+    "approved_hosts": [
+      "116.90.120.149"
+    ],
+    "priority": 5,
+    "access_notes": "Public third-party distribution; broadcaster authorization not established. Manifest/media, three-frame decode, on-screen channel branding and increasing live media sequence checked 2026-11-21. Language follows channel/catalog metadata; spoken audio not independently transcribed. Region restrictions and expiry may apply."
+  },
+  {
+    "id": "StarMoviesSelect.in",
+    "name": "Star Movies Select",
+    "category": "India",
+    "provider": "Star",
+    "famous": true,
+    "country": "IN",
+    "website": "http://www.starmovies.in/",
+    "logo": "",
+    "languages": [
+      "eng"
+    ],
+    "candidates": [
+      {
+        "url": "http://116.90.120.149:8000/play/a139/index.m3u8",
+        "quality": "1080p",
+        "feed": "HD",
+        "languages": [
+          "eng"
+        ],
+        "labels": [],
+        "user_agent": null,
+        "referrer": null,
+        "sources": [
+          "premium-catalog-c773c84625c4"
+        ]
+      }
+    ],
+    "baseline_present": false,
+    "approved_hosts": [
+      "116.90.120.149"
+    ],
+    "priority": 5,
+    "access_notes": "Public third-party distribution; broadcaster authorization not established. Manifest/media, three-frame decode, on-screen channel branding and increasing live media sequence checked 2026-11-21. Language follows channel/catalog metadata; spoken audio not independently transcribed. Region restrictions and expiry may apply."
+  },
+  {
+    "id": "StarSports1Hindi.in",
+    "name": "Star Sports 1 Hindi",
+    "category": "Sports",
+    "provider": "Star",
+    "famous": true,
+    "country": "IN",
+    "website": "https://www.startv.com/about-us/sports",
+    "logo": "",
+    "languages": [
+      "hin"
+    ],
+    "candidates": [
+      {
+        "url": "http://116.90.120.149:8000/play/a122/index.m3u8",
+        "quality": "1080p",
+        "feed": "HD",
+        "languages": [
+          "hin"
+        ],
+        "labels": [],
+        "user_agent": null,
+        "referrer": null,
+        "sources": [
+          "premium-catalog-c1df068b16b0"
+        ]
+      }
+    ],
+    "baseline_present": false,
+    "approved_hosts": [
+      "116.90.120.149"
+    ],
+    "priority": 5,
+    "access_notes": "Public third-party distribution; broadcaster authorization not established. Manifest/media, three-frame decode, on-screen channel branding and increasing live media sequence checked 2026-11-21. Language follows channel/catalog metadata; spoken audio not independently transcribed. Region restrictions and expiry may apply."
+  },
+  {
+    "id": "StarSports2.in",
+    "name": "Star Sports 2",
+    "category": "Sports",
+    "provider": "Star",
+    "famous": true,
+    "country": "IN",
+    "website": "https://www.startv.com/about-us/sports",
+    "logo": "",
+    "languages": [
+      "eng"
+    ],
+    "candidates": [
+      {
+        "url": "http://116.90.120.149:8000/play/a120/index.m3u8",
+        "quality": "1080p",
+        "feed": "HD",
+        "languages": [
+          "eng"
+        ],
+        "labels": [],
+        "user_agent": null,
+        "referrer": null,
+        "sources": [
+          "premium-catalog-c1df068b16b0"
+        ]
+      }
+    ],
+    "baseline_present": false,
+    "approved_hosts": [
+      "116.90.120.149"
+    ],
+    "priority": 5,
+    "access_notes": "Public third-party distribution; broadcaster authorization not established. Manifest/media, three-frame decode, on-screen channel branding and increasing live media sequence checked 2026-11-21. Language follows channel/catalog metadata; spoken audio not independently transcribed. Region restrictions and expiry may apply."
   }
 ]

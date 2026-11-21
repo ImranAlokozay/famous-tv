@@ -97,7 +97,17 @@ def select_channels(channels, policy):
             continue
         for candidate in channel['candidates']:
             validate_candidate(candidate, channel, policy)
-        candidates = [c for c in channel['candidates'] if resolution_rank(c.get('quality'))[0] < 5]
+        preferred = policy.get('preferred_languages', policy['languages'])
+        if channel['category'] == 'Afghanistan':
+            preferred = policy['afghanistan_languages']
+        elif channel['category'] == 'Pakistan':
+            preferred = policy.get('pakistan_languages', policy['languages'])
+        eligible = [c for c in channel['candidates']
+                    if set(c['languages']) & set(channel['languages']) & set(preferred)]
+        if not eligible:
+            excluded.append({'id': channel['id'], 'reason': 'Outside preferred audio languages'})
+            continue
+        candidates = [c for c in eligible if resolution_rank(c.get('quality'))[0] < 5]
         if not candidates:
             excluded.append({'id': channel['id'], 'reason': 'Only resolutions above 1080 available'})
             continue
